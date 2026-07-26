@@ -13,7 +13,7 @@
       "visual": {
         "type": "placeholder",
         "label": "Freiburg",
-        "tone": "light"
+        "tone": "accent"
       },
       "sources": [
         {
@@ -120,7 +120,7 @@
       "visual": {
         "type": "placeholder",
         "label": "D · HRO · S",
-        "tone": "light"
+        "tone": "accent"
       },
       "sources": [
         {
@@ -172,7 +172,7 @@
       "visual": {
         "type": "placeholder",
         "label": "Pepperdine",
-        "tone": "light"
+        "tone": "accent"
       },
       "sources": [
         {
@@ -270,7 +270,7 @@
       "visual": {
         "type": "placeholder",
         "label": "Nanjing",
-        "tone": "light"
+        "tone": "accent"
       },
       "sources": [
         {
@@ -425,7 +425,7 @@
       "visual": {
         "type": "placeholder",
         "label": "Israel",
-        "tone": "light"
+        "tone": "accent"
       },
       "sources": [
         {
