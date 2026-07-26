@@ -1,0 +1,1124 @@
+{
+  "teaching": [
+    {
+      "id": "rwv-freiburg-wagner-masterclass-2025",
+      "status": "confirmed",
+      "institution": "Richard-Wagner-Verband Freiburg / KHG Freiburg",
+      "location": "Freiburg",
+      "date": "8.–10. September 2025",
+      "sortDate": "2025-09-08",
+      "title": "Wagner Meisterkurs · Tristan – Ring – Parsifal",
+      "summary": "Meisterkurs anlässlich 75 Jahre Neugründung des Richard-Wagner-Verbandes Freiburg mit Arbeit an kleinen und mittleren Wagner-Partien.",
+      "buttonLabel": "Mehr anzeigen",
+      "visual": {
+        "type": "placeholder",
+        "label": "Freiburg",
+        "tone": "light"
+      },
+      "sources": [
+        {
+          "label": "Solfaghari.com — Termine",
+          "href": "https://www.solfaghari.com/termine/"
+        }
+      ],
+      "details": {
+        "tags": [
+          "Masterclass",
+          "Wagner",
+          "Freiburg"
+        ],
+        "intro": [
+          "Der Freiburger Wagner-Meisterkurs widmet sich kleinen und mittleren Partien aus Tristan, Ring und Parsifal. Im Mittelpunkt stehen musikalische Struktur, Diktion, dramatischer Ausdruck und die Frage, wie auch kleinere Rollen einen sicheren, vollständigen Eindruck vermitteln.",
+          "Der Kurs findet im Rahmen des Jubiläums „75 Jahre Neugründung des Richard-Wagner-Verbandes Freiburg“ statt. Die Arbeit verbindet Einzelunterricht, Gruppenarbeit und die Vorbereitung auf professionelle Vorsing- und Bühnensituationen."
+        ],
+        "facts": [
+          {
+            "label": "Datum",
+            "value": "8.–10. September 2025"
+          },
+          {
+            "label": "Ort",
+            "value": "KHG, Lorettostr. 20, 79100 Freiburg"
+          },
+          {
+            "label": "Kontext",
+            "value": "75 Jahre Richard-Wagner-Verband Freiburg"
+          },
+          {
+            "label": "Schwerpunkt",
+            "value": "Tristan, Ring, Parsifal; kleine und mittlere Partien"
+          }
+        ]
+      }
+    },
+    {
+      "id": "hmdk-stuttgart-2024",
+      "status": "needs-verification",
+      "institution": "Musikhochschule Stuttgart / HMDK",
+      "location": "Stuttgart",
+      "date": "2024",
+      "sortDate": "2024-02-01",
+      "title": "Masterclass in Stuttgart",
+      "summary": "Masterclass im Stuttgarter Hochschulumfeld mit Arbeit an szenischer Präsenz, Diktion und Rollenverständnis im Übergang zwischen Studium und Beruf.",
+      "buttonLabel": "Mehr anzeigen",
+      "visual": {
+        "type": "placeholder",
+        "label": "Stuttgart",
+        "tone": "accent"
+      },
+      "sources": [
+        {
+          "label": "Operabase — Biografie/Lehre",
+          "href": "https://www.operabase.com/jasmin-solfaghari-a7919/de"
+        },
+        {
+          "label": "Solfaghari.com — About",
+          "href": "https://www.solfaghari.com/en/about-jasmin-solfaghari/"
+        }
+      ],
+      "verificationNote": "Von Razz/Jasmin erinnert; öffentlich bisher nicht als Einzeltermin auffindbar. Übergeordnete Lehrtätigkeit an Opernschule Stuttgart ist über Operabase/Solfaghari-Bio belegt.",
+      "details": {
+        "tags": [
+          "Masterclass",
+          "Musikdrama",
+          "Diktion"
+        ],
+        "intro": [
+          "In dieser Masterclass arbeitet Jasmin Solfaghari mit jungen Sänger:innen an der Verbindung von musikalischer Genauigkeit, Sprache und szenischer Präsenz. Eine Partie wird nicht nur stimmlich vorbereitet, sondern als konkrete Bühnensituation verstanden.",
+          "Im Mittelpunkt stehen Rollenverständnis, präzise Diktion und die Fähigkeit, musikalische Struktur in glaubwürdige Handlung zu übersetzen. Der Unterricht richtet den Blick auf den Übergang vom Studium in professionelle Proben- und Vorsingsituationen."
+        ],
+        "facts": [
+          {
+            "label": "Jahr",
+            "value": "2024"
+          },
+          {
+            "label": "Ort",
+            "value": "Stuttgart"
+          },
+          {
+            "label": "Format",
+            "value": "Masterclass / dramatischer Unterricht"
+          },
+          {
+            "label": "Schwerpunkt",
+            "value": "Musiktheater, Diktion, Rollenarbeit"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dresden-rostock-stuttgart-dramatischer-unterricht",
+      "status": "partial",
+      "institution": "Musikhochschulen Dresden · Rostock · Stuttgart",
+      "location": "Dresden / Rostock / Stuttgart",
+      "date": "seit 2011",
+      "sortDate": "2024-01-01",
+      "title": "Dramatischer Unterricht an Musikhochschulen",
+      "summary": "Freiberufliche Hochschullehre an Opern- und Musikhochschulen in Dresden, Rostock und Stuttgart mit Fokus auf dramatischen Unterricht und Bühnenpraxis.",
+      "buttonLabel": "Mehr anzeigen",
+      "visual": {
+        "type": "placeholder",
+        "label": "D · HRO · S",
+        "tone": "light"
+      },
+      "sources": [
+        {
+          "label": "Solfaghari.com — About",
+          "href": "https://www.solfaghari.com/en/about-jasmin-solfaghari/"
+        },
+        {
+          "label": "Operabase",
+          "href": "https://www.operabase.com/jasmin-solfaghari-a7919/de"
+        }
+      ],
+      "verificationNote": "Übergeordnete Stationen belegt; Einzeltermine müssen bei Bedarf aus Hochschularchiven nachgezogen werden.",
+      "details": {
+        "tags": [
+          "Lehrauftrag",
+          "Hochschule",
+          "Dramatischer Unterricht"
+        ],
+        "intro": [
+          "Jasmin Solfaghari arbeitet an Musikhochschulen und Opernschulen mit jungen Sänger:innen an der szenischen Seite des Berufs. Der dramatische Unterricht verbindet Rollenarbeit, Textverständnis, Körperpräsenz und musikalische Form.",
+          "Die Arbeit ist unmittelbar praxisbezogen: Arien, Ensembles und Dialoge werden als theatrale Situationen behandelt. So entsteht aus Partitur und Text eine klare Bühnenhandlung, die im Vorsingen, in der Probe und in der Produktion trägt."
+        ],
+        "facts": [
+          {
+            "label": "Zeitraum",
+            "value": "seit 2011"
+          },
+          {
+            "label": "Institutionen",
+            "value": "Musikhochschulen Dresden, Rostock, Opernschule Stuttgart"
+          },
+          {
+            "label": "Arbeitsfelder",
+            "value": "Rollenarbeit, Diktion, Szene, Bühnenpräsenz"
+          }
+        ]
+      }
+    },
+    {
+      "id": "pepperdine-heidelberg-summer-program",
+      "status": "confirmed",
+      "institution": "Pepperdine University",
+      "location": "Malibu / Heidelberg Summer Program",
+      "date": "2013, 2015, 2017",
+      "sortDate": "2017-12-31",
+      "title": "Masterclasses · Heidelberg Summer Program",
+      "summary": "Masterclasses im Heidelberg Summer Program der Pepperdine University unter Leitung von Prof. Dr. Henry Price in den Jahren 2013, 2015 und 2017.",
+      "buttonLabel": "Mehr anzeigen",
+      "visual": {
+        "type": "placeholder",
+        "label": "Pepperdine",
+        "tone": "light"
+      },
+      "sources": [
+        {
+          "label": "Solfaghari.com — Masterclasses & Coach",
+          "href": "https://www.solfaghari.com/en/masterclasses-coach/"
+        }
+      ],
+      "details": {
+        "tags": [
+          "Masterclass",
+          "USA",
+          "Heidelberg Summer Program"
+        ],
+        "intro": [
+          "Im Heidelberg Summer Program der Pepperdine University arbeitet Jasmin Solfaghari mit jungen Sänger:innen an Opernszenen, Arien und Rollen. Die Masterclasses verbinden musikalische Vorbereitung mit konkreter szenischer Arbeit.",
+          "Text, Sprache und körperliche Präsenz werden gemeinsam entwickelt. Dabei geht es um deutsche, italienische, französische und englische Diktion ebenso wie um die Frage, wie eine Figur auf der Bühne frei und wahrhaftig handeln kann."
+        ],
+        "facts": [
+          {
+            "label": "Jahre",
+            "value": "2013, 2015, 2017"
+          },
+          {
+            "label": "Program Director",
+            "value": "Prof. Dr. Henry Price"
+          },
+          {
+            "label": "Kontext",
+            "value": "Pepperdine University / Heidelberg Summer Program"
+          },
+          {
+            "label": "Sprachen",
+            "value": "Deutsch, Englisch, Französisch, Italienisch"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rio-de-janeiro-lecture",
+      "status": "confirmed",
+      "institution": "Universidade Federal do Rio de Janeiro",
+      "location": "Rio de Janeiro",
+      "date": "Februar 2016",
+      "sortDate": "2016-02-01",
+      "title": "Lecture in Brasilien",
+      "summary": "Lecture an der Universidade Federal do Rio de Janeiro im Februar 2016 als Teil ihrer internationalen Lehr- und Vortragstätigkeit.",
+      "buttonLabel": "Mehr anzeigen",
+      "visual": {
+        "type": "placeholder",
+        "label": "Rio",
+        "tone": "accent"
+      },
+      "sources": [
+        {
+          "label": "Solfaghari.com — Masterclasses & Coach",
+          "href": "https://www.solfaghari.com/en/masterclasses-coach/"
+        }
+      ],
+      "details": {
+        "tags": [
+          "Lecture",
+          "Brasilien",
+          "Hochschule"
+        ],
+        "intro": [
+          "Die Lecture an der Universidade Federal do Rio de Janeiro führt Jasmin Solfagharis Arbeit in einen internationalen Hochschulkontext. Oper wird hier als Zusammenspiel von Musik, Sprache, Körper und dramatischer Situation vermittelt.",
+          "Der Vortrag knüpft an ihre Arbeit als Regisseurin und Lehrende an: Partitur und Text werden nicht abstrakt analysiert, sondern auf ihre Wirkung im Raum und auf der Bühne hin befragt."
+        ],
+        "facts": [
+          {
+            "label": "Datum",
+            "value": "Februar 2016"
+          },
+          {
+            "label": "Institution",
+            "value": "Universidade Federal do Rio de Janeiro"
+          },
+          {
+            "label": "Format",
+            "value": "Lecture / Hochschulveranstaltung"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nanjing-class",
+      "status": "needs-verification",
+      "institution": "Class in Nanjing",
+      "location": "Nanjing, China",
+      "date": "Internationale Lehrstation",
+      "sortDate": "2015-01-01",
+      "title": "Unterricht in Nanjing",
+      "summary": "Unterricht in Nanjing als Teil ihrer internationalen Lehrtätigkeit mit Schwerpunkt Musikdrama, Sprache und szenische Präsenz.",
+      "buttonLabel": "Mehr anzeigen",
+      "visual": {
+        "type": "placeholder",
+        "label": "Nanjing",
+        "tone": "light"
+      },
+      "sources": [
+        {
+          "label": "Solfaghari.com — About",
+          "href": "https://www.solfaghari.com/en/about-jasmin-solfaghari/"
+        }
+      ],
+      "verificationNote": "Station ist in externen Biografien genannt; Jahr und genaue Institution öffentlich noch nicht belastbar auffindbar.",
+      "details": {
+        "tags": [
+          "China",
+          "Class",
+          "International"
+        ],
+        "intro": [
+          "Der Unterricht in Nanjing erweitert Jasmin Solfagharis internationale Lehrtätigkeit nach China. Im Zentrum steht die Arbeit an Musikdrama, Sprache und szenischer Präsenz.",
+          "Sänger:innen entwickeln Rollen aus Musik, Text und körperlicher Handlung heraus. Die Klasse verbindet technische Genauigkeit mit der Frage, wie eine Opernfigur im Moment der Aufführung überzeugend lebt."
+        ],
+        "facts": [
+          {
+            "label": "Ort",
+            "value": "Nanjing, China"
+          },
+          {
+            "label": "Format",
+            "value": "Class / Unterricht"
+          },
+          {
+            "label": "Schwerpunkt",
+            "value": "Musikdrama und szenische Arbeit"
+          }
+        ]
+      }
+    },
+    {
+      "id": "montepulciano-masterclass",
+      "status": "needs-verification",
+      "institution": "Montepulciano",
+      "location": "Italien",
+      "date": "Internationale Lehrstation",
+      "sortDate": "2014-01-01",
+      "title": "Lehrstation in Italien",
+      "summary": "Internationale Lehrstation in Montepulciano mit Arbeit an Opernszene, Diktion, Rollenverständnis und dramatischem Ausdruck.",
+      "buttonLabel": "Mehr anzeigen",
+      "visual": {
+        "type": "placeholder",
+        "label": "Italia",
+        "tone": "accent"
+      },
+      "sources": [
+        {
+          "label": "Speakerinnen.org",
+          "href": "https://www.speakerinnen.org/en/profiles/4049"
+        },
+        {
+          "label": "Operabase — Biografie/Lehre",
+          "href": "https://www.operabase.com/jasmin-solfaghari-a7919/de"
+        },
+        {
+          "label": "Solfaghari.com — About",
+          "href": "https://www.solfaghari.com/en/about-jasmin-solfaghari/"
+        }
+      ],
+      "verificationNote": "Station ist in Speakerinnen/Operabase/Solfaghari-Bio genannt; Jahr und Träger sind noch nicht als Einzelprogramm gefunden.",
+      "details": {
+        "tags": [
+          "Italien",
+          "Masterclass",
+          "International"
+        ],
+        "intro": [
+          "In Montepulciano arbeitet Jasmin Solfaghari mit Sänger:innen an Opernszenen und Rollen. Der Unterricht verbindet musikalische Form, Sprache und dramatischen Ausdruck zu einer konkreten Bühnenpraxis.",
+          "Junge Künstler:innen lernen, den emotionalen und erzählerischen Kern einer Partie präzise zu greifen. Aus musikalischen Impulsen, Text und räumlicher Situation entsteht eine Figur, die auf der Bühne lesbar wird."
+        ],
+        "facts": [
+          {
+            "label": "Ort",
+            "value": "Montepulciano, Italien"
+          },
+          {
+            "label": "Format",
+            "value": "Masterclass / Lehrstation"
+          },
+          {
+            "label": "Arbeitsfeld",
+            "value": "Opernszene, Diktion, Rollenarbeit"
+          }
+        ]
+      }
+    },
+    {
+      "id": "hmt-leipzig-professur",
+      "status": "confirmed",
+      "institution": "Hochschule für Musik und Theater Leipzig",
+      "location": "Leipzig",
+      "date": "2006–2011",
+      "sortDate": "2011-12-31",
+      "title": "Professorin für Dramatischen Unterricht",
+      "summary": "Professorin für Musikdrama und Dramatischen Unterricht an der Hochschule für Musik und Theater Leipzig von 2006 bis 2011.",
+      "buttonLabel": "Mehr anzeigen",
+      "visual": {
+        "type": "placeholder",
+        "label": "HMT Leipzig",
+        "tone": "accent"
+      },
+      "sources": [
+        {
+          "label": "Solfaghari.com — About",
+          "href": "https://www.solfaghari.com/en/about-jasmin-solfaghari/"
+        },
+        {
+          "label": "Schott Music",
+          "href": "https://www.schott-music.com/en/person/jasmin-solfaghari"
+        }
+      ],
+      "details": {
+        "tags": [
+          "Professur",
+          "HMT Leipzig",
+          "Musikdrama"
+        ],
+        "intro": [
+          "Von 2006 bis 2011 war Jasmin Solfaghari Professorin für Musikdrama / Dramatischen Unterricht an der Hochschule für Musik und Theater Leipzig. Diese mehrjährige Hochschulposition bildet das Zentrum ihrer institutionellen Lehrbiografie.",
+          "In Leipzig verband sie künstlerische Regiepraxis mit Ausbildung: Arbeit an Opernszenen, Rollenverständnis, professioneller Probenhaltung und der Fähigkeit, musikalische Struktur in lebendige Bühnenhandlung zu übersetzen."
+        ],
+        "facts": [
+          {
+            "label": "Zeitraum",
+            "value": "2006-2011"
+          },
+          {
+            "label": "Institution",
+            "value": "Hochschule für Musik und Theater Leipzig"
+          },
+          {
+            "label": "Funktion",
+            "value": "Professorin für Musikdrama / Dramatischen Unterricht"
+          }
+        ]
+      }
+    },
+    {
+      "id": "jerusalem-tel-aviv-masterclasses",
+      "status": "confirmed",
+      "institution": "Jerusalem Academy for Music and Dance / Tel Aviv Opera Studio",
+      "location": "Jerusalem / Tel Aviv",
+      "date": "2011",
+      "sortDate": "2011-12-31",
+      "title": "Masterclasses in Israel",
+      "summary": "Masterclasses an der Jerusalem Academy for Music and Dance und im Tel Aviv Opera Studio im Jahr 2011.",
+      "buttonLabel": "Mehr anzeigen",
+      "visual": {
+        "type": "placeholder",
+        "label": "Israel",
+        "tone": "light"
+      },
+      "sources": [
+        {
+          "label": "Solfaghari.com — Masterclasses & Coach",
+          "href": "https://www.solfaghari.com/en/masterclasses-coach/"
+        }
+      ],
+      "details": {
+        "tags": [
+          "Masterclass",
+          "Israel",
+          "Opera Studio"
+        ],
+        "intro": [
+          "Die Masterclasses in Jerusalem und Tel Aviv widmen sich der Arbeit an Opernszenen, Sprachen und Rollen. Jasmin Solfaghari verbindet dabei Repertoirekenntnis mit genauer Text- und Szenenarbeit.",
+          "Studierende entwickeln musikalische Phrasen als Handlung und untersuchen, welche menschliche Situation hinter einer Arie oder einem Ensemble steht. So entsteht eine Form von Unterricht, die technische Präzision und darstellerische Wärme zusammenführt."
+        ],
+        "facts": [
+          {
+            "label": "Jahr",
+            "value": "2011"
+          },
+          {
+            "label": "Institutionen",
+            "value": "Jerusalem Academy for Music and Dance; Tel Aviv Opera Studio"
+          },
+          {
+            "label": "Referenz",
+            "value": "Zvi Semel, Head of Vocal Department"
+          }
+        ]
+      }
+    },
+    {
+      "id": "usa-masterclasses-2009",
+      "status": "confirmed",
+      "institution": "Boston University · Iowa State University · Wartburg College",
+      "location": "USA",
+      "date": "2009",
+      "sortDate": "2009-12-31",
+      "title": "Masterclasses an amerikanischen Hochschulen",
+      "summary": "USA-Masterclasses am Boston University Opera Institute, an der Iowa State University und am Wartburg College Waverly im Jahr 2009.",
+      "buttonLabel": "Mehr anzeigen",
+      "visual": {
+        "type": "placeholder",
+        "label": "USA",
+        "tone": "accent"
+      },
+      "sources": [
+        {
+          "label": "Solfaghari.com — Masterclasses & Coach",
+          "href": "https://www.solfaghari.com/en/masterclasses-coach/"
+        },
+        {
+          "label": "Schott Music",
+          "href": "https://www.schott-music.com/en/person/jasmin-solfaghari"
+        }
+      ],
+      "details": {
+        "tags": [
+          "Masterclass",
+          "USA",
+          "Opera Institute"
+        ],
+        "intro": [
+          "Die USA-Masterclasses führen Jasmin Solfaghari an mehrere Ausbildungsorte: das Boston University Opera Institute, die Iowa State University und das Wartburg College in Waverly.",
+          "Gearbeitet wird an Repertoire, Stil, Diktion und szenischer Freiheit. Sänger:innen werden ermutigt, vertraute Muster zu verlassen und musikalische Entscheidungen in konkrete, spielbare Situationen zu verwandeln."
+        ],
+        "facts": [
+          {
+            "label": "Jahr",
+            "value": "2009"
+          },
+          {
+            "label": "Stationen",
+            "value": "Boston University Opera Institute; Iowa State University; Wartburg College Waverly"
+          },
+          {
+            "label": "Referenz",
+            "value": "Donald Simonson, Iowa State University"
+          }
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "id": "xerxes-lehrpraxis",
+      "status": "confirmed",
+      "institution": "Hochschule für Musik Dresden",
+      "location": "Kleines Haus Dresden",
+      "date": "2014",
+      "sortDate": "2014-05-01",
+      "title": "Xerxes",
+      "summary": "Jahresproduktion der Opernklasse: Händels Werk als große Hochschulproduktion mit Ensemblearbeit, Stilgefühl und präziser szenischer Führung.",
+      "buttonLabel": "Zur Inszenierung",
+      "visual": {
+        "type": "image",
+        "src": "/assets/img/xerxes/xerxes-04.jpg",
+        "alt": "Xerxes, Hochschulproduktion Dresden"
+      },
+      "sources": [
+        {
+          "label": "HfM Dresden",
+          "href": "https://www.hfmdd.de/en/study/ensembles/opera-class"
+        }
+      ],
+      "href": "/inszenierungen/xerxes/"
+    },
+    {
+      "id": "albert-herring-lehrpraxis",
+      "status": "confirmed",
+      "institution": "Hochschule für Musik und Theater Leipzig",
+      "location": "Leipzig",
+      "date": "2011",
+      "sortDate": "2011-06-01",
+      "title": "Albert Herring",
+      "summary": "Hochschulproduktion zum Abschluss der Leipziger Lehrzeit: Brittens Komödie als Ausbildungsraum für Ensemble, Sprache und Timing.",
+      "buttonLabel": "Zur Inszenierung",
+      "visual": {
+        "type": "image",
+        "src": "/assets/img/albert-herring/benjamin-britten-1921.jpg",
+        "alt": "Albert Herring, Lehrpraxis und Hochschulproduktion"
+      },
+      "sources": [
+        {
+          "label": "Boosey & Hawkes",
+          "href": "https://www.boosey.com/pages/teaching/calendar/default?d=19&m=6&y=2011"
+        }
+      ],
+      "href": "/inszenierungen/albert-herring/"
+    },
+    {
+      "id": "alle-wuensche-lehrpraxis",
+      "status": "confirmed",
+      "institution": "HMT Leipzig / Ludwigsburger Schlossfestspiele",
+      "location": "Leipzig / Ludwigsburg",
+      "date": "2009",
+      "sortDate": "2009-06-01",
+      "title": "Alle Wünsche sind dahin",
+      "summary": "Musiktheater-Collage als Hochschullabor: historische Vorlage, neue Dialogfassung, Probenmoment und szenische Reflexion.",
+      "buttonLabel": "Zur Inszenierung",
+      "visual": {
+        "type": "image",
+        "src": "/assets/img/alle-wuensche-sind-dahin/fanny-hensel-1842.jpg",
+        "alt": "Alle Wünsche sind dahin, Lehrpraxis und Hochschulproduktion"
+      },
+      "sources": [
+        {
+          "label": "Universität Tübingen",
+          "href": "https://uni-tuebingen.de/fakultaeten/philosophische-fakultaet/fachbereiche/altertums-und-kunstwissenschaften/musikwissenschaftliches-institut/institut/archiv-veranstaltungen/gastvortraege/"
+        }
+      ],
+      "href": "/inszenierungen/alle-wunsche-sind-dahin/"
+    },
+    {
+      "id": "le-nozze-di-figaro-lehrpraxis",
+      "status": "confirmed",
+      "institution": "Hochschule für Musik und Theater Leipzig",
+      "location": "Leipzig",
+      "date": "2008",
+      "sortDate": "2008-01-01",
+      "title": "Le nozze di Figaro",
+      "summary": "Hochschulproduktion, in der Solfaghari mit Studierenden intensiv an Text, Szene, Figurenverständnis und Bühnenfreude arbeitete.",
+      "buttonLabel": "Zur Inszenierung",
+      "visual": {
+        "type": "image",
+        "src": "/assets/img/figaros-toller-tag/figaros-toller-tag-tom-schulze.jpg",
+        "alt": "Figaro-Produktion als Bildreferenz für die Lehrpraxis"
+      },
+      "sources": [
+        {
+          "label": "Solfaghari.com — Masterclasses & Coach",
+          "href": "https://www.solfaghari.com/en/masterclasses-coach/"
+        }
+      ],
+      "href": "/inszenierungen/figaros-toller-tag/"
+    }
+  ],
+  "lectures": [
+    {
+      "id": "goetheanum-pflanzen-oper-2026",
+      "status": "confirmed",
+      "institution": "Goetheanum Dornach",
+      "location": "Dornach",
+      "date": "28. März 2026",
+      "sortDate": "2026-03-28",
+      "title": "Kräuter und Wurzeln findet ein Jeder sich selbst – Pflanzen in der Oper",
+      "summary": "Vortrag beim Parsifal-Thementag am Goetheanum über Pflanzenmotive in der Oper, von Kräutern und Wurzeln bis Gift, Heilung und Erkenntnis.",
+      "buttonLabel": "Mehr anzeigen",
+      "visual": {
+        "type": "placeholder",
+        "label": "Goetheanum",
+        "tone": "accent"
+      },
+      "sources": [
+        {
+          "label": "Goetheanum-Bühne",
+          "href": "https://www.goetheanum-buehne.ch/projekte/wagners-parsifal-2026-1"
+        }
+      ],
+      "details": {
+        "time": "15 Uhr",
+        "tags": [
+          "Vortrag",
+          "Goetheanum",
+          "Parsifal"
+        ],
+        "intro": [
+          "Der Vortrag ist Teil des Parsifal-Thementags am Goetheanum am 28. März 2026. Unter dem Titel „Kräuter und Wurzeln findet ein Jeder sich selbst – Pflanzen in der Oper“ verbindet Jasmin Solfaghari ihre Parsifal-Arbeit mit einem größeren operngeschichtlichen Motivfeld.",
+          "Der Blick richtet sich auf Pflanzen als Zeichen von Heilung, Verführung, Gift, Naturwissen und Erkenntnis. Der Vortrag steht im Umfeld der erneuten Parsifal-Aufführungen am Goetheanum im März 2026."
+        ],
+        "facts": [
+          {
+            "label": "Datum",
+            "value": "28. März 2026"
+          },
+          {
+            "label": "Zeit",
+            "value": "15 Uhr"
+          },
+          {
+            "label": "Ort",
+            "value": "Goetheanum, CH-Dornach"
+          },
+          {
+            "label": "Kontext",
+            "value": "Parsifal-Thementag"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rwv-hamburg-parsifal-2025",
+      "status": "confirmed",
+      "institution": "Richard-Wagner-Verband Hamburg",
+      "location": "Hamburg",
+      "date": "6. Oktober 2025",
+      "sortDate": "2025-10-06",
+      "title": "Ich schreite kaum, doch wähn' ich mich schon weit. Parsifal am Goetheanum",
+      "summary": "Vortrag beim Richard-Wagner-Verband Hamburg über Entstehung, Regiesprache und Erfahrungsraum von Parsifal am Goetheanum.",
+      "buttonLabel": "Mehr anzeigen",
+      "visual": {
+        "type": "placeholder",
+        "label": "Hamburg",
+        "tone": "light"
+      },
+      "sources": [
+        {
+          "label": "Solfaghari.com — Termine",
+          "href": "https://www.solfaghari.com/termine/"
+        }
+      ],
+      "details": {
+        "tags": [
+          "Vortrag",
+          "Richard-Wagner-Verband",
+          "Parsifal"
+        ],
+        "intro": [
+          "Der Hamburger Vortrag ist für den 6. Oktober 2025 angekündigt und steht unter dem Parsifal-Titel „Ich schreite kaum, doch wähn’ ich mich schon weit“. Er führt in die Entstehung und Konzeption der Goetheanum-Produktion ein.",
+          "Im Mittelpunkt stehen die Besonderheiten dieser Arbeit: Oper und Eurythmie teilen sich den Bühnenraum, der spirituelle Gehalt des Werks wird ernst genommen, und die Regie sucht nach einer Form, in der Musik, Körper und Raum gemeinsam erzählen."
+        ],
+        "facts": [
+          {
+            "label": "Datum",
+            "value": "6. Oktober 2025"
+          },
+          {
+            "label": "Veranstalter",
+            "value": "Richard-Wagner-Verband Hamburg"
+          },
+          {
+            "label": "Thema",
+            "value": "Parsifal am Goetheanum"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rwv-magdeburg-regiesprache-2025",
+      "status": "confirmed",
+      "institution": "Richard-Wagner-Verband Magdeburg",
+      "location": "Magdeburg",
+      "date": "27. September 2025",
+      "sortDate": "2025-09-27",
+      "title": "Die Sprache der Opern-Regie zwischen Zerrissenheit und Anpassung",
+      "summary": "Vortrag im Rahmenprogramm zur Tannhäuser-Neuproduktion über Regiesprache zwischen Werkbezug, Zerrissenheit und Anpassungsdruck.",
+      "buttonLabel": "Mehr anzeigen",
+      "visual": {
+        "type": "placeholder",
+        "label": "Magdeburg",
+        "tone": "accent"
+      },
+      "sources": [
+        {
+          "label": "Solfaghari.com — Termine",
+          "href": "https://www.solfaghari.com/termine/"
+        }
+      ],
+      "details": {
+        "tags": [
+          "Vortrag",
+          "Regiesprache",
+          "Tannhäuser"
+        ],
+        "intro": [
+          "Der Magdeburger Vortrag am 27. September 2025 ist als Rahmenprogramm zur Tannhäuser-Neuproduktion angekündigt. Der Titel benennt ein zentrales Spannungsfeld des Gegenwartstheaters: „Die Sprache der Opern-Regie zwischen Zerrissenheit und Anpassung“.",
+          "Jasmin Solfaghari kann hier aus mehreren Perspektiven sprechen: als Regisseurin mit Wagner-Erfahrung, als Hochschullehrerin und als Autorin, die immer wieder zwischen Werkvermittlung, Bühnenpraxis und Publikumsgespräch arbeitet."
+        ],
+        "facts": [
+          {
+            "label": "Datum",
+            "value": "27. September 2025"
+          },
+          {
+            "label": "Veranstalter",
+            "value": "Richard-Wagner-Verband Magdeburg"
+          },
+          {
+            "label": "Kontext",
+            "value": "Rahmenprogramm zur Tannhäuser-Neuproduktion"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rotary-berlin-bildersprache-2025",
+      "status": "confirmed",
+      "institution": "Rotary Berlin",
+      "location": "Berlin",
+      "date": "24. April 2025",
+      "sortDate": "2025-04-24",
+      "title": "Bildersprache",
+      "summary": "Berliner Vortrag über Bildersprache: Wie Opernregie musikalische Dramaturgie, Raum und Wahrnehmung in sichtbare Zeichen übersetzt.",
+      "buttonLabel": "Mehr anzeigen",
+      "visual": {
+        "type": "placeholder",
+        "label": "Berlin",
+        "tone": "light"
+      },
+      "sources": [
+        {
+          "label": "Solfaghari.com — Termine",
+          "href": "https://www.solfaghari.com/termine/"
+        }
+      ],
+      "details": {
+        "tags": [
+          "Vortrag",
+          "Berlin",
+          "Bildersprache"
+        ],
+        "intro": [
+          "Der Vortrag „Bildersprache“ fragt danach, wie Opernregie musikalische Dramaturgie, Raum und Wahrnehmung in sichtbare Zeichen übersetzt.",
+          "Ausgehend von Solfagharis Arbeit als Regisseurin geht es um Theaterbilder, die nicht dekorativ bleiben, sondern Handlung, Klang und psychologische Situation zusammenführen."
+        ],
+        "facts": [
+          {
+            "label": "Datum",
+            "value": "24. April 2025"
+          },
+          {
+            "label": "Veranstalter",
+            "value": "Rotary Berlin"
+          },
+          {
+            "label": "Thema",
+            "value": "Bildersprache und Opernregie"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rwv-nuernberg-parsifal-2025",
+      "status": "confirmed",
+      "institution": "Richard-Wagner-Verband Nürnberg",
+      "location": "Nürnberg",
+      "date": "15. Februar 2025 / verschoben auf November",
+      "sortDate": "2025-02-15",
+      "title": "Ich schreite kaum, doch wähn’ ich mich schon weit",
+      "summary": "Vortrag beim Richard-Wagner-Verband Nürnberg über Parsifal am Goetheanum; der Termin wurde auf November verschoben.",
+      "buttonLabel": "Mehr anzeigen",
+      "visual": {
+        "type": "placeholder",
+        "label": "Nürnberg",
+        "tone": "light"
+      },
+      "sources": [
+        {
+          "label": "Solfaghari.com — Termine",
+          "href": "https://www.solfaghari.com/termine/"
+        }
+      ],
+      "details": {
+        "time": "15 Uhr",
+        "tags": [
+          "Vortrag",
+          "Richard-Wagner-Verband",
+          "Parsifal"
+        ],
+        "intro": [
+          "Der Nürnberger Vortrag führt in Parsifal am Goetheanum ein und beleuchtet die Entstehung der Dornacher Produktion. Im Zentrum stehen Regie, Eurythmie, Raumwirkung und die Frage, wie Wagners Bühnenweihfestspiel im Goetheanum eine eigene szenische Form findet.",
+          "Der ursprünglich für den 15. Februar 2025 angekündigte Vortrag beim Richard-Wagner-Verband Nürnberg wurde auf November verschoben."
+        ],
+        "facts": [
+          {
+            "label": "Ursprünglicher Termin",
+            "value": "15. Februar 2025, 15 Uhr"
+          },
+          {
+            "label": "Status",
+            "value": "auf November verschoben"
+          },
+          {
+            "label": "Ort",
+            "value": "Loews Merkur Hotel, Nürnberg"
+          },
+          {
+            "label": "Veranstalter",
+            "value": "Richard-Wagner-Verband Nürnberg"
+          }
+        ]
+      }
+    },
+    {
+      "id": "eurythmeum-stuttgart-parsifal-2025",
+      "status": "confirmed",
+      "institution": "Richard-Wagner-Verband Stuttgart / Eurythmeum Stuttgart",
+      "location": "Stuttgart",
+      "date": "13. Februar 2025",
+      "sortDate": "2025-02-13",
+      "title": "Parsifal am Goetheanum",
+      "summary": "Vortrag im Eurythmeum Stuttgart mit anschließendem Gespräch und Buchverkauf zu Parsifal am Goetheanum.",
+      "buttonLabel": "Mehr anzeigen",
+      "visual": {
+        "type": "placeholder",
+        "label": "Eurythmeum",
+        "tone": "accent"
+      },
+      "sources": [
+        {
+          "label": "Eurythmeum Stuttgart — Archiv",
+          "href": "https://www.eurythmeumstuttgart.de/kalender/archiv?page_e699=8"
+        },
+        {
+          "label": "Solfaghari.com — Termine",
+          "href": "https://www.solfaghari.com/termine/"
+        },
+        {
+          "label": "Goetheanum — Parsifal und Eurythmie",
+          "href": "https://goetheanum.ch/de/nachrichten/parsifal-und-eurythmie"
+        }
+      ],
+      "details": {
+        "time": "19:30 Uhr",
+        "tags": [
+          "Vortrag",
+          "Eurythmeum",
+          "Parsifal"
+        ],
+        "intro": [
+          "Am 13. Februar 2025 sprach Jasmin Solfaghari im Eurythmeum Stuttgart über „Ich schreite kaum, doch wähn’ ich mich schon weit“ und damit über Parsifal am Goetheanum. Das Archiv des Eurythmeums nennt sie ausdrücklich als Regisseurin und Autorin des Vortrags.",
+          "Der Abend war vom Richard-Wagner-Verband Stuttgart und dem Eurythmeum Stuttgart getragen; im Anschluss war ein Gespräch mit Jasmin Solfaghari und Severin Fraser sowie Buchverkauf angekündigt."
+        ],
+        "facts": [
+          {
+            "label": "Datum",
+            "value": "13. Februar 2025"
+          },
+          {
+            "label": "Zeit",
+            "value": "19:30 Uhr"
+          },
+          {
+            "label": "Ort",
+            "value": "Eurythmeum Stuttgart"
+          },
+          {
+            "label": "Veranstalter",
+            "value": "Richard-Wagner-Verband Stuttgart / Eurythmeum Stuttgart"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rwv-muenchen-parsifal-2025",
+      "status": "confirmed",
+      "institution": "Richard-Wagner-Verband München",
+      "location": "Künstlerhaus am Lenbachplatz, München",
+      "date": "11. Januar 2025",
+      "sortDate": "2025-01-11",
+      "title": "Ich schreite kaum, doch wähn' ich mich schon weit",
+      "summary": "Vortrag beim Richard-Wagner-Verband München über die Dornacher Parsifal-Produktion und ihr Zusammenspiel von Oper, Eurythmie und Raum.",
+      "buttonLabel": "Mehr anzeigen",
+      "visual": {
+        "type": "placeholder",
+        "label": "München",
+        "tone": "light"
+      },
+      "sources": [
+        {
+          "label": "Richard-Wagner-Verband München",
+          "href": "https://www.rwv-muenchen.de/RWV_Veranstaltung_2025_Solfaghari.php"
+        }
+      ],
+      "details": {
+        "tags": [
+          "Vortrag",
+          "München",
+          "Parsifal"
+        ],
+        "intro": [
+          "Der Münchner Vortrag führt in die Dornacher Parsifal-Produktion ein und beleuchtet das besondere Zusammenspiel von Oper, Eurythmie und Bühnenraum am Goetheanum.",
+          "Im Mittelpunkt steht die Frage, wie Wagners Bühnenweihfestspiel in einem spirituell und architektonisch geprägten Raum Gestalt annimmt und wie Regie, Sänger:innen, Chor, Orchester und Eurythmie eine gemeinsame Form finden."
+        ],
+        "facts": [
+          {
+            "label": "Datum",
+            "value": "11. Januar 2025"
+          },
+          {
+            "label": "Ort",
+            "value": "Künstlerhaus am Lenbachplatz, München"
+          },
+          {
+            "label": "Veranstalter",
+            "value": "Richard-Wagner-Verband München"
+          }
+        ]
+      }
+    },
+    {
+      "id": "toulouse-parsifal-2024",
+      "status": "confirmed",
+      "institution": "Cercle Wagner de Toulouse Occitanie",
+      "location": "Toulouse",
+      "date": "16. November 2024",
+      "sortDate": "2024-11-16",
+      "title": "Je marche à peine, mais je me sens déjà loin",
+      "summary": "Französischsprachige Conversation beim Cercle Wagner de Toulouse Occitanie über Parsifal in Dornach.",
+      "buttonLabel": "Mehr anzeigen",
+      "visual": {
+        "type": "placeholder",
+        "label": "Toulouse",
+        "tone": "accent"
+      },
+      "sources": [
+        {
+          "label": "Solfaghari.com — Termine",
+          "href": "https://www.solfaghari.com/termine/"
+        }
+      ],
+      "details": {
+        "tags": [
+          "Conversation",
+          "Toulouse",
+          "Französisch"
+        ],
+        "intro": [
+          "Die Veranstaltung in Toulouse am 16. November 2024 ist als französischsprachige Conversation angekündigt: „Je marche à peine, mais je me sens déjà loin. Parsifal à Dornach“.",
+          "Sie zeigt, dass Solfagharis Vortragstätigkeit nicht nur deutschsprachig funktioniert. Die Parsifal-Produktion wird hier im Kontext eines Wagner-Kreises in Frankreich vermittelt und diskutiert."
+        ],
+        "facts": [
+          {
+            "label": "Datum",
+            "value": "16. November 2024"
+          },
+          {
+            "label": "Veranstalter",
+            "value": "Cercle Wagner de Toulouse Occitanie"
+          },
+          {
+            "label": "Sprache",
+            "value": "Französisch"
+          },
+          {
+            "label": "Präsentation",
+            "value": "Annie Lasbistes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rwv-magdeburg-parsifal-2024",
+      "status": "confirmed",
+      "institution": "Richard-Wagner-Verband Magdeburg",
+      "location": "Magdeburg",
+      "date": "22. Oktober 2024",
+      "sortDate": "2024-10-22",
+      "title": "Ich schreite kaum, doch wähn’ ich mich schon weit. Über Parsifal am Goetheanum 2023/24",
+      "summary": "Vortrag beim Richard-Wagner-Verband Magdeburg über die Entstehung und Konzeption von Parsifal am Goetheanum 2023/24.",
+      "buttonLabel": "Mehr anzeigen",
+      "visual": {
+        "type": "placeholder",
+        "label": "Magdeburg",
+        "tone": "accent"
+      },
+      "sources": [
+        {
+          "label": "Solfaghari.com — Termine",
+          "href": "https://www.solfaghari.com/termine/"
+        }
+      ],
+      "details": {
+        "tags": [
+          "Vortrag",
+          "Richard-Wagner-Verband",
+          "Parsifal"
+        ],
+        "intro": [
+          "Der Magdeburger Parsifal-Vortrag stellt die Goetheanum-Produktion 2023/24 vor und führt in ihre künstlerische Konzeption ein. Jasmin Solfaghari spricht über Regieentscheidungen, den besonderen Bühnenraum und das Zusammenspiel von Oper und Eurythmie.",
+          "Der Vortrag macht sichtbar, wie aus Wagners Partitur, der Architektur des Goetheanums und der choreografischen Arbeit ein eigenständiger szenischer Erfahrungsraum entsteht."
+        ],
+        "facts": [
+          {
+            "label": "Datum",
+            "value": "22. Oktober 2024"
+          },
+          {
+            "label": "Veranstalter",
+            "value": "Richard-Wagner-Verband Magdeburg"
+          },
+          {
+            "label": "Thema",
+            "value": "Parsifal am Goetheanum 2023/24"
+          }
+        ]
+      }
+    },
+    {
+      "id": "la-opera-league-parsifal-2024",
+      "status": "confirmed",
+      "institution": "Wagner Society of Southern California / L.A. Opera League",
+      "location": "Coburn School, Los Angeles",
+      "date": "29. September 2024",
+      "sortDate": "2024-09-29",
+      "title": "I barely walk, but I already feel far",
+      "summary": "Englischsprachiger Vortrag in Los Angeles über die Regie von Parsifal am Goetheanum 2023/24.",
+      "buttonLabel": "Mehr anzeigen",
+      "visual": {
+        "type": "placeholder",
+        "label": "Los Angeles",
+        "tone": "light"
+      },
+      "sources": [
+        {
+          "label": "Solfaghari.com — Termine",
+          "href": "https://www.solfaghari.com/termine/"
+        }
+      ],
+      "details": {
+        "tags": [
+          "Lecture",
+          "Los Angeles",
+          "English"
+        ],
+        "intro": [
+          "Der englischsprachige Vortrag in Los Angeles führt in die Regie von Parsifal am Goetheanum 2023/24 ein. Er richtet sich an ein amerikanisches Wagner-Publikum und beschreibt die ästhetischen und räumlichen Entscheidungen der Produktion.",
+          "Im Zentrum steht die Verbindung von Oper und Eurythmie: Wie werden Musik, Körper, Chor, Orchester und Raum zu einem gemeinsamen Bühnenvorgang, und was bedeutet das für die Deutung von Parsifal?"
+        ],
+        "facts": [
+          {
+            "label": "Datum",
+            "value": "29. September 2024"
+          },
+          {
+            "label": "Ort",
+            "value": "Coburn School, Los Angeles"
+          },
+          {
+            "label": "Veranstalter",
+            "value": "Wagner Society of Southern California / L.A. Opera League"
+          },
+          {
+            "label": "Sprache",
+            "value": "Englisch"
+          }
+        ]
+      }
+    }
+  ],
+  "lectureTopics": [
+    "Ich schreite kaum, doch wähn' ich mich schon weit. Parsifal am Goetheanum",
+    "Die Sprache der Opern-Regie zwischen Zerrissenheit und Anpassung",
+    "In zwei Tagen in den Ring gestiegen. Erfahrungen einer Opernregisseurin",
+    "Wenn alles ratlos steht… – Der singende Mensch auf einer Opernbühne",
+    "Zwangvolle Plage, Müh' ohne Zweck? – Aspekte von Regiekonzeption",
+    "Opernregie – (Nicht nur) ein Handwerk. Eine Einführung",
+    "Mein Weg zur Opernregie. Ein Erfahrungsbericht",
+    "Dornröschen von Engelbert Humperdinck",
+    "Tränke in Tristan und Isolde, Die Walküre, Götterdämmerung",
+    "Kräuter und Wurzeln findet ein Jeder sich selbst – Pflanzen in der Oper",
+    "Wer hat Angst vor Kundry? Weiblichkeit und Erkenntnis in Wagners Parsifal"
+  ]
+}

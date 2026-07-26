@@ -1,0 +1,24 @@
+{% macro aktuellesRow(item, context = "") %}
+  {% set tag = "a" if item.href or item.externalHref else ("button" if item.details else "article") %}
+  {% set targetHref = item.href or item.externalHref %}
+  <{{ tag }} class="aktuelles-row{% if context == 'all-view' %} aktuelles-row--all{% endif %}{% if context == 'all-view' and item.category == 'inszenierung' %} aktuelles-row--featured{% endif %}{% if context == 'all-view' and item.category == 'meisterkurs' %} aktuelles-row--course{% endif %}{% if item.status == 'needs-verification' %} aktuelles-row--muted{% endif %}"{% if tag == "a" %} href="{{ targetHref }}"{% if targetHref | isExternalUrl %} target="_blank" rel="noopener noreferrer"{% endif %}{% elif tag == "button" %} type="button" data-event-modal-open="event-modal-{{ item.id }}"{% endif %} data-category="{{ item.category }}">
+    <span class="aktuelles-row__date" aria-label="{{ item.dateLabel }}">
+      <span class="aktuelles-row__day">{{ item.day }}</span>
+      <span class="aktuelles-row__month">{{ item.month }}</span>
+    </span>
+    <span class="aktuelles-row__main">
+      <span class="aktuelles-row__meta">
+        <span>{{ item.categoryLabel }}</span>
+        <span>{{ item.location }}</span>
+      </span>
+      <span class="aktuelles-row__title">{{ item.title }}</span>
+      {% if item.subtitle %}
+        <span class="aktuelles-row__subtitle">{{ item.subtitle }}</span>
+      {% endif %}
+      {% if item.summary %}
+        <span class="aktuelles-row__summary">{{ item.summary }}</span>
+      {% endif %}
+    </span>
+    <span class="aktuelles-row__action">{{ item.buttonLabel or ("Mehr anzeigen" if targetHref or item.details else "Notiert") }}{% if targetHref or item.details %} &rarr;{% endif %}</span>
+  </{{ tag }}>
+{% endmacro %}

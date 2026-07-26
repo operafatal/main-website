@@ -1,0 +1,390 @@
+/* Über Jasmin — structured editorial biography. */
+
+.about-page {
+  display: grid;
+  gap: clamp(var(--space-10), 7vw, var(--space-16));
+  min-width: 0;
+}
+
+.about-eyebrow {
+  margin: 0;
+  color: var(--color-accent);
+  font-size: var(--font-size-label);
+  font-weight: 700;
+  letter-spacing: var(--tracking-label);
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.about-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 0.34fr);
+  min-height: clamp(360px, 34vw, 480px);
+  background: var(--color-accent);
+}
+
+.about-hero__copy {
+  display: grid;
+  align-content: center;
+  gap: var(--space-4);
+  min-width: 0;
+  padding: clamp(var(--space-6), 4vw, var(--space-10));
+}
+
+.about-hero__title {
+  max-width: 11ch;
+  margin: 0;
+  color: var(--color-bg);
+  font-size: clamp(2.9rem, 5vw, 4.45rem);
+  font-weight: 500;
+  line-height: 0.86;
+  letter-spacing: 0;
+}
+
+.about-hero__lead {
+  max-width: 38rem;
+  margin: 0;
+  color: color-mix(in srgb, var(--color-bg) 82%, transparent);
+  font-size: clamp(1rem, 1.25vw, 1.16rem);
+  line-height: 1.48;
+}
+
+.about-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  padding-top: var(--space-2);
+}
+
+.about-hero .about-eyebrow {
+  color: color-mix(in srgb, var(--color-bg) 84%, transparent);
+}
+
+.about-hero .pill-button {
+  border-color: color-mix(in srgb, var(--color-bg) 58%, transparent);
+  color: var(--color-bg);
+}
+
+.about-hero .pill-button:hover {
+  background: var(--color-bg);
+  border-color: var(--color-bg);
+  color: var(--color-accent);
+}
+
+.about-hero__portrait {
+  position: relative;
+  min-height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: var(--color-accent);
+}
+
+.about-hero__portrait img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 18%;
+}
+
+.about-hero__portrait figcaption {
+  position: absolute;
+  right: var(--space-4);
+  bottom: var(--space-4);
+  left: var(--space-4);
+  margin: 0;
+  color: var(--color-bg);
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  letter-spacing: var(--tracking-nav);
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.about-section {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.34fr) minmax(0, 1fr);
+  gap: clamp(var(--space-8), 6vw, var(--space-12));
+  align-items: start;
+  min-width: 0;
+}
+
+.about-bio {
+  display: grid;
+  justify-items: start;
+}
+
+.about-section__head {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.about-section__head h2,
+.about-publications h2 {
+  margin: 0;
+  color: var(--color-text);
+  font-size: var(--font-size-section-heading);
+  font-weight: 500;
+  line-height: 0.94;
+  letter-spacing: 0;
+}
+
+.about-section__head p:not(.about-eyebrow) {
+  margin: 0;
+  max-width: 34rem;
+  color: var(--color-text-muted);
+  line-height: 1.65;
+}
+
+.about-bio__text {
+  display: grid;
+  gap: var(--space-5);
+  width: 100%;
+  max-width: 54rem;
+}
+
+.about-bio__text p {
+  margin: 0;
+  color: var(--color-text);
+  font-size: clamp(1.02rem, 1.2vw, 1.16rem);
+  line-height: 1.72;
+}
+
+.about-section--timeline .timeline {
+  border-top: 1px solid color-mix(in srgb, var(--color-accent) 10%, transparent);
+}
+
+.about-section--timeline {
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+}
+
+.about-section--timeline .about-section__head {
+  max-width: 100%;
+}
+
+.about-section--timeline .timeline__row {
+  grid-template-columns: clamp(6.8rem, 11vw, 8.4rem) minmax(0, 1fr);
+  column-gap: clamp(var(--space-4), 3vw, var(--space-8));
+}
+
+.about-section--timeline .timeline__text {
+  margin-left: 0;
+}
+
+.about-section--timeline .timeline__year {
+  color: var(--color-accent);
+  font-variant-numeric: tabular-nums;
+}
+
+.about-collaborations {
+  min-width: 0;
+  padding-top: var(--space-8);
+  border-top: 1px solid color-mix(in srgb, var(--color-accent) 12%, transparent);
+}
+
+.about-collaborations__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-8);
+}
+
+.about-collaborations__group {
+  display: grid;
+  align-content: start;
+  gap: var(--space-4);
+  min-width: 0;
+}
+
+.about-collaborations__group h3 {
+  margin: 0;
+  color: var(--color-text);
+  font-size: clamp(1.35rem, 2vw, 1.8rem);
+  font-weight: 500;
+  line-height: 1.05;
+}
+
+.about-collaborations__group ul {
+  display: grid;
+  gap: var(--space-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about-collaborations__group li {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-body);
+  line-height: 1.45;
+}
+
+.about-publications {
+  display: grid;
+  grid-template-columns: minmax(300px, 0.62fr) minmax(280px, 0.76fr) auto;
+  gap: clamp(var(--space-6), 4vw, var(--space-10));
+  align-items: center;
+  padding: clamp(var(--space-8), 5vw, var(--space-12));
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+
+.about-publications h2 {
+  color: var(--color-bg);
+}
+
+.about-publications__title {
+  min-width: 0;
+}
+
+.about-publications__body {
+  display: grid;
+  justify-items: center;
+  min-width: 0;
+}
+
+.about-publications p:not(.about-eyebrow) {
+  margin: 0;
+  max-width: 42ch;
+  color: color-mix(in srgb, var(--color-bg) 82%, transparent);
+  line-height: 1.6;
+}
+
+.about-publications__action {
+  justify-self: end;
+}
+
+.about-publications .pill-button {
+  border-color: var(--color-bg);
+  background: var(--color-bg);
+  color: var(--color-accent);
+  white-space: nowrap;
+}
+
+@media (max-width: 980px) {
+  .about-hero,
+  .about-section,
+  .about-publications {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero {
+    min-height: 0;
+  }
+
+  .about-hero__portrait {
+    height: 420px;
+    min-height: 0;
+  }
+
+  .about-collaborations__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-publications {
+    align-items: start;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-page {
+    gap: var(--space-10);
+    width: auto;
+    max-width: none;
+    justify-self: center;
+  }
+
+  .about-hero,
+  .about-bio,
+  .about-section,
+  .about-collaborations,
+  .about-publications {
+    width: calc(100vw - (var(--space-6) * 2));
+    max-width: calc(100vw - (var(--space-6) * 2));
+    min-width: 0;
+  }
+
+  .about-hero__copy {
+    padding: var(--space-6) var(--space-10) var(--space-6) var(--space-6);
+  }
+
+  .about-hero__lead {
+    max-width: 29ch;
+    overflow-wrap: break-word;
+  }
+
+  .about-hero__title {
+    font-size: clamp(2.9rem, 13vw, 4.4rem);
+  }
+
+  .about-hero__portrait {
+    height: 360px;
+  }
+
+  .about-hero__portrait figcaption {
+    right: var(--space-3);
+    bottom: var(--space-3);
+    left: var(--space-3);
+    font-size: 10px;
+    letter-spacing: 0.08em;
+  }
+
+  .about-hero__actions {
+    align-items: stretch;
+    width: 100%;
+    max-width: 29ch;
+  }
+
+  .about-hero__actions .pill-button {
+    width: 100%;
+  }
+
+  .about-section {
+    gap: var(--space-6);
+  }
+
+  .about-section__head,
+  .about-bio__text,
+  .about-collaborations__grid,
+  .about-publications {
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .about-section__head h2 {
+    max-width: 10ch;
+  }
+
+  .about-bio__text p,
+  .about-section__head p:not(.about-eyebrow),
+  .about-publications p:not(.about-eyebrow) {
+    max-width: 29ch;
+    overflow-wrap: break-word;
+  }
+
+  .about-section--timeline .timeline__row {
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+  }
+
+  .about-section--timeline .timeline__text {
+    max-width: 29ch;
+    overflow-wrap: break-word;
+  }
+
+  .about-section--timeline .timeline__row:nth-child(3n+2) .timeline__text,
+  .about-section--timeline .timeline__row:nth-child(3n+3) .timeline__text {
+    margin-left: 0;
+  }
+
+  .about-publications {
+    padding: var(--space-6);
+  }
+
+  .about-publications__body {
+    justify-items: start;
+  }
+
+  .about-publications__action {
+    justify-self: start;
+  }
+}

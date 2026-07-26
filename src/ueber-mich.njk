@@ -1,0 +1,71 @@
+---
+layout: base.njk
+title: Jasmin Solfaghari
+permalink: /ueber-jasmin/
+---
+{% from "components/pill-button.njk" import pillButton %}
+{% from "components/timeline.njk" import timeline %}
+{% set about = aboutProfile %}
+
+<article class="about-page">
+  <section class="about-hero" aria-labelledby="about-title">
+    <div class="about-hero__copy">
+      <p class="about-eyebrow">{{ about.hero.kicker }}</p>
+      <h1 class="about-hero__title" id="about-title">{{ about.hero.title }}</h1>
+      <p class="about-hero__lead">{{ about.hero.lead }}</p>
+      <div class="about-hero__actions" aria-label="Weiterführende Seiten">
+        {% for link in about.introLinks %}
+          {{ pillButton(link.label, link.href, "ghost") }}
+        {% endfor %}
+      </div>
+    </div>
+    <figure class="about-hero__portrait">
+      <img src="{{ about.hero.portrait.src }}" alt="{{ about.hero.portrait.alt }}" decoding="async">
+      {% if about.hero.portrait.credit %}
+        <figcaption>{{ about.hero.portrait.credit }}</figcaption>
+      {% endif %}
+    </figure>
+  </section>
+
+  <section class="about-bio" aria-label="Biografie">
+    <div class="about-bio__text">
+      {% for paragraph in about.bio.paragraphs %}
+        <p>{{ paragraph }}</p>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="about-section about-section--timeline" aria-labelledby="about-timeline-title">
+    <div class="about-section__head">
+      <h2 id="about-timeline-title">Werdegang</h2>
+    </div>
+    {{ timeline(about.timeline.entries) }}
+  </section>
+
+  <section class="about-publications" aria-labelledby="about-publications-title">
+    <div class="about-publications__title">
+      <h2 id="about-publications-title">{{ about.publicationTeaser.title }}</h2>
+    </div>
+    <div class="about-publications__body">
+      <p>{{ about.publicationTeaser.text }}</p>
+    </div>
+    <div class="about-publications__action">
+      {{ pillButton(about.publicationTeaser.linkLabel, about.publicationTeaser.href, "solid", true) }}
+    </div>
+  </section>
+
+  <section class="about-collaborations" aria-label="Zusammenarbeiten">
+    <div class="about-collaborations__grid">
+      {% for group in about.collaborations.groups %}
+        <section class="about-collaborations__group" aria-labelledby="collaboration-{{ loop.index }}">
+          <h3 id="collaboration-{{ loop.index }}">{{ group.title }}</h3>
+          <ul>
+            {% for item in group.items %}
+              <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </section>
+      {% endfor %}
+    </div>
+  </section>
+</article>

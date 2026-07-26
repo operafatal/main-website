@@ -1,0 +1,88 @@
+[
+  {
+    "type": "Inszenierung",
+    "meta": "2023–2027",
+    "titleStyle": "display",
+    "title": "Parsifal",
+    "copyWidth": "25rem",
+    "subtitle": "Richard Wagner",
+    "details": "Goetheanum, Dornach (CH)",
+    "note": "Koproduktion PAMY Mediaproductions / Goetheanum-Bühne.",
+    "href": "/inszenierungen/",
+    "durationMs": 9000,
+    "visual": {
+      "type": "image",
+      "src": "/assets/img/parsifal/parsifal-francois-croissant-dsc8045.jpg",
+      "alt": "Bühnenszene aus Richard Wagners Parsifal am Goetheanum Dornach",
+      "credit": "Fotos: Francois Croissant / Klaus Lefebvre",
+      "images": [
+        {
+          "src": "/assets/img/parsifal/parsifal-francois-croissant-dsc8045.jpg",
+          "alt": "Bühnenszene aus Richard Wagners Parsifal am Goetheanum Dornach",
+          "credit": "Foto: Francois Croissant"
+        },
+        {
+          "src": "/assets/img/parsifal/parsifal-klaus-lefebvre-2541.jpg",
+          "alt": "Bühnenszene aus Richard Wagners Parsifal am Goetheanum Dornach",
+          "credit": "Foto: Klaus Lefebvre"
+        },
+        {
+          "src": "/assets/img/parsifal/parsifal-klaus-lefebvre-3594.jpg",
+          "alt": "Bühnenszene aus Richard Wagners Parsifal am Goetheanum Dornach",
+          "credit": "Foto: Klaus Lefebvre"
+        }
+      ]
+    }
+  },
+  {
+    "type": "Uraufführung",
+    "meta": "10.10.2026",
+    "titleStyle": "display",
+    "title": "Der Schmetterling",
+    "copyWidth": "31rem",
+    "subtitle": "Daniel Behle · Libretto: Alain Claude Sulzer",
+    "details": "Eduard-von-Winterstein-Theater, Annaberg-Buchholz",
+    "note": "",
+    "href": "/inszenierungen/",
+    "visual": {
+      "type": "image",
+      "src": "/assets/img/der-schmetterling-daniel-behle.webp",
+      "alt": "Daniel Behle in einer Porträtaufnahme für Der Schmetterling",
+      "credit": "Foto: Lucia Hunziker"
+    }
+  },
+  {
+    "type": "Publikation",
+    "meta": "Schott",
+    "titleStyle": "publication",
+    "title": "Ich schreite kaum, doch wähn' ich mich schon weit.",
+    "copyWidth": "31rem",
+    "subtitle": "Parsifal am Goetheanum",
+    "details": "Herausgegeben von Jasmin Solfaghari · PAMY Mediaproductions",
+    "note": "",
+    "href": "/publikationen/",
+    "visual": {
+      "type": "image",
+      "src": "/assets/img/parsifal/buch/parsifal-buchsignierung.jpeg",
+      "alt": "Jasmin Solfaghari bei einer Buchsignierung vor dem Cover von Parsifal am Goetheanum",
+      "focus": "publication"
+    }
+  },
+  {
+    "type": "Meisterkurs",
+    "meta": "27.–29.10.2026",
+    "titleStyle": "display",
+    "title": "Requiem Studies Part I",
+    "copyWidth": "39rem",
+    "subtitle": "Gesang & Bühneneurythmie",
+    "details": "nosolo studios Stuttgart · mit Severin Fraser",
+    "note": "Mozart, Verdi und Brahms.",
+    "href": "/meisterkurse-coaching/",
+    "visual": {
+      "type": "image",
+      "src": "/assets/img/requiem-studies.webp",
+      "alt": "Requiem Studies Seminar für Gesang und Bühneneurythmie in den nosolo studios Stuttgart",
+      "credit": "Foto: nosolo studios"
+    }
+  }
+]

@@ -1,0 +1,177 @@
+/* Shared layout for the long-form content pages (Werk, Meisterkurse, Lehre,
+   Publikationen, Aktuelles, Über mich, Kontakt, Impressum, Datenschutz).
+   Deliberately smaller/quieter than the Home editorial sections — --font-size-h2
+   is its own scale, not the shared --font-size-section-heading, because these
+   are reading pages, not full-bleed statements. */
+
+.page-copy,
+.page-prose,
+.page-intro,
+.feed-section,
+.work-sections {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.page-copy,
+.page-prose,
+.page-intro,
+.feed-section,
+.work-section {
+  max-width: 72ch;
+}
+
+.page-copy__lead,
+.page-copy__links,
+.page-prose,
+.page-prose__note,
+.feed-list,
+.work-grid {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.page-copy__lead p,
+.page-copy__links,
+.page-prose p,
+.page-prose li,
+.feed-section p {
+  margin: 0;
+  line-height: 1.72;
+}
+
+.page-copy__links {
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  justify-content: start;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  letter-spacing: var(--tracking-nav);
+  text-transform: uppercase;
+}
+
+.page-copy__links a,
+.category-tabs__link {
+  color: var(--color-accent);
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--color-accent) 18%, transparent);
+  padding-bottom: 2px;
+}
+
+.page-copy__links a:hover,
+.category-tabs__link:hover {
+  border-bottom-color: var(--color-accent);
+}
+
+.page-intro h1,
+.page-intro h2,
+.work-section__heading h2,
+.feed-section h2 {
+  margin: 0;
+}
+
+.page-intro p,
+.work-section__heading p {
+  margin: 0;
+  color: var(--color-text-muted);
+}
+
+.page-prose h2,
+.feed-section h2,
+.work-section__heading h2 {
+  font-size: clamp(1.75rem, 3vw, var(--font-size-h2));
+  line-height: 1.08;
+}
+
+.page-prose h3,
+.feed-section h3 {
+  margin: 0;
+  font-size: clamp(1.4rem, 2.2vw, 2rem);
+  line-height: 1.1;
+}
+
+.page-prose hr {
+  width: 100%;
+  margin: var(--space-2) 0;
+  border: 0;
+  border-top: 1px solid color-mix(in srgb, var(--color-accent) 12%, transparent);
+}
+
+.page-prose ul,
+.page-prose ol {
+  margin: 0;
+  padding-left: 1.25rem;
+  display: grid;
+  gap: var(--space-2);
+}
+
+.page-prose blockquote {
+  margin: 0;
+  padding: var(--space-4) var(--space-5);
+  border-left: 2px solid color-mix(in srgb, var(--color-accent) 26%, transparent);
+  background: color-mix(in srgb, var(--color-bg-subtle) 70%, transparent);
+}
+
+.page-prose__note {
+  padding: var(--space-4) var(--space-5);
+  border: 1px solid color-mix(in srgb, var(--color-accent) 14%, transparent);
+  border-radius: var(--radius-card);
+  background: color-mix(in srgb, var(--color-bg-subtle) 82%, transparent);
+  max-width: 62ch;
+}
+
+.page-prose__note p {
+  font-size: var(--font-size-small);
+  line-height: 1.7;
+  color: var(--color-text-muted);
+}
+
+.contact-placeholder {
+  padding: var(--space-5);
+  border: 1px dashed color-mix(in srgb, var(--color-accent) 32%, transparent);
+  border-radius: var(--radius-card);
+  background: color-mix(in srgb, var(--color-bg-subtle) 72%, transparent);
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  letter-spacing: var(--tracking-nav);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.category-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.category-tabs__link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 0 0.9rem;
+  border-radius: var(--radius-pill);
+  background: color-mix(in srgb, var(--color-bg-subtle) 84%, transparent);
+}
+
+.work-sections {
+  gap: var(--space-12);
+}
+
+.work-section {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.work-section__heading {
+  display: grid;
+  gap: var(--space-2);
+}
+
+@media (max-width: 720px) {
+  .page-copy__links {
+    grid-auto-flow: row;
+    justify-content: start;
+  }
+}

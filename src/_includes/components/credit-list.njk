@@ -1,0 +1,13 @@
+{#
+  Compact team/credits list — for Werk item detail (director, stage, costumes...),
+  currently unused data already sitting in werk.json's `credits` object.
+  entries: [{ label, value }]
+#}
+{% macro creditList(entries) %}
+  <dl class="credit-list">
+    {% for entry in entries %}
+      <dt class="credit-list__label">{{ entry.label }}</dt>
+      <dd class="credit-list__value">{{ entry.value }}</dd>
+    {% endfor %}
+  </dl>
+{% endmacro %}

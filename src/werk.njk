@@ -1,0 +1,52 @@
+---
+layout: base.njk
+title: Inszenierungen
+permalink: /inszenierungen/
+---
+{% from "components/werk-card.njk" import werkCard %}
+{% from "components/archive-row.njk" import archiveRow %}
+{% set work = curatedContent.work %}
+
+<h1 class="sr-only">Inszenierungen</h1>
+
+<div class="work-tabs" data-work-tabs>
+  <div class="work-tabs__list" role="tablist" aria-label="Werkkategorien">
+    {% for category in work.groupedCategories %}
+      <button
+        class="work-tabs__button{% if loop.first %} is-active{% endif %}"
+        id="tab-{{ category.slug }}"
+        type="button"
+        role="tab"
+        aria-selected="{{ 'true' if loop.first else 'false' }}"
+        aria-controls="panel-{{ category.slug }}"
+        data-work-tab="{{ category.slug }}"
+      >{{ category.label }}</button>
+    {% endfor %}
+  </div>
+
+  {% for category in work.groupedCategories %}
+    <section
+      class="work-tab-panel"
+      id="panel-{{ category.slug }}"
+      role="tabpanel"
+      aria-labelledby="tab-{{ category.slug }}"
+      data-work-panel="{{ category.slug }}"
+      {% if not loop.first %}hidden{% endif %}
+    >
+      <div class="work-grid">
+        {% for item in category.items %}
+          {{ werkCard(item) }}
+        {% endfor %}
+      </div>
+
+      <div class="work-archive">
+        <h3 class="work-archive__title">Chronologische Übersicht</h3>
+        <div class="archive-row-list">
+          {% for item in category.items %}
+            {{ archiveRow(item.year, item.title, item.composer, item.place, item.href) }}
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+  {% endfor %}
+</div>

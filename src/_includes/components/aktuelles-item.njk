@@ -1,0 +1,9 @@
+{% macro aktuellesItem(item) %}
+  <article class="aktuelles-item">
+    <p class="aktuelles-item__label">{{ item.label }}</p>
+    <h3 class="aktuelles-item__title">{{ item.title }}</h3>
+    {% if item.body %}
+      <div class="aktuelles-item__body">{{ item.body | markdown | safe }}</div>
+    {% endif %}
+  </article>
+{% endmacro %}

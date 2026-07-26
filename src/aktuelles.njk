@@ -1,0 +1,68 @@
+---
+layout: base.njk
+title: Aktuelles
+permalink: /aktuelles/
+---
+{% from "components/aktuelles-row.njk" import aktuellesRow %}
+{% from "components/event-modal.njk" import eventModal %}
+
+{% set feed = aktuellesEvents %}
+
+<article class="aktuelles-page">
+  <div class="aktuelles-tabs" data-work-tabs>
+    <div class="work-tabs__list aktuelles-tabs__list" role="tablist" aria-label="Aktuelles filtern">
+      {% for category in feed.categories %}
+        <button class="work-tabs__button{% if loop.first %} is-active{% endif %}" id="tab-{{ category.slug }}" type="button" role="tab" aria-selected="{{ 'true' if loop.first else 'false' }}" aria-controls="panel-{{ category.slug }}" data-work-tab="{{ category.slug }}">{{ category.label }}</button>
+      {% endfor %}
+    </div>
+
+    {% for category in feed.categories %}
+      <section class="work-tab-panel aktuelles-panel" id="panel-{{ category.slug }}" role="tabpanel" aria-labelledby="tab-{{ category.slug }}" data-work-panel="{{ category.slug }}"{% if not loop.first %} hidden{% endif %}>
+        <section class="aktuelles-section" aria-labelledby="upcoming-{{ category.slug }}">
+          <div class="aktuelles-section__head">
+            <h2 id="upcoming-{{ category.slug }}">Kommende Termine</h2>
+            <p>Stand: {{ feed.updated }}.</p>
+          </div>
+          <div class="aktuelles-list">
+            {% set upcomingItems = feed.upcoming | byCategory(category.slug) %}
+            {% for item in upcomingItems %}
+              {{ aktuellesRow(item, "all-view" if category.slug == "alle" else "") }}
+            {% endfor %}
+            {% if not upcomingItems.length %}
+              <p class="aktuelles-empty">Für diesen Bereich sind aktuell keine kommenden Termine eingetragen.</p>
+            {% endif %}
+          </div>
+        </section>
+
+        <section class="aktuelles-section aktuelles-section--archive" aria-labelledby="archive-{{ category.slug }}">
+          <div class="aktuelles-section__head">
+            <h2 id="archive-{{ category.slug }}">Archiv</h2>
+            <p>Vollständig aus den übernommenen Terminquellen und den bereits strukturierten Seitenereignissen zusammengeführt.</p>
+          </div>
+
+          <div class="aktuelles-archive">
+            {% for yearGroup in feed.archive %}
+              {% set archiveItems = yearGroup.items | byCategory(category.slug) %}
+              {% if archiveItems.length %}
+                <section class="aktuelles-year">
+                  <h3>{{ yearGroup.year }}</h3>
+                  <div class="aktuelles-list aktuelles-list--archive">
+                    {% for item in archiveItems %}
+                      {{ aktuellesRow(item, "all-view" if category.slug == "alle" else "") }}
+                    {% endfor %}
+                  </div>
+                </section>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </section>
+      </section>
+    {% endfor %}
+  </div>
+
+  {% for item in feed.upcoming %}
+    {% if item.details %}
+      {{ eventModal(item) }}
+    {% endif %}
+  {% endfor %}
+</article>

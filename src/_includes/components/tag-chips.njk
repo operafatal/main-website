@@ -1,0 +1,8 @@
+{% macro tagChips(tags) %}
+  <div class="tag-chips" aria-label="Keywords">
+    {% for tag in tags %}
+      <span class="tag-chips__chip">{{ tag }}</span>
+    {% endfor %}
+  </div>
+{% endmacro %}
+

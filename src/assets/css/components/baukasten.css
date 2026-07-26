@@ -1,0 +1,1045 @@
+/*
+  New, generically reusable components for the still-unbuilt pages
+  (Werk, Meisterkurse, Publikationen, ...). Demoed on /baukasten/, spec'd
+  fully in docs/main-tasks/brand-site-baukasten.md. Unlike styleguide.css
+  (demo-only helpers), these two ARE meant to ship on real pages later.
+*/
+
+.archive-row-list {
+  display: grid;
+}
+
+.archive-row {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(4.5rem, auto) 1fr auto;
+  align-items: baseline;
+  gap: var(--space-4) var(--space-6);
+  padding: var(--space-4) 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--color-accent) 12%, transparent);
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Accent bar lives outside the row's own box (negative left offset) so it
+   never shifts layout on hover — no card, no shadow, just a thin editorial
+   marker sliding in. */
+.archive-row::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc(var(--space-3) * -1);
+  width: 2px;
+  background: var(--color-accent);
+  transform: scaleY(0);
+  transform-origin: center;
+  transition: transform 200ms ease;
+}
+
+a.archive-row:hover::before,
+a.archive-row:focus-visible::before {
+  transform: scaleY(1);
+}
+
+.archive-row__year {
+  font-family: var(--font-serif);
+  font-size: var(--font-size-card-heading);
+  font-weight: 500;
+  line-height: 1;
+  color: var(--color-text-faint);
+  white-space: nowrap;
+}
+
+.archive-row__main {
+  display: grid;
+  gap: 0.2em;
+  min-width: 0;
+}
+
+.archive-row__title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.archive-row__subtitle {
+  font-size: var(--font-size-small);
+  color: var(--color-text-muted);
+}
+
+.archive-row__meta {
+  font-size: var(--font-size-small);
+  color: var(--color-text-faint);
+  text-align: right;
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .archive-row {
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+  }
+
+  .archive-row__meta {
+    text-align: left;
+  }
+}
+
+/* Spotlight — standalone version of the current-work single-highlight pattern. */
+
+.spotlight {
+  display: grid;
+  grid-template-columns: minmax(0, 31rem) minmax(0, 1fr);
+  align-items: stretch;
+  gap: clamp(var(--space-6), 4vw, var(--space-10));
+  min-height: clamp(360px, 36vw, 480px);
+  overflow: hidden;
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+
+.spotlight__copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-width: 0;
+  padding: var(--space-copy-padding);
+}
+
+.spotlight__meta {
+  margin: 0 0 var(--space-4);
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--color-bg) 64%, transparent);
+}
+
+.spotlight__title {
+  margin: 0;
+  font-size: var(--font-size-section-heading);
+  font-weight: 500;
+  line-height: 0.92;
+  letter-spacing: -0.04em;
+  color: var(--color-bg);
+  text-wrap: balance;
+}
+
+.spotlight__subtitle {
+  margin: var(--space-3) 0 0;
+  font-size: clamp(1.1rem, 1.5vw, 1.4rem);
+  color: color-mix(in srgb, var(--color-bg) 84%, transparent);
+}
+
+.spotlight__description {
+  margin: var(--space-4) 0 0;
+  max-width: 42ch;
+  color: color-mix(in srgb, var(--color-bg) 68%, transparent);
+  line-height: 1.6;
+}
+
+.spotlight__actions {
+  margin-top: var(--space-6);
+}
+
+.spotlight .pill-button--ghost {
+  color: var(--color-bg);
+  border-color: color-mix(in srgb, var(--color-bg) 40%, transparent);
+}
+
+.spotlight .pill-button--ghost:hover {
+  background: color-mix(in srgb, var(--color-bg) 10%, transparent);
+  border-color: color-mix(in srgb, var(--color-bg) 40%, transparent);
+}
+
+.spotlight__visual {
+  position: relative;
+  margin: 0;
+  min-width: 0;
+  overflow: hidden;
+  background: var(--color-bg-subtle);
+}
+
+.spotlight__visual--color {
+  background: var(--spotlight-visual-color);
+}
+
+.spotlight__visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.spotlight__visual figcaption {
+  position: absolute;
+  right: var(--space-4);
+  bottom: var(--space-4);
+  left: var(--space-4);
+  margin: 0;
+  color: var(--color-bg);
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  letter-spacing: var(--tracking-nav);
+  text-transform: uppercase;
+}
+
+@media (max-width: 720px) {
+  .spotlight {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 280px;
+  }
+
+  .spotlight__copy {
+    padding: var(--space-8) var(--space-6);
+  }
+}
+
+/* Credit-list — compact dl-based team credits (Werk item detail). */
+
+.credit-list {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-2) var(--space-5);
+  margin: 0;
+}
+
+.credit-list__label {
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--color-text-faint);
+}
+
+.credit-list__value {
+  margin: 0;
+  color: var(--color-text);
+}
+
+/* Pull-quote — single inline quote inside prose pages, no carousel. */
+
+.pull-quote {
+  margin: var(--space-8) 0;
+  padding-left: var(--space-6);
+  border-left: 2px solid var(--color-accent);
+}
+
+.pull-quote__text {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: clamp(1.3rem, 2vw, 1.8rem);
+  font-style: italic;
+  line-height: 1.3;
+  color: var(--color-text);
+}
+
+.pull-quote__attribution {
+  display: block;
+  margin-top: var(--space-3);
+  font-style: normal;
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+/* Date-row — Aktuelles feed, date emphasized like a programme note. */
+
+.date-row {
+  display: grid;
+  grid-template-columns: 4.5rem 1fr;
+  align-items: baseline;
+  gap: var(--space-5);
+  padding: var(--space-4) 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--color-accent) 12%, transparent);
+  color: inherit;
+  text-decoration: none;
+}
+
+.date-row__date {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.date-row__day {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--color-accent);
+}
+
+.date-row__month {
+  margin-top: 0.3em;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--color-text-faint);
+}
+
+.date-row__main {
+  display: grid;
+  gap: 0.25em;
+  min-width: 0;
+}
+
+.date-row__title {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  color: var(--color-text);
+}
+
+.date-row__meta {
+  font-size: var(--font-size-small);
+  color: var(--color-text-muted);
+}
+
+/* Timeline — career milestones, deliberately not a straight ruled line:
+   rows alternate a small horizontal nudge (nth-child) so it reads as
+   organic rather than a static table with a connecting spine. */
+
+.timeline {
+  display: grid;
+}
+
+.timeline__row {
+  display: grid;
+  grid-template-columns: 5rem 1fr;
+  gap: var(--space-6);
+  padding: var(--space-4) 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--color-accent) 10%, transparent);
+}
+
+.timeline__row:nth-child(3n+2) .timeline__text {
+  margin-left: var(--space-4);
+}
+
+.timeline__row:nth-child(3n+3) .timeline__text {
+  margin-left: var(--space-2);
+}
+
+.timeline__year {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--color-text-faint);
+  white-space: nowrap;
+}
+
+.timeline__text {
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+/* Offer-panels — asymmetric text blocks (Lehre), not equal-width cards. */
+
+.offer-panels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-8) var(--space-10);
+}
+
+.offer-panel {
+  flex: 1 1 clamp(220px, 28vw, 320px);
+  padding-top: var(--space-5);
+  border-top: 1px solid color-mix(in srgb, var(--color-accent) 18%, transparent);
+}
+
+.offer-panel--primary {
+  flex-basis: clamp(280px, 42vw, 480px);
+}
+
+.offer-panel__title {
+  margin: 0 0 var(--space-3);
+  font-size: var(--font-size-card-heading);
+  font-weight: 500;
+  line-height: 1.05;
+  color: var(--color-text);
+}
+
+.offer-panel--primary .offer-panel__title {
+  font-size: var(--font-size-section-heading);
+}
+
+.offer-panel__text {
+  margin: 0;
+  max-width: 42ch;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+  .date-row,
+  .timeline__row {
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+  }
+
+  .timeline__row:nth-child(3n+2) .timeline__text,
+  .timeline__row:nth-child(3n+3) .timeline__text {
+    margin-left: 0;
+  }
+}
+
+/* Course-preview-card — timeline tile for a single masterclass (Meisterkurse
+   & Coaching). Reading order top to bottom: status badge, then a header
+   pairing date + location (both prominent — the two facts people scan for
+   first), then the project name (large), a short description, and
+   composer/genre tags as small chips so relevance is visible at a glance.
+   Three tile treatments carry the status now that section headings are gone
+   (see chronological filter in eleventy.config.js): offen = solid navy fill;
+   demnaechst = grey fill; vergangen = white + outline/text in
+   --color-text-faint (outline tone always matches text tone, so the box
+   reads as "clickable" while still feeling archived/faded). */
+
+.course-preview-card {
+  display: grid;
+  align-content: start;
+  gap: var(--space-2);
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid color-mix(in srgb, var(--color-text) 20%, transparent);
+  color: inherit;
+  text-decoration: none;
+  text-align: left;
+  transition: border-color 160ms ease, background-color 160ms ease;
+}
+
+/* offen/demnaechst render as a <button> (opens the course's modal) instead
+   of an <a> — reset the button defaults it would otherwise carry. */
+button.course-preview-card {
+  appearance: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+.course-preview-card__more {
+  justify-self: start;
+  margin-top: var(--space-1);
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+.course-preview-card__badge {
+  width: fit-content;
+  padding: 0.25em 0.6em;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+}
+
+.course-preview-card__header {
+  display: grid;
+  gap: 0.15em;
+  margin-top: var(--space-1);
+}
+
+.course-preview-card__date {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.course-preview-card__location {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+.course-preview-card__name {
+  margin: var(--space-2) 0 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.course-preview-card__description {
+  margin: var(--space-2) 0 0;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.course-preview-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  margin: var(--space-1) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.course-preview-card__tag {
+  padding: 0.25em 0.6em;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+  opacity: 0.8;
+}
+
+.course-preview-card__veranstalter {
+  margin: var(--space-1) 0 0;
+  font-size: 0.72rem;
+}
+
+/* Jetzt offen — full navy fill, white text throughout. */
+.course-preview-card--offen {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-bg);
+}
+
+.course-preview-card--offen:hover {
+  background: color-mix(in srgb, var(--color-accent) 90%, black);
+}
+
+.course-preview-card--offen .course-preview-card__badge {
+  color: var(--color-accent);
+  background: var(--color-bg);
+  border-color: var(--color-bg);
+}
+
+/* h1/h2/h3 carry their own global color rule (base.css), which otherwise
+   wins over the inherited --color-bg from the card — name needs its own
+   explicit override here. */
+.course-preview-card--offen .course-preview-card__name {
+  color: var(--color-bg);
+}
+
+.course-preview-card--offen .course-preview-card__description,
+.course-preview-card--offen .course-preview-card__veranstalter {
+  color: color-mix(in srgb, var(--color-bg) 80%, transparent);
+}
+
+/* Demnächst — grey fill, no outline, dark text. */
+.course-preview-card--demnaechst {
+  background: var(--color-bg-subtle);
+  border-color: transparent;
+  color: var(--color-text);
+}
+
+.course-preview-card--demnaechst:hover {
+  background: color-mix(in srgb, var(--color-bg-subtle) 80%, var(--color-text) 8%);
+}
+
+.course-preview-card--demnaechst .course-preview-card__description,
+.course-preview-card--demnaechst .course-preview-card__veranstalter {
+  color: var(--color-text-muted);
+}
+
+/* Vergangen — white, outline + text in faint grey (archived vibe). Only
+   status that keeps a visible outline. */
+.course-preview-card--vergangen {
+  background: var(--color-bg);
+  border-color: var(--color-text-faint);
+  color: var(--color-text-faint);
+}
+
+.course-preview-card--vergangen:hover {
+  background: color-mix(in srgb, var(--color-text-faint) 6%, transparent);
+}
+
+.course-preview-card--vergangen .course-preview-card__name {
+  color: var(--color-text-faint);
+}
+
+.course-preview-card--vergangen .course-preview-card__description,
+.course-preview-card--vergangen .course-preview-card__veranstalter {
+  color: var(--color-text-faint);
+}
+
+.course-timeline {
+  display: grid;
+  gap: var(--space-4);
+}
+
+/* Load-more — progressive reveal for long archives (Vergangene Meisterkurse
+   today; reusable for Publikationsliste/Presse-Erwähnungen later). */
+
+[data-load-more-item][hidden] {
+  display: none;
+}
+
+.load-more-button {
+  justify-self: start;
+  margin-top: var(--space-5);
+  padding: 0.6em 1.4em;
+  background: transparent;
+  border: 1px solid color-mix(in srgb, var(--color-accent) 40%, transparent);
+  color: var(--color-accent);
+  font: inherit;
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.load-more-button:hover {
+  background: color-mix(in srgb, var(--color-accent) 8%, transparent);
+}
+
+/* Coaching intro — short description + single clear CTA. */
+
+.coaching-intro {
+  display: grid;
+  gap: var(--space-5);
+  max-width: 58ch;
+  align-content: start;
+}
+
+.coaching-intro__text {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+/* CTA showing the real address instead of a generic "Kontakt"-Button that
+   looks identical to the contact-form CTA elsewhere on the site — same
+   bordered, uppercase pattern as the under-construction placeholder pages
+   (masterclass-landingpage / coaching-landingpage `.cta`). */
+.cta-mail {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  padding: 0.85em 1.6em;
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: background-color 160ms ease, color 160ms ease;
+}
+
+.cta-mail:hover {
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+
+/* Portal-note — dezenter Hinweis, dass Meisterkurse/Coaching eine eigene,
+   im Aufbau befindliche Infrastruktur bekommen (masterclass./coaching.
+   solfaghari.com). Sitzt in der Tab-Leiste direkt neben den Meisterkurse/
+   Coaching-Buttons (vertikal zentriert, kein eigener Platzverbrauch). Zwei
+   Instanzen (je Tab eine), von work-tabs.js über dasselbe data-work-panel
+   ein-/ausgeblendet wie die Tab-Panels selbst. */
+.portal-note[hidden] {
+  display: none;
+}
+
+.portal-note {
+  display: inline-flex;
+  width: fit-content;
+  align-self: center;
+  align-items: center;
+  gap: var(--space-2);
+  margin-left: var(--space-4);
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.portal-note:hover {
+  border-bottom-color: currentColor;
+}
+
+.portal-note__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  animation: portal-note-pulse 1.8s ease-in-out infinite;
+}
+
+@keyframes portal-note-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portal-note__dot {
+    animation: none;
+  }
+}
+
+/* Meisterkurse & Coaching — two-column layout: course timeline / coaching
+   intro on the left, photo + testimonial carousels on the right (fills what
+   was previously dead space next to the event tiles). */
+.meisterkurse-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 400px) minmax(360px, 1fr);
+  align-items: start;
+  gap: var(--space-8);
+}
+
+.meisterkurse-layout__main {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.meisterkurse-layout__aside {
+  display: grid;
+  gap: var(--space-4);
+  align-content: start;
+  padding-inline: var(--space-6);
+}
+
+/* Carousels nested in the narrower aside column: smaller, and the reserved
+   photo-visual column of the quote layout (meant for full-width sections
+   with a companion image) collapses since these two calls pass no photo. */
+.meisterkurse-layout__aside .editorial-carousel__quote-layout {
+  grid-template-columns: 1fr;
+}
+
+/* No padding override here — .editorial-carousel__quote-content already
+   defaults to var(--space-copy-padding), the standard tile padding used
+   everywhere else (current-work, home tiles, course-list panel etc.). */
+
+.meisterkurse-layout__aside .editorial-carousel__quote {
+  font-size: clamp(1.75rem, 2.4vw, 2.15rem);
+  line-height: 1.25;
+}
+
+/* Fixed, not min-height: the card must never resize the page layout when
+   the carousel rotates to a longer testimonial. A flat height sized for the
+   worst case everywhere (measured at ~580px) left huge empty space at
+   ordinary desktop widths, where the longest quote in rotation (Karen Van
+   Der Walt's, ~303 characters) only ever needs ~300–350px — the column
+   narrows sharply (and needs much more height) only in two specific bands:
+   phones below 480px, and the awkward narrow strip of the two-column
+   layout just above the 900px breakpoint. Sized per band below (all
+   measured against that same longest quote). overflow:hidden is a pure
+   insurance net for some future even-longer testimonial, not the plan. */
+.meisterkurse-layout__aside .editorial-carousel--quote .editorial-carousel__slide,
+.meisterkurse-layout__aside .editorial-carousel--quote .editorial-carousel__card {
+  height: 380px;
+  min-height: 0;
+  overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  .meisterkurse-layout__aside .editorial-carousel--quote .editorial-carousel__slide,
+  .meisterkurse-layout__aside .editorial-carousel--quote .editorial-carousel__card {
+    height: 560px;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1100px) {
+  .meisterkurse-layout__aside .editorial-carousel--quote .editorial-carousel__slide,
+  .meisterkurse-layout__aside .editorial-carousel--quote .editorial-carousel__card {
+    height: 560px;
+  }
+}
+
+/* Center the quote vertically within the fixed-height card — single-line
+   quotes should sit in the middle, not pinned to the top. Safe to diverge
+   from the sitewide align-content:start default here (see
+   editorial-carousel.css) because this card has a fixed height rather than
+   one sized to the longest quote in rotation, so there's no cross-browser
+   leftover-space inconsistency to guard against. */
+.meisterkurse-layout__aside .editorial-carousel--quote .editorial-carousel__card {
+  align-content: center;
+}
+
+/* This call passes no heading, so the section only ever renders an
+   out-of-flow (position:absolute) sr-only h2 — the carousel div is the
+   grid's only real item and auto-places into row 1, leaving row 2 (1fr)
+   sitting empty plus its gap below. Single-row override removes that
+   phantom trailing space. Safe only here, where the heading is always
+   empty — Home's Impressionen carousel passes a real heading and still
+   needs both rows. */
+.meisterkurse-layout__aside .editorial-carousel--photo {
+  grid-template-rows: minmax(0, 1fr);
+}
+
+.meisterkurse-layout__aside .editorial-carousel__carousel--photo {
+  block-size: clamp(220px, 20vw, 320px);
+}
+
+.meisterkurse-layout__aside .editorial-carousel--photo .editorial-carousel__control--previous {
+  left: calc(var(--space-6) * -1);
+}
+
+.meisterkurse-layout__aside .editorial-carousel--photo .editorial-carousel__control--next {
+  right: calc(var(--space-6) * -1);
+}
+
+/* Quote controls sit inside the card's own copy-padding (unlike the
+   zero-padding photo card), so their offset needs that padding added back
+   in — otherwise they'd land well inside the card instead of level with
+   the photo carousel's arrows above. */
+.meisterkurse-layout__aside .editorial-carousel--quote .editorial-carousel__control--previous {
+  left: calc((var(--space-copy-padding) + var(--space-6)) * -1);
+}
+
+.meisterkurse-layout__aside .editorial-carousel--quote .editorial-carousel__control--next {
+  right: calc((var(--space-copy-padding) + var(--space-6)) * -1);
+}
+
+@media (max-width: 900px) {
+  .meisterkurse-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .meisterkurse-layout__aside {
+    padding-inline: 0;
+  }
+}
+
+/* Course-modal — full masterclass detail (opened from course-preview-card).
+   No dedicated landing page: the funnel is just "email to apply", so a
+   modal carries the whole thing — flyer, full content description, facts,
+   how to apply. */
+
+/* Native <dialog>, same pattern as .work-detail__review-dialog: the
+   dialog element itself stays transparent/borderless, .course-modal__inner
+   carries the actual visual card (background, shadow, its own scroll). */
+.course-modal {
+  width: min(100%, 900px);
+  max-height: min(90vh, 800px);
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--color-text);
+}
+
+.course-modal::backdrop {
+  background: color-mix(in srgb, var(--color-text) 55%, transparent);
+}
+
+.course-modal__inner {
+  position: relative;
+  max-height: min(90vh, 800px);
+  overflow-y: auto;
+  background: var(--color-bg);
+  box-shadow: 0 24px 64px color-mix(in srgb, var(--color-text) 28%, transparent);
+}
+
+/* Same circular, invert-on-hover close button as .work-detail__review-close
+   (Inszenierungen-Detailseiten) — same context (sits over the navy head),
+   same treatment. */
+.course-modal__close {
+  position: absolute;
+  top: var(--space-5);
+  right: var(--space-5);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  border: 1px solid color-mix(in srgb, var(--color-bg) 42%, transparent);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--color-bg);
+  font: inherit;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.course-modal__close:hover {
+  background: var(--color-bg);
+  color: var(--color-accent);
+}
+
+/* Full-bleed accent header — the masterclass's "cover", clearly set apart
+   from the plain-white body below it. Padding matches
+   .work-detail__review-dialog-head (Parsifal/Kritik-Modal) — same clamp,
+   same reserved space for the close button. */
+.course-modal__header {
+  display: grid;
+  gap: var(--space-2);
+  padding: clamp(var(--space-6), 6vw, var(--space-10));
+  padding-right: clamp(var(--space-10), 10vw, calc(var(--space-16) + var(--space-8)));
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+
+.course-modal__date {
+  margin: 0;
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--color-bg) 80%, transparent);
+}
+
+.course-modal__zeiten {
+  margin: 0;
+  color: color-mix(in srgb, var(--color-bg) 85%, transparent);
+}
+
+.course-modal__title {
+  margin: 0;
+  font-size: var(--font-size-card-heading);
+  line-height: 1.05;
+  color: var(--color-bg);
+}
+
+.course-modal__location {
+  margin: 0;
+  color: color-mix(in srgb, var(--color-bg) 85%, transparent);
+}
+
+.course-modal__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  margin: var(--space-1) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.course-modal__tag {
+  padding: 0.25em 0.6em;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  border: 1px solid color-mix(in srgb, var(--color-bg) 55%, transparent);
+  color: var(--color-bg);
+}
+
+.course-modal__body {
+  display: grid;
+  align-content: start;
+  gap: var(--space-6);
+  padding: clamp(var(--space-6), 5vw, var(--space-10));
+}
+
+/* Intro text + flyer side by side — flyer sits level with the copy that
+   describes the masterclass, not a full-height sidebar of its own. */
+.course-modal__content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(160px, 220px);
+  gap: var(--space-6);
+  align-items: start;
+}
+
+.course-modal__intro {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.course-modal__intro p {
+  margin: 0;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+/* Bild-oder-Farbfeld-Slot wie überall sonst auf der Seite — Flyer-Fotos
+   liegen noch nicht vor, Farbfeld bis dahin. Poster-ish proportions since
+   these will be Jasmin's designed masterclass flyers. */
+.course-modal__flyer {
+  aspect-ratio: 3 / 4;
+  background: var(--color-bg-subtle);
+}
+
+/* Facts as one shared accent block (not individual tiles) — a single navy
+   panel, each fact separated by a thin light divider instead of its own
+   background/gap. */
+.course-modal__facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  margin: 0;
+  background: var(--color-accent);
+}
+
+.course-modal__fact {
+  display: grid;
+  /* Grid items default to min-width:auto (floor = content's min-content,
+     i.e. the longest unbreakable word) — without this, a long compound
+     word like "Unterrichtssprachen" refuses to shrink below its own
+     natural width and sticks out past this block's edge, silently
+     clipped by .course-modal__inner's overflow-y:auto (which makes the
+     x-axis "auto" too, per spec). */
+  min-width: 0;
+  gap: 0.3em;
+  padding: var(--space-3) var(--space-4);
+  border-left: 1px solid color-mix(in srgb, var(--color-bg) 22%, transparent);
+}
+
+.course-modal__fact:first-child {
+  border-left: 0;
+}
+
+.course-modal__fact dt,
+.course-modal__fact dd {
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+.course-modal__fact dt {
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--color-bg) 78%, transparent);
+}
+
+.course-modal__fact dd {
+  margin: 0;
+  font-weight: 600;
+  color: var(--color-bg);
+}
+
+.course-modal__apply {
+  display: grid;
+  gap: var(--space-4);
+  padding-top: var(--space-4);
+  border-top: 1px solid color-mix(in srgb, var(--color-text) 12%, transparent);
+}
+
+.course-modal__apply-item {
+  display: grid;
+  gap: var(--space-2);
+  justify-items: start;
+}
+
+.course-modal__apply-label {
+  margin: 0;
+  font-size: var(--font-size-small);
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 640px) {
+  .course-modal {
+    max-height: 92vh;
+  }
+
+  .course-modal__inner {
+    max-height: 92vh;
+  }
+
+  .course-modal__content {
+    grid-template-columns: 1fr;
+  }
+
+  .course-modal__flyer {
+    aspect-ratio: 16 / 9;
+  }
+}

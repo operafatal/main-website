@@ -1,0 +1,35 @@
+{#
+  Standalone editorial highlight — the "one large, single work highlight" pattern
+  from current-work.njk, generalised for use outside a carousel (Werk, Publikationen,
+  Meisterkurse). See brand-site-baukasten.md.
+  meta: small uppercase kicker (e.g. "2023–2027 · Inszenierung")
+  title, subtitle: large serif title + smaller line under it
+  description: short body copy
+  ctaLabel/ctaHref: optional pill-button
+  visual: { type: "image", src, alt, credit } or { type: "color", color }
+#}
+{% from "components/pill-button.njk" import pillButton %}
+{% macro spotlight(meta, title, subtitle, description, visual, ctaLabel, ctaHref) %}
+  <article class="spotlight">
+    <div class="spotlight__copy">
+      {% if meta %}<p class="spotlight__meta">{{ meta }}</p>{% endif %}
+      <h3 class="spotlight__title">{{ title }}</h3>
+      {% if subtitle %}<p class="spotlight__subtitle">{{ subtitle }}</p>{% endif %}
+      {% if description %}<p class="spotlight__description">{{ description }}</p>{% endif %}
+      {% if ctaLabel and ctaHref %}
+        <div class="spotlight__actions">
+          {{ pillButton(ctaLabel, ctaHref, "ghost") }}
+        </div>
+      {% endif %}
+    </div>
+
+    {% if visual.type == "image" %}
+      <figure class="spotlight__visual">
+        <img src="{{ visual.src }}" alt="{{ visual.alt }}" loading="lazy" decoding="async">
+        {% if visual.credit %}<figcaption>{{ visual.credit }}</figcaption>{% endif %}
+      </figure>
+    {% else %}
+      <div class="spotlight__visual spotlight__visual--color" style="--spotlight-visual-color: {{ visual.color }};" aria-hidden="true"></div>
+    {% endif %}
+  </article>
+{% endmacro %}

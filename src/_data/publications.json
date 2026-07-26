@@ -1,0 +1,389 @@
+{
+  "spotlight": {
+    "meta": "Schott · 2024",
+    "title": "Ich schreite kaum, doch wähn' ich mich schon weit",
+    "subtitle": "Parsifal am Goetheanum",
+    "description": "Die Publikation dokumentiert die Entstehung der Goetheanum-Produktion und verbindet Fotos, Essays und fachliche Beiträge mit Jasmin Solfagharis Blick auf Regie, Eurythmie, Bühnenraum und musikalische Struktur.",
+    "visual": {
+      "type": "image",
+      "src": "/assets/img/parsifal/buch/parsifal-buchsignierung.jpeg",
+      "alt": "Jasmin Solfaghari bei einer Buchsignierung vor dem Parsifal-Buch"
+    },
+    "ctaLabel": "Bei Schott ansehen",
+    "ctaHref": "https://www.schott-music.com/de/ich-schreite-kaum-doch-waehn-ich-mich-schon-weit-no584712.html"
+  },
+  "books": [
+    {
+      "year": "2024",
+      "title": "Ich schreite kaum, doch wähn' ich mich schon weit. Parsifal am Goetheanum",
+      "subtitle": "Hrsg. von Jasmin Solfaghari, PAMY Mediaproductions",
+      "meta": "Schott Verlag, Mainz",
+      "href": "https://www.schott-music.com/de/ich-schreite-kaum-doch-waehn-ich-mich-schon-weit-no584712.html"
+    },
+    {
+      "year": "2020",
+      "title": "Opera Guide for Beginners",
+      "subtitle": "The Marriage of Figaro · The Freeshooter · The Ring of the Nibelung; Übersetzung: Dr. Ursula und Alan Cemore",
+      "meta": "Schott Verlag, Mainz",
+      "href": "https://www.schott-music.com/en/person/jasmin-solfaghari"
+    },
+    {
+      "year": "2020",
+      "title": "Crashkurs Oper",
+      "subtitle": "Überblick über die Welt der Oper vor und hinter den Kulissen; seit 2024 auch auf Chinesisch",
+      "meta": "Schott Verlag, Mainz",
+      "href": "https://www.schott-music.com/de/crashkurs-oper-no375923.html"
+    },
+    {
+      "year": "2019",
+      "title": "Opernführer für Einsteiger",
+      "subtitle": "Die Hochzeit des Figaro · Der Freischütz · Der Ring des Nibelungen, Deutsch-Fränkisch; Übersetzung: David Saam",
+      "meta": "Schott Verlag, Mainz",
+      "href": "https://www.schott-music.com/en/person/jasmin-solfaghari"
+    },
+    {
+      "year": "2017",
+      "title": "Opernführer für Einsteiger",
+      "subtitle": "Die Hochzeit des Figaro · Der Freischütz · Der Ring des Nibelungen, Deutsch-Sächsisch; Übersetzung: Klaus Petermann",
+      "meta": "Schott Verlag, Mainz",
+      "href": "https://www.schott-music.com/de/opernfuehrer-fuer-einsteiger-noc358985.html"
+    },
+    {
+      "year": "2017",
+      "title": "Opernführer für Einsteiger",
+      "subtitle": "Die Hochzeit des Figaro · Der Freischütz · Der Ring des Nibelungen, Deutsch-Alemannisch; Übersetzung: Claudia Sütterlin",
+      "meta": "Schott Verlag, Mainz",
+      "href": "https://www.schott-music.com/en/person/jasmin-solfaghari"
+    }
+  ],
+  "archiveGroups": [
+    {
+      "label": "2020er",
+      "items": [
+        {
+          "year": "2024",
+          "title": "Ich schreite kaum, doch wähn' ich mich schon weit. Parsifal am Goetheanum",
+          "subtitle": "Hrsg. von Jasmin Solfaghari, PAMY Mediaproductions",
+          "meta": "Schott Verlag, Mainz",
+          "href": "https://www.schott-music.com/de/ich-schreite-kaum-doch-waehn-ich-mich-schon-weit-no584712.html"
+        },
+        {
+          "year": "2020",
+          "title": "Opera Guide for Beginners",
+          "subtitle": "Übersetzung: Dr. Ursula und Alan Cemore",
+          "meta": "Schott Verlag, Mainz",
+          "href": "https://www.schott-music.com/en/person/jasmin-solfaghari"
+        },
+        {
+          "year": "2020",
+          "title": "Crashkurs Oper",
+          "subtitle": "Oper kompakt, vor und hinter den Kulissen",
+          "meta": "Schott Verlag, Mainz",
+          "href": "https://www.schott-music.com/de/crashkurs-oper-no375923.html"
+        }
+      ]
+    },
+    {
+      "label": "2010er",
+      "items": [
+        {
+          "year": "2019",
+          "title": "Step into the RING: Staging Wagner's Ring Cycle in two weeks",
+          "subtitle": "Leitmotive, Journal of the Wagner Society of Northern California, Fall 2019",
+          "meta": "Essay",
+          "href": "https://wagnersf.org/leitmotive/"
+        },
+        {
+          "year": "2019",
+          "title": "Opernführer für Einsteiger",
+          "subtitle": "Deutsch-Fränkisch; Übersetzung: David Saam",
+          "meta": "Schott Verlag, Mainz",
+          "href": "https://www.schott-music.com/en/person/jasmin-solfaghari"
+        },
+        {
+          "year": "2018",
+          "title": "Opera Fatal und die Folgen: ein Erfahrungsbericht",
+          "subtitle": "In: Digitale Spiele – Interdisziplinäre Perspektiven zu Diskursfeldern, Inszenierung und Musik",
+          "meta": "transcript Verlag",
+          "href": "https://www.transcript-verlag.de/978-3-8376-4415-9/digitale-spiele/"
+        },
+        {
+          "year": "2017",
+          "title": "Erda brachte sie ins Ziel. Richard-Wagner-Nachwuchspreis 2017",
+          "subtitle": "Richard Wagner Stiftung, Stiftungsbrief August",
+          "meta": "Beitrag",
+          "href": "https://www.solfaghari.com/publikationen/"
+        },
+        {
+          "year": "2017",
+          "title": "Nur mach vor Staunen mich stumm",
+          "subtitle": "Die Regisseurin Jasmin Solfaghari zum Verhältnis von Musik und Szene",
+          "meta": "Die Deutsche Bühne 05/17",
+          "href": "https://www.die-deutsche-buehne.de/"
+        },
+        {
+          "year": "2017",
+          "title": "Opernführer für Einsteiger",
+          "subtitle": "Deutsch-Sächsisch; Übersetzung: Klaus Petermann",
+          "meta": "Schott Verlag, Mainz",
+          "href": "https://www.schott-music.com/de/opernfuehrer-fuer-einsteiger-noc358985.html"
+        },
+        {
+          "year": "2017",
+          "title": "Opernführer für Einsteiger",
+          "subtitle": "Deutsch-Alemannisch; Übersetzung: Claudia Sütterlin",
+          "meta": "Schott Verlag, Mainz",
+          "href": "https://www.schott-music.com/en/person/jasmin-solfaghari"
+        },
+        {
+          "year": "2013",
+          "title": "Wer ist in unserem Land noch bereit, für die Oper noch Etats zu sichern?",
+          "subtitle": "Jörg Rothkamm / Jasmin Solfaghari: Zu Jasmin Solfagharis Neuinszenierung Die Opernprobe",
+          "meta": "HMT Leipzig, Schriften 9",
+          "href": "https://www.solfaghari.com/publikationen/"
+        }
+      ]
+    },
+    {
+      "label": "2000er",
+      "items": [
+        {
+          "year": "2007–2009",
+          "title": "Diverse Artikel",
+          "subtitle": "Hochschule für Musik und Theater Felix Mendelssohn Bartholdy Leipzig",
+          "meta": "Journal",
+          "href": "https://www.solfaghari.com/publikationen/"
+        },
+        {
+          "year": "2000",
+          "title": "Die Nacht der Frauen",
+          "subtitle": "Zur eigenen Inszenierung Eine Nacht in Venedig",
+          "meta": "Programmheft Wiener Kammeroper",
+          "href": "https://www.solfaghari.com/publikationen/"
+        }
+      ]
+    },
+    {
+      "label": "1990er",
+      "items": [
+        {
+          "year": "1993",
+          "title": "Tender Buttons - oder wie inszeniere ich ein Stück, das ich noch gar nicht kenne?",
+          "subtitle": "Zwischen Aufklärung und Kulturindustrie, Band II Musik/Theater",
+          "meta": "Bockel Verlag Hamburg",
+          "href": "https://www.solfaghari.com/publikationen/"
+        },
+        {
+          "year": "1993",
+          "title": "Ich liebe das Lied mehr als alles andere",
+          "subtitle": "Portrait über Margaret Price",
+          "meta": "Schleswig-Holstein Musik Festival, Leporello",
+          "href": "https://www.solfaghari.com/publikationen/"
+        },
+        {
+          "year": "1992",
+          "title": "Die Tonleiter ist das schönste Lied, das es gibt",
+          "subtitle": "Portrait über Giora Feidman",
+          "meta": "Schleswig-Holstein Musik Festival, Leporello",
+          "href": "https://www.solfaghari.com/publikationen/"
+        },
+        {
+          "year": "1992",
+          "title": "Mit verliebten Gecken geh'n wir Weiber also um",
+          "subtitle": "Zur eigenen Inszenierung Pimpinone",
+          "meta": "Staatsoper Hamburg, Auftakt",
+          "href": "https://www.solfaghari.com/publikationen/"
+        },
+        {
+          "year": "1991",
+          "title": "Die Schule der Frauen. Gedanken zur Dramaturgie",
+          "subtitle": "Zur eigenen Inszenierung Die Schule der Frauen von Rolf Liebermann",
+          "meta": "Sibelius Akatemia, Helsinki",
+          "href": "https://www.solfaghari.com/publikationen/"
+        },
+        {
+          "year": "1991",
+          "title": "Atem ist mein Lebenselement",
+          "subtitle": "Interview mit Heinz Holliger",
+          "meta": "Schleswig-Holstein Musik Festival, Leporello",
+          "href": "https://www.solfaghari.com/publikationen/"
+        },
+        {
+          "year": "1991",
+          "title": "Wie ängstlich schlägt mein Herz",
+          "subtitle": "Zur Entführungsszene der Entführung aus dem Serail von Marco Arturo Marelli",
+          "meta": "Bühnentechnische Rundschau",
+          "href": "https://www.solfaghari.com/publikationen/"
+        },
+        {
+          "year": "1991",
+          "title": "Ein Wein? Ein Bier? Ein Hippokras mit Ingwer?",
+          "subtitle": "Getränke auf der Opernbühne",
+          "meta": "Schleswig-Holstein Musik Festival",
+          "href": "https://www.solfaghari.com/publikationen/"
+        }
+      ]
+    }
+  ],
+  "stageWorks": [
+    {
+      "title": "Alle Wünsche sind dahin",
+      "subtitle": "Musiktheater mit Musik von Fanny Hensel und Felix Mendelssohn Bartholdy",
+      "meta": "Jasmin Solfaghari, Helmut Kukuk, Jörg Rothkamm; in Zusammenarbeit mit Miriam Kohnert und Carolin Seidl"
+    },
+    {
+      "title": "Immer nur lächeln",
+      "subtitle": "Ein Richard-Tauber-Abend",
+      "meta": "Text, Regie und Ausstattung: Jasmin Solfaghari; Uraufführung Komödie Winterhuder Fährhaus"
+    }
+  ],
+  "dialogueAdaptations": [
+    "Die Opernprobe",
+    "Die lustigen Weiber von Windsor",
+    "Eine Nacht in Venedig",
+    "Pariser Leben",
+    "Fidelio",
+    "Die beiden Pädagogen",
+    "Figaros toller Tag",
+    "La Cenerentola",
+    "Der Ring in 100 Minuten",
+    "Der Freischütz für Kinder",
+    "L'Infedeltà delusa",
+    "Die kleine Zauberflöte",
+    "Die lustige Witwe",
+    "Herr Blumenkohl gibt sich die Ehre",
+    "Die Insel Tulipatan",
+    "Figaro für Operneinsteiger",
+    "Die Zirkusprinzessin"
+  ],
+  "reviews": [
+    {
+      "quote": "Die Opernregisseurin Jasmin Solfaghari hat einen sehr charmanten Opernführer für Einsteiger geschrieben. Dass Solfaghari durch und durch Praktikerin ist, wird in einem Kapitel über Bühneneffekte und durch anschauliche Erläuterungen von Fachbegriffen erfahrbar.",
+      "source": "Das Opernglas",
+      "date": "Februar 2019",
+      "context": "Opernführer für Einsteiger",
+      "href": "https://www.solfaghari.com/publikationen/"
+    },
+    {
+      "quote": "Klare Leseempfehlung für alle Operneinsteiger und sowieso für alle, die Oper lieben.",
+      "source": "Detlef Obens, Das Opernmagazin",
+      "date": "1. Juni 2021",
+      "context": "Opernführer für Einsteiger",
+      "href": "https://opernmagazin.de/buchempfehlung-opernfuehrer-fuer-einsteiger-von-jasmin-solfaghari/"
+    },
+    {
+      "quote": "Ausgezeichnetes Bildmaterial visualisiert das eurythmische Konzept.",
+      "source": "Stefan Mauß, Das Opernglas",
+      "date": "Mai 2025",
+      "context": "Parsifal am Goetheanum",
+      "href": "https://dasgoetheanum.com/parsifal-im-opernglas/"
+    },
+    {
+      "quote": "Hochinteressant ist, dass sich endlich mal jemand Fauna, Flora und den im Stück verabreichten Getränken widmet.",
+      "source": "Bernd Klempnow, Sächsische Zeitung",
+      "date": "2017",
+      "context": "Opernführer für Einsteiger",
+      "href": "https://www.solfaghari.com/publikationen/"
+    },
+    {
+      "quote": "Es ist wirklich köstlich.",
+      "source": "WDR",
+      "date": "2017",
+      "context": "Opernführer für Einsteiger",
+      "href": "https://www.solfaghari.com/publikationen/"
+    },
+    {
+      "quote": "Jasmin Solfaghari hat einen Opernführer für Einsteiger geschaffen, der wirklich etwas Besonderes ist.",
+      "source": "Renate Wagner, Online Merker",
+      "date": "2017",
+      "context": "Opernführer für Einsteiger",
+      "href": "https://www.solfaghari.com/publikationen/"
+    },
+    {
+      "quote": "Ein sinnvolles Geschenk!",
+      "source": "Roland Dippel, Leipziger Volkszeitung",
+      "date": "2017",
+      "context": "Opernführer für Einsteiger",
+      "href": "https://www.solfaghari.com/publikationen/"
+    },
+    {
+      "quote": "Spannend und verständlich, ohne zu belehren, wird uns die Welt des Theaters erklärt und nahe gebracht. Sehr empfehlenswert, nicht nur für Opern-Einsteiger!",
+      "source": "Johannes Neumann, Amazon",
+      "date": "2018",
+      "context": "Opernführer für Einsteiger",
+      "href": "https://www.solfaghari.com/publikationen/"
+    },
+    {
+      "quote": "Ich persönlich kenne mich wirklich nicht mit Opern aus, habe aber durch dieses Buch einen Bezug dazu gefunden. Es ist mit Liebe und Hingabe geschrieben.",
+      "source": "Kunde aus Landsberg, Thalia",
+      "date": "2017",
+      "context": "Opernführer für Einsteiger",
+      "href": "https://www.solfaghari.com/publikationen/"
+    },
+    {
+      "quote": "Jasmin Solfaghari zeigt in ihrem Theaterstück Immer nur lächeln einen Tag im Leben des Stars. Für die Fans der leichten Muse ist dieser stimmungsvolle Abend an der Komödie extra feiner Hör- und Sehgenuss.",
+      "source": "Brigitte Scholz, Hamburger Morgenpost",
+      "date": "5. Oktober 1999",
+      "context": "Immer nur lächeln",
+      "href": "https://www.solfaghari.com/publikationen/"
+    }
+  ],
+  "press": [
+    {
+      "quote": "Die Inszenierung von Richard Wagners Parsifal am Goetheanum unter der Leitung von Jasmin Solfaghari hat mit dem Einsatz der Eurythmie Operngeschichte geschrieben.",
+      "source": "Goetheanum, Pressemitteilung",
+      "date": "28. Februar 2025",
+      "context": "Buchdokumentation Parsifal am Goetheanum",
+      "href": "https://www.mynewsdesk.com/de/goetheanum/pressreleases/wie-operngeschichte-geschrieben-wurde-dokumentation-der-inszenierung-des-parsifal-am-goetheanum-3372674"
+    },
+    {
+      "quote": "Das Buch gibt vielfältige persönliche und fachliche Einblicke in das komplexe Geschehen dieser Inszenierung.",
+      "source": "Goetheanum, Pressemitteilung",
+      "date": "28. Februar 2025",
+      "context": "Ich schreite kaum, doch wähn' ich mich schon weit",
+      "href": "https://www.mynewsdesk.com/de/goetheanum/pressreleases/wie-operngeschichte-geschrieben-wurde-dokumentation-der-inszenierung-des-parsifal-am-goetheanum-3372674"
+    },
+    {
+      "quote": "Damit macht sie über die Aufführungen und das breite Medienecho hinaus den besonderen Charakter der Zusammenarbeit von Musik, Spiel und Eurythmie zugänglich.",
+      "source": "Das Goetheanum",
+      "date": "12. Februar 2026",
+      "context": "Parsifal im Goetheanum",
+      "href": "https://dasgoetheanum.com/parsifal-im-goetheanum/"
+    },
+    {
+      "quote": "Sechs ausverkaufte Aufführungen, darunter eine Galavorstellung mit Klaus Florian Vogt.",
+      "source": "Goetheanum, Pressemitteilung",
+      "date": "27. April 2024",
+      "context": "Parsifal am Goetheanum",
+      "href": "https://www.mynewsdesk.com/de/goetheanum/pressreleases/wo-oper-und-eurythmie-zusammen-wirken-2025-geht-richard-wagners-parsifal-am-goetheanum-ins-dritte-jahr-3319657"
+    },
+    {
+      "quote": "Ein Gesamtkunstwerk, das von der Regisseurin Jasmin Solfaghari wesentlich befeuert, animiert und energetisiert wird.",
+      "source": "Björn Florian Fuchs, Deutschlandfunk; zitiert bei Goetheanum",
+      "date": "19. April 2023",
+      "context": "Medienecho Parsifal am Goetheanum",
+      "href": "https://goetheanum.ch/de/nachrichten/ein-gesamtkunstwerk"
+    },
+    {
+      "quote": "Die Inszenierung von Jasmin Solfaghari, die Eurythmie-Regie von Stefan Hasler und die Ausstattung von Walter Schütze wirkten erstaunlich rund und lieferten sinnfällige Denkanstöße.",
+      "source": "Roland Dippel, neue musikzeitung",
+      "date": "8. April 2023",
+      "context": "Parsifal am Goetheanum",
+      "href": "https://www.nmz.de/kritik/oper-konzert/frauenpower-am-goetheanum-wagners-parsifal-mit-eurhythmie-und-denkanstoessen"
+    },
+    {
+      "quote": "Naturalistisch, klar und textnah.",
+      "source": "Christian Wildhagen, NZZ",
+      "date": "6. April 2023",
+      "context": "Über Solfagharis Regiestil in Parsifal",
+      "href": "https://goetheanum.ch/de/nachrichten/ein-gesamtkunstwerk"
+    },
+    {
+      "quote": "Bestätigt Jasmin Solfagharis Inszenierungsstil eine stringente Personenführung.",
+      "source": "Fabian Kristmann, Basler Zeitung",
+      "date": "3. April 2023",
+      "context": "Parsifal am Goetheanum",
+      "href": "https://goetheanum.ch/de/nachrichten/ein-gesamtkunstwerk"
+    }
+  ]
+}

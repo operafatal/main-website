@@ -1,0 +1,16 @@
+{#
+  Asymmetric offering blocks (Lehre) — deliberately NOT equal-width SaaS-style
+  cards (see brand-site-design.md: no target-audience cards). One larger
+  panel, others smaller beside it; typographic hierarchy + a rule, no boxes.
+  panels: [{ title, text }] — first entry renders larger (offer-panel--primary)
+#}
+{% macro offerPanels(panels) %}
+  <div class="offer-panels">
+    {% for panel in panels %}
+      <div class="offer-panel{% if loop.first %} offer-panel--primary{% endif %}">
+        <h3 class="offer-panel__title">{{ panel.title }}</h3>
+        <p class="offer-panel__text">{{ panel.text }}</p>
+      </div>
+    {% endfor %}
+  </div>
+{% endmacro %}

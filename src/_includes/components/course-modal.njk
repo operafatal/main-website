@@ -1,0 +1,89 @@
+{#
+  Full-detail modal for a single masterclass — opened by clicking its
+  course-preview-card (see course-preview-card.njk + assets/js/course-modal.js,
+  same native <dialog> pattern as work-detail__review-dialog on the
+  Inszenierungen detail pages). Only rendered for courses with a `details`
+  object (offen/demnaechst) — vergangen courses have no modal, nothing to
+  apply to anymore.
+  Deliberately a modal, not its own page: the funnel here is simple
+  (interested singers just email masterclass@solfaghari.com), no booking
+  system needed yet.
+#}
+{% macro courseModal(course) %}
+  <dialog class="course-modal" id="modal-{{ course.id }}" aria-labelledby="modal-{{ course.id }}-title">
+    <div class="course-modal__inner">
+      <button class="course-modal__close" type="button" data-modal-close aria-label="Schließen">
+        <span aria-hidden="true">&times;</span>
+      </button>
+
+      <header class="course-modal__header">
+        <p class="course-modal__date">{{ course.date }}</p>
+        {% if course.details.zeiten %}
+          <p class="course-modal__zeiten">{{ course.details.zeiten }}</p>
+        {% endif %}
+        <h2 class="course-modal__title" id="modal-{{ course.id }}-title">{{ course.name }}</h2>
+        <p class="course-modal__location">{{ course.details.adresse or course.location }}</p>
+        {% if course.tags and course.tags.length %}
+          <ul class="course-modal__tags">
+            {% for tag in course.tags %}
+              <li class="course-modal__tag">{{ tag }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </header>
+
+      <div class="course-modal__body">
+        <div class="course-modal__content">
+          {% if course.details.intro %}
+            <div class="course-modal__intro">
+              {% for paragraph in course.details.intro %}
+                <p>{{ paragraph | safe }}</p>
+              {% endfor %}
+            </div>
+          {% endif %}
+
+          <div class="course-modal__flyer" aria-hidden="true"></div>
+        </div>
+
+        <dl class="course-modal__facts">
+          {% if course.details.zielgruppe %}
+            <div class="course-modal__fact"><dt>Zielgruppe</dt><dd>{{ course.details.zielgruppe }}</dd></div>
+          {% endif %}
+          {% if course.details.teilnehmerzahl %}
+            <div class="course-modal__fact"><dt>Teilnehmerzahl</dt><dd>{{ course.details.teilnehmerzahl }}</dd></div>
+          {% endif %}
+          {% if course.details.sprachen %}
+            <div class="course-modal__fact"><dt>Unterrichtssprachen</dt><dd>{{ course.details.sprachen }}</dd></div>
+          {% endif %}
+          {% if course.details.klavier %}
+            <div class="course-modal__fact"><dt>Klavier</dt><dd>{{ course.details.klavier }}</dd></div>
+          {% endif %}
+          {% if course.details.kosten %}
+            <div class="course-modal__fact"><dt>Kosten</dt><dd>{{ course.details.kosten }}</dd></div>
+          {% endif %}
+          {% if course.details.anzahlung %}
+            <div class="course-modal__fact"><dt>Anzahlung</dt><dd>{{ course.details.anzahlung }}</dd></div>
+          {% endif %}
+          {% if course.veranstalter %}
+            <div class="course-modal__fact"><dt>Veranstalter</dt><dd>{{ course.veranstalter }}</dd></div>
+          {% endif %}
+        </dl>
+
+        {% if course.details.bewerbung and course.details.bewerbung.length %}
+          <div class="course-modal__apply">
+            {% for entry in course.details.bewerbung %}
+              <div class="course-modal__apply-item">
+                {% if entry.label or entry.hinweis %}
+                  <p class="course-modal__apply-label">
+                    {% if entry.label %}{{ entry.label }}{% endif %}{% if entry.hinweis %}{% if entry.label %} · {% endif %}{{ entry.hinweis }}{% endif %}
+                  </p>
+                {% endif %}
+                <a class="cta-mail course-modal__apply-cta" href="mailto:{{ entry.email }}">{{ entry.email }}</a>
+              </div>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </dialog>
+{% endmacro %}

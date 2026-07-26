@@ -1,0 +1,129 @@
+---
+layout: base.njk
+title: Home
+permalink: /
+---
+{% from "components/hero.njk" import hero %}
+{% from "components/marquee.njk" import marquee %}
+{% from "components/current-work.njk" import currentWork %}
+{% from "components/editorial-carousel.njk" import editorialCarousel %}
+{% from "components/pill-button.njk" import pillButton %}
+
+<div class="home-page">
+  <div class="styleguide__full-bleed">
+    {# Hero-Logo deaktiviert; bei Bedarf wieder als letzter hero()-Parameter aktivieren: "/assets/img/jasmin-logo-v2.png" #}
+    {{ hero(
+      "/assets/img/hero-jasmin-fenster.webp?v=20260725c",
+      "<span class=\"hero__headline-first\">Jasmin</span><span class=\"hero__headline-last\">Solfaghari</span>",
+      "Inszenierungen ansehen",
+      "/inszenierungen/",
+      "Kontakt",
+      "/kontakt/",
+      "Opernregisseurin, Coachin, Autorin.",
+      [],
+      "",
+      "",
+      ""
+    ) }}
+  </div>
+
+  {{ currentWork(homepageCurrentWork) }}
+
+  <section class="home-course-tile" aria-label="Meisterkurse und Coaching">
+    <div class="home-course-tile__grid">
+      <div class="home-course-tile__main">
+        <div class="home-course-tile__photo" style="background-image: url('/assets/img/meisterkurse-tile.jpg');" aria-hidden="true"></div>
+        <h2 class="home-course-tile__heading">Meisterkurse &amp; Coaching</h2>
+        <a class="home-course-tile__card" href="/meisterkurse-coaching/" aria-label="Requiem Studies Part I ansehen">
+          <div class="home-course-tile__card-top">
+            <p class="pill-button pill-button--compact pill-button--negative home-course-tile__badge">Jetzt offen</p>
+            <h3 class="home-course-tile__card-title">Requiem Studies Part I</h3>
+          </div>
+          <span class="home-course-tile__card-link">Mehr erfahren <span aria-hidden="true">→</span></span>
+        </a>
+      </div>
+
+      <div class="home-course-tile__testimonials" aria-label="Rückmeldungen von Meisterkurs und Coaching">
+        <div class="editorial-carousel__carousel home-course-tile__carousel" data-editorial-carousel data-editorial-pause-on-hover="false" aria-roledescription="carousel" tabindex="0">
+          <div class="editorial-carousel__viewport">
+            <div class="editorial-carousel__track">
+              {% for item in homeFeedback %}
+                <article class="editorial-carousel__card editorial-carousel__slide{% if loop.first %} is-active{% endif %}" data-editorial-slide{% if not loop.first %} aria-hidden="true"{% endif %}>
+                  <blockquote class="editorial-carousel__quote">{{ item.quote }}</blockquote>
+                  <p class="editorial-carousel__attribution">{{ item.author }}{% if item.source %} · {{ item.source }}{% endif %}</p>
+                </article>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="home-course-tile__actions">
+      {{ pillButton("Alle Meisterkurse", "/meisterkurse-coaching/", "solid", true) }}
+    </div>
+  </section>
+
+  {{ editorialCarousel(
+    "home-press",
+    "Presse & Kritiken",
+    "Inszenierungen in der Presse",
+    "Ausgewählte Kritiken",
+    pressQuotes,
+    "quote",
+    "/assets/img/parsifal/parsifal-klaus-lefebvre-3302-cropped.jpg",
+    "Bühnenbild aus Parsifal am Goetheanum",
+    "Foto: Klaus Lefebvre",
+    "Publikationen ansehen",
+    "/publikationen/",
+    false,
+    "Parsifal"
+  ) }}
+
+  {{ editorialCarousel(
+    "home-impressionen",
+    "Impressionen",
+    "",
+    "Impressionen aus Proben, Vorträgen und Meisterkursen",
+    homepageImpressionen,
+    "photo"
+  ) }}
+
+  <div class="styleguide__full-bleed">
+    {{ marquee([
+      { "id": "deutsche-oper-berlin", "name": "Deutsche Oper Berlin", "logo": "/assets/img/logos/deutsche-oper-berlin.svg" },
+      { "name": "Goetheanum-Bühne Dornach", "logo": "/assets/img/logos/goetheanum-buehne.svg" },
+      { "name": "Oper Köln", "logo": "/assets/img/logos/oper-koeln.svg" },
+      { "id": "hamburgische-staatsoper", "name": "Hamburgische Staatsoper", "logo": "/assets/img/logos/hamburgische-staatsoper.svg" },
+      { "id": "hmt-leipzig", "name": "Hochschule für Musik und Theater Leipzig", "logo": "/assets/img/logos/hmt-leipzig.svg" },
+      { "name": "Odense Symfoniorkester", "logo": "/assets/img/logos/odense-symfoniorkester.svg" },
+      { "name": "Staatsoperette Dresden", "logo": "/assets/img/logos/staatsoperette-dresden.svg" }
+    ]) }}
+  </div>
+
+  <section class="home-closer" aria-label="Kontakt">
+    <div class="home-closer__grid">
+      <div class="home-closer__main">
+        <h2 class="home-closer__title">Kommen wir ins Gespräch</h2>
+
+        <div class="home-closer__inquiries" aria-label="Anfragen zu">
+          <p class="home-closer__inquiries-label">Anfragen zu</p>
+          <ul class="home-closer__inquiries-list">
+            <li>Regie &amp; Inszenierung</li>
+            <li>Meisterkurse &amp; Coaching</li>
+            <li>Vorträge &amp; Publikationen</li>
+            <li>Künstlerische Projekte</li>
+          </ul>
+        </div>
+
+        <div class="home-closer__actions">
+          {{ pillButton("Kontakt aufnehmen", "/kontakt/", "solid", true) }}
+        </div>
+      </div>
+
+      <figure class="home-closer__image">
+        <img src="/assets/img/zusammenarbeit-cache-27623773.jpg" alt="Jasmin Solfaghari im Gespräch" loading="lazy" decoding="async">
+      </figure>
+    </div>
+  </section>
+</div>

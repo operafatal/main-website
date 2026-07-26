@@ -1,0 +1,296 @@
+/* Home-only full-bleed sections: the Meisterkurse/Rückmeldungen tile pair and
+   the dark closer. (home-press-band and home-editorial-row, an earlier
+   design iteration superseded by .current-work / .editorial-carousel, were
+   removed here on 2026-07-25 — dead code, no template referenced them.) */
+
+.home-page {
+  display: grid;
+  gap: var(--space-8);
+}
+
+/* Meisterkurse & Coaching — one tile (2026-07-25: merged from a two-tile
+   pair; they belonged together conceptually and read as two unrelated
+   cards, so the seam/gap between them went away and the CTA + the
+   heading/card left edge are now shared). Razz asked to keep the exact
+   center split from the old two-tile version otherwise: left half stays
+   navy + photo, right half stays the light "grey" surface — so the merge
+   is structural (one tile, one button, aligned edges), not a color merge. */
+
+.home-course-tile {
+  position: relative;
+  overflow: hidden;
+  min-height: clamp(420px, 32vw, 480px);
+}
+
+.home-course-tile__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 0;
+  height: 100%;
+}
+
+.home-course-tile__main {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--space-5);
+  min-width: 0;
+  padding: var(--space-copy-padding);
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+
+.home-course-tile__photo {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-size: 135% auto;
+  background-position: 0% center;
+  filter: grayscale(1);
+  opacity: 0.55;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, transparent 24%, black 60%);
+  mask-image: linear-gradient(to right, transparent 0%, transparent 24%, black 60%);
+}
+
+.home-course-tile__heading {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-size: var(--font-size-section-heading);
+  font-weight: 500;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  text-wrap: balance;
+  color: var(--color-bg);
+}
+
+.home-course-tile__card {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--space-4);
+  width: min(100%, 24.5rem);
+  min-height: 0;
+  padding: var(--space-5);
+  background: var(--color-bg);
+  color: var(--color-text);
+  text-decoration: none;
+  border: 1px solid color-mix(in srgb, var(--color-bg) 22%, transparent);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+.home-course-tile__card:hover {
+  border-color: color-mix(in srgb, var(--color-bg) 36%, transparent);
+}
+
+.home-course-tile__card-top {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.home-course-tile__badge {
+  width: fit-content;
+  margin: 0;
+  font-weight: 500;
+}
+
+.home-course-tile__card-title {
+  margin: 0;
+  font-size: var(--font-size-card-heading);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--color-text);
+}
+
+.home-course-tile__card-link {
+  align-self: flex-end;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  letter-spacing: var(--tracking-nav);
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.home-course-tile__testimonials {
+  display: flex;
+  align-items: center;
+  min-height: 100%;
+  padding: var(--space-copy-padding);
+  background: var(--color-bg-subtle);
+  color: var(--color-text);
+}
+
+.home-course-tile__carousel {
+  width: 100%;
+}
+
+.home-course-tile__testimonials .editorial-carousel__slide,
+.home-course-tile__testimonials .editorial-carousel__card {
+  min-height: clamp(130px, 13vw, 180px);
+}
+
+.home-course-tile__testimonials .editorial-carousel__card {
+  padding: 0;
+}
+
+.home-course-tile__testimonials .editorial-carousel__quote {
+  quotes: "„" "“";
+}
+
+.home-course-tile__testimonials .editorial-carousel__quote::before {
+  content: open-quote;
+}
+
+.home-course-tile__testimonials .editorial-carousel__quote::after {
+  content: close-quote;
+}
+
+.home-course-tile__testimonials .editorial-carousel__quote::before,
+.home-course-tile__testimonials .editorial-carousel__quote::after {
+  font-family: var(--font-serif);
+}
+
+.home-course-tile__actions {
+  position: absolute;
+  z-index: 2;
+  right: var(--space-copy-padding);
+  bottom: var(--space-copy-padding);
+}
+
+.home-closer {
+  position: relative;
+  overflow: hidden;
+  min-height: clamp(420px, 32vw, 480px);
+}
+
+.home-closer__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 0;
+  height: 100%;
+}
+
+.home-closer__main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--space-6);
+  min-width: 0;
+  padding: var(--space-copy-padding);
+  background: var(--color-bg-subtle);
+  color: var(--color-text);
+}
+
+.home-closer__title {
+  margin: 0;
+  max-width: 12ch;
+  font-size: var(--font-size-section-heading);
+  font-weight: 500;
+  line-height: 0.92;
+  letter-spacing: -0.04em;
+  color: var(--color-text);
+}
+
+.home-closer__actions {
+  display: flex;
+}
+
+.home-closer__image {
+  margin: 0;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.home-closer__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 38%;
+}
+
+.home-closer__inquiries {
+  display: grid;
+  gap: var(--space-4);
+  width: 100%;
+  max-width: 26rem;
+}
+
+.home-closer__inquiries-label {
+  margin: 0;
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.home-closer__inquiries-list {
+  display: grid;
+  gap: var(--space-3);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.home-closer__inquiries-list li {
+  padding-top: var(--space-3);
+  border-top: 1px solid color-mix(in srgb, var(--color-accent) 14%, transparent);
+  font-family: var(--font-serif);
+  font-size: var(--font-size-card-heading);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--color-text);
+}
+
+@media (max-width: 720px) {
+  .home-course-tile__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-course-tile__main,
+  .home-course-tile__testimonials {
+    padding: var(--space-8) var(--space-6);
+  }
+
+  .home-course-tile__card {
+    width: min(100%, 100%);
+    padding: var(--space-3);
+  }
+
+  .home-course-tile__actions {
+    position: static;
+    display: flex;
+    justify-content: center;
+    margin-top: var(--space-6);
+  }
+
+  .home-closer__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-closer__main {
+    padding: var(--space-8) var(--space-6);
+  }
+
+  .home-closer__title {
+    max-width: 10ch;
+  }
+
+  .home-closer__image {
+    min-height: 320px;
+  }
+
+  .home-closer__inquiries {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,19 @@
+{#
+  Editorial list row for text-heavy archives (Werk, Publikationsliste,
+  Hochschul-Produktionen) — no card, no border box. See brand-site-baukasten.md.
+  year: catalogue-style number/date shown large on the left (e.g. "2023", "1996")
+  title, subtitle: main entry (subtitle usually the composer/author)
+  meta: short right-aligned detail (e.g. place, publisher)
+  href: optional — renders as <a> when present, plain row otherwise
+#}
+{% macro archiveRow(year, title, subtitle, meta, href) %}
+  {% set tag = "a" if href else "div" %}
+  <{{ tag }} class="archive-row"{% if href %} href="{{ href }}"{% if href | isExternalUrl %} target="_blank" rel="noopener noreferrer"{% endif %}{% endif %}>
+    <span class="archive-row__year">{{ year }}</span>
+    <span class="archive-row__main">
+      <span class="archive-row__title">{{ title }}</span>
+      {% if subtitle %}<span class="archive-row__subtitle">{{ subtitle }}</span>{% endif %}
+    </span>
+    {% if meta %}<span class="archive-row__meta">{{ meta }}</span>{% endif %}
+  </{{ tag }}>
+{% endmacro %}

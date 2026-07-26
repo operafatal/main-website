@@ -1,0 +1,29 @@
+---
+layout: base.njk
+title: Kontakt
+permalink: /kontakt/
+---
+{% from "components/pill-button.njk" import pillButton %}
+{% set contact = contactInfo %}
+
+<article class="contact-page">
+  <section class="contact-hero" aria-labelledby="kontakt-title">
+    <div class="contact-hero__copy">
+      <div>
+        <h1 class="contact-hero__title" id="kontakt-title">{{ contact.hero.title }}</h1>
+      </div>
+      <p class="contact-hero__lead">{{ contact.hero.lead }}</p>
+      <div class="contact-hero__actions">
+        {{ pillButton(contact.primaryEmail.display, contact.primaryEmail.href, "solid") }}
+        {{ pillButton(contact.masterclassPage.label, contact.masterclassPage.href, "ghost") }}
+        {{ pillButton(contact.coachingPage.label, contact.coachingPage.href, "ghost") }}
+      </div>
+    </div>
+    <figure class="contact-hero__visual">
+      <img src="{{ contact.hero.image.src }}" alt="{{ contact.hero.image.alt }}" decoding="async">
+      {% if contact.hero.image.credit %}
+        <figcaption class="contact-hero__credit">{{ contact.hero.image.credit }}</figcaption>
+      {% endif %}
+    </figure>
+  </section>
+</article>

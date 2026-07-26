@@ -1,0 +1,528 @@
+{
+  "updated": "2026-07-26",
+  "sourcesNote": "Termine aus solfaghari.com/termine, Goetheanum-Bühne, LinkedIn, Daniel Behle, Operabase sowie bestehenden lokalen Daten abgeglichen. Persönliche News werden nicht ausgespielt.",
+  "categories": [
+    { "slug": "alle", "label": "Alle" },
+    { "slug": "inszenierung", "label": "Inszenierungen" },
+    { "slug": "meisterkurs", "label": "Meisterkurse" },
+    { "slug": "vortrag", "label": "Vorträge" },
+    { "slug": "publikation", "label": "Publikationen" }
+  ],
+  "upcoming": [
+    {
+      "id": "der-schmetterling-2026",
+      "category": "inszenierung",
+      "categoryLabel": "Uraufführung",
+      "dateLabel": "10. Oktober 2026",
+      "sortDate": "2026-10-10",
+      "day": "10",
+      "month": "Okt 2026",
+      "title": "Der Schmetterling",
+      "subtitle": "Operette von Daniel Behle · Libretto Alain Claude Sulzer",
+      "location": "Eduard-von-Winterstein-Theater, Annaberg-Buchholz",
+      "summary": "Uraufführung der neuen Operette; Regie Jasmin Solfaghari, musikalische Leitung Bruno Borralhinho, Bühne und Kostüme Walter Schütze.",
+      "href": "/inszenierungen/der-schmetterling/",
+      "buttonLabel": "Mehr anzeigen",
+      "sources": [
+        { "label": "Solfaghari.com — Termine", "href": "https://www.solfaghari.com/termine/" },
+        { "label": "Daniel Behle — Projektankündigung", "href": "https://www.danielbehle.de/news-detail/schmetterling-opus-2.html" },
+        { "label": "Operabase", "href": "https://www.operabase.com/productions/der-schmetterling-487585/en" }
+      ]
+    },
+    {
+      "id": "wagner-tristan-ring-parsifal-2026-10",
+      "category": "meisterkurs",
+      "categoryLabel": "Meisterkurs",
+      "dateLabel": "20.–22. Oktober 2026",
+      "sortDate": "2026-10-20",
+      "day": "20–22",
+      "month": "Okt 2026",
+      "title": "Tristan | Ring | Parsifal",
+      "subtitle": "Kleine Wagner-Partien",
+      "location": "nosolo studios Stuttgart",
+      "summary": "Meisterkurs zu Musiktheater, Diktion und dramatischem Ausdruck; Abschlusskonzert am 22. Oktober.",
+      "href": "/meisterkurse-coaching/#meisterkurse:modal-wagner-tristan-ring-parsifal-2026-10",
+      "buttonLabel": "Details öffnen",
+      "sources": [
+        { "label": "Solfaghari.com — Meisterkurse & Lehre", "href": "https://www.solfaghari.com/meisterkurse-lehre/" }
+      ]
+    },
+    {
+      "id": "requiem-studies-part-i-2026",
+      "category": "meisterkurs",
+      "categoryLabel": "Meisterkurs",
+      "dateLabel": "27.–29. Oktober 2026",
+      "sortDate": "2026-10-27",
+      "day": "27–29",
+      "month": "Okt 2026",
+      "title": "Requiem Studies Part I",
+      "subtitle": "Seminar für Gesang & Bühneneurythmie",
+      "location": "nosolo studios Stuttgart",
+      "summary": "Arbeit an zentralen Themen aus den Requien von Mozart, Verdi und Brahms, gemeinsam mit Severin Fraser.",
+      "href": "/meisterkurse-coaching/#meisterkurse:modal-requiem-studies-part-i",
+      "buttonLabel": "Details öffnen",
+      "sources": [
+        { "label": "Solfaghari.com — Termine", "href": "https://www.solfaghari.com/termine/" }
+      ]
+    },
+    {
+      "id": "la-cabine-telephonique-2026",
+      "category": "inszenierung",
+      "categoryLabel": "Premiere",
+      "dateLabel": "4. und 11. Dezember 2026",
+      "sortDate": "2026-12-04",
+      "day": "4/11",
+      "month": "Dez 2026",
+      "title": "La cabine téléphonique",
+      "subtitle": "Opéra bouffe von Claude Arrieu",
+      "location": "Institut Français Berlin",
+      "summary": "Inszenierung und Ausstattung in der Reihe „Die lustigen Komponistinnen. Frauen im komischen Musiktheater um 1960“; Veranstalter Jazz am Helmholtzplatz e.V. / Dr. Regina Câmara.",
+      "href": "/inszenierungen/la-cabine-telephonique/",
+      "buttonLabel": "Mehr anzeigen",
+      "sources": [
+        { "label": "LinkedIn — Jasmin Solfaghari", "href": "https://de.linkedin.com/in/jasmin-solfaghari-a6ba3127" }
+      ]
+    },
+    {
+      "id": "vorsingetraining-diktion-praesenz-2026",
+      "category": "meisterkurs",
+      "categoryLabel": "Meisterkurs",
+      "dateLabel": "16.–18. Dezember 2026",
+      "sortDate": "2026-12-16",
+      "day": "16–18",
+      "month": "Dez 2026",
+      "title": "Vorsingtraining | Diktion | Präsenz",
+      "subtitle": "Meisterkurs mit Abschlusskonzert",
+      "location": "Aula des KHG, Freiburg",
+      "summary": "Drei Tage Arbeit an Partien für Vorsingen, Diktion und szenischer Präsenz; Abschlusskonzert am 18. Dezember.",
+      "href": "/meisterkurse-coaching/#meisterkurse:modal-vorsingetraining-diktion-praesenz",
+      "buttonLabel": "Details öffnen",
+      "sources": [
+        { "label": "Solfaghari.com — Termine", "href": "https://www.solfaghari.com/termine/" }
+      ]
+    },
+    {
+      "id": "wagner-lecture-southern-california-2026",
+      "category": "vortrag",
+      "categoryLabel": "Vortrag",
+      "dateLabel": "22. Dezember 2026",
+      "sortDate": "2026-12-22",
+      "day": "22",
+      "month": "Dez 2026",
+      "title": "Wagner Lecture",
+      "subtitle": "Zoom-Vortrag",
+      "location": "Wagner Society of Southern California, Los Angeles",
+      "summary": "Online-Vortrag im Umfeld der Wagner Society of Southern California; Detailtitel öffentlich noch nicht belastbar nachgewiesen.",
+      "buttonLabel": "In Prüfung",
+      "status": "needs-verification",
+      "sources": [
+        { "label": "Solfaghari.com — Termine", "href": "https://www.solfaghari.com/termine/" }
+      ]
+    },
+    {
+      "id": "pflanzen-oper-freiburg-2027",
+      "category": "vortrag",
+      "categoryLabel": "Vortrag",
+      "dateLabel": "3. oder 4. März 2027",
+      "sortDate": "2027-03-03",
+      "day": "3/4",
+      "month": "Mär 2027",
+      "title": "Kräuter und Wurzeln findet ein Jeder sich selbst – Pflanzen in der Oper",
+      "subtitle": "Vortrag beim Richard-Wagner-Verband Freiburg",
+      "location": "Freiburg",
+      "summary": "Vortragstermin aus der übernommenen Terminquelle; exaktes Datum muss vor Livegang bei Jasmin/Razz oder Veranstalter geprüft werden.",
+      "buttonLabel": "In Prüfung",
+      "status": "needs-verification",
+      "sources": [
+        { "label": "Solfaghari.com — Termine", "href": "https://www.solfaghari.com/termine/" }
+      ]
+    },
+    {
+      "id": "parsifal-goetheanum-2027",
+      "category": "inszenierung",
+      "categoryLabel": "Inszenierung",
+      "dateLabel": "12./14./21. März 2027",
+      "sortDate": "2027-03-12",
+      "day": "12/14/21",
+      "month": "Mär 2027",
+      "title": "Parsifal",
+      "subtitle": "Richard Wagner · Goetheanum Dornach",
+      "location": "Goetheanum Dornach bei Basel",
+      "summary": "Drei Aufführungen der Parsifal-Produktion; Inszenierung Jasmin Solfaghari, Regie Eurythmie Stefan Hasler.",
+      "href": "/inszenierungen/parsifal/",
+      "buttonLabel": "Mehr anzeigen",
+      "sources": [
+        { "label": "Goetheanum-Bühne — Parsifal 2027", "href": "https://www.goetheanum-buehne.ch/projekte/wagners-parsifal-2026" }
+      ]
+    },
+    {
+      "id": "parsifal-retrospektive-2027",
+      "category": "vortrag",
+      "categoryLabel": "Rahmenprogramm",
+      "dateLabel": "13. März 2027",
+      "sortDate": "2027-03-13",
+      "day": "13",
+      "month": "Mär 2027",
+      "title": "„Zum Raum wird hier die Zeit“ – Parsifal am Goetheanum 2023–2027",
+      "subtitle": "Künstlerische Retrospektive",
+      "location": "Goetheanum Dornach",
+      "summary": "Retrospektive mit Stefan Hasler, Jasmin Solfaghari und Walter Schütze im Rahmenprogramm der Parsifal-Aufführungen.",
+      "buttonLabel": "Mehr anzeigen",
+      "details": {
+        "time": "15 Uhr",
+        "tags": ["Rahmenprogramm", "Parsifal", "Goetheanum"],
+        "intro": [
+          "Die Einführung betrachtet die Jahre 2023 bis 2027 der Goetheanum-Produktion und führt künstlerische Perspektiven von Regie, Eurythmie und Ausstattung zusammen.",
+          "Mit Stefan Hasler, Jasmin Solfaghari und Walter Schütze."
+        ],
+        "facts": [
+          { "label": "Datum", "value": "13. März 2027" },
+          { "label": "Zeit", "value": "15 Uhr" },
+          { "label": "Ort", "value": "Goetheanum Dornach" }
+        ]
+      },
+      "sources": [
+        { "label": "Goetheanum-Bühne — Parsifal 2027", "href": "https://www.goetheanum-buehne.ch/projekte/wagners-parsifal-2026" }
+      ]
+    },
+    {
+      "id": "kundry-vortrag-2027",
+      "category": "vortrag",
+      "categoryLabel": "Vortrag",
+      "dateLabel": "20. März 2027",
+      "sortDate": "2027-03-20",
+      "day": "20",
+      "month": "Mär 2027",
+      "title": "Wer hat Angst vor Kundry?",
+      "subtitle": "Weiblichkeit und Erkenntnis in Wagners Parsifal",
+      "location": "Goetheanum Dornach",
+      "summary": "Vortrag von Jasmin Solfaghari beim Parsifal-Thementag am Goetheanum.",
+      "buttonLabel": "Mehr anzeigen",
+      "details": {
+        "time": "15 Uhr",
+        "tags": ["Vortrag", "Parsifal", "Kundry"],
+        "intro": [
+          "Der Vortrag gehört zum Parsifal-Thementag 2027 am Goetheanum und widmet sich Kundry als Figur zwischen Weiblichkeit, Erkenntnis, Schuld, Sehnsucht und Erlösung.",
+          "Die Veranstaltung steht im unmittelbaren Umfeld der Parsifal-Aufführungen am Goetheanum."
+        ],
+        "facts": [
+          { "label": "Datum", "value": "20. März 2027" },
+          { "label": "Zeit", "value": "15 Uhr" },
+          { "label": "Ort", "value": "Goetheanum Dornach" }
+        ]
+      },
+      "sources": [
+        { "label": "Goetheanum-Bühne — Parsifal 2027", "href": "https://www.goetheanum-buehne.ch/projekte/wagners-parsifal-2026" }
+      ]
+    }
+  ],
+  "archive": [
+    {
+      "year": "2026",
+      "items": [
+        {
+          "id": "wagner-masterclass-muenchen-2026",
+          "category": "meisterkurs",
+          "categoryLabel": "Meisterklasse",
+          "dateLabel": "9.–12. April 2026",
+          "sortDate": "2026-04-09",
+          "day": "9–12",
+          "month": "Apr 2026",
+          "title": "Tristan | Ring | Parsifal",
+          "subtitle": "Musiktheater · Diktion · kleine Wagner-Partien",
+          "location": "Richard-Wagner-Verband München",
+          "summary": "Meisterklasse mit Konzert; Ort in älteren Quellen widersprüchlich und vor Livegang zu prüfen.",
+          "sources": [
+            { "label": "Solfaghari.com — Termine", "href": "https://www.solfaghari.com/termine/" },
+            { "label": "Solfaghari.com — Meisterkurse & Lehre", "href": "https://www.solfaghari.com/meisterkurse-lehre/" }
+          ]
+        },
+        {
+          "id": "goetheanum-pflanzen-oper-2026",
+          "category": "vortrag",
+          "categoryLabel": "Vortrag",
+          "dateLabel": "28. März 2026",
+          "sortDate": "2026-03-28",
+          "day": "28",
+          "month": "Mär 2026",
+          "title": "Kräuter und Wurzeln findet ein Jeder sich selbst – Pflanzen in der Oper",
+          "subtitle": "Parsifal-Thementag",
+          "location": "Goetheanum Dornach",
+          "summary": "Vortrag beim Parsifal-Thementag am Goetheanum.",
+          "detailsSource": "event-modal-goetheanum-pflanzen-oper-2026",
+          "sources": [
+            { "label": "Goetheanum-Bühne — Parsifal 2026", "href": "https://www.goetheanum-buehne.ch/projekte/wagners-parsifal-2026-1" }
+          ]
+        },
+        {
+          "id": "parsifal-goetheanum-2026",
+          "category": "inszenierung",
+          "categoryLabel": "Inszenierung",
+          "dateLabel": "20./22./29. März 2026",
+          "sortDate": "2026-03-20",
+          "day": "20/22/29",
+          "month": "Mär 2026",
+          "title": "Parsifal",
+          "subtitle": "Richard Wagner · Goetheanum Dornach",
+          "location": "Goetheanum Dornach bei Basel",
+          "summary": "Vierte Wiederaufnahme der Parsifal-Inszenierung am Goetheanum.",
+          "href": "/inszenierungen/parsifal/",
+          "buttonLabel": "Mehr anzeigen",
+          "sources": [
+            { "label": "Goetheanum-Bühne — Parsifal 2026", "href": "https://www.goetheanum-buehne.ch/projekte/wagners-parsifal-2026-1" }
+          ]
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "items": [
+        {
+          "id": "buchpraesentation-tuebingen-2025",
+          "category": "publikation",
+          "categoryLabel": "Buchpräsentation",
+          "dateLabel": "11. November 2025",
+          "sortDate": "2025-11-11",
+          "day": "11",
+          "month": "Nov 2025",
+          "title": "Ich schreite kaum, doch wähn' ich mich schon weit. Parsifal am Goetheanum",
+          "subtitle": "Buchpräsentation",
+          "location": "Universität Tübingen",
+          "summary": "Buchpräsentation am Musikwissenschaftlichen Institut der Universität Tübingen.",
+          "detailsSource": "event-modal-buchpraesentation-tuebingen-2025"
+        },
+        {
+          "id": "rwv-hamburg-parsifal-2025",
+          "category": "vortrag",
+          "categoryLabel": "Vortrag",
+          "dateLabel": "6. Oktober 2025",
+          "sortDate": "2025-10-06",
+          "day": "6",
+          "month": "Okt 2025",
+          "title": "Ich schreite kaum, doch wähn' ich mich schon weit. Parsifal am Goetheanum",
+          "subtitle": "Vortrag",
+          "location": "Richard-Wagner-Verband Hamburg",
+          "summary": "Vortrag über die Entstehung und Regiesprache von Parsifal am Goetheanum.",
+          "detailsSource": "event-modal-rwv-hamburg-parsifal-2025"
+        },
+        {
+          "id": "rwv-magdeburg-regiesprache-2025",
+          "category": "vortrag",
+          "categoryLabel": "Vortrag",
+          "dateLabel": "27. September 2025",
+          "sortDate": "2025-09-27",
+          "day": "27",
+          "month": "Sep 2025",
+          "title": "Die Sprache der Opern-Regie zwischen Zerrissenheit und Anpassung",
+          "subtitle": "Rahmenprogramm zur Tannhäuser-Neuproduktion",
+          "location": "Richard-Wagner-Verband Magdeburg",
+          "summary": "Vortrag über Regiesprache im Spannungsfeld von Werkbezug und Gegenwart.",
+          "detailsSource": "event-modal-rwv-magdeburg-regiesprache-2025"
+        },
+        {
+          "id": "wagner-meisterkurs-freiburg-2025",
+          "category": "meisterkurs",
+          "categoryLabel": "Meisterkurs",
+          "dateLabel": "8.–10. September 2025",
+          "sortDate": "2025-09-08",
+          "day": "8–10",
+          "month": "Sep 2025",
+          "title": "Tristan – Ring – Parsifal",
+          "subtitle": "Wagner Meisterkurs",
+          "location": "KHG Freiburg",
+          "summary": "Meisterkurs anlässlich 75 Jahre Neugründung des Richard-Wagner-Verbandes Freiburg."
+        },
+        {
+          "id": "zirkusprinzessin-neustrelitz-2025",
+          "category": "inszenierung",
+          "categoryLabel": "Premiere",
+          "dateLabel": "18. Juli 2025",
+          "sortDate": "2025-07-18",
+          "day": "18",
+          "month": "Jul 2025",
+          "title": "Die Zirkusprinzessin",
+          "subtitle": "Emerich Kálmán",
+          "location": "Theater und Orchester Neubrandenburg / Neustrelitz",
+          "summary": "Premiere der Inszenierung mit Dialogen von Jasmin Solfaghari.",
+          "href": "/inszenierungen/die-zirkusprinzessin/",
+          "buttonLabel": "Mehr anzeigen"
+        },
+        {
+          "id": "rotary-berlin-bildersprache-2025",
+          "category": "vortrag",
+          "categoryLabel": "Vortrag",
+          "dateLabel": "24. April 2025",
+          "sortDate": "2025-04-24",
+          "day": "24",
+          "month": "Apr 2025",
+          "title": "Bildersprache",
+          "subtitle": "Vortrag",
+          "location": "Rotary Berlin",
+          "summary": "Vortrag über Theaterbilder, Regie und Opernwahrnehmung.",
+          "detailsSource": "event-modal-rotary-berlin-bildersprache-2025"
+        },
+        {
+          "id": "parsifal-goetheanum-2025",
+          "category": "inszenierung",
+          "categoryLabel": "Inszenierung",
+          "dateLabel": "13./18./20. April 2025",
+          "sortDate": "2025-04-13",
+          "day": "13/18/20",
+          "month": "Apr 2025",
+          "title": "Parsifal",
+          "subtitle": "Richard Wagner · Goetheanum Dornach",
+          "location": "Goetheanum Dornach bei Basel",
+          "summary": "Wiederaufnahme der Parsifal-Inszenierung am Goetheanum.",
+          "href": "/inszenierungen/parsifal/",
+          "buttonLabel": "Mehr anzeigen"
+        },
+        {
+          "id": "buchmesse-leipzig-schott-2025",
+          "category": "publikation",
+          "categoryLabel": "Buchpräsentation",
+          "dateLabel": "30. März 2025",
+          "sortDate": "2025-03-30",
+          "day": "30",
+          "month": "Mär 2025",
+          "title": "Ich schreite kaum, doch wähn' ich mich schon weit. Parsifal am Goetheanum",
+          "subtitle": "Leipziger Buchmesse · Schott",
+          "location": "Leipziger Buchmesse",
+          "summary": "Buchpräsentation am Stand des Schott Verlags.",
+          "detailsSource": "event-modal-buchmesse-leipzig-schott-2025"
+        },
+        {
+          "id": "rwv-nuernberg-parsifal-2025",
+          "category": "vortrag",
+          "categoryLabel": "Vortrag",
+          "dateLabel": "15. Februar 2025 / verschoben auf November",
+          "sortDate": "2025-02-15",
+          "day": "15",
+          "month": "Feb 2025",
+          "title": "Ich schreite kaum, doch wähn’ ich mich schon weit",
+          "subtitle": "Vortrag · verschoben",
+          "location": "Richard-Wagner-Verband Nürnberg",
+          "summary": "Vortrag über Parsifal am Goetheanum; ursprünglich angekündigter Termin wurde verschoben.",
+          "detailsSource": "event-modal-rwv-nuernberg-parsifal-2025"
+        },
+        {
+          "id": "eurythmeum-stuttgart-parsifal-2025",
+          "category": "vortrag",
+          "categoryLabel": "Vortrag",
+          "dateLabel": "13. Februar 2025",
+          "sortDate": "2025-02-13",
+          "day": "13",
+          "month": "Feb 2025",
+          "title": "Parsifal am Goetheanum",
+          "subtitle": "Vortrag mit Gespräch und Buchverkauf",
+          "location": "Eurythmeum Stuttgart",
+          "summary": "Vortrag im Eurythmeum Stuttgart mit anschließendem Gespräch.",
+          "detailsSource": "event-modal-eurythmeum-stuttgart-parsifal-2025"
+        },
+        {
+          "id": "buchpraesentation-basel-2025",
+          "category": "publikation",
+          "categoryLabel": "Buchpräsentation",
+          "dateLabel": "11. Februar 2025",
+          "sortDate": "2025-02-11",
+          "day": "11",
+          "month": "Feb 2025",
+          "title": "Ich schreite kaum, doch wähn' ich mich schon weit. Parsifal am Goetheanum",
+          "subtitle": "Buchpräsentation mit Alain Claude Sulzer",
+          "location": "Bider & Tanner, Basel",
+          "summary": "Buchpräsentation und Gespräch in Basel.",
+          "detailsSource": "event-modal-buchpraesentation-basel-2025"
+        },
+        {
+          "id": "rwv-muenchen-parsifal-2025",
+          "category": "vortrag",
+          "categoryLabel": "Vortrag",
+          "dateLabel": "11. Januar 2025",
+          "sortDate": "2025-01-11",
+          "day": "11",
+          "month": "Jan 2025",
+          "title": "Ich schreite kaum, doch wähn' ich mich schon weit",
+          "subtitle": "Vortrag",
+          "location": "Richard-Wagner-Verband München",
+          "summary": "Vortrag über die Dornacher Parsifal-Produktion.",
+          "detailsSource": "event-modal-rwv-muenchen-parsifal-2025"
+        }
+      ]
+    },
+    {
+      "year": "2024",
+      "items": [
+        {
+          "id": "toulouse-parsifal-2024",
+          "category": "vortrag",
+          "categoryLabel": "Conversation",
+          "dateLabel": "16. November 2024",
+          "sortDate": "2024-11-16",
+          "day": "16",
+          "month": "Nov 2024",
+          "title": "Je marche à peine, mais je me sens déjà loin",
+          "subtitle": "Parsifal à Dornach",
+          "location": "Cercle Wagner de Toulouse Occitanie",
+          "summary": "Französischsprachige Conversation über Parsifal in Dornach.",
+          "detailsSource": "event-modal-toulouse-parsifal-2024"
+        },
+        {
+          "id": "rwv-magdeburg-parsifal-2024",
+          "category": "vortrag",
+          "categoryLabel": "Vortrag",
+          "dateLabel": "22. Oktober 2024",
+          "sortDate": "2024-10-22",
+          "day": "22",
+          "month": "Okt 2024",
+          "title": "Ich schreite kaum, doch wähn’ ich mich schon weit. Über Parsifal am Goetheanum 2023/24",
+          "subtitle": "Vortrag",
+          "location": "Richard-Wagner-Verband Magdeburg",
+          "summary": "Vortrag über Entstehung und Konzeption von Parsifal am Goetheanum.",
+          "detailsSource": "event-modal-rwv-magdeburg-parsifal-2024"
+        },
+        {
+          "id": "lesung-klub-alsergrund-2024",
+          "category": "publikation",
+          "categoryLabel": "Lesung",
+          "dateLabel": "18. Oktober 2024",
+          "sortDate": "2024-10-18",
+          "day": "18",
+          "month": "Okt 2024",
+          "title": "Opernführer für Einsteiger",
+          "subtitle": "Lesung",
+          "location": "Klub Alsergrund, Wien",
+          "summary": "Lesung aus dem Opernführer für Einsteiger, moderiert von Ivaylo Guberov.",
+          "detailsSource": "event-modal-lesung-klub-alsergrund-2024"
+        },
+        {
+          "id": "la-opera-league-parsifal-2024",
+          "category": "vortrag",
+          "categoryLabel": "Lecture",
+          "dateLabel": "29. September 2024",
+          "sortDate": "2024-09-29",
+          "day": "29",
+          "month": "Sep 2024",
+          "title": "I barely walk, but I already feel far",
+          "subtitle": "Directing Parsifal am Goetheanum 2023/24",
+          "location": "Wagner Society of Southern California / L.A. Opera League",
+          "summary": "Englischsprachiger Vortrag in Los Angeles über die Regie von Parsifal am Goetheanum.",
+          "detailsSource": "event-modal-la-opera-league-parsifal-2024"
+        },
+        {
+          "id": "parsifal-goetheanum-2024",
+          "category": "inszenierung",
+          "categoryLabel": "Inszenierung",
+          "dateLabel": "24./29./31. März 2024",
+          "sortDate": "2024-03-24",
+          "day": "24/29/31",
+          "month": "Mär 2024",
+          "title": "Parsifal",
+          "subtitle": "Richard Wagner · Goetheanum Dornach",
+          "location": "Goetheanum Dornach bei Basel",
+          "summary": "Parsifal am Goetheanum in der Inszenierung von Jasmin Solfaghari.",
+          "href": "/inszenierungen/parsifal/",
+          "buttonLabel": "Mehr anzeigen"
+        }
+      ]
+    }
+  ]
+}

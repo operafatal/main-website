@@ -1,0 +1,9 @@
+{% macro quoteStrip(quote, attribution) %}
+  <section class="quote-strip" aria-label="Highlighted quote">
+    <div class="quote-strip__inner">
+      <blockquote class="quote-strip__quote">{{ quote }}</blockquote>
+      <p class="quote-strip__attribution">{{ attribution }}</p>
+    </div>
+  </section>
+{% endmacro %}
+

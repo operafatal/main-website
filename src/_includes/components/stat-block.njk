@@ -1,0 +1,10 @@
+{% macro statBlock(stats) %}
+  <section class="stat-block" aria-label="Kennzahlen">
+    {% for stat in stats %}
+      <div class="stat-block__item">
+        <div class="stat-block__number">{{ stat.number }}</div>
+        <div class="stat-block__label">{{ stat.label }}</div>
+      </div>
+    {% endfor %}
+  </section>
+{% endmacro %}

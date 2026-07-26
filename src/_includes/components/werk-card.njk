@@ -1,0 +1,30 @@
+{% macro werkCard(item) %}
+  <article class="werk-card{% if item.featured %} werk-card--featured{% endif %}">
+    <a class="werk-card__link" href="{{ item.href }}" aria-label="Mehr zur Inszenierung {{ item.title }}">
+      <figure class="werk-card__visual"{% if item.visual and (item.visual.cardPosition or item.visual.position or item.visual.cardScale) %} style="{% if item.visual.cardPosition or item.visual.position %}--werk-card-object-position: {{ item.visual.cardPosition or item.visual.position }};{% endif %}{% if item.visual.cardScale %} --werk-card-image-scale: {{ item.visual.cardScale }}; --werk-card-image-hover-scale: {{ item.visual.cardHoverScale or item.visual.cardScale }};{% endif %}"{% endif %}>
+        {% if item.visual and item.visual.type == "image" %}
+          <img src="{{ item.visual.cardSrc or item.visual.src }}" alt="{{ item.visual.cardAlt or item.visual.alt }}" loading="lazy" decoding="async">
+        {% else %}
+          <span class="werk-card__visual-field" style="--werk-card-color: {{ item.visual.color if item.visual else '#0f2657' }};" aria-hidden="true"></span>
+        {% endif %}
+      </figure>
+
+      <div class="werk-card__body">
+        <div class="werk-card__topline">
+          <span>{{ item.year }}</span>
+          <span class="werk-card__separator" aria-hidden="true">·</span>
+          <span>{{ item.categoryLabel }}</span>
+        </div>
+        <h3 class="werk-card__title">{{ item.title }}</h3>
+        <p class="werk-card__meta">{{ item.composer }}</p>
+        <p class="werk-card__meta">{{ item.place }}</p>
+        {% if item.note %}
+          <p class="werk-card__note">{{ item.note }}</p>
+        {% elif item.reviews and item.reviews[0] %}
+          <p class="werk-card__note">Pressestimme: {{ item.reviews[0].source }}</p>
+        {% endif %}
+        <span class="werk-card__cta">Mehr zur Inszenierung <span aria-hidden="true">→</span></span>
+      </div>
+    </a>
+  </article>
+{% endmacro %}

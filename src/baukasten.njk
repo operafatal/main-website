@@ -1,0 +1,103 @@
+---
+layout: base.njk
+title: Baukasten
+---
+{% from "components/archive-row.njk" import archiveRow %}
+{% from "components/spotlight.njk" import spotlight %}
+{% from "components/credit-list.njk" import creditList %}
+{% from "components/pull-quote.njk" import pullQuote %}
+{% from "components/date-row.njk" import dateRow %}
+{% from "components/timeline.njk" import timeline %}
+{% from "components/offer-panels.njk" import offerPanels %}
+
+<div class="styleguide styleguide__page">
+  <section class="styleguide__section">
+    <h2 class="styleguide__section-title">Masterplan</h2>
+    <p class="styleguide__section-copy">Vollständiger Seiten-für-Seite-Plan für Werk, Meisterkurse, Lehre &amp; Vorträge, Publikationen, Aktuelles, Über mich und Kontakt steht in <code>docs/main-tasks/brand-site-baukasten.md</code> (im Doku-Repo, nicht Teil dieser Seite). Diese Seite zeigt die zwei neuen Bausteine daraus konkret, mit echten Inhalten.</p>
+  </section>
+
+  <section class="styleguide__section" id="archive-row">
+    <h2 class="styleguide__section-title">Archive-Row — für Werk, Publikationsliste, Hochschul-Produktionen</h2>
+    <p class="styleguide__section-copy">Kein Rahmen, keine Box. Für Listen mit vielen Einträgen, von denen die meisten kein Foto haben (bei Werk: 34 von 37 Produktionen). Trennlinie statt Kartenrand, dünner Navy-Akzentstrich bei Hover statt Schatten.</p>
+    <div class="archive-row-list">
+      {{ archiveRow("2018", "Der Ring des Nibelungen", "Richard Wagner", "Odense") }}
+      {{ archiveRow("2013", "La Cenerentola", "Gioacchino Rossini", "Theater an der Wien in der Kammeroper") }}
+      {{ archiveRow("2011", "Albert Herring", "Benjamin Britten", "Hochschule für Musik und Theater Leipzig") }}
+      {{ archiveRow("2009", "Die beiden Pädagogen", "Felix Mendelssohn Bartholdy", "HMT Leipzig / Ludwigsburger Schlossfestspiele") }}
+      {{ archiveRow("2008", "Tannhäuser", "Richard Wagner", "Oper Köln") }}
+    </div>
+  </section>
+
+  <section class="styleguide__section" id="spotlight">
+    <h2 class="styleguide__section-title">Spotlight — für den aktuellsten Meisterkurs, featured Werke, das Publikations-Buch</h2>
+    <p class="styleguide__section-copy">Verallgemeinerte Version des „Aktuelles"-Highlights von der Startseite, jetzt als eigenständiger Baustein — mit echtem Foto oder, wo noch keins im Repo liegt, mit einem Farbfeld statt Platzhalterbild.</p>
+    {{ spotlight(
+      "27.–29.10.2026 · Meisterkurs",
+      "Requiem Studies Part I",
+      "Gesang & Bühneneurythmie · Jasmin Solfaghari & Severin Fraser",
+      "Sänger:innen und Eurythmist:innen arbeiten erstmals parallel an szenischen Umsetzungen aus den Requien von Mozart, Verdi und Brahms – an der Schnittstelle von Stimme, Bewegung und Ausdruck.",
+      { "type": "image", "src": "/assets/img/requiem-studies.webp", "alt": "Requiem Studies Seminar für Gesang und Bühneneurythmie in den nosolo studios Stuttgart", "credit": "Foto: nosolo studios" },
+      "Alle Meisterkurse",
+      "/meisterkurse-coaching/"
+    ) }}
+    <p class="styleguide__section-copy" style="margin-top: var(--space-6);">Dieselbe Komponente ohne Foto — Farbfeld-Platzhalter, bis ein echtes Bild vorliegt:</p>
+    {{ spotlight(
+      "2008 · Inszenierung",
+      "Tannhäuser",
+      "Richard Wagner · Oper Köln",
+      "Musikalische Leitung: Markus Stenz. Bühne: Frank Philipp Schlössmann.",
+      { "type": "color", "color": "#5b2a3a" }
+    ) }}
+  </section>
+
+  <section class="styleguide__section" id="credit-list">
+    <h2 class="styleguide__section-title">Credit-List — für Werk-Detail (Team einer Produktion)</h2>
+    <p class="styleguide__section-copy">Kompakte Definitionsliste für die Credits, die schon in <code>werk.json</code> stecken, aber bisher nirgends angezeigt werden — hier am Beispiel Parsifal.</p>
+    {{ creditList([
+      { "label": "Idee & Produzent", "value": "Alexander von Glenck" },
+      { "label": "Musikalische Leitung", "value": "Roland Fister" },
+      { "label": "Regie Eurythmie", "value": "Stefan Hasler" },
+      { "label": "Bühne / Kostüme / Video", "value": "Walter Schütze" },
+      { "label": "Chorleitung", "value": "Andreas Klippert" }
+    ]) }}
+  </section>
+
+  <section class="styleguide__section" id="pull-quote">
+    <h2 class="styleguide__section-title">Pull-Quote — einzelnes Zitat in Fließtext-Seiten</h2>
+    <p class="styleguide__section-copy">Für Publikationen/Lehre &amp; Vorträge/Über mich, wenn nur ein Zitat an einer Stelle sitzen soll — ohne die Karussell-Maschinerie der großen Presse-Sektion.</p>
+    {{ pullQuote("„Ein sinnvolles Geschenk!“", "Roland Dippel", "Leipziger Volkszeitung, über „Crashkurs Oper“") }}
+  </section>
+
+  <section class="styleguide__section" id="date-row">
+    <h2 class="styleguide__section-title">Date-Row — für Aktuelles</h2>
+    <p class="styleguide__section-copy">Datum groß wie auf einem Programmzettel, damit die Terminliste beim Scannen sofort lesbar bleibt statt wie eine Tabelle zu wirken.</p>
+    <div class="archive-row-list">
+      {{ dateRow("10.", "OKT · URAUFFÜHRUNG", "Der Schmetterling", "Eduard-von-Winterstein-Theater, Annaberg-Buchholz") }}
+      {{ dateRow("20.", "OKT · MEISTERKURS", "Wagner: Tristan · Ring · Parsifal", "nosolo studios Stuttgart") }}
+      {{ dateRow("27.", "OKT · MEISTERKURS", "Requiem Studies Part I", "nosolo studios Stuttgart") }}
+    </div>
+  </section>
+
+  <section class="styleguide__section" id="timeline">
+    <h2 class="styleguide__section-title">Timeline — Karriere-Stationen für Über mich</h2>
+    <p class="styleguide__section-copy">Bewusst keine gerade Linie mit Knotenpunkten (wirkt statisch) — die Zeilen verschieben sich leicht gegeneinander, bleiben aber durch die gemeinsame Jahres-Spalte klar lesbar.</p>
+    {{ timeline([
+      { "year": "2018–heute", "text": "Leitung der Abteilung Oper/Musiktheater bei PAMY Mediaproductions — Produktionsleitung & Regie." },
+      { "year": "2014–2024", "text": "Initiatorin und Jury-Vorsitzende des Wettbewerbs um den Richard-Wagner-Nachwuchspreis Leipzig." },
+      { "year": "2006–2011", "text": "Professorin für Dramatischen Unterricht, Hochschule für Musik und Theater Leipzig." },
+      { "year": "2004–2006", "text": "Oberspielleiterin der Deutschen Oper Berlin." },
+      { "year": "2001–2004", "text": "Oberspielleiterin, Stadttheater Bremerhaven (13 Inszenierungen)." },
+      { "year": "seit 1997", "text": "Zahlreiche Inszenierungen im In- und Ausland aus allen Epochen." }
+    ]) }}
+  </section>
+
+  <section class="styleguide__section" id="offer-panels">
+    <h2 class="styleguide__section-title">Offer-Panels — für Lehre &amp; Vorträge</h2>
+    <p class="styleguide__section-copy">Bewusst keine gleichförmigen Karten (verboten seit dem ersten Home-Durchlauf, siehe brand-site-design.md) — ein größerer Block, kleinere daneben, nur Typografie und eine dünne obere Trennlinie statt Rahmen.</p>
+    {{ offerPanels([
+      { "title": "Einzelcoaching", "text": "Vorbereitung für Vorsingen, Erarbeitung von Rollen, Diktion auch in der Fremdsprache, Dialogtraining — auch via Zoom/FaceTime." },
+      { "title": "Masterclasses für Opernstudios", "text": "Vorsingen, Rollenarbeit, Diktion, Ensembletraining für Sänger:innen in Opernstudios." },
+      { "title": "Vorträge", "text": "Mehrsprachige Vorträge zu Oper, Wagner und Musiktheater für Richard-Wagner-Verbände und internationale Gesellschaften." }
+    ]) }}
+  </section>
+</div>

@@ -1,0 +1,65 @@
+{#
+  Timeline tile for a single masterclass. Order (top to bottom): status
+  badge, then a "header" block pairing date + location (both prominent —
+  the two facts people scan for first: when and where), then the project
+  name (large), a short description, and composer/genre tags as small
+  chips so relevance is visible at a glance. One flowing chronological list
+  (see `chronological` filter) instead of three headed status groups, so the
+  status badge + tile treatment alone carry the offen/demnaechst/vergangen
+  distinction: offen = solid navy fill, demnaechst = grey fill, vergangen =
+  white + faint-grey outline (outline tone matches text tone).
+  offen/demnaechst: the whole card is a button opening that course's modal
+  (course-modal.njk) — full details + how to apply, no separate landing
+  page needed for a funnel this simple. vergangen: plain, non-interactive —
+  nothing to apply to anymore.
+  course.status: "offen" | "demnaechst" | "vergangen"
+#}
+{% macro coursePreviewCard(course) %}
+  {% set statusLabel = "Jetzt offen" if course.status == "offen" else ("Demnächst" if course.status == "demnaechst" else "Vergangen") %}
+  {% if course.details %}
+    <button type="button" class="course-preview-card course-preview-card--{{ course.status }}" data-course-modal-open="modal-{{ course.id }}" aria-label="{{ course.name }} — Details &amp; Anmeldung">
+      <span class="course-preview-card__badge">{{ statusLabel }}</span>
+      <div class="course-preview-card__header">
+        <p class="course-preview-card__date">{{ course.date }}</p>
+        <p class="course-preview-card__location">{{ course.location }}</p>
+      </div>
+      <h3 class="course-preview-card__name">{{ course.name }}</h3>
+      {% if course.description %}
+        <p class="course-preview-card__description">{{ course.description }}</p>
+      {% endif %}
+      {% if course.tags and course.tags.length %}
+        <ul class="course-preview-card__tags">
+          {% for tag in course.tags %}
+            <li class="course-preview-card__tag">{{ tag }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+      {% if course.veranstalter %}
+        <p class="course-preview-card__veranstalter">{{ course.veranstalter }}</p>
+      {% endif %}
+      <span class="course-preview-card__more">Mehr erfahren &rarr;</span>
+    </button>
+  {% else %}
+    <div class="course-preview-card course-preview-card--{{ course.status }}">
+      <span class="course-preview-card__badge">{{ statusLabel }}</span>
+      <div class="course-preview-card__header">
+        <p class="course-preview-card__date">{{ course.date }}</p>
+        <p class="course-preview-card__location">{{ course.location }}</p>
+      </div>
+      <h3 class="course-preview-card__name">{{ course.name }}</h3>
+      {% if course.description %}
+        <p class="course-preview-card__description">{{ course.description }}</p>
+      {% endif %}
+      {% if course.tags and course.tags.length %}
+        <ul class="course-preview-card__tags">
+          {% for tag in course.tags %}
+            <li class="course-preview-card__tag">{{ tag }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+      {% if course.veranstalter %}
+        <p class="course-preview-card__veranstalter">{{ course.veranstalter }}</p>
+      {% endif %}
+    </div>
+  {% endif %}
+{% endmacro %}

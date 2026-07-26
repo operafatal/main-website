@@ -1,0 +1,77 @@
+/*
+  Design tokens for main-website (Phase 3A).
+  Source: visual language of _INPUT/jasmin_homepage_mockup_standalone.html
+  (built for the Masterclass mockup — only the design language is reused here,
+  not its booking-specific components). See docs/main-tasks/brand-site-design.md.
+*/
+
+:root {
+  /* Colors */
+  --color-accent: #0F2657;      /* navy — headlines, links, CTAs, borders (satter/dunkler als vorheriges #1B3A6B) */
+  --color-text: #1a0a05;        /* warm near-black — body text */
+  --color-text-muted: rgba(26, 10, 5, 0.6);
+  --color-text-faint: rgba(26, 10, 5, 0.4);
+  --color-bg: #ffffff;
+  --color-bg-subtle: #f2f4f8;
+  --color-live-dot: #C0392B;     /* red accent — "live"/urgency indicators */
+
+  /* Typography */
+  --font-serif: 'Cormorant Garamond', serif;   /* headlines, large numerals — zurück zur ursprünglichen Wahl nach mehreren Alternativen (Playfair, Bodoni, Italiana, Lora, EB Garamond, Spectral) */
+  --font-sans: 'Figtree', sans-serif;          /* body copy, UI, nav */
+
+  --font-size-hero: 76px;
+  --font-size-h1: 46px;
+  --font-size-h2: 26px;
+  --font-size-stat: 52px;
+  --font-size-body: 15px;
+  --font-size-small: 12px;
+  --font-size-label: 10px;
+
+  /* Editorial type scale (2026-07-25 consolidation — siehe brand-site-design.md).
+     Zwei Rollen statt sechs zufälliger Section-Heading-Größen:
+     - section-heading: vollflächige Editorial-Sections (Hero-artige Blöcke,
+       current-work, editorial-carousel, home-square-tile, home-closer)
+     - card-heading: Karten-/Unter-Überschriften innerhalb einer Section
+     --font-size-h2 bleibt bewusst eigenständig für die ruhigen Textseiten
+     (page-prose) — kleinere Lesegröße ist dort gewollt, keine dritte
+     Editorial-Größe. */
+  --font-size-section-heading: clamp(2.4rem, 4.4vw, 4rem);
+  --font-size-card-heading: clamp(1.75rem, 2.8vw, 2.4rem);
+
+  /* Spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 48px;
+  --space-12: 56px;
+  --space-16: 80px;
+
+  /* Shared padding scale (2026-07-25) — ersetzt komponentenweise erfundene
+     clamp()-Werte für Karten-/Copy-Innenabstand. Ursprünglich zwei Tokens
+     (--space-card-padding, kleiner, für editorial-carousel; --space-copy-padding,
+     größer, für current-work/home-course-tile/home-closer) — am selben Tag auf
+     ein einziges Token konsolidiert, nachdem der Unterschied als unbeabsichtigte
+     Inkonsistenz auffiel (Presse & Kritiken/Impressionen hatten sichtbar weniger
+     Innenabstand als Aktuelles/Meisterkurse/Kontakt-Kachel). */
+  --space-copy-padding: clamp(var(--space-8), 5vw, var(--space-12));
+  --site-header-height: 62px;
+  --page-top-offset: calc(var(--site-header-height) + var(--space-8));
+  /* Shared by .page-tabs-flush main (padding-top) and .work-tabs__list
+     (sticky top) — both must use the exact same value, or the tab bar's
+     static resting position won't match its own sticky trigger point and
+     it'll visibly travel that difference before locking on scroll. */
+  --tabs-flush-offset: calc(var(--site-header-height) + var(--space-2) - 1px);
+
+  /* Radii */
+  --radius-pill: 100px;   /* buttons */
+  --radius-card: 10px;    /* cards, panels */
+  --radius-sm: 8px;       /* small elements, calendar chips */
+
+  /* Letter spacing (uppercase labels/eyebrows) */
+  --tracking-label: 0.2em;
+  --tracking-nav: 0.12em;
+}

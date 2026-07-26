@@ -1,0 +1,61 @@
+{% macro currentWork(items) %}
+  <section class="current-work" aria-labelledby="current-work-title">
+    <header class="current-work__section-head">
+      <h2 id="current-work-title">Aktuelles</h2>
+      <a class="pill-button pill-button--ghost pill-button--compact current-work__more-link" href="/aktuelles/">Mehr ansehen</a>
+    </header>
+
+    <div class="current-work__carousel" data-editorial-carousel aria-roledescription="carousel" aria-label="Aktuelle Arbeit" tabindex="0">
+      <button class="current-work__control current-work__control--previous" type="button" data-editorial-previous aria-label="Vorherige Arbeit">
+        <span aria-hidden="true">&larr;</span>
+      </button>
+
+      <div class="current-work__viewport">
+        <div class="current-work__track">
+          {% for item in items %}
+            <article class="current-work__card current-work__card--{{ item.titleStyle or 'display' }} current-work__slide{% if loop.first %} is-active{% endif %}" data-editorial-slide{% if item.durationMs %} data-editorial-duration="{{ item.durationMs }}"{% endif %}{% if not loop.first %} aria-hidden="true"{% endif %}>
+              <a class="current-work__card-link" href="{{ item.href }}" aria-label="{{ item.title }} ansehen"{% if item.copyWidth %} style="--current-work-copy-width: {{ item.copyWidth }};"{% endif %}>
+                <div class="current-work__copy">
+                  <p class="current-work__meta"><span>{{ item.meta }}</span><span aria-hidden="true">&middot;</span><span>{{ item.type }}</span></p>
+                  <h3 class="current-work__title current-work__title--{{ item.titleStyle or 'display' }}">{{ item.title }}</h3>
+                  <p class="current-work__composer">{{ item.subtitle }}</p>
+                  <div class="current-work__details">
+                    <p>{{ item.details }}</p>
+                    {% if item.note %}
+                      <p>{{ item.note }}</p>
+                    {% endif %}
+                  </div>
+                </div>
+
+                {% if item.visual.type == "image" %}
+                  <figure class="current-work__visual{% if item.visual.focus %} current-work__visual--{{ item.visual.focus }}{% endif %}{% if item.type == 'Publikation' %} current-work__visual--publication{% endif %}{% if item.type == 'Meisterkurs' %} current-work__visual--masterclass{% endif %}">
+                    {% if item.visual.images and item.visual.images.length %}
+                      <div class="current-work__visual-sequence" aria-hidden="true">
+                        {% for image in item.visual.images %}
+                          <img class="current-work__sequence-image" src="{{ image.src }}" alt="" loading="lazy" decoding="async">
+                        {% endfor %}
+                      </div>
+                      <span class="sr-only">{{ item.visual.alt }}</span>
+                    {% else %}
+                      <img src="{{ item.visual.src }}" alt="{{ item.visual.alt }}" loading="lazy" decoding="async">
+                    {% endif %}
+                    {% if item.visual.credit %}
+                      <figcaption>{{ item.visual.credit }}</figcaption>
+                    {% endif %}
+                  </figure>
+                {% else %}
+                  <div class="current-work__visual current-work__visual--color" style="--current-work-visual-color: {{ item.visual.color }};" aria-hidden="true"></div>
+                {% endif %}
+              </a>
+            </article>
+          {% endfor %}
+        </div>
+      </div>
+
+      <button class="current-work__control current-work__control--next" type="button" data-editorial-next aria-label="Nächste Arbeit">
+        <span aria-hidden="true">&rarr;</span>
+      </button>
+    </div>
+
+  </section>
+{% endmacro %}

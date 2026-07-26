@@ -1,0 +1,80 @@
+.marquee {
+  overflow: hidden;
+  background: transparent;
+  padding-block: clamp(var(--space-8), 5vw, var(--space-12));
+}
+
+.marquee__track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 26s linear infinite;
+}
+
+.marquee__list {
+  display: flex;
+  align-items: center;
+  gap: clamp(1.5rem, 3vw, 3rem);
+  padding: var(--space-1) clamp(var(--space-6), 4vw, var(--space-10));
+  margin: 0;
+  list-style: none;
+}
+
+.marquee__item {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-small);
+  font-weight: 500;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--color-text-muted);
+}
+
+.marquee__item--logo {
+  display: grid;
+  place-items: center;
+  flex: 0 0 clamp(110px, 10vw, 160px);
+  height: 48px;
+  overflow: visible;
+}
+
+.marquee__item--deutsche-oper-berlin {
+  flex-basis: clamp(160px, 14vw, 220px);
+  margin-left: clamp(-1.5rem, -2vw, -1rem);
+}
+
+.marquee__item--hamburgische-staatsoper,
+.marquee__item--hmt-leipzig {
+  flex-basis: clamp(70px, 7vw, 96px);
+}
+
+.marquee__logo {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 34px;
+  filter: brightness(0);
+  opacity: 0.76;
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 720px) {
+  .marquee__list {
+    gap: var(--space-6);
+    padding-inline: var(--space-6);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee__track {
+    animation: none;
+  }
+}

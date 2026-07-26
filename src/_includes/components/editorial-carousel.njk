@@ -1,0 +1,144 @@
+{% from "components/pill-button.njk" import pillButton %}
+
+{#
+  Generic sibling to current-work.njk: same carousel engine (assets/js/editorial-carousel.js)
+  for the quote variant, own CSS namespace (.editorial-carousel__*) so each variant can stay
+  visually distinct ("ähnlich, aber anders" — siehe brand-site-design.md).
+  variant: "quote" (Presse & Kritiken) | "course" (statische Meisterkurs-Kachel) | "photo" (Impressionen-Bilderstrecke)
+#}
+{% macro editorialCarousel(id, heading, subheading, ariaLabel, items, variant, visualSrc, visualAlt, visualCaption, ctaLabel, ctaHref, showControls=true, filterWork=false) %}
+  <section class="editorial-carousel editorial-carousel--{{ variant }}" aria-labelledby="{{ id }}-title">
+    {% if variant == "quote" %}
+      <div class="editorial-carousel__quote-layout">
+        <div class="editorial-carousel__quote-content">
+          <header class="editorial-carousel__section-head">
+            <h2 id="{{ id }}-title">{{ heading }}</h2>
+            {% if subheading %}
+              <p class="editorial-carousel__subhead">{{ subheading }}</p>
+            {% endif %}
+          </header>
+
+          <div class="editorial-carousel__carousel" data-editorial-carousel data-editorial-pause-on-hover="false" aria-roledescription="carousel" aria-label="{{ ariaLabel }}" tabindex="0">
+            {% if showControls != false %}
+              <button class="editorial-carousel__control editorial-carousel__control--previous" type="button" data-editorial-previous aria-label="Vorheriger Eintrag">
+                <span aria-hidden="true">&larr;</span>
+              </button>
+            {% endif %}
+
+            <div class="editorial-carousel__viewport">
+              <div class="editorial-carousel__track">
+                {% set firstVisible = true %}
+                {% for item in items %}
+                  {% if (filterWork and item.work and filterWork in item.work and item.source != "Amazon-Rezension") or not filterWork %}
+                    <article class="editorial-carousel__card editorial-carousel__slide{% if firstVisible %} is-active{% endif %}" data-editorial-slide{% if not firstVisible %} aria-hidden="true"{% endif %}>
+                      <blockquote class="editorial-carousel__quote">{{ item.quote }}</blockquote>
+                      <p class="editorial-carousel__attribution">
+                        {{ item.author }}{% if item.source %} &middot; {{ item.source }}{% endif %}
+                      </p>
+                      {% if item.work %}
+                        <p class="editorial-carousel__meta">{{ item.work }}</p>
+                      {% endif %}
+                    </article>
+                    {% set firstVisible = false %}
+                  {% endif %}
+                {% endfor %}
+              </div>
+            </div>
+
+            {% if showControls != false %}
+              <button class="editorial-carousel__control editorial-carousel__control--next" type="button" data-editorial-next aria-label="Nächster Eintrag">
+                <span aria-hidden="true">&rarr;</span>
+              </button>
+            {% endif %}
+          </div>
+
+          {% if ctaLabel and ctaHref %}
+            <div class="editorial-carousel__actions">
+              {{ pillButton(ctaLabel, ctaHref, "ghost") }}
+            </div>
+          {% endif %}
+        </div>
+
+        {% if visualSrc %}
+          <figure class="editorial-carousel__visual">
+            <img src="{{ visualSrc }}" alt="{{ visualAlt }}" loading="lazy" decoding="async">
+            {% if visualCaption %}
+              <figcaption>{{ visualCaption }}</figcaption>
+            {% endif %}
+          </figure>
+        {% endif %}
+      </div>
+    {% elif variant == "course" %}
+      <header class="editorial-carousel__section-head">
+        <h2 id="{{ id }}-title">{{ heading }}</h2>
+        {% if subheading %}
+          <p class="editorial-carousel__subhead">{{ subheading }}</p>
+        {% endif %}
+      </header>
+
+      {% set courseItems = items | masterclassEntries %}
+      <div class="editorial-carousel__course-list" aria-label="{{ ariaLabel }}">
+        {% if courseItems[0] %}
+          <article class="editorial-carousel__course-panel editorial-carousel__course-panel--primary">
+            <h3 class="editorial-carousel__course-title">{{ courseItems[0].title }}</h3>
+            <p class="editorial-carousel__course-subtitle">{{ courseItems[0].subtitle }}</p>
+            <p class="editorial-carousel__course-details">{{ courseItems[0].date }}{% if courseItems[0].details %} · {{ courseItems[0].details }}{% endif %}</p>
+          </article>
+        {% endif %}
+
+        {% if courseItems[1] %}
+          <article class="editorial-carousel__course-panel editorial-carousel__course-panel--secondary">
+            <h3 class="editorial-carousel__course-title">{{ courseItems[1].title }}</h3>
+            <p class="editorial-carousel__course-subtitle">{{ courseItems[1].subtitle }}</p>
+            <p class="editorial-carousel__course-details">{{ courseItems[1].date }}{% if courseItems[1].details %} · {{ courseItems[1].details }}{% endif %}</p>
+          </article>
+        {% endif %}
+      </div>
+    {% elif variant == "photo" %}
+      {% if heading %}
+        <header class="editorial-carousel__section-head">
+          <h2 id="{{ id }}-title">{{ heading }}</h2>
+          {% if subheading %}
+            <p class="editorial-carousel__subhead">{{ subheading }}</p>
+          {% endif %}
+        </header>
+      {% else %}
+        <h2 class="sr-only" id="{{ id }}-title">{{ ariaLabel }}</h2>
+      {% endif %}
+
+      <div class="editorial-carousel__carousel editorial-carousel__carousel--photo" data-editorial-carousel data-editorial-pause-on-hover="true" aria-roledescription="carousel" aria-label="{{ ariaLabel }}" tabindex="0">
+        {% if showControls != false %}
+          <button class="editorial-carousel__control editorial-carousel__control--previous" type="button" data-editorial-previous aria-label="Vorheriges Bild">
+            <span aria-hidden="true">&larr;</span>
+          </button>
+        {% endif %}
+
+        <div class="editorial-carousel__viewport">
+          <div class="editorial-carousel__track">
+            {% for item in items %}
+              <article class="editorial-carousel__card editorial-carousel__slide editorial-carousel__photo-card{% if loop.first %} is-active{% endif %}" data-editorial-slide{% if not loop.first %} aria-hidden="true"{% endif %}>
+                <figure class="editorial-carousel__photo">
+                  <img src="{{ item.src }}" alt="{{ item.alt }}" loading="lazy" decoding="async">
+                  {% if item.caption %}
+                    <figcaption>{{ item.caption }}</figcaption>
+                  {% endif %}
+                </figure>
+              </article>
+            {% endfor %}
+          </div>
+        </div>
+
+        {% if showControls != false %}
+          <button class="editorial-carousel__control editorial-carousel__control--next" type="button" data-editorial-next aria-label="Nächstes Bild">
+            <span aria-hidden="true">&rarr;</span>
+          </button>
+        {% endif %}
+      </div>
+    {% endif %}
+    {% if variant == "course" and ctaLabel and ctaHref %}
+      <div class="editorial-carousel__actions">
+        {{ pillButton(ctaLabel, ctaHref, "ghost") }}
+      </div>
+    {% endif %}
+  </section>
+{% endmacro %}

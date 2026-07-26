@@ -1,0 +1,13 @@
+{#
+  Single inline quote for embedding inside prose pages (Publikationen, Lehre,
+  Über mich) — no carousel engine, lighter than editorial-carousel's quote
+  variant. Use when there's exactly one quote to place, not a rotating set.
+#}
+{% macro pullQuote(quote, author, source) %}
+  <blockquote class="pull-quote">
+    <p class="pull-quote__text">{{ quote }}</p>
+    {% if author %}
+      <cite class="pull-quote__attribution">{{ author }}{% if source %} · {{ source }}{% endif %}</cite>
+    {% endif %}
+  </blockquote>
+{% endmacro %}

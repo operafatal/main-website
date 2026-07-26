@@ -1,0 +1,108 @@
+---
+layout: base.njk
+title: Meisterkurse & Coaching
+permalink: /meisterkurse-coaching/
+---
+{% from "components/course-preview-card.njk" import coursePreviewCard %}
+{% from "components/course-modal.njk" import courseModal %}
+{% from "components/editorial-carousel.njk" import editorialCarousel %}
+
+{% set alleKurseChronologisch = masterclasses | chronological %}
+{% set masterclassPlaceholder = "https://masterclass.solfaghari.com" %}
+{% set coachingPlaceholder = "https://coaching.solfaghari.com" %}
+
+<h1 class="sr-only">Meisterkurse &amp; Coaching</h1>
+
+<div class="work-tabs" data-work-tabs>
+  <div class="work-tabs__list" role="tablist" aria-label="Meisterkurse oder Coaching">
+    <button class="work-tabs__button is-active" id="tab-meisterkurse" type="button" role="tab" aria-selected="true" aria-controls="panel-meisterkurse" data-work-tab="meisterkurse">Meisterkurse</button>
+    <button class="work-tabs__button" id="tab-coaching" type="button" role="tab" aria-selected="false" aria-controls="panel-coaching" data-work-tab="coaching">Coaching</button>
+    <a class="portal-note" href="{{ masterclassPlaceholder }}" target="_blank" rel="noopener noreferrer" data-work-panel="meisterkurse">
+      <span class="portal-note__dot" aria-hidden="true"></span>
+      Eigenes Meisterkurs-Portal im Aufbau &rarr;
+    </a>
+    <a class="portal-note" href="{{ coachingPlaceholder }}" target="_blank" rel="noopener noreferrer" data-work-panel="coaching" hidden>
+      <span class="portal-note__dot" aria-hidden="true"></span>
+      Eigenes Coaching-Portal im Aufbau &rarr;
+    </a>
+  </div>
+
+  <section class="work-tab-panel" id="panel-meisterkurse" role="tabpanel" aria-labelledby="tab-meisterkurse" data-work-panel="meisterkurse">
+    <div class="meisterkurse-layout">
+      <div class="meisterkurse-layout__main">
+        <div class="course-timeline" data-load-more data-load-more-step="3">
+          {% for course in alleKurseChronologisch %}
+            {% if course.status == "vergangen" %}
+              <div data-load-more-item>
+                {{ coursePreviewCard(course) }}
+              </div>
+            {% else %}
+              {{ coursePreviewCard(course) }}
+            {% endif %}
+          {% endfor %}
+          <button class="load-more-button" type="button" data-load-more-button>Ältere anzeigen</button>
+        </div>
+      </div>
+
+      {% for course in alleKurseChronologisch %}
+        {% if course.details %}
+          {{ courseModal(course) }}
+        {% endif %}
+      {% endfor %}
+
+      <div class="meisterkurse-layout__aside">
+        {{ editorialCarousel(
+          "meisterkurse-impressionen",
+          "",
+          "",
+          "Impressionen aus Meisterkursen",
+          masterclassImpressionen,
+          "photo"
+        ) }}
+
+        {{ editorialCarousel(
+          "meisterkurse-feedback",
+          "Stimmen aus den Meisterkursen",
+          "",
+          "Referenzen von Meisterkurs-Teilnehmer:innen",
+          meisterkurseFeedback,
+          "quote",
+          "",
+          "",
+          "",
+          "",
+          "",
+          true
+        ) }}
+      </div>
+    </div>
+  </section>
+
+  <section class="work-tab-panel" id="panel-coaching" role="tabpanel" aria-labelledby="tab-coaching" data-work-panel="coaching" hidden>
+    <div class="meisterkurse-layout">
+      <div class="meisterkurse-layout__main">
+        <div class="coaching-intro">
+          <p class="coaching-intro__text">Einzelcoaching, auch via Zoom oder FaceTime: Vorbereitung für Vorsingen, Erarbeitung von Rollen, Diktion auch in der Fremdsprache, Dialogtraining.</p>
+          <a class="cta-mail" href="mailto:jasmin@solfaghari.de">jasmin@solfaghari.de</a>
+        </div>
+      </div>
+
+      <div class="meisterkurse-layout__aside">
+        {{ editorialCarousel(
+          "coaching-feedback",
+          "Stimmen aus dem Coaching",
+          "",
+          "Referenzen von Coaching-Teilnehmer:innen",
+          coachingFeedback,
+          "quote",
+          "",
+          "",
+          "",
+          "",
+          "",
+          true
+        ) }}
+      </div>
+    </div>
+  </section>
+</div>

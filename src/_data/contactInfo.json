@@ -1,0 +1,56 @@
+{
+  "hero": {
+    "kicker": "Kontakt",
+    "title": "Kommen wir ins Gespräch",
+    "lead": "Für Regieanfragen, Coaching, Vorträge, Publikationen und Presse erreichen Sie Jasmin Solfaghari direkt per E-Mail.",
+    "image": {
+      "src": "/assets/img/channels4_profile.jpg",
+      "alt": "Portrait von Jasmin Solfaghari",
+      "credit": ""
+    }
+  },
+  "primaryEmail": {
+    "label": "Direkte Anfragen",
+    "display": "jasmin@solfaghari.de",
+    "href": "mailto:jasmin@solfaghari.de",
+    "note": "Für Regie, Coaching, Vorträge, Publikationen und Presse."
+  },
+  "masterclassEmail": {
+    "label": "Meisterkurse",
+    "display": "masterclass@solfaghari.com",
+    "href": "mailto:masterclass@solfaghari.com",
+    "note": "Nur für Anmeldungen und Fragen zu Meisterkursen."
+  },
+  "masterclassPage": {
+    "label": "Meisterkurs-Anfrage",
+    "href": "/meisterkurse-coaching/#meisterkurse"
+  },
+  "coachingPage": {
+    "label": "Coaching-Anfrage",
+    "href": "/meisterkurse-coaching/#coaching"
+  },
+  "inquiryTypes": [
+    "Regieanfragen",
+    "Coaching",
+    "Vorträge & Lesungen",
+    "Publikationen & Presse"
+  ],
+  "social": [
+    {
+      "label": "LinkedIn",
+      "href": "https://de.linkedin.com/in/jasmin-solfaghari-a6ba3127",
+      "icon": "/assets/img/linkedin-svgrepo-com.svg"
+    },
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/solfaghari/",
+      "icon": "/assets/img/instagram-logo-facebook-2-svgrepo-com.svg"
+    }
+  ],
+  "sourceNotes": {
+    "primaryEmail": "Von Razz am 2026-07-26 freigegeben; auf der alten Website nicht eindeutig gefunden.",
+    "masterclassEmail": "Auf solfaghari.com/meisterkurse-lehre als Meisterkurs-Adresse genannt.",
+    "instagram": "LovelyBooks-Profil verlinkt Instagram; Ziel-URL durch den dortigen Link ermittelt.",
+    "linkedin": "Öffentliches LinkedIn-Profil."
+  }
+}

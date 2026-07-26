@@ -1,0 +1,204 @@
+.hero {
+  position: relative;
+  min-height: clamp(500px, 78vh, 780px);
+  display: flex;
+  overflow: hidden;
+  background: #000000;
+  color: var(--color-bg);
+}
+
+.hero__inner {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 1180px);
+  margin-inline: auto;
+  padding: clamp(var(--space-8), 5vw, 88px) clamp(2rem, 4vw, 4rem) clamp(var(--space-8), 5vw, 88px) clamp(15rem, 20vw, 22rem);
+  display: flex;
+  flex: 1;
+}
+
+.hero__content {
+  max-width: 44rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.hero__copy {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.hero__mark {
+  display: block;
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  width: auto;
+  height: clamp(140px, 9.75vw, 142px);
+  margin-right: var(--space-4);
+  transform: translateY(-50%);
+  filter: brightness(0) saturate(100%) invert(13%) sepia(33%) saturate(2204%) hue-rotate(195deg) brightness(91%) contrast(96%);
+}
+
+.hero__top {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.hero__identity {
+  position: relative;
+}
+
+.hero__headline {
+  margin: 0;
+  /* Deviates deliberately from the global h1/h2/h3 rule: tries Melodrama first,
+     falls back to the serif token — kept explicit because the hero headline is
+     the one place where the Melodrama-vs-fallback difference is most visible. */
+  font-family: "Melodrama", var(--font-serif);
+  font-size: clamp(4rem, 8.4vw, 5.9rem);
+  line-height: 0.88;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: var(--color-bg);
+}
+
+.hero__headline-first,
+.hero__headline-last {
+  display: block;
+}
+
+.hero__headline-first {
+  font-size: 0.86em;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.hero__headline-last {
+  font-weight: 600;
+}
+
+.hero__role {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--color-bg) 78%, transparent);
+}
+
+.hero__body {
+  margin: 0;
+  max-width: 46ch;
+  font-size: clamp(0.92rem, 1vw, 1rem);
+  line-height: 1.65;
+  color: color-mix(in srgb, var(--color-bg) 86%, transparent);
+}
+
+.hero__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  padding: 0;
+  margin: var(--space-5) 0 0;
+  list-style: none;
+}
+
+.hero__meta li {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0 0.9rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid color-mix(in srgb, var(--color-bg) 16%, transparent);
+  background: color-mix(in srgb, var(--color-text) 68%, transparent);
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--color-bg);
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  margin-top: 0;
+}
+
+.hero__media {
+  position: absolute;
+  inset: 0;
+  background-color: #000000;
+  background-position: center 28%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__media {
+    transform: none !important;
+  }
+}
+
+.hero__media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--color-accent) 40%, black 60%) 0%,
+    color-mix(in srgb, var(--color-accent) 38%, black 58%) 20%,
+    color-mix(in srgb, var(--color-accent) 30%, black 38%) 34%,
+    color-mix(in srgb, var(--color-accent) 14%, transparent) 48%,
+    transparent 60%
+  );
+}
+
+.hero__media--placeholder {
+  background-image: none;
+}
+
+.hero__credit {
+  position: absolute;
+  right: var(--space-4);
+  bottom: var(--space-4);
+  margin: 0;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  color: color-mix(in srgb, var(--color-bg) 55%, transparent);
+  z-index: 1;
+}
+
+/* On dark surfaces (the hero image) ghost buttons need light text/border
+   instead of the default accent-on-light styling in buttons.css. */
+.hero .pill-button--ghost {
+  color: var(--color-bg);
+  border-color: color-mix(in srgb, var(--color-bg) 44%, transparent);
+}
+
+.hero .pill-button--ghost:hover {
+  border-color: color-mix(in srgb, var(--color-bg) 44%, transparent);
+  background: color-mix(in srgb, var(--color-bg) 12%, transparent);
+}
+
+@media (max-width: 720px) {
+  .hero {
+    min-height: 540px;
+  }
+
+  .hero__inner {
+    padding-inline: var(--space-6);
+  }
+
+  .hero__mark {
+    height: 100px;
+    max-width: none;
+  }
+}

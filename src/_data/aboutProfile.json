@@ -1,0 +1,158 @@
+{
+  "hero": {
+    "kicker": "Opernregisseurin · Coaching · Autorin",
+    "title": "Jasmin Solfaghari",
+    "lead": "Jasmin Solfaghari verbindet über zwei Jahrzehnte Opern- und Musiktheaterpraxis mit Lehre, Coaching und einer besonderen Aufmerksamkeit für die Vermittlung komplexer Bühnenstoffe.",
+    "portrait": {
+      "src": "/assets/img/portrait-amazon-klein.jpg",
+      "alt": "Portrait von Jasmin Solfaghari",
+      "credit": "Portrait: Cathleen Herwarth von Bittenfeld"
+    }
+  },
+  "introLinks": [
+    {
+      "label": "Inszenierungen",
+      "href": "/inszenierungen/"
+    },
+    {
+      "label": "Publikationen",
+      "href": "/publikationen/"
+    }
+  ],
+  "bio": {
+    "paragraphs": [
+      "Als Opernregisseurin entwickelt Jasmin Solfaghari Musiktheater aus einem breiten Repertoire heraus: von Wagner, Rossini und Britten über Opern für Einsteiger bis zu zeitgenössischen Formaten. Ihre Arbeiten führen sie an Häuser und Projekte im In- und Ausland.",
+      "Ihre Arbeit mit Sänger:innen ist eng mit ihrer Lehrpraxis verbunden. Sie gibt Meisterkurse, coacht Rollen, Vorsingen und szenische Präsenz und begleitet Künstler:innen in der Verbindung von Stimme, Text und Haltung.",
+      "Als Autorin macht sie Oper zugänglich, ohne sie zu vereinfachen. Ihre Bücher bei Schott, darunter „Crashkurs Oper“ und „Ich schreite kaum, doch wähn' ich mich schon weit. Parsifal am Goetheanum“, verbinden Sachkenntnis mit einem Blick für die lebendige Erfahrung auf und vor der Bühne."
+    ]
+  },
+  "timeline": {
+    "entries": [
+      {
+        "year": "seit 2018",
+        "text": "Leitung der Abteilung Oper/Musiktheater bei PAMY Mediaproductions — Produktionsleitung und Regie."
+      },
+      {
+        "year": "2024",
+        "text": "Publikation „Ich schreite kaum, doch wähn' ich mich schon weit. Parsifal am Goetheanum“ bei Schott."
+      },
+      {
+        "year": "2014–2024",
+        "text": "Initiatorin und Jury-Vorsitzende des Wettbewerbs um den Richard-Wagner-Nachwuchspreis Leipzig."
+      },
+      {
+        "year": "seit 2011",
+        "text": "Freiberufliche Lehrtätigkeit und Meisterkurse, unter anderem in Dresden, Rostock, Stuttgart, Italien, Israel, den USA, Brasilien und China."
+      },
+      {
+        "year": "2006–2011",
+        "text": "Professorin für Dramatischen Unterricht an der Hochschule für Musik und Theater Leipzig."
+      },
+      {
+        "year": "2004–2006",
+        "text": "Oberspielleiterin der Deutschen Oper Berlin."
+      },
+      {
+        "year": "2001–2004",
+        "text": "Oberspielleiterin am Stadttheater Bremerhaven mit dreizehn Inszenierungen."
+      },
+      {
+        "year": "seit 1997",
+        "text": "Zahlreiche eigene Inszenierungen im In- und Ausland aus allen Epochen."
+      },
+      {
+        "year": "1994–1998",
+        "text": "Spielleiterin an der Hamburgischen Staatsoper; Assistenzen und Wiederaufnahmen mit prägenden Regiepersönlichkeiten."
+      }
+    ]
+  },
+  "collaborations": {
+    "eyebrow": "Zusammenarbeiten",
+    "title": "Ein Netzwerk aus Bühne, Pult und Stimme",
+    "intro": "Die frühen Spielleitungs- und Assistenzjahre führten Jasmin Solfaghari mit prägenden Regisseur:innen, Dirigent:innen und Sängerpersönlichkeiten zusammen. Die vollständigen Listen bleiben erhalten, aber bewusst aufklappbar.",
+    "groups": [
+      {
+        "title": "Regie-Assistenzen & Wiederaufnahmen",
+        "items": [
+          "Christine Mielitz",
+          "John Dew",
+          "Harry Kupfer",
+          "Günther Krämer",
+          "Peter Mussbach",
+          "Achim Freyer",
+          "Marco Arturo Marelli",
+          "Der Ring des Nibelungen",
+          "Il Trittico",
+          "Die Fledermaus",
+          "Tristan und Isolde"
+        ]
+      },
+      {
+        "title": "Dirigent:innen",
+        "items": [
+          "Christian Thielemann",
+          "Sir Simon Rattle",
+          "Philippe Augin",
+          "Jacques Lacombe",
+          "Daniel Oren",
+          "Marc Albrecht",
+          "Antonello Allemandi",
+          "Gerd Albrecht",
+          "Donald Runnicles",
+          "Markus Stenz",
+          "Lothar Zagrosek",
+          "Alexander Vedernikov"
+        ]
+      },
+      {
+        "title": "Sänger:innen",
+        "items": [
+          "Deborah Voigt",
+          "Véronique Gens",
+          "Sophie Koch",
+          "Agnes Baltsa",
+          "Helga Dernesch",
+          "Gabriele Schnaut",
+          "Lisbeth Balslev",
+          "Angelika Kirchschlager",
+          "Montserrat Caballé",
+          "Barbara Daniels",
+          "Linda Watson",
+          "Evelyn Herlitzius",
+          "Olga Romanko",
+          "Piotr Beczala",
+          "Topi Lehtipuu",
+          "Jean-Marc Ainsley",
+          "Graham Clark",
+          "Lance Ryan",
+          "Stefan Vinke",
+          "José Cura",
+          "Jochen Kowalski",
+          "Franz Grundheber",
+          "Simon Estes",
+          "Matti Salminen",
+          "René Pape",
+          "Kurt Moll",
+          "Ricarda Merbeth",
+          "Torsten Kerl",
+          "Gerhard Siegel",
+          "Lioba Braun",
+          "Catherine Foster",
+          "Jennifer Wilson",
+          "Klaus Florian Vogt"
+        ]
+      }
+    ]
+  },
+  "publicationTeaser": {
+    "title": "Oper auch auf dem Papier",
+    "text": "Jasmin Solfaghari schreibt über Oper mit dem Blick einer Praktikerin: nah an der Bühne, genau im Detail und zugänglich für Leser:innen, die tiefer in die Werke einsteigen wollen.",
+    "href": "/publikationen/",
+    "linkLabel": "Zu den Publikationen"
+  },
+  "sourceNotes": {
+    "raw": "main-website/content/ueber-mich.md bleibt Rohquelle.",
+    "portrait": "Portrait-amazon-klein.jpg von Razz für Über Jasmin bestimmt; sichtbarer Credit von Razz am 2026-07-26 freigegeben.",
+    "timelineOrder": "Razz bestätigte am 2026-07-26: heutiges Profil zuerst, dann rückwärts."
+  }
+}

@@ -1,0 +1,128 @@
+---
+layout: base.njk
+title: Publikationen
+permalink: /publikationen/
+---
+{% from "components/archive-row.njk" import archiveRow %}
+{% from "components/event-feature-row.njk" import eventFeatureRow %}
+{% from "components/event-modal.njk" import eventModal %}
+{% from "components/spotlight.njk" import spotlight %}
+
+<div class="work-tabs event-tabs publication-tabs" data-work-tabs>
+  <div class="work-tabs__list" role="tablist" aria-label="Publikationen, Veranstaltungen, Rezensionen und Presse">
+    <button class="work-tabs__button is-active" id="tab-publikationen" type="button" role="tab" aria-selected="true" aria-controls="panel-publikationen" data-work-tab="publikationen">Publikationen</button>
+    <button class="work-tabs__button" id="tab-lesungen" type="button" role="tab" aria-selected="false" aria-controls="panel-lesungen" data-work-tab="lesungen">Lesungen &amp; Buchpräsentationen</button>
+    <button class="work-tabs__button" id="tab-rezensionen" type="button" role="tab" aria-selected="false" aria-controls="panel-rezensionen" data-work-tab="rezensionen">Rezensionen</button>
+    <button class="work-tabs__button" id="tab-presse" type="button" role="tab" aria-selected="false" aria-controls="panel-presse" data-work-tab="presse">Presse</button>
+  </div>
+
+  <section class="work-tab-panel publication-panel" id="panel-publikationen" role="tabpanel" aria-labelledby="tab-publikationen" data-work-panel="publikationen">
+    {{ spotlight(
+      publications.spotlight.meta,
+      publications.spotlight.title,
+      publications.spotlight.subtitle,
+      publications.spotlight.description,
+      publications.spotlight.visual,
+      publications.spotlight.ctaLabel,
+      publications.spotlight.ctaHref
+    ) }}
+
+    <section class="publication-section" aria-labelledby="publication-books-title">
+      <div class="publication-section__head">
+        <h2 id="publication-books-title">Bücher bei Schott</h2>
+      </div>
+      <div class="archive-row-list publication-archive">
+        {% for item in publications.books %}
+          {{ archiveRow(item.year, item.title, item.subtitle, item.meta, item.href) }}
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="publication-section" aria-labelledby="publication-archive-title">
+      <div class="publication-section__head">
+        <h2 id="publication-archive-title">Publikationsverzeichnis</h2>
+      </div>
+      <div class="publication-decade-list">
+        {% for group in publications.archiveGroups %}
+          <section class="publication-decade" aria-labelledby="publication-decade-{{ loop.index }}">
+            <h3 id="publication-decade-{{ loop.index }}">{{ group.label }}</h3>
+            <div class="archive-row-list publication-archive">
+              {% for item in group.items %}
+                {{ archiveRow(item.year, item.title, item.subtitle, item.meta, item.href) }}
+              {% endfor %}
+            </div>
+          </section>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="publication-section publication-section--compact" aria-labelledby="publication-stage-title">
+      <div class="publication-section__head">
+        <h2 id="publication-stage-title">Theaterstücke &amp; Musiktheater-Eigenwerke</h2>
+      </div>
+      <div class="publication-mini-list">
+        {% for item in publications.stageWorks %}
+          <article class="publication-mini-item">
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.subtitle }}</p>
+            <p class="publication-mini-item__meta">{{ item.meta }}</p>
+          </article>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="publication-section publication-section--compact" aria-labelledby="publication-dialogues-title">
+      <div class="publication-section__head">
+        <h2 id="publication-dialogues-title">Eigene Dialogfassungen</h2>
+      </div>
+      <ul class="publication-chip-list">
+        {% for item in publications.dialogueAdaptations %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+  </section>
+
+  <section class="work-tab-panel event-panel" id="panel-lesungen" role="tabpanel" aria-labelledby="tab-lesungen" data-work-panel="lesungen" hidden>
+    <div class="event-section">
+      <div class="event-feature-list">
+        {% for event in publicationEvents.events %}
+          {{ eventFeatureRow(event) }}
+        {% endfor %}
+      </div>
+      {% for event in publicationEvents.events %}
+        {{ eventModal(event) }}
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="work-tab-panel publication-panel" id="panel-rezensionen" role="tabpanel" aria-labelledby="tab-rezensionen" data-work-panel="rezensionen" hidden>
+    <div class="publication-quote-list">
+      {% for item in publications.reviews %}
+        <article class="publication-quote">
+          <blockquote>„{{ item.quote }}“</blockquote>
+          <p>{{ item.source }}{% if item.date %} · {{ item.date }}{% endif %}</p>
+          {% if item.context %}<span>{{ item.context }}</span>{% endif %}
+          {% if item.href %}
+            <a class="work-detail__source-link work-detail__source-link--outline publication-quote__link" href="{{ item.href }}"{% if item.href | isExternalUrl %} target="_blank" rel="noopener noreferrer"{% endif %}>Beitrag öffnen <span aria-hidden="true">→</span></a>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="work-tab-panel publication-panel" id="panel-presse" role="tabpanel" aria-labelledby="tab-presse" data-work-panel="presse" hidden>
+    <div class="publication-quote-list publication-quote-list--press">
+      {% for item in publications.press %}
+        <article class="publication-quote">
+          <blockquote>„{{ item.quote }}“</blockquote>
+          <p>{{ item.source }}{% if item.date %} · {{ item.date }}{% endif %}</p>
+          {% if item.context %}<span>{{ item.context }}</span>{% endif %}
+          {% if item.href %}
+            <a class="work-detail__source-link work-detail__source-link--outline publication-quote__link" href="{{ item.href }}"{% if item.href | isExternalUrl %} target="_blank" rel="noopener noreferrer"{% endif %}>Beitrag öffnen <span aria-hidden="true">→</span></a>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+</div>

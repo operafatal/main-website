@@ -1,0 +1,16 @@
+{#
+  Career-milestone timeline (Über mich) — deliberately not a straight ruled
+  line with dots (feels static); rows nudge left/right slightly via
+  nth-child in CSS instead, so it reads as organic rather than a table.
+  entries: [{ year, text }]
+#}
+{% macro timeline(entries) %}
+  <div class="timeline">
+    {% for entry in entries %}
+      <div class="timeline__row">
+        <span class="timeline__year">{{ entry.year }}</span>
+        <span class="timeline__text">{{ entry.text }}</span>
+      </div>
+    {% endfor %}
+  </div>
+{% endmacro %}

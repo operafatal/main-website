@@ -1,0 +1,18 @@
+{#
+  Termin-row with an emphasized date — for Aktuelles. day + monthLabel are
+  split so the day can be set in large serif numerals (programme-note style).
+  href optional.
+#}
+{% macro dateRow(day, monthLabel, title, meta, href) %}
+  {% set tag = "a" if href else "div" %}
+  <{{ tag }} class="date-row"{% if href %} href="{{ href }}"{% endif %}>
+    <span class="date-row__date">
+      <span class="date-row__day">{{ day }}</span>
+      <span class="date-row__month">{{ monthLabel }}</span>
+    </span>
+    <span class="date-row__main">
+      <span class="date-row__title">{{ title }}</span>
+      {% if meta %}<span class="date-row__meta">{{ meta }}</span>{% endif %}
+    </span>
+  </{{ tag }}>
+{% endmacro %}

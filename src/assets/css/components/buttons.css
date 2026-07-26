@@ -1,0 +1,83 @@
+/* Pill button — base component. Context-specific variants (dark hero surface,
+   dark editorial-carousel course panel, dark home-closer) live next to their
+   context in the respective component file, not here. */
+
+.pill-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  padding: 0 1.75rem;
+  border-radius: 0;
+  border: 1px solid transparent;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  letter-spacing: var(--tracking-nav);
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+
+.pill-button--solid {
+  background: var(--color-accent);
+  color: var(--color-bg);
+  border-color: var(--color-accent);
+}
+
+.pill-button--solid:hover {
+  background: color-mix(in srgb, var(--color-accent) 90%, white);
+  border-color: color-mix(in srgb, var(--color-accent) 90%, white);
+}
+
+.pill-button--ghost {
+  background: transparent;
+  color: var(--color-accent);
+  border-color: color-mix(in srgb, var(--color-accent) 40%, transparent);
+}
+
+.pill-button--ghost:hover {
+  border-color: var(--color-accent);
+  background: color-mix(in srgb, var(--color-accent) 8%, transparent);
+}
+
+.pill-button--compact {
+  min-height: auto;
+  padding: 0.48rem 0.8rem 0.5rem;
+  letter-spacing: 0.03em;
+}
+
+.pill-button--positive {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-bg);
+}
+
+.pill-button--positive:hover {
+  background: color-mix(in srgb, var(--color-accent) 90%, white);
+  border-color: color-mix(in srgb, var(--color-accent) 90%, white);
+}
+
+.pill-button--negative {
+  background: transparent;
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.pill-button--negative:hover {
+  background: color-mix(in srgb, var(--color-accent) 8%, transparent);
+}
+
+.pill-button--ghost::after,
+.pill-button--with-arrow::after {
+  content: "→";
+  margin-left: var(--space-2);
+  font-size: 1em;
+  line-height: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pill-button {
+    transition: none;
+  }
+}

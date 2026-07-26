@@ -1,0 +1,60 @@
+---
+layout: base.njk
+title: Lehre & Vorträge
+permalink: /lehre/
+---
+{% from "components/event-feature-row.njk" import eventFeatureRow %}
+{% from "components/event-modal.njk" import eventModal %}
+
+<h1 class="sr-only">Lehre &amp; Vorträge</h1>
+
+<div class="work-tabs event-tabs" data-work-tabs>
+  <div class="work-tabs__list" role="tablist" aria-label="Lehre und Vorträge">
+    <button class="work-tabs__button is-active" id="tab-lehrauftraege" type="button" role="tab" aria-selected="true" aria-controls="panel-lehrauftraege" data-work-tab="lehrauftraege">Lehraufträge &amp; Masterclasses</button>
+    <button class="work-tabs__button" id="tab-vortraege" type="button" role="tab" aria-selected="false" aria-controls="panel-vortraege" data-work-tab="vortraege">Vorträge</button>
+  </div>
+
+  <section class="work-tab-panel event-panel" id="panel-lehrauftraege" role="tabpanel" aria-labelledby="tab-lehrauftraege" data-work-panel="lehrauftraege">
+    <div class="event-section">
+      <div class="event-feature-list">
+        {% for event in lehreEvents.teaching %}
+          {{ eventFeatureRow(event) }}
+        {% endfor %}
+      </div>
+      {% for event in lehreEvents.teaching %}
+        {{ eventModal(event) }}
+      {% endfor %}
+    </div>
+
+    <div class="event-section">
+      <h2 class="event-section__title">Lehrpraxis</h2>
+      <div class="event-feature-list">
+        {% for event in lehreEvents.practice %}
+          {{ eventFeatureRow(event) }}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="work-tab-panel event-panel" id="panel-vortraege" role="tabpanel" aria-labelledby="tab-vortraege" data-work-panel="vortraege" hidden>
+    <div class="event-section">
+      <div class="event-feature-list">
+        {% for event in lehreEvents.lectures %}
+          {{ eventFeatureRow(event) }}
+        {% endfor %}
+      </div>
+      {% for event in lehreEvents.lectures %}
+        {{ eventModal(event) }}
+      {% endfor %}
+    </div>
+
+    <div class="event-topic-list" aria-labelledby="lecture-topics-title">
+      <h2 id="lecture-topics-title">Weitere Vortragsthemen</h2>
+      <ul>
+        {% for topic in lehreEvents.lectureTopics %}
+          <li>{{ topic }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+</div>

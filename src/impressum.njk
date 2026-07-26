@@ -1,0 +1,15 @@
+---
+layout: base.njk
+title: Impressum
+permalink: /impressum/
+---
+{% set page = curatedContent.impressum %}
+
+<article class="legal-page legal-page--imprint">
+  {{ page.bodyHtml | safe }}
+  {% if page.noteHtml %}
+    <div class="legal-page__note">
+      {{ page.noteHtml | safe }}
+    </div>
+  {% endif %}
+</article>

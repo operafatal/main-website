@@ -1,0 +1,520 @@
+/*
+  Generic sibling to .current-work: same carousel engine (data-editorial-*,
+  assets/js/editorial-carousel.js), own visual identity per variant so repeated
+  full-width sections stay "ähnlich, aber anders" (siehe brand-site-design.md,
+  Presse & Kritiken / Meisterkurse).
+*/
+.editorial-carousel {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  gap: var(--space-4);
+  min-height: 100%;
+  padding: var(--space-copy-padding);
+  color: var(--color-text);
+}
+
+.editorial-carousel--quote {
+  background: var(--color-bg-subtle);
+  padding: 0;
+  gap: 0;
+}
+
+.editorial-carousel--course {
+  background: color-mix(in srgb, var(--color-bg-subtle) 74%, transparent);
+}
+
+.editorial-carousel__section-head,
+.editorial-carousel__course-list,
+.editorial-carousel__carousel,
+.editorial-carousel__actions {
+  width: min(100%, 1000px);
+  margin-inline: auto;
+}
+
+.editorial-carousel__section-head {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.editorial-carousel__section-head h2 {
+  margin: 0;
+  color: var(--color-text);
+  font-size: var(--font-size-section-heading);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+}
+
+.editorial-carousel__subhead {
+  margin: 0;
+  max-width: none;
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+.editorial-carousel__carousel {
+  position: relative;
+  min-height: 0;
+}
+
+.editorial-carousel--quote .editorial-carousel__section-head,
+.editorial-carousel--quote .editorial-carousel__carousel,
+.editorial-carousel--quote .editorial-carousel__actions,
+.editorial-carousel--course .editorial-carousel__section-head,
+.editorial-carousel--course .editorial-carousel__carousel,
+.editorial-carousel--course .editorial-carousel__actions,
+.editorial-carousel--photo .editorial-carousel__section-head,
+.editorial-carousel--photo .editorial-carousel__carousel {
+  width: 100%;
+}
+
+.editorial-carousel__quote-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.9fr);
+  grid-template-rows: auto 1fr auto;
+  gap: 0;
+  align-items: stretch;
+  min-height: 100%;
+}
+
+.editorial-carousel__quote-content {
+  grid-column: 1;
+  grid-row: 1 / 4;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: var(--space-5);
+  padding: var(--space-copy-padding);
+}
+
+.editorial-carousel__quote-layout > .editorial-carousel__visual {
+  grid-column: 2;
+  grid-row: 1 / 4;
+}
+
+.editorial-carousel__quote-layout > .editorial-carousel__visual,
+.editorial-carousel__quote-layout > .editorial-carousel__quote-content {
+  min-height: 100%;
+}
+
+.editorial-carousel--course {
+  background: var(--color-accent);
+  color: var(--color-bg);
+  padding: var(--space-copy-padding);
+  border-radius: 0;
+}
+
+.editorial-carousel--course .editorial-carousel__section-head h2 {
+  color: var(--color-bg);
+}
+
+.editorial-carousel__viewport,
+.editorial-carousel__track,
+.editorial-carousel__slide,
+.editorial-carousel__card {
+  min-height: 100%;
+}
+
+.editorial-carousel--quote .editorial-carousel__slide,
+.editorial-carousel--quote .editorial-carousel__card {
+  min-height: clamp(130px, 13vw, 180px);
+}
+
+.editorial-carousel__slide + .editorial-carousel__slide {
+  margin-top: var(--space-4);
+}
+
+.editorial-carousel__carousel.is-enhanced .editorial-carousel__track {
+  display: grid;
+  min-height: 100%;
+}
+
+.editorial-carousel__carousel.is-enhanced .editorial-carousel__slide {
+  display: none;
+  margin-top: 0;
+}
+
+.editorial-carousel__carousel.is-enhanced .editorial-carousel__slide.is-active {
+  display: grid;
+  animation: current-work-enter 360ms ease both;
+}
+
+.editorial-carousel__card {
+  display: grid;
+  /* Explicit, not the default "normal": when this card's box is taller than
+     its content (e.g. the testimonials min-height below, sized for the
+     longest quote in rotation), leftover space needs a defined place to go.
+     "normal" leaves that to the browser's own judgment call, and engines
+     disagree — confirmed in Safari, shorter quotes (less content, more
+     leftover space) got a visibly bigger gap before the source line than
+     longer ones, because the leftover space was being distributed between
+     the quote and the attribution instead of after the attribution.
+     align-content:start pins both rows to the top with a fixed gap between
+     them regardless of how much space is left over, in every browser. */
+  align-content: start;
+}
+
+.editorial-carousel--quote .editorial-carousel__card {
+  justify-items: start;
+  gap: var(--space-1);
+  width: 100%;
+  margin-inline: 0;
+  text-align: left;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+.editorial-carousel__quote {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: clamp(1.45rem, 2.1vw, 2rem);
+  line-height: 1.12;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-text);
+}
+
+.editorial-carousel__quote::before {
+  content: "\201E";
+}
+
+.editorial-carousel__quote::after {
+  content: "\201C";
+}
+
+.editorial-carousel__visual {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  align-self: stretch;
+  justify-self: stretch;
+  overflow: hidden;
+  background: var(--color-bg-subtle);
+}
+
+.editorial-carousel__visual img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 58% center;
+  transform: scale(1.08);
+  transform-origin: center center;
+}
+
+.editorial-carousel__visual figcaption {
+  position: absolute;
+  right: var(--space-4);
+  bottom: var(--space-4);
+  left: var(--space-4);
+  margin: 0;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: var(--tracking-nav);
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--color-bg) 78%, transparent);
+}
+
+.editorial-carousel__attribution {
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  /* Explicit, fixed gap — previously there was none, so the visible space
+     above the attribution was just whatever line-height leading happened
+     to be left under the quote's last line, which looked fine by accident
+     for some quote lengths and wrong for others. A real margin stays the
+     same regardless of how many lines the quote wraps to, or whether the
+     attribution itself wraps to a second line. */
+  margin-top: var(--space-4);
+}
+
+.editorial-carousel__meta {
+  margin: 0;
+  font-size: 0.72rem;
+  color: var(--color-text-faint);
+  margin-top: 0;
+}
+
+.editorial-carousel__course-title {
+  margin: 0;
+  font-size: var(--font-size-card-heading);
+  font-weight: 500;
+  line-height: 1.05;
+  color: var(--color-bg);
+}
+
+.editorial-carousel__course-subtitle {
+  margin: 0;
+  color: color-mix(in srgb, var(--color-bg) 80%, transparent);
+}
+
+.editorial-carousel__course-details {
+  margin: 0;
+  font-size: var(--font-size-small);
+  color: color-mix(in srgb, var(--color-bg) 70%, transparent);
+}
+
+.editorial-carousel__course-list {
+  display: grid;
+  gap: var(--space-4);
+  align-content: start;
+  min-height: 100%;
+  padding: var(--space-6);
+  background: var(--color-accent);
+  color: var(--color-bg);
+  border-radius: 0;
+}
+
+.editorial-carousel__course-panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.editorial-carousel__course-panel--secondary {
+  padding-top: var(--space-4);
+  border-top: 1px solid color-mix(in srgb, var(--color-bg) 18%, transparent);
+}
+
+.editorial-carousel__course-meta {
+  margin: 0;
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--color-bg) 72%, transparent);
+}
+
+.editorial-carousel__course-panel--secondary .editorial-carousel__course-title {
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+}
+
+.editorial-carousel__course-panel--secondary .editorial-carousel__course-subtitle {
+  color: color-mix(in srgb, var(--color-bg) 68%, transparent);
+}
+
+.editorial-carousel__course-panel--secondary .editorial-carousel__course-details {
+  color: color-mix(in srgb, var(--color-bg) 58%, transparent);
+}
+
+.editorial-carousel--photo {
+  /* Only ever renders 2 children (heading + carousel) — never the 3rd
+     "actions" row the base 3-row grid reserves for the course/quote CTA.
+     Overriding to 2 explicit row tracks removes that trailing empty track
+     so its gap doesn't add invisible space below the carousel. */
+  grid-template-rows: auto minmax(0, 1fr);
+  padding: 0;
+  gap: var(--space-6);
+}
+
+.editorial-carousel__carousel--photo {
+  block-size: clamp(360px, 42vw, 560px);
+}
+
+.editorial-carousel__carousel--photo .editorial-carousel__viewport,
+.editorial-carousel__carousel--photo .editorial-carousel__track,
+.editorial-carousel__carousel--photo .editorial-carousel__slide,
+.editorial-carousel__carousel--photo .editorial-carousel__card {
+  block-size: 100%;
+  min-block-size: 0;
+}
+
+.editorial-carousel__carousel--photo .editorial-carousel__slide + .editorial-carousel__slide {
+  margin-top: 0;
+}
+
+.editorial-carousel__photo-card {
+  align-content: stretch;
+  grid-template-rows: minmax(0, 1fr);
+  overflow: hidden;
+  background: var(--color-bg-subtle);
+}
+
+.editorial-carousel__photo {
+  position: relative;
+  align-self: stretch;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.editorial-carousel__photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 62%, rgba(15, 10, 5, 0.5) 100%);
+  pointer-events: none;
+}
+
+.editorial-carousel__photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  transform: scale(1.08);
+  transform-origin: center center;
+}
+
+.editorial-carousel--photo .editorial-carousel__control--previous {
+  left: calc((var(--space-10) + var(--space-4)) * -1);
+}
+
+.editorial-carousel--photo .editorial-carousel__control--next {
+  right: calc((var(--space-10) + var(--space-4)) * -1);
+}
+
+.editorial-carousel__photo figcaption {
+  position: absolute;
+  right: var(--space-4);
+  bottom: var(--space-4);
+  left: var(--space-4);
+  z-index: 1;
+  margin: 0;
+  color: var(--color-bg);
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  letter-spacing: var(--tracking-nav);
+  text-transform: uppercase;
+}
+
+.editorial-carousel__control {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  display: none;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid color-mix(in srgb, var(--color-accent) 24%, transparent);
+  background: var(--color-bg);
+  color: var(--color-accent);
+  font: inherit;
+  font-size: 1.45rem;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.editorial-carousel__carousel.is-enhanced .editorial-carousel__control {
+  display: inline-flex;
+}
+
+.editorial-carousel__control:hover {
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+
+.editorial-carousel__control:focus-visible {
+  outline: 2px solid var(--color-live-dot);
+  outline-offset: 4px;
+}
+
+.editorial-carousel__control--previous {
+  left: calc(var(--space-6) * -1);
+}
+
+.editorial-carousel__control--next {
+  right: calc(var(--space-6) * -1);
+}
+
+.editorial-carousel__actions {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.editorial-carousel--quote .editorial-carousel__actions {
+  justify-content: flex-start;
+  margin-top: calc(var(--space-6) * -1);
+}
+
+.editorial-carousel--course .editorial-carousel__course-list {
+  padding: 0;
+  background: transparent;
+}
+
+.editorial-carousel--course .editorial-carousel__course-panel {
+  padding: 0;
+}
+
+.editorial-carousel--course .editorial-carousel__course-panel--secondary {
+  margin-top: var(--space-2);
+  padding-top: var(--space-4);
+}
+
+.editorial-carousel--course .editorial-carousel__course-title,
+.editorial-carousel--course .editorial-carousel__course-subtitle,
+.editorial-carousel--course .editorial-carousel__course-details {
+  color: var(--color-bg);
+}
+
+.editorial-carousel--course .pill-button--ghost {
+  color: var(--color-bg);
+  border-color: color-mix(in srgb, var(--color-bg) 40%, transparent);
+}
+
+.editorial-carousel--course .pill-button--ghost:hover {
+  background: color-mix(in srgb, var(--color-bg) 10%, transparent);
+  border-color: color-mix(in srgb, var(--color-bg) 40%, transparent);
+}
+
+@media (max-width: 900px) {
+  /* mirrors current-work's own 900px tweak (base.css switches main's side
+     padding at this breakpoint) — keep the photo carousel's arrow offset
+     in sync with it since both sit at the same container width. */
+  .editorial-carousel--photo .editorial-carousel__control--previous {
+    left: calc((var(--space-6) + var(--space-4)) * -1);
+  }
+
+  .editorial-carousel--photo .editorial-carousel__control--next {
+    right: calc((var(--space-6) + var(--space-4)) * -1);
+  }
+}
+
+@media (max-width: 720px) {
+  .editorial-carousel {
+    padding: var(--space-8) var(--space-6);
+  }
+
+  /* The base rule above (same specificity, but declared first in the file)
+     would otherwise win at this breakpoint and reintroduce padding on the
+     photo/quote variants, which both rely on padding:0 for their sizing
+     (block-size on the photo carousel, the quote card's own copy-padding). */
+  .editorial-carousel--photo,
+  .editorial-carousel--quote {
+    padding: 0;
+  }
+
+  .editorial-carousel__quote-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .editorial-carousel__control--previous,
+  .editorial-carousel--photo .editorial-carousel__control--previous {
+    left: var(--space-2);
+  }
+
+  .editorial-carousel__control--next,
+  .editorial-carousel--photo .editorial-carousel__control--next {
+    right: var(--space-2);
+  }
+}

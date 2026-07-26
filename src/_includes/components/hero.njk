@@ -1,0 +1,42 @@
+{% from "components/pill-button.njk" import pillButton %}
+
+{% macro hero(imageUrl, slogan, primaryLabel, primaryHref, secondaryLabel, secondaryHref, body="", meta=[], imageCredit="", role="", logoUrl="") %}
+  <section class="hero" aria-label="Featured introduction">
+    <div class="hero__inner">
+      <div class="hero__content">
+        <div class="hero__copy">
+          <div class="hero__top">
+            <div class="hero__identity">
+              {% if logoUrl %}
+                <img class="hero__mark" src="{{ logoUrl }}" alt="">
+              {% endif %}
+              <h1 class="hero__headline">{{ slogan | safe }}</h1>
+            </div>
+            {% if role %}
+              <p class="hero__role">{{ role }}</p>
+            {% endif %}
+            {% if body %}
+              <p class="hero__body">{{ body }}</p>
+            {% endif %}
+            {% if meta and meta.length %}
+              <ul class="hero__meta" aria-label="Schlagworte">
+                {% for item in meta %}
+                  <li>{{ item }}</li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </div>
+          <div class="hero__actions">
+            {{ pillButton(primaryLabel, primaryHref, "solid", true) }}
+            {{ pillButton(secondaryLabel, secondaryHref, "ghost") }}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__media{% if not imageUrl %} hero__media--placeholder{% endif %}"{% if imageUrl %} style="background-image: url('{{ imageUrl }}');"{% endif %}>
+      {% if imageCredit %}
+        <p class="hero__credit">{{ imageCredit }}</p>
+      {% endif %}
+    </div>
+  </section>
+{% endmacro %}

@@ -1,0 +1,455 @@
+.current-work {
+  display: grid;
+  gap: var(--space-6);
+  margin: calc(var(--space-8) * -1) 0 0;
+  padding: clamp(var(--space-8), 6vw, var(--space-12)) 0 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.current-work__section-head,
+.current-work__carousel,
+.current-work__actions {
+  width: 100%;
+}
+
+.current-work__section-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.current-work__section-head h2,
+.current-work__meta,
+.current-work__composer,
+.current-work__details p {
+  margin: 0;
+}
+
+.current-work__meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+.current-work__section-head h2 {
+  color: var(--color-text);
+  font-size: var(--font-size-section-heading);
+  font-weight: 400;
+  letter-spacing: -0.045em;
+  line-height: 0.9;
+}
+
+.current-work__more-link {
+  flex: 0 0 auto;
+  margin-bottom: 0.2rem;
+}
+
+.current-work__card {
+  block-size: 500px;
+  /* min-height:0 matters here too, not just on .current-work__copy below:
+     the active slide (this element) becomes a grid item of .current-work__track
+     once JS enhances the carousel (.is-active gets display:grid), and grid
+     items default to min-height:auto — which silently overrides even an
+     explicit block-size:500px the moment content's min-content size exceeds
+     it, growing this box past 500px and dragging every fixed-position child
+     down with it. Confirmed by forcing an oversized title: without this,
+     .current-work__details moved by 1000px+; block-size alone did not stop it. */
+  min-height: 0;
+  overflow: hidden;
+  background: var(--color-accent);
+  color: var(--color-bg);
+  isolation: isolate;
+}
+
+.current-work__card-link {
+  display: grid;
+  grid-template-columns: minmax(0, var(--current-work-copy-width, 31rem)) minmax(0, 1fr);
+  /* grid-template-rows: 1fr (not the default implicit "auto") is the actual
+     fix for .current-work__details drifting: an "auto" row sizes itself to
+     fit its tallest item's content and grows past the card's fixed 500px
+     the moment kicker+title+composer need more room than that — dragging
+     everything positioned relative to .current-work__copy down with it,
+     .current-work__details included, despdisplay:absolute. "1fr" makes the
+     row consume exactly the grid container's own definite height (100% of
+     the 500px card) instead, so content that doesn't fit is clipped by
+     .current-work__card's overflow:hidden rather than growing the box.
+     Confirmed via a forced-overflow test: without this, an artificially
+     long title shifted .current-work__details by over 1000px; with it,
+     the same test leaves .current-work__details untouched. */
+  grid-template-rows: 1fr;
+  align-items: stretch;
+  column-gap: clamp(var(--space-5), 3vw, var(--space-8));
+  block-size: 100%;
+  /* Third and last layer of the same automatic-minimum-size chain: this
+     element is itself a grid item of .current-work__card once JS marks the
+     slide .is-active (that rule sets display:grid on .current-work__card).
+     Needs its own min-height:0 too, or content can still force it — and
+     everything inside it — taller than the 100% it's supposed to be. */
+  min-height: 0;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.current-work__slide + .current-work__slide {
+  margin-top: var(--space-6);
+}
+
+.current-work__carousel.is-enhanced .current-work__track {
+  display: grid;
+}
+
+.current-work__carousel.is-enhanced .current-work__viewport {
+  block-size: 500px;
+}
+
+.current-work__carousel.is-enhanced .current-work__slide {
+  display: none;
+  margin-top: 0;
+}
+
+.current-work__carousel.is-enhanced .current-work__slide.is-active {
+  display: grid;
+  animation: current-work-enter 360ms ease both;
+}
+
+.current-work__copy {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  /* Grid items default to min-height:auto, which lets a row grow past its
+     track size (.current-work__card's fixed block-size:500px) if the
+     stacked content — kicker + title + composer — ever needs more room
+     than that. If that happens, .current-work__details drifts down with
+     it despite being position:absolute, because its containing block (this
+     element) silently got taller than 500px. min-height:0 forces this item
+     to stay within its 500px track and overflow (invisibly, clipped by
+     .current-work__card's overflow:hidden) instead of growing it — keeping
+     .current-work__details pinned to the same spot no matter what. */
+  min-height: 0;
+  padding: var(--space-copy-padding);
+  padding-bottom: clamp(var(--space-10), 7vw, var(--space-16));
+}
+
+.current-work__meta {
+  color: color-mix(in srgb, var(--color-bg) 64%, transparent);
+}
+
+.current-work__title {
+  width: 100%;
+  max-width: 100%;
+  margin: var(--space-4) 0 0;
+  color: var(--color-bg);
+  letter-spacing: -0.04em;
+  text-wrap: balance;
+}
+
+/* Rule (2026-07-25, Razz): one universal title size for every work title —
+   "display" below — regardless of title length ("Parsifal" and "Der
+   Schmetterling" render at the identical font-size). A smaller size is only
+   for a justified exception where the title itself is long-form content,
+   not a proper noun — currently just "publication" (a full quote sentence
+   as the title). Don't add a third, smaller variant for an ordinary work
+   title that merely "looks like it wants more room" — let it wrap instead.
+
+   No min-height reservation here on purpose (tried once, reverted on
+   Razz's explicit request 2026-07-25): .current-work__composer must follow
+   directly after the title's actual last line, however many lines that is
+   — it is not meant to sit at a uniform offset across slides. Only
+   .current-work__details (the description block near the card's bottom)
+   is meant to be perfectly fixed regardless of what's above it — see the
+   min-height:0 note on .current-work__copy for how that's guaranteed. */
+.current-work__title--display {
+  font-size: clamp(4rem, 5.4vw, 5.4rem);
+  font-weight: 500;
+  line-height: 0.74;
+}
+
+.current-work__title--publication {
+  width: 100%;
+  font-size: clamp(2.55rem, 3.6vw, 3.6rem);
+  font-weight: 500;
+  line-height: 0.84;
+}
+
+.current-work__composer {
+  margin-top: var(--space-4);
+  font-size: clamp(1.1rem, 1.5vw, 1.4rem);
+  color: color-mix(in srgb, var(--color-bg) 84%, transparent);
+}
+
+.current-work__details {
+  position: absolute;
+  left: clamp(var(--space-8), 5vw, var(--space-12));
+  right: clamp(var(--space-8), 5vw, var(--space-12));
+  bottom: clamp(var(--space-10), 7vw, var(--space-16));
+  height: calc(4 * 1.55em + var(--space-3));
+  display: grid;
+  align-content: start;
+  gap: var(--space-3);
+  max-width: 38ch;
+  color: color-mix(in srgb, var(--color-bg) 62%, transparent);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.current-work__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  justify-content: flex-start;
+}
+
+.current-work__visual {
+  position: relative;
+  z-index: 1;
+  align-self: stretch;
+  min-width: 0;
+  block-size: auto;
+  min-block-size: 0;
+  margin: 0;
+  overflow: hidden;
+  background: var(--color-bg-subtle);
+}
+
+.current-work__visual--color {
+  background: var(--current-work-visual-color);
+}
+
+.current-work__visual::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(15, 38, 87, 0.2), transparent 40%);
+  pointer-events: none;
+}
+
+.current-work__visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 68% center;
+  filter: saturate(0.82) contrast(1.06);
+}
+
+.current-work__visual-sequence {
+  position: absolute;
+  inset: 0;
+}
+
+.current-work__sequence-image {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  animation: current-work-image-fade 9s ease-in-out infinite;
+}
+
+.current-work__sequence-image:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.current-work__sequence-image:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.current-work__sequence-image:nth-child(3) {
+  animation-delay: 6s;
+}
+
+.current-work__visual--jasmin-signing img {
+  object-position: 100% 56%;
+  transform: scale(1.38);
+  transform-origin: 100% 56%;
+}
+
+.current-work__visual--publication img {
+  object-position: 100% center;
+  transform: scale(1.28);
+  transform-origin: center center;
+}
+
+.current-work__visual--masterclass img {
+  object-position: 52% 36%;
+  transform: scale(1.12);
+  transform-origin: center center;
+}
+
+.current-work__visual figcaption {
+  position: absolute;
+  right: var(--space-4);
+  bottom: var(--space-4);
+  left: var(--space-4);
+  z-index: 1;
+  color: var(--color-bg);
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  letter-spacing: var(--tracking-nav);
+  text-transform: uppercase;
+}
+
+.current-work__carousel {
+  position: relative;
+}
+
+.current-work__control {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  display: none;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid color-mix(in srgb, var(--color-accent) 24%, transparent);
+  background: var(--color-bg);
+  color: var(--color-accent);
+  font: inherit;
+  font-size: 1.45rem;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.current-work__carousel.is-enhanced .current-work__control {
+  display: inline-flex;
+}
+
+.current-work__control:hover {
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+
+.current-work__control:focus-visible,
+.current-work__card-link:focus-visible {
+  outline: 2px solid var(--color-live-dot);
+  outline-offset: 4px;
+}
+
+.current-work__control--previous {
+  left: calc((var(--space-10) + var(--space-4)) * -1);
+}
+
+.current-work__control--next {
+  right: calc((var(--space-10) + var(--space-4)) * -1);
+}
+
+@keyframes current-work-enter {
+  from {
+    opacity: 0;
+    transform: translateX(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes current-work-image-fade {
+  0%,
+  28% {
+    opacity: 1;
+  }
+
+  36%,
+  92% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 900px) {
+  /* main switches to var(--space-6) side padding at this breakpoint (base.css) —
+     mirror it here so the arrows (offset to align with main's own edge) don't
+     overshoot past the viewport in the 721–900px gap. */
+  .current-work__control--previous {
+    left: calc((var(--space-6) + var(--space-4)) * -1);
+  }
+
+  .current-work__control--next {
+    right: calc((var(--space-6) + var(--space-4)) * -1);
+  }
+}
+
+@media (max-width: 720px) {
+  .current-work {
+    min-height: 0;
+    margin: calc(var(--space-8) * -1) 0 0;
+    padding: var(--space-8) var(--space-6);
+  }
+
+  .current-work__card {
+    block-size: 580px;
+  }
+
+  .current-work__card-link,
+  .current-work__card--publication .current-work__card-link {
+    grid-template-columns: 1fr;
+    grid-template-rows: 320px 260px;
+  }
+
+  .current-work__carousel.is-enhanced .current-work__viewport {
+    block-size: 580px;
+  }
+
+  .current-work__copy {
+    min-height: 320px;
+    padding: var(--space-8) var(--space-6);
+  }
+
+  .current-work__title {
+    width: 100%;
+  }
+
+  .current-work__title--display {
+    font-size: clamp(3.7rem, 14vw, 5.3rem);
+  }
+
+  .current-work__title--publication {
+    font-size: clamp(2.8rem, 10vw, 4rem);
+  }
+
+  .current-work__section-head {
+    align-items: start;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .current-work__more-link {
+    margin-bottom: 0;
+  }
+
+  .current-work__visual {
+    min-height: 0;
+  }
+
+  .current-work__control--previous {
+    left: var(--space-2);
+  }
+
+  .current-work__control--next {
+    right: var(--space-2);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .current-work__sequence-image {
+    animation: none;
+  }
+
+  .current-work__sequence-image:first-child {
+    opacity: 1;
+  }
+}

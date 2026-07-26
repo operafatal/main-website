@@ -1,0 +1,244 @@
+---
+layout: base.njk
+pagination:
+  data: werk.items
+  size: 1
+  alias: production
+permalink: "/inszenierungen/{{ production.slug }}/"
+eleventyComputed:
+  title: "{{ production.title }}"
+---
+{% from "components/editorial-carousel.njk" import editorialCarousel %}
+
+<article class="work-detail">
+  <header class="work-detail__hero">
+    <a class="work-detail__back" href="/inszenierungen/">← Zurück zu den Inszenierungen</a>
+    <div class="work-detail__hero-copy">
+      <p class="work-detail__kicker">{{ production.categoryLabel }} · {{ production.year }}</p>
+      <h1>{{ production.title }}</h1>
+      <p class="work-detail__subtitle">{{ production.composer }}</p>
+      <p class="work-detail__place">{{ production.place }}</p>
+      {% if production.note %}
+        <p class="work-detail__note">{{ production.note }}</p>
+      {% endif %}
+    </div>
+
+    <figure class="work-detail__hero-visual"{% if production.visual and (production.visual.position or production.visual.scale) %} style="{% if production.visual.position %}--work-detail-hero-object-position: {{ production.visual.position }};{% endif %}{% if production.visual.scale %} --work-detail-hero-image-scale: {{ production.visual.scale }};{% endif %}"{% endif %}>
+      {% if production.visual and production.visual.type == "image" %}
+        <img src="{{ production.visual.heroSrc or production.visual.src }}" alt="{{ production.visual.heroAlt or production.visual.alt }}" loading="eager" decoding="async">
+        {% if production.visual.caption %}
+          <figcaption>{{ production.visual.caption }}</figcaption>
+        {% endif %}
+      {% else %}
+        <span class="work-detail__visual-field" style="--work-detail-color: {{ production.visual.color if production.visual else '#0f2657' }};" aria-hidden="true"></span>
+      {% endif %}
+    </figure>
+  </header>
+
+  {% set detailGallery = production.gallery | galleryAfterHero(production.galleryStartIndex) %}
+  {% if detailGallery and detailGallery.length > 0 and (detailGallery.length > 1 or not production.visual or not production.visual.src or detailGallery[0].src != production.visual.src) %}
+    {{ editorialCarousel(
+      "gallery-" ~ production.slug,
+      "",
+      "",
+      "Bilder zur Inszenierung " ~ production.title,
+      detailGallery,
+      "photo",
+      "",
+      "",
+      "",
+      "",
+      "",
+      detailGallery.length > 1
+    ) }}
+  {% endif %}
+
+  <div class="work-detail__content">
+    {% if production.credits %}
+      <section class="work-detail__section work-detail__section--credits" aria-labelledby="credits-title">
+        <h2 id="credits-title">Credits</h2>
+        <dl class="work-detail__credits">
+          {% for key, value in production.credits %}
+            <dt>{{ key | creditLabel }}</dt>
+            <dd>{{ value }}</dd>
+          {% endfor %}
+        </dl>
+      </section>
+    {% endif %}
+
+    {% if production.detailIntro or production.detailSections %}
+      <section class="work-detail__section work-detail__section--narrative" aria-labelledby="narrative-title">
+        <h2 id="narrative-title">Konzept & Wirkung</h2>
+        {% if production.detailIntro %}
+          <p class="work-detail__lead">{{ production.detailIntro }}</p>
+        {% endif %}
+        {% if production.detailSections %}
+          <div class="work-detail__text-grid">
+            {% for section in production.detailSections %}
+              <section class="work-detail__text-block">
+                <h3>{{ section.heading }}</h3>
+                <p>{{ section.body }}</p>
+              </section>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </section>
+    {% endif %}
+
+    {% if production.trailer %}
+      <section class="work-detail__section work-detail__section--trailer" aria-labelledby="trailer-title">
+        <h2 id="trailer-title">{{ production.trailer.heading or "Trailer" }}</h2>
+        <div class="work-detail__video">
+          {% if production.trailer.youtubeId %}
+            <iframe
+              src="https://www.youtube.com/embed/{{ production.trailer.youtubeId }}"
+              title="{{ production.trailer.title }}"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          {% elif production.trailer.embedSrc %}
+            <iframe
+              src="{{ production.trailer.embedSrc }}"
+              title="{{ production.trailer.title }}"
+              frameborder="0"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          {% endif %}
+        </div>
+      </section>
+    {% endif %}
+
+    {% if production.publicationFeature %}
+      <section class="work-detail__section work-detail__section--publication" aria-labelledby="publication-title">
+        <div class="work-detail__publication-copy">
+          {% if production.publicationFeature.kicker %}
+            <p class="work-detail__section-kicker">{{ production.publicationFeature.kicker }}</p>
+          {% endif %}
+          <h2 id="publication-title">{{ production.publicationFeature.title }}</h2>
+          {% if production.publicationFeature.subtitle %}
+            <p class="work-detail__publication-subtitle">{{ production.publicationFeature.subtitle }}</p>
+          {% endif %}
+          {% if production.publicationFeature.body %}
+            <p class="work-detail__publication-body">{{ production.publicationFeature.body }}</p>
+          {% endif %}
+          {% if production.publicationFeature.facts and production.publicationFeature.facts.length %}
+            <ul class="work-detail__publication-facts" aria-label="Buchdetails">
+              {% for fact in production.publicationFeature.facts %}
+                <li>{{ fact }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+          <div class="work-detail__publication-actions">
+            {% if production.publicationFeature.href %}
+              <a class="work-detail__source-link work-detail__source-link--publication" href="{{ production.publicationFeature.href }}"{% if production.publicationFeature.href | isExternalUrl %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ production.publicationFeature.linkLabel or "Mehr erfahren" }} <span aria-hidden="true">→</span></a>
+            {% endif %}
+            {% if production.publicationFeature.detailLinkLabel %}
+              <span class="work-detail__source-link work-detail__source-link--publication-dummy" aria-disabled="true">{{ production.publicationFeature.detailLinkLabel }} <span aria-hidden="true">→</span></span>
+            {% endif %}
+          </div>
+        </div>
+        {% if production.publicationFeature.image %}
+          <figure class="work-detail__publication-visual">
+            <img src="{{ production.publicationFeature.image.src }}" alt="{{ production.publicationFeature.image.alt }}" loading="lazy" decoding="async">
+            {% if production.publicationFeature.image.caption %}
+              <figcaption>{{ production.publicationFeature.image.caption }}</figcaption>
+            {% endif %}
+          </figure>
+        {% endif %}
+      </section>
+    {% endif %}
+
+    {% if production.externalLinks and production.externalLinks.length %}
+      <section class="work-detail__section" aria-labelledby="links-title">
+        <h2 id="links-title">Weiterführende Links</h2>
+        <div class="work-detail__links">
+          {% for link in production.externalLinks %}
+            <a class="work-detail__source-link" href="{{ link.href }}"{% if link.href | isExternalUrl %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ link.label }} <span aria-hidden="true">→</span></a>
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+
+    {% if (production.reviews and production.reviews.length) or (production.mediaEcho and production.mediaEcho.length) %}
+      <section class="work-detail__section work-detail__section--press" aria-labelledby="reviews-title">
+        <h2 id="reviews-title">{{ "Presse & Kritiken" if production.reviews and production.reviews.length else "Presse" }}</h2>
+        {% if production.reviews and production.reviews.length %}
+          <div class="work-detail__reviews">
+            {% for review in production.reviews %}
+              {% set reviewDialogId = "review-" ~ production.slug ~ "-" ~ loop.index %}
+              <article class="work-detail__review">
+                <figure>
+                  {% if review.title %}
+                    <p class="work-detail__review-title">{{ review.title }}</p>
+                  {% endif %}
+                  <blockquote>{{ review.quote }}</blockquote>
+                  <figcaption>
+                    {{ review.author }}{% if review.source %} · {{ review.source }}{% endif %}{% if review.date %} · {{ review.date }}{% endif %}
+                  </figcaption>
+                </figure>
+                <div class="work-detail__review-actions">
+                  {% if review.fullText and review.fullText.length %}
+                    <button class="work-detail__review-button" type="button" data-review-open="{{ reviewDialogId }}">Vollständige Kritik anzeigen <span aria-hidden="true">→</span></button>
+                  {% endif %}
+                  {% if review.href %}
+                    <a class="work-detail__source-link work-detail__source-link--outline" href="{{ review.href }}"{% if review.href | isExternalUrl %} target="_blank" rel="noopener noreferrer"{% endif %}>Beitrag öffnen <span aria-hidden="true">→</span></a>
+                  {% endif %}
+                </div>
+                {% if review.fullText and review.fullText.length %}
+                  <dialog class="work-detail__review-dialog" id="{{ reviewDialogId }}" aria-labelledby="{{ reviewDialogId }}-title">
+                    <div class="work-detail__review-dialog-inner">
+                      <div class="work-detail__review-dialog-head">
+                        <button class="work-detail__review-close" type="button" data-review-close aria-label="Kritik schließen">×</button>
+                        <p class="work-detail__section-kicker">Vollständige Kritik</p>
+                        <h3 id="{{ reviewDialogId }}-title">{{ review.title if review.title else production.title }}</h3>
+                        <p class="work-detail__review-dialog-meta">
+                          {{ review.author }}{% if review.source %} · {{ review.source }}{% endif %}{% if review.date %} · {{ review.date }}{% endif %}
+                        </p>
+                      </div>
+                      <div class="work-detail__review-fulltext">
+                        {% for paragraph in review.fullText %}
+                          <p>{{ paragraph }}</p>
+                        {% endfor %}
+                      </div>
+                    </div>
+                  </dialog>
+                {% endif %}
+              </article>
+            {% endfor %}
+          </div>
+        {% endif %}
+        {% if production.mediaEcho and production.mediaEcho.length %}
+          <div class="work-detail__media-echo">
+            <h3>Weitere Beiträge</h3>
+            <div class="work-detail__media-list">
+              {% for item in production.mediaEcho %}
+                <article class="work-detail__media-item">
+                  <p class="work-detail__media-meta">{{ item.source }}{% if item.date %} · {{ item.date }}{% endif %}</p>
+                  <h4>{{ item.title }}</h4>
+                  {% if item.summary %}
+                    <p>{{ item.summary }}</p>
+                  {% endif %}
+                  {% if item.href %}
+                    <a class="work-detail__source-link work-detail__source-link--outline" href="{{ item.href }}"{% if item.href | isExternalUrl %} target="_blank" rel="noopener noreferrer"{% endif %}>Beitrag öffnen <span aria-hidden="true">→</span></a>
+                  {% endif %}
+                </article>
+              {% endfor %}
+            </div>
+          </div>
+        {% endif %}
+      </section>
+    {% endif %}
+
+    {% if not production.detailSections %}
+      <section class="work-detail__section" aria-labelledby="source-title">
+        <p class="work-detail__section-kicker">Originalmaterial</p>
+        <h2 id="source-title">Quelle</h2>
+        <p class="work-detail__source-copy">Die Detailseite nutzt die aktuell lokal übertragenen Hard-Facts, Credits, Pressestimmen und Bildgruppen der alten Website. Die langen Originaltexte werden als nächster redaktioneller Durchlauf produktionweise sauber ergänzt.</p>
+        <a class="work-detail__source-link" href="{{ production.sourceUrl }}"{% if production.sourceUrl | isExternalUrl %} target="_blank" rel="noopener noreferrer"{% endif %}>Originalseite öffnen <span aria-hidden="true">→</span></a>
+      </section>
+    {% endif %}
+  </div>
+</article>

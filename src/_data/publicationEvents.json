@@ -1,0 +1,207 @@
+{
+  "events": [
+    {
+      "id": "buchpraesentation-tuebingen-2025",
+      "status": "confirmed",
+      "location": "Universität Tübingen",
+      "date": "11. November 2025",
+      "sortDate": "2025-11-11",
+      "type": "Buchpräsentation",
+      "title": "Ich schreite kaum, doch wähn' ich mich schon weit. Parsifal am Goetheanum",
+      "summary": "Buchpräsentation am Musikwissenschaftlichen Institut der Universität Tübingen.",
+      "buttonLabel": "Mehr anzeigen",
+      "visual": {
+        "type": "placeholder",
+        "label": "Tübingen",
+        "tone": "light"
+      },
+      "sources": [
+        {
+          "label": "Solfaghari.com — Termine",
+          "href": "https://www.solfaghari.com/termine/"
+        }
+      ],
+      "details": {
+        "tags": [
+          "Buchpräsentation",
+          "Universität",
+          "Parsifal"
+        ],
+        "intro": [
+          "Die Buchpräsentation am Musikwissenschaftlichen Institut der Universität Tübingen stellt Jasmin Solfagharis Parsifal-Buch in einen akademischen Kontext.",
+          "Im Zentrum steht die Entstehung der Goetheanum-Produktion und die Frage, wie sich Regie, Raum, Eurythmie und Werkdeutung in Buchform nachvollziehen lassen."
+        ],
+        "facts": [
+          {
+            "label": "Datum",
+            "value": "11. November 2025"
+          },
+          {
+            "label": "Ort",
+            "value": "Musikwissenschaftliches Institut, Universität Tübingen"
+          },
+          {
+            "label": "Buch",
+            "value": "Ich schreite kaum, doch wähn’ ich mich schon weit. Parsifal am Goetheanum"
+          }
+        ]
+      }
+    },
+    {
+      "id": "buchmesse-leipzig-schott-2025",
+      "status": "confirmed",
+      "location": "Leipziger Buchmesse / Schott Verlag",
+      "date": "30. März 2025",
+      "sortDate": "2025-03-30",
+      "type": "Buchpräsentation",
+      "title": "Ich schreite kaum, doch wähn' ich mich schon weit. Parsifal am Goetheanum",
+      "summary": "Buchpräsentation auf der Leipziger Buchmesse am Stand des Schott Verlags.",
+      "buttonLabel": "Mehr anzeigen",
+      "visual": {
+        "type": "image",
+        "src": "/assets/img/parsifal/buch/ich-schreite-kaum-doch-waehn-ich-mich-schon-weit-gebundene-ausgabe-jasmin-solfaghari.jpg",
+        "alt": "Buchcover Parsifal am Goetheanum"
+      },
+      "sources": [
+        {
+          "label": "Solfaghari.com — Termine",
+          "href": "https://www.solfaghari.com/termine/"
+        }
+      ],
+      "details": {
+        "time": "11:30-12:00 Uhr",
+        "tags": [
+          "Buchmesse",
+          "Schott",
+          "Parsifal"
+        ],
+        "intro": [
+          "Auf der Leipziger Buchmesse 2025 präsentiert Jasmin Solfaghari ihr bei Schott erschienenes Buch zu Parsifal am Goetheanum am Verlagsstand.",
+          "Die Präsentation verbindet Autorinnenauftritt, Werkvermittlung und Produktionsgeschichte: Der Blick geht von Wagners Bühnenweihfestspiel zur konkreten Entstehung der außergewöhnlichen Goetheanum-Fassung."
+        ],
+        "facts": [
+          {
+            "label": "Datum",
+            "value": "30. März 2025"
+          },
+          {
+            "label": "Zeit",
+            "value": "11:30-12:00 Uhr"
+          },
+          {
+            "label": "Ort",
+            "value": "Leipziger Buchmesse, Halle 2"
+          },
+          {
+            "label": "Verlag",
+            "value": "Schott"
+          }
+        ]
+      }
+    },
+    {
+      "id": "buchpraesentation-basel-2025",
+      "status": "confirmed",
+      "location": "Bider & Tanner, Basel",
+      "date": "11. Februar 2025",
+      "sortDate": "2025-02-11",
+      "type": "Buchpräsentation",
+      "title": "Ich schreite kaum, doch wähn' ich mich schon weit. Parsifal am Goetheanum",
+      "summary": "Buchpräsentation mit Alain Claude Sulzer in Basel.",
+      "buttonLabel": "Mehr anzeigen",
+      "visual": {
+        "type": "image",
+        "src": "/assets/img/parsifal/buch/ich-schreite-kaum-doch-waehn-ich-mich-schon-weit-gebundene-ausgabe-jasmin-solfaghari.jpg",
+        "alt": "Buchcover Parsifal am Goetheanum"
+      },
+      "sources": [
+        {
+          "label": "Solfaghari.com — Termine",
+          "href": "https://www.solfaghari.com/termine/"
+        }
+      ],
+      "details": {
+        "time": "19:30 Uhr",
+        "tags": [
+          "Buchpräsentation",
+          "Basel",
+          "Parsifal"
+        ],
+        "intro": [
+          "Die Basler Buchpräsentation bei Bider & Tanner bringt Jasmin Solfagharis Parsifal-Buch in unmittelbare Nähe zum Goetheanum-Kontext.",
+          "Moderiert wird der Abend von Alain Claude Sulzer. Das Format verbindet Lesung, Gespräch und Einblick in die künstlerische Arbeit an Parsifal am Goetheanum."
+        ],
+        "facts": [
+          {
+            "label": "Datum",
+            "value": "11. Februar 2025"
+          },
+          {
+            "label": "Zeit",
+            "value": "19:30 Uhr"
+          },
+          {
+            "label": "Ort",
+            "value": "Bider & Tanner, Basel"
+          },
+          {
+            "label": "Moderation",
+            "value": "Alain Claude Sulzer"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lesung-klub-alsergrund-2024",
+      "status": "confirmed",
+      "location": "Klub Alsergrund, Wien",
+      "date": "18. Oktober 2024",
+      "sortDate": "2024-10-18",
+      "type": "Lesung",
+      "title": "Opernführer für Einsteiger",
+      "summary": "Lesung aus dem Opernführer für Einsteiger, moderiert von Ivaylo Guberov.",
+      "buttonLabel": "Mehr anzeigen",
+      "visual": {
+        "type": "placeholder",
+        "label": "Wien",
+        "tone": "accent"
+      },
+      "sources": [
+        {
+          "label": "Solfaghari.com — Termine",
+          "href": "https://www.solfaghari.com/termine/"
+        }
+      ],
+      "details": {
+        "time": "19 Uhr",
+        "tags": [
+          "Lesung",
+          "Wien",
+          "Opernführer"
+        ],
+        "intro": [
+          "Die Lesung im Klub Alsergrund in Wien widmet sich dem „Opernführer für Einsteiger“ und Jasmin Solfagharis Arbeit an verständlicher, lebendiger Opernvermittlung.",
+          "Moderiert von Ivaylo Guberov wird Oper als erzählbare, zugängliche Kunstform präsentiert: mit Blick auf Werke, Theaterpraxis und die Freude am Einstieg in das Repertoire."
+        ],
+        "facts": [
+          {
+            "label": "Datum",
+            "value": "18. Oktober 2024"
+          },
+          {
+            "label": "Zeit",
+            "value": "19 Uhr"
+          },
+          {
+            "label": "Ort",
+            "value": "Klub Alsergrund, Haus der Bezirksvorstehung, 1090 Wien"
+          },
+          {
+            "label": "Moderation",
+            "value": "Ivaylo Guberov"
+          }
+        ]
+      }
+    }
+  ]
+}

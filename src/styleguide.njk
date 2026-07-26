@@ -1,0 +1,107 @@
+---
+layout: base.njk
+title: Styleguide
+---
+{% from "components/hero.njk" import hero %}
+{% from "components/marquee.njk" import marquee %}
+{% from "components/stat-block.njk" import statBlock %}
+{% from "components/tag-chips.njk" import tagChips %}
+{% from "components/quote-strip.njk" import quoteStrip %}
+
+<div class="styleguide styleguide__page">
+  <section class="styleguide__section" id="font-compare">
+    <h2 class="styleguide__section-title">Serifen-Vergleich (Headline-Font)</h2>
+    <p class="styleguide__section-copy">Fünf Kandidaten, editorial aber verspielt/geschwungen. Aktuell live im Einsatz: Cormorant Garamond.</p>
+    <div class="font-compare">
+      <div class="font-compare__row">
+        <p class="font-compare__label">1 — Cormorant Garamond (aktuell live)</p>
+        <p class="font-compare__sample" style="font-family: 'Cormorant Garamond', serif;">Jasmin Solfaghari</p>
+      </div>
+      <div class="font-compare__row">
+        <p class="font-compare__label">2 — Fraunces</p>
+        <p class="font-compare__sample" style="font-family: 'Fraunces', serif;">Jasmin Solfaghari</p>
+      </div>
+      <div class="font-compare__row">
+        <p class="font-compare__label">3 — Instrument Serif</p>
+        <p class="font-compare__sample" style="font-family: 'Instrument Serif', serif;">Jasmin Solfaghari</p>
+      </div>
+      <div class="font-compare__row">
+        <p class="font-compare__label">4 — Gilda Display</p>
+        <p class="font-compare__sample" style="font-family: 'Gilda Display', serif;">Jasmin Solfaghari</p>
+      </div>
+      <div class="font-compare__row">
+        <p class="font-compare__label">5 — Yeseva One</p>
+        <p class="font-compare__sample" style="font-family: 'Yeseva One', serif;">Jasmin Solfaghari</p>
+      </div>
+      <div class="font-compare__row">
+        <p class="font-compare__label">6 — Suranna</p>
+        <p class="font-compare__sample" style="font-family: 'Suranna', serif;">Jasmin Solfaghari</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="styleguide__full-bleed">
+    {{ hero(
+      "",
+      "A thoughtful, editorial presence for artistic work, conversation, and selected projects.",
+      "View Portfolio",
+      "#",
+      "Contact Jasmin",
+      "#"
+    ) }}
+  </div>
+
+  <section class="styleguide__section">
+    <h2 class="styleguide__section-title">Marquee</h2>
+    {{ marquee([
+      "Schauspielhaus Zürich",
+      "Konzerthaus Berlin",
+      "Staatsoper Hamburg",
+      "Royal Opera House",
+      "Tonhalle Zürich",
+      "Wiener Festwochen"
+    ]) }}
+  </section>
+
+  <section class="styleguide__section">
+    <h2 class="styleguide__section-title">Stat Block</h2>
+    {{ statBlock([
+      {"number": "120+", "label": "Performances"},
+      {"number": "18", "label": "Years on stage"},
+      {"number": "7", "label": "International productions"}
+    ]) }}
+  </section>
+
+  <section class="styleguide__section">
+    <h2 class="styleguide__section-title">Tag Chips</h2>
+    {{ tagChips([
+      "Opera",
+      "Recital",
+      "Contemporary",
+      "Teaching",
+      "Production"
+    ]) }}
+  </section>
+
+  <div class="styleguide__full-bleed">
+    {{ quoteStrip(
+      "Voice becomes most powerful when it is shaped with patience, precision, and trust.",
+      "Jasmin Solfaghari"
+    ) }}
+  </div>
+
+  <section class="styleguide__section">
+    <h2 class="styleguide__section-title">Pill Button</h2>
+    <div class="styleguide__stack">
+      <div>
+        {% from "components/pill-button.njk" import pillButton %}
+        {{ pillButton("Primary CTA", "#", "solid") }}
+      </div>
+      <div>
+        {% from "components/pill-button.njk" import pillButton %}
+        {{ pillButton("Ghost CTA", "#", "ghost") }}
+      </div>
+    </div>
+  </section>
+</div>
+

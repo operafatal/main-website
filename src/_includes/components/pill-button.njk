@@ -1,0 +1,11 @@
+{% macro pillButton(label, href, variant="solid", showArrow=false) %}
+  {% set classes = "pill-button pill-button--" ~ variant %}
+  {% if showArrow %}
+    {% set classes = classes ~ " pill-button--with-arrow" %}
+  {% endif %}
+  {% if href %}
+    <a class="{{ classes }}" href="{{ href }}">{{ label }}</a>
+  {% else %}
+    <button class="{{ classes }}" type="button">{{ label }}</button>
+  {% endif %}
+{% endmacro %}

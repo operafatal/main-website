@@ -1,0 +1,326 @@
+/* Base shell for main-website. The more expressive page-specific work
+   lives in assets/css/components/*.css, but the header/footer/navigation
+   and page framing belong here so every page shares the same editorial
+   rhythm. */
+
+* { box-sizing: border-box; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* overflow-x lives on <html>, not <body>: setting it on body forces
+   body's overflow-y to compute as "auto" (CSS spec quirk), which makes
+   body its own scroll container instead of the window/documentElement —
+   breaking window scroll-position listeners (e.g. the header in base.njk). */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  /* The tab bar (.work-tabs__list) is fully sticky to the header now — the
+     trackpad rubber-band overscroll at the top/bottom of the page made it
+     visibly jump/overshoot during that bounce, which reads as broken since
+     there's nothing left for it to "catch up" to. */
+  overscroll-behavior-y: none;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-body);
+  color: var(--color-text);
+  background: #ffffff;
+}
+
+h1, h2, h3 {
+  font-family: "Melodrama", var(--font-serif);
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+main {
+  padding: var(--page-top-offset) var(--space-10) calc(var(--space-16) + 16px);
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.page-home main {
+  padding-top: 0;
+}
+
+/* Inszenierungen/Meisterkurse & Coaching: no visible H1 anymore, so the
+   sticky tab bar (.work-tabs__list) is the first thing in the page. The
+   visible gap under the fixed header is baked into its own sticky offset
+   (see .page-tabs-flush .work-tabs__list below) rather than left as plain
+   spacing here — its static resting position must exactly equal that
+   sticky offset, or it visibly travels/scrolls the difference before
+   locking in place instead of being stuck from the first pixel of scroll. */
+.page-tabs-flush main {
+  padding-top: var(--tabs-flush-offset);
+}
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 30;
+  background: color-mix(in srgb, var(--color-bg) 92%, transparent);
+  border-top: 1px solid color-mix(in srgb, var(--color-accent) 12%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--color-accent) 12%, transparent);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .site-header {
+    background: color-mix(in srgb, var(--color-bg) 92%, transparent);
+  }
+}
+
+.site-header__inner,
+.site-footer__inner {
+  width: min(100%, 1180px);
+  margin-inline: auto;
+  padding: var(--space-5) var(--space-10);
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+}
+
+.site-header__inner {
+  justify-content: space-between;
+  padding-block: var(--space-4);
+}
+
+.site-header__brand {
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-accent);
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    opacity 220ms ease,
+    transform 220ms ease;
+}
+
+.site-header__brand-logo {
+  display: block;
+  width: auto;
+  height: clamp(1.6rem, 2.4vw, 2.24rem);
+}
+
+.site-header__brand-mark {
+  display: inline-flex;
+  align-items: baseline;
+  font-family: "Melodrama", var(--font-serif);
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  line-height: 0.8;
+  letter-spacing: -0.08em;
+  color: var(--color-accent);
+}
+
+.site-header__brand-letter--j {
+  font-style: normal;
+  font-weight: 400;
+}
+
+.site-header__brand-letter--s {
+  font-style: normal;
+  font-weight: 600;
+  margin-left: -0.02em;
+}
+
+.site-nav {
+  margin-left: auto;
+}
+
+.site-nav__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-6);
+  padding: 0;
+  margin: 0;
+}
+
+.site-footer__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-6);
+  padding: 0;
+  margin: 0;
+}
+
+.site-nav__link,
+.site-footer__link,
+.site-footer__copyright {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-size: var(--font-size-small);
+  letter-spacing: var(--tracking-nav);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.site-footer__link {
+  position: relative;
+  padding-bottom: 4px;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.site-footer__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 100%;
+  bottom: -1px;
+  height: 1px;
+  background: var(--color-text);
+  transition: right 180ms ease;
+}
+
+.site-footer__link:hover::after {
+  right: 0;
+}
+
+.site-nav__link {
+  position: relative;
+  display: inline-block;
+  padding: 0 0 4px;
+  color: var(--color-text);
+  letter-spacing: 0.045em;
+  line-height: 1;
+}
+
+.site-nav__link--contact {
+  padding: 0.48rem 0.8rem 0.5rem;
+  border-radius: 0;
+  border: 1px solid var(--color-accent);
+  background: var(--color-accent);
+  color: var(--color-bg);
+  letter-spacing: 0.025em;
+}
+
+.site-nav__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 100%;
+  bottom: -1px;
+  height: 1px;
+  background: var(--color-text);
+  transition: right 180ms ease;
+}
+
+.site-nav__link:hover::after {
+  right: 0;
+}
+
+.site-nav__link.is-current {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.site-nav__link--contact.is-current {
+  color: var(--color-bg);
+  font-weight: 500;
+}
+
+.site-nav__link.is-current::after {
+  right: 0;
+  background: var(--color-text);
+}
+
+.site-nav__link--contact::after,
+.site-nav__link--contact.is-current::after {
+  display: none;
+}
+
+.site-nav__link--contact:hover {
+  opacity: 1;
+  background: color-mix(in srgb, var(--color-accent) 90%, white);
+  border-color: color-mix(in srgb, var(--color-accent) 90%, white);
+}
+
+.site-nav__link--contact:hover::after,
+.site-nav__link--contact:focus-visible::after {
+  display: none;
+}
+
+.site-footer {
+  color: var(--color-text);
+  background: #ffffff;
+  border-top: 1px solid color-mix(in srgb, var(--color-accent) 12%, transparent);
+}
+
+.site-footer__inner {
+  align-items: center;
+  justify-content: space-between;
+  padding-block: var(--space-5);
+}
+
+.site-footer__copyright {
+  margin: 0;
+  color: color-mix(in srgb, var(--color-text) 66%, transparent);
+}
+
+.site-footer__nav {
+  margin-left: auto;
+}
+
+.site-footer__list {
+  justify-content: flex-end;
+}
+
+.site-nav__link:hover,
+.site-header__brand:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 900px) {
+  .site-header__inner,
+  .site-footer__inner,
+  main {
+    padding-inline: var(--space-6);
+  }
+
+  .site-header__inner,
+  .site-footer__inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-4);
+    padding-block: var(--space-4);
+  }
+
+  .site-nav,
+  .site-footer__nav {
+    margin-left: 0;
+    min-width: 0;
+  }
+
+  .site-nav {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .site-nav__list {
+    width: max-content;
+    max-width: none;
+    flex-wrap: nowrap;
+    gap: var(--space-4);
+    row-gap: var(--space-2);
+  }
+}

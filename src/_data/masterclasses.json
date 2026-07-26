@@ -1,0 +1,98 @@
+[
+  {
+    "id": "requiem-studies-part-i",
+    "status": "offen",
+    "date": "27.–29. Oktober 2026",
+    "sortDate": "2026-10-27",
+    "meta": "Meisterkurs",
+    "location": "nosolo studios Stuttgart",
+    "name": "Requiem Studies Part I",
+    "description": "Seminar für Gesang & Bühneneurythmie",
+    "tags": ["Mozart", "Verdi", "Brahms"],
+    "veranstalter": "Jasmin Solfaghari & Severin Fraser",
+    "details": {
+      "zeiten": "Täglich 10:00–13:00 & 14:00–17:00",
+      "adresse": "nosolo studios, Hackstraße 77, 70190 Stuttgart",
+      "intro": [
+        "In diesem neu konzipierten Seminar widmen sich Jasmin Solfaghari und Severin Fraser zentralen Themen aus den Requien von Mozart, Verdi und Brahms. Erstmals arbeiten Sänger:innen und Eurythmist:innen parallel und gemeinsam an szenischen Umsetzungen – an der Schnittstelle von Stimme, Bewegung und Ausdruck. Im Zentrum stehen existenzielle Themen wie Leid, Schmerz und Hoffnung – in Isolation und Gemeinschaft.",
+        "Severin Fraser arbeitet an der Bühnenpräsenz „von Kopf bis Fuß\". Er entwickelt choreografische Sequenzen – individuell und im Ensemble –, die Eurythmist:innen wie Sänger:innen neue Möglichkeiten des Ausdrucks eröffnen. So wird die szenische Aufgabe unmittelbar erfahrbar.",
+        "Jasmin Solfaghari fokussiert sich auf musikalisch-dramatische Gestaltung, Diktion und Bühnenpräsenz. Durch ihre charakterzentrierte Arbeitsweise entstehen neue Räume für Stimme, Energie und Ausdruckskraft.",
+        "Ziel ist es, beide Gruppen in kurzen szenischen Einheiten zu einer gemeinsamen, künstlerisch dichten Ausdrucksform zu führen."
+      ],
+      "zielgruppe": "Sänger:innen (Chor); Eurythmist:innen / Tänzer:innen",
+      "teilnehmerzahl": "ca. 20–25 (begrenzte Plätze)",
+      "sprachen": "Deutsch, Englisch, Französisch, Italienisch",
+      "kosten": "auf Anfrage",
+      "bewerbung": [
+        { "label": "Sänger:innen", "email": "masterclass@solfaghari.com", "hinweis": "CV + Video-Links" },
+        { "label": "Eurythmist:innen", "email": "contact@nosoloculture.com", "hinweis": "CV + Video-Links" }
+      ]
+    }
+  },
+  {
+    "id": "wagner-tristan-ring-parsifal-2026-10",
+    "status": "demnaechst",
+    "date": "20.–22. Oktober 2026",
+    "sortDate": "2026-10-20",
+    "meta": "Meisterkurs",
+    "location": "nosolo studios Stuttgart",
+    "name": "Tristan | Ring | Parsifal",
+    "description": "kleine Wagner-Partien",
+    "tags": ["Wagner"],
+    "veranstalter": "Jasmin Solfaghari & Severin Fraser",
+    "details": {
+      "zeiten": "10:00–17:00 Uhr, am 22.10. Abschlusskonzert",
+      "adresse": "nosolo studios, Hackstraße 77, 70190 Stuttgart",
+      "klavier": "Miki Hashimoto",
+      "intro": [
+        "Arbeit an Rollen, die Sänger:innen kurz nach Studienabschluss oder in der selbständigen Tätigkeit für künftige Engagements einbringen könnten. Am Beispiel von Tristan, Ring und Parsifal gelingt der Einstieg in das Thema Wagner mühelos. Ziel: auch bei kleinen/mittleren Rollen einen sicheren, abgerundeten Gesamteindruck in Stimme und Interpretation vermitteln.",
+        "Knapp drei Tage Einzel- und Gruppenunterricht: musikalische Struktur, Dramaturgie, Diktion, dramatischer Ausdruck. Am 22. Oktober Abschlusskonzert mit dem Gelernten."
+      ],
+      "teilnehmerzahl": "10 Plätze",
+      "sprachen": "Deutsch, Französisch, Englisch, Italienisch",
+      "kosten": "350 € insgesamt",
+      "anzahlung": "200 € per PayPal/Überweisung bei Anmeldung",
+      "bewerbung": [
+        { "label": "Anmeldung", "email": "masterclass@solfaghari.com" }
+      ]
+    }
+  },
+  {
+    "id": "vorsingetraining-diktion-praesenz",
+    "status": "demnaechst",
+    "date": "16.–18. Dezember 2026",
+    "sortDate": "2026-12-16",
+    "meta": "Meisterkurs",
+    "location": "Aula des KHG, Freiburg",
+    "name": "Vorsingetraining | Diktion | Präsenz",
+    "description": "",
+    "tags": [],
+    "veranstalter": "Jasmin Solfaghari, gefördert vom Richard-Wagner-Verband Freiburg",
+    "details": {
+      "zeiten": "Am 18. Dezember Abschlusskonzert",
+      "adresse": "Aula des KHG, Lorettostr. 20, 79100 Freiburg",
+      "klavier": "N.N.",
+      "intro": [
+        "Arbeit mit und ohne Klavierbegleitung an Partien, die gezielt für Vorsingen vorbereitet werden sollen. Drei Tage Einzel- und Gruppenunterricht: musikalische Struktur, Dramaturgie, Diktion, dramatischer Ausdruck. Am 18. Dezember Abschlusskonzert."
+      ],
+      "teilnehmerzahl": "10 Plätze",
+      "sprachen": "Deutsch, Französisch, Englisch, Italienisch",
+      "kosten": "350 € insgesamt",
+      "anzahlung": "200 € per PayPal/Überweisung",
+      "bewerbung": [
+        { "label": "Anmeldung", "email": "masterclass@solfaghari.com" }
+      ]
+    }
+  },
+  {
+    "status": "vergangen",
+    "date": "9.–12. April 2026",
+    "sortDate": "2026-04-09",
+    "meta": "Meisterklasse mit Konzert",
+    "location": "Lenbachhaus München",
+    "name": "Tristan | Ring | Parsifal",
+    "description": "Musiktheater, Diktion — kleine Gesangspartien",
+    "tags": [],
+    "veranstalter": "Richard-Wagner-Verein München"
+  }
+]

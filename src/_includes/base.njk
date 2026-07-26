@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=melodrama@400,500,600,700&display=block">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,300&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Instrument+Serif:ital@0;1&family=Gilda+Display&family=Yeseva+One&family=Suranna&family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/tokens.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/components/buttons.css">
+    <link rel="stylesheet" href="/assets/css/components/hero.css">
+    <link rel="stylesheet" href="/assets/css/components/marquee.css">
+    <link rel="stylesheet" href="/assets/css/components/current-work.css">
+    <link rel="stylesheet" href="/assets/css/components/editorial-carousel.css">
+    <link rel="stylesheet" href="/assets/css/components/home.css">
+    <link rel="stylesheet" href="/assets/css/components/misc.css">
+    <link rel="stylesheet" href="/assets/css/components/page-prose.css">
+    <link rel="stylesheet" href="/assets/css/components/werk.css">
+    <link rel="stylesheet" href="/assets/css/components/events.css">
+    <link rel="stylesheet" href="/assets/css/components/publications.css">
+    <link rel="stylesheet" href="/assets/css/components/aktuelles.css">
+    <link rel="stylesheet" href="/assets/css/components/contact.css">
+    <link rel="stylesheet" href="/assets/css/components/about.css">
+    <link rel="stylesheet" href="/assets/css/components/legal.css">
+    <link rel="stylesheet" href="/assets/css/components/baukasten.css">
+    <link rel="stylesheet" href="/assets/css/components/styleguide.css">
+  </head>
+  <body{% if page.url == '/' %} class="page-home"{% elif page.url == '/impressum/' or page.url == '/datenschutz/' %} class="page-legal"{% elif page.url == '/inszenierungen/' or page.url == '/meisterkurse-coaching/' or page.url == '/lehre/' or page.url == '/publikationen/' or page.url == '/aktuelles/' %} class="page-tabs-flush"{% endif %}>
+    {% include "nav.njk" %}
+    <main>
+      {{ content | safe }}
+    </main>
+    {% include "footer.njk" %}
+    <script src="/assets/js/editorial-carousel.js" defer></script>
+    <script src="/assets/js/hero-parallax.js" defer></script>
+    <script src="/assets/js/work-tabs.js" defer></script>
+    <script src="/assets/js/work-review-dialog.js" defer></script>
+    <script src="/assets/js/course-modal.js" defer></script>
+    <script src="/assets/js/work-back-button.js" defer></script>
+    <script src="/assets/js/load-more.js" defer></script>
+  </body>
+</html>

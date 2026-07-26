@@ -1,0 +1,43 @@
+{% macro eventModal(event) %}
+  {% if event.details %}
+    <dialog class="event-modal" id="event-modal-{{ event.id }}" aria-labelledby="event-modal-{{ event.id }}-title">
+      <div class="event-modal__inner">
+        <button class="event-modal__close" type="button" data-modal-close aria-label="Schließen">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+        <header class="event-modal__header">
+          <p class="event-modal__location">{{ event.institution or event.location }}{% if event.location and event.institution %} · {{ event.location }}{% endif %}</p>
+          <h2 class="event-modal__title" id="event-modal-{{ event.id }}-title">{{ event.title }}</h2>
+          <p class="event-modal__date">{{ event.date }}{% if event.details.time %} · {{ event.details.time }}{% endif %}</p>
+          {% if event.details.tags and event.details.tags.length %}
+            <ul class="event-modal__tags">
+              {% for tag in event.details.tags %}
+                <li class="event-modal__tag">{{ tag }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </header>
+
+        <div class="event-modal__body">
+          {% if event.details.intro and event.details.intro.length %}
+            <div class="event-modal__intro">
+              {% for paragraph in event.details.intro %}
+                <p>{{ paragraph | safe }}</p>
+              {% endfor %}
+            </div>
+          {% endif %}
+
+          {% if event.details.facts and event.details.facts.length %}
+            <dl class="event-modal__facts">
+              {% for fact in event.details.facts %}
+                <div class="event-modal__fact"><dt>{{ fact.label }}</dt><dd>{{ fact.value }}</dd></div>
+              {% endfor %}
+            </dl>
+          {% endif %}
+
+        </div>
+      </div>
+    </dialog>
+  {% endif %}
+{% endmacro %}
