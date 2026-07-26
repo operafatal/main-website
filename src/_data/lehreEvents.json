@@ -171,7 +171,7 @@
       "buttonLabel": "Mehr anzeigen",
       "visual": {
         "type": "placeholder",
-        "label": "Pepperdine",
+        "label": "Los Angeles",
         "tone": "accent"
       },
       "sources": [
@@ -618,7 +618,7 @@
       "buttonLabel": "Mehr anzeigen",
       "visual": {
         "type": "placeholder",
-        "label": "Goetheanum",
+        "label": "Dornach",
         "tone": "accent"
       },
       "sources": [
@@ -671,7 +671,7 @@
       "visual": {
         "type": "placeholder",
         "label": "Hamburg",
-        "tone": "light"
+        "tone": "accent"
       },
       "sources": [
         {
@@ -765,7 +765,7 @@
       "visual": {
         "type": "placeholder",
         "label": "Berlin",
-        "tone": "light"
+        "tone": "accent"
       },
       "sources": [
         {
@@ -812,7 +812,7 @@
       "visual": {
         "type": "placeholder",
         "label": "Nürnberg",
-        "tone": "light"
+        "tone": "accent"
       },
       "sources": [
         {
@@ -863,7 +863,7 @@
       "buttonLabel": "Mehr anzeigen",
       "visual": {
         "type": "placeholder",
-        "label": "Eurythmeum",
+        "label": "Stuttgart",
         "tone": "accent"
       },
       "sources": [
@@ -924,7 +924,7 @@
       "visual": {
         "type": "placeholder",
         "label": "München",
-        "tone": "light"
+        "tone": "accent"
       },
       "sources": [
         {
@@ -1069,7 +1069,7 @@
       "visual": {
         "type": "placeholder",
         "label": "Los Angeles",
-        "tone": "light"
+        "tone": "accent"
       },
       "sources": [
         {
