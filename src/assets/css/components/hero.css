@@ -56,10 +56,7 @@
 
 .hero__headline {
   margin: 0;
-  /* Deviates deliberately from the global h1/h2/h3 rule: tries Melodrama first,
-     falls back to the serif token — kept explicit because the hero headline is
-     the one place where the Melodrama-vs-fallback difference is most visible. */
-  font-family: "Melodrama", var(--font-serif);
+  font-family: var(--font-serif);
   font-size: clamp(4rem, 8.4vw, 5.9rem);
   line-height: 0.88;
   font-weight: 600;

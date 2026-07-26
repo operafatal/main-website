@@ -128,7 +128,7 @@
 .contact-method__mail {
   width: fit-content;
   color: var(--color-text);
-  font-family: "Melodrama", var(--font-serif);
+  font-family: var(--font-serif);
   font-size: clamp(2.2rem, 4.8vw, 4.5rem);
   font-weight: 500;
   line-height: 0.94;
@@ -172,7 +172,7 @@
 .contact-inquiries__list li {
   padding-bottom: var(--space-3);
   border-bottom: 1px solid color-mix(in srgb, var(--color-accent) 10%, transparent);
-  font-family: "Melodrama", var(--font-serif);
+  font-family: var(--font-serif);
   font-size: clamp(1.45rem, 2.2vw, 2rem);
   line-height: 1.05;
 }

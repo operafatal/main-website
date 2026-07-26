@@ -134,7 +134,7 @@
 
 .event-feature-row__placeholder span {
   max-width: 10ch;
-  font-family: "Melodrama", var(--font-serif);
+  font-family: var(--font-serif);
   font-size: clamp(1.05rem, 2.3vw, 2.15rem);
   line-height: 0.95;
   letter-spacing: -0.02em;
