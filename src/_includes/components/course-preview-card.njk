@@ -5,17 +5,25 @@
   name (large), a short description, and composer/genre tags as small
   chips so relevance is visible at a glance. One flowing chronological list
   (see `chronological` filter) instead of three headed status groups, so the
-  status badge + tile treatment alone carry the offen/demnaechst/vergangen
-  distinction: offen = solid navy fill, demnaechst = grey fill, vergangen =
-  white + faint-grey outline (outline tone matches text tone).
-  offen/demnaechst: the whole card is a button opening that course's modal
-  (course-modal.njk) — full details + how to apply, no separate landing
-  page needed for a funnel this simple. vergangen: plain, non-interactive —
-  nothing to apply to anymore.
-  course.status: "offen" | "demnaechst" | "vergangen"
+  status badge + tile treatment alone carry the offen/demnaechst/ausgebucht/
+  vergangen distinction: offen = solid navy fill, demnaechst = grey fill,
+  ausgebucht = grey fill like demnaechst but faint/muted text (still
+  current, just not bookable), vergangen = white + faint-grey outline
+  (outline tone matches text tone).
+  offen/demnaechst/ausgebucht: the whole card is a button opening that
+  course's modal (course-modal.njk) — full details + how to apply, no
+  separate landing page needed for a funnel this simple. vergangen: plain,
+  non-interactive — nothing to apply to anymore.
+  course.status: "offen" | "demnaechst" | "ausgebucht" | "vergangen"
 #}
 {% macro coursePreviewCard(course) %}
-  {% set statusLabel = "Jetzt offen" if course.status == "offen" else ("Demnächst" if course.status == "demnaechst" else "Vergangen") %}
+  {% set statusLabels = {
+    "offen": "Jetzt offen",
+    "demnaechst": "Demnächst",
+    "ausgebucht": "Ausgebucht",
+    "vergangen": "Vergangen"
+  } %}
+  {% set statusLabel = statusLabels[course.status] %}
   {% if course.details %}
     <button type="button" class="course-preview-card course-preview-card--{{ course.status }}" data-course-modal-open="modal-{{ course.id }}" aria-label="{{ course.name }} — Details &amp; Anmeldung">
       <span class="course-preview-card__badge">{{ statusLabel }}</span>

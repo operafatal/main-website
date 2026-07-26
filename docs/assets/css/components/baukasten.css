@@ -540,6 +540,28 @@ button.course-preview-card {
   color: var(--color-text-muted);
 }
 
+/* Ausgebucht — same grey fill as Demnächst (still a current course, not an
+   archived one), but muted/faint text throughout so it visibly reads as
+   "not bookable" without a whole extra card colour. */
+.course-preview-card--ausgebucht {
+  background: var(--color-bg-subtle);
+  border-color: transparent;
+  color: var(--color-text-faint);
+}
+
+.course-preview-card--ausgebucht:hover {
+  background: color-mix(in srgb, var(--color-bg-subtle) 80%, var(--color-text) 8%);
+}
+
+.course-preview-card--ausgebucht .course-preview-card__name {
+  color: var(--color-text-muted);
+}
+
+.course-preview-card--ausgebucht .course-preview-card__description,
+.course-preview-card--ausgebucht .course-preview-card__veranstalter {
+  color: var(--color-text-faint);
+}
+
 /* Vergangen — white, outline + text in faint grey (archived vibe). Only
    status that keeps a visible outline. */
 .course-preview-card--vergangen {
