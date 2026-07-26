@@ -10,7 +10,8 @@ Deutschland
 
 ## Kontakt
 
-E-Mail: [jasmin@solfaghari.de](mailto:jasmin@solfaghari.de)
+E-Mail: [jasmin@solfaghari.de](mailto:jasmin@solfaghari.de)  
+Telefon: [030 25810712](tel:+493025810712)
 
 ## Verantwortlich für den Inhalt
 
