@@ -10,7 +10,7 @@ permalink: /inszenierungen/
 <h1 class="sr-only">Inszenierungen</h1>
 
 <div class="work-tabs" data-work-tabs>
-  <div class="work-tabs__list" role="tablist" aria-label="Werkkategorien">
+  <div class="work-tabs__list" role="tablist" aria-label="Werkkategorien und Presse">
     {% for category in work.groupedCategories %}
       <button
         class="work-tabs__button{% if loop.first %} is-active{% endif %}"
@@ -22,6 +22,7 @@ permalink: /inszenierungen/
         data-work-tab="{{ category.slug }}"
       >{{ category.label }}</button>
     {% endfor %}
+    <button class="work-tabs__button" id="tab-presse" type="button" role="tab" aria-selected="false" aria-controls="panel-presse" data-work-tab="presse">Presse</button>
   </div>
 
   {% for category in work.groupedCategories %}
@@ -49,4 +50,19 @@ permalink: /inszenierungen/
       </div>
     </section>
   {% endfor %}
+
+  <section class="work-tab-panel publication-panel" id="panel-presse" role="tabpanel" aria-labelledby="tab-presse" data-work-panel="presse" hidden>
+    <div class="publication-quote-list publication-quote-list--press">
+      {% for item in publications.press %}
+        <article class="publication-quote">
+          <blockquote>„{{ item.quote }}“</blockquote>
+          <p>{{ item.source }}{% if item.date %} · {{ item.date }}{% endif %}</p>
+          {% if item.context %}<span>{{ item.context }}</span>{% endif %}
+          {% if item.href %}
+            <a class="work-detail__source-link work-detail__source-link--outline publication-quote__link" href="{{ item.href }}"{% if item.href | isExternalUrl %} target="_blank" rel="noopener noreferrer"{% endif %}>Beitrag öffnen <span aria-hidden="true">→</span></a>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
+  </section>
 </div>

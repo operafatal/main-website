@@ -9,11 +9,10 @@ permalink: /publikationen/
 {% from "components/spotlight.njk" import spotlight %}
 
 <div class="work-tabs event-tabs publication-tabs" data-work-tabs>
-  <div class="work-tabs__list" role="tablist" aria-label="Publikationen, Veranstaltungen, Rezensionen und Presse">
+  <div class="work-tabs__list" role="tablist" aria-label="Publikationen, Veranstaltungen und Rezensionen">
     <button class="work-tabs__button is-active" id="tab-publikationen" type="button" role="tab" aria-selected="true" aria-controls="panel-publikationen" data-work-tab="publikationen">Publikationen</button>
     <button class="work-tabs__button" id="tab-lesungen" type="button" role="tab" aria-selected="false" aria-controls="panel-lesungen" data-work-tab="lesungen">Lesungen &amp; Buchpräsentationen</button>
     <button class="work-tabs__button" id="tab-rezensionen" type="button" role="tab" aria-selected="false" aria-controls="panel-rezensionen" data-work-tab="rezensionen">Rezensionen</button>
-    <button class="work-tabs__button" id="tab-presse" type="button" role="tab" aria-selected="false" aria-controls="panel-presse" data-work-tab="presse">Presse</button>
   </div>
 
   <section class="work-tab-panel publication-panel" id="panel-publikationen" role="tabpanel" aria-labelledby="tab-publikationen" data-work-panel="publikationen">
@@ -99,21 +98,6 @@ permalink: /publikationen/
   <section class="work-tab-panel publication-panel" id="panel-rezensionen" role="tabpanel" aria-labelledby="tab-rezensionen" data-work-panel="rezensionen" hidden>
     <div class="publication-quote-list">
       {% for item in publications.reviews %}
-        <article class="publication-quote">
-          <blockquote>„{{ item.quote }}“</blockquote>
-          <p>{{ item.source }}{% if item.date %} · {{ item.date }}{% endif %}</p>
-          {% if item.context %}<span>{{ item.context }}</span>{% endif %}
-          {% if item.href %}
-            <a class="work-detail__source-link work-detail__source-link--outline publication-quote__link" href="{{ item.href }}"{% if item.href | isExternalUrl %} target="_blank" rel="noopener noreferrer"{% endif %}>Beitrag öffnen <span aria-hidden="true">→</span></a>
-          {% endif %}
-        </article>
-      {% endfor %}
-    </div>
-  </section>
-
-  <section class="work-tab-panel publication-panel" id="panel-presse" role="tabpanel" aria-labelledby="tab-presse" data-work-panel="presse" hidden>
-    <div class="publication-quote-list publication-quote-list--press">
-      {% for item in publications.press %}
         <article class="publication-quote">
           <blockquote>„{{ item.quote }}“</blockquote>
           <p>{{ item.source }}{% if item.date %} · {{ item.date }}{% endif %}</p>
