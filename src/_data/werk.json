@@ -2003,7 +2003,7 @@
       "composer": "Engelbert Humperdinck",
       "place": "Landestheater Neustrelitz",
       "year": "2021",
-      "category": "familie-operette",
+      "category": "oper",
       "featured": false,
       "note": "Premiere am 25. September 2021; ursprünglich für November 2020 geplant und pandemiebedingt verschoben.",
       "credits": {
@@ -2254,7 +2254,7 @@
       "composer": "Engelbert Humperdinck",
       "place": "Staatsoperette Dresden",
       "year": "2017",
-      "category": "familie-operette",
+      "category": "oper",
       "featured": false,
       "note": "Neuinszenierung für die Vorbühne 2017 und für die Hauptbühne 2018 in der neuen Spielstätte „Kraftwerk“, Wettiner Platz Dresden.",
       "credits": {
@@ -2366,7 +2366,7 @@
       "composer": "Nino Rota",
       "place": "Oper Leipzig",
       "year": "2014",
-      "category": "familie-operette",
+      "category": "oper",
       "featured": false,
       "credits": {
         "musikalischeLeitung": "Johannes Pell",
