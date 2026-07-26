@@ -1,4 +1,4 @@
-# Meisterkurse & Coaching
+# Meisterkurse & Mentoring
 
 Jasmin Solfaghari gibt regelmäßig mehrtägige Meisterkurse zu Gesang, Diktion, Bühnenpräsenz und Rollengestaltung. Die folgende Fassung übernimmt die vollständigen Angaben der alten Seite.
 
@@ -64,7 +64,7 @@ Ort (lt. altem Seitentext, evtl. Fehler auf Originalseite — steht dort trotz M
 Anzahlung: 300 € per PayPal/Überweisung  
 Kontakt: masterclass@solfaghari.com
 
-## Einzelcoaching / Private Coachings (auch via Zoom/Facetime)
+## Einzelmentoring / Private Mentoring-Sitzungen (auch via Zoom/Facetime)
 Themen: Vorbereitung für Vorsingen, Erarbeitung von Rollen, Diktion auch in der Fremdsprache, Dialogtraining
 
 ## Masterclasses für Opernstudios, Sänger

@@ -2,7 +2,7 @@
   "hero": {
     "kicker": "Kontakt",
     "title": "Kommen wir ins Gespräch",
-    "lead": "Für Regieanfragen, Coaching, Vorträge, Publikationen und Presse erreichen Sie Jasmin Solfaghari direkt per E-Mail.",
+    "lead": "Für Regieanfragen, Mentoring, Vorträge, Publikationen und Presse erreichen Sie Jasmin Solfaghari direkt per E-Mail.",
     "image": {
       "src": "/assets/img/channels4_profile.jpg",
       "alt": "Portrait von Jasmin Solfaghari",
@@ -13,7 +13,7 @@
     "label": "Direkte Anfragen",
     "display": "jasmin@solfaghari.de",
     "href": "mailto:jasmin@solfaghari.de",
-    "note": "Für Regie, Coaching, Vorträge, Publikationen und Presse."
+    "note": "Für Regie, Mentoring, Vorträge, Publikationen und Presse."
   },
   "masterclassEmail": {
     "label": "Meisterkurse",
@@ -26,12 +26,12 @@
     "href": "/meisterkurse-coaching/#meisterkurse"
   },
   "coachingPage": {
-    "label": "Coaching-Anfrage",
+    "label": "Mentoring-Anfrage",
     "href": "/meisterkurse-coaching/#coaching"
   },
   "inquiryTypes": [
     "Regieanfragen",
-    "Coaching",
+    "Mentoring",
     "Vorträge & Lesungen",
     "Publikationen & Presse"
   ],

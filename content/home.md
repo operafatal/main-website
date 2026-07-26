@@ -1,4 +1,4 @@
-Jasmin Solfaghari — Opernregisseurin, Coach, Autorin.
+Jasmin Solfaghari — Opernregisseurin, Mentorin, Autorin.
 
 Seit über zwanzig Jahren auf Europas bedeutendsten Bühnen inszeniert, unterrichtet und schreibt Jasmin Solfaghari über die Kunst des Musiktheaters.
 

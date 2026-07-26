@@ -1,6 +1,6 @@
 # Lehre & Vorträge
 
-Jasmin Solfaghari hält mehrsprachige Vorträge zu Oper, Musiktheater, Diktion und Bühnenpräsenz. Die folgenden Vortragstitel sind vollständig aus dem alten Seitenbestand übernommen. Einzelcoaching und Masterclasses siehe [Meisterkurse & Coaching](/meisterkurse-coaching/).
+Jasmin Solfaghari hält mehrsprachige Vorträge zu Oper, Musiktheater, Diktion und Bühnenpräsenz. Die folgenden Vortragstitel sind vollständig aus dem alten Seitenbestand übernommen. Einzelmentoring und Masterclasses siehe [Meisterkurse & Mentoring](/meisterkurse-coaching/).
 
 ## Vorträge
 Jasmin Solfaghari hält mehrsprachige Vorträge zu Oper, Wagner und Musiktheater, u. a. für Richard-Wagner-Verbände und internationale Wagner-Gesellschaften.
@@ -19,4 +19,4 @@ Jasmin Solfaghari hält mehrsprachige Vorträge zu Oper, Wagner und Musiktheater
 11. In Vorbereitung für 2027: „Wer hat Angst vor Kundry? Weiblichkeit und Erkenntnis in Wagners Parsifal"
 
 ---
-_Quelle: `vortraege.txt`; die Vortragsliste ist vollständig. Die Einzelcoaching- und Referenzen-Abschnitte sind auf [Meisterkurse & Coaching](/meisterkurse-coaching/) umgezogen (2026-07-25) — dort standen sie ohnehin schon fast wortgleich, um Dopplung zu vermeiden._
+_Quelle: `vortraege.txt`; die Vortragsliste ist vollständig. Die Einzelmentoring- und Referenzen-Abschnitte sind auf [Meisterkurse & Mentoring](/meisterkurse-coaching/) umgezogen (2026-07-25) — dort standen sie ohnehin schon fast wortgleich, um Dopplung zu vermeiden._

@@ -1,6 +1,6 @@
 # Über mich
 
-Jasmin Solfaghari ist Opernregisseurin, Coach und Autorin mit über zwei Jahrzehnten Bühnenerfahrung auf Europas bedeutendsten Opernhäusern.
+Jasmin Solfaghari ist Opernregisseurin, Mentorin und Autorin mit über zwei Jahrzehnten Bühnenerfahrung auf Europas bedeutendsten Opernhäusern.
 
 ## Werdegang (Auswahl)
 - 2018–heute: Leitung der Abteilung Oper/Musiktheater bei PAMY Mediaproductions — Produktionsleitung & Regie.
