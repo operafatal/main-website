@@ -231,8 +231,6 @@
         ],
         "href": "https://www.schott-music.com/de/ich-schreite-kaum-doch-waehn-ich-mich-schon-weit-no584712.html",
         "linkLabel": "Buch bei Schott ansehen",
-        "detailHrefTodo": "/publikationen/ich-schreite-kaum-doch-waehn-ich-mich-schon-weit/",
-        "detailLinkLabel": "Zur Publikationsdetailseite",
         "image": {
           "src": "/assets/img/parsifal/buch/ich-schreite-kaum-doch-waehn-ich-mich-schon-weit-gebundene-ausgabe-jasmin-solfaghari.jpg",
           "alt": "Cover der Schott-Publikation Ich schreite kaum, doch wähn’ ich mich schon weit. Parsifal am Goetheanum",
@@ -304,6 +302,12 @@
           "src": "/assets/img/der-ring-des-nibelungen/ring-siegfried-3.jpg",
           "alt": "Der Ring des Nibelungen, Odense - Foto: Trine Lai",
           "caption": "Der Ring des Nibelungen, Odense - Foto: Trine Lai"
+        },
+        {
+          "src": "/assets/img/der-ring-des-nibelungen/schluss1.gd.jpg",
+          "alt": "Der Ring des Nibelungen, Odense - Foto: Trine Lai",
+          "caption": "Der Ring des Nibelungen, Odense - Foto: Trine Lai",
+          "position": "center 78%"
         }
       ],
       "sourceUrl": "https://www.solfaghari.com/b%C3%BChnenprojekte/oper/",

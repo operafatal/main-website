@@ -25,24 +25,6 @@
   letter-spacing: 0;
 }
 
-.legal-page h1::after {
-  content: "Rechtliche Angaben";
-  display: block;
-  margin-top: var(--space-5);
-  max-width: 42ch;
-  font-family: var(--font-sans);
-  font-size: var(--font-size-small);
-  font-weight: 500;
-  line-height: 1.55;
-  letter-spacing: var(--tracking-nav);
-  text-transform: uppercase;
-  color: var(--legal-muted-on-blue);
-}
-
-.legal-page--privacy h1::after {
-  content: "Umgang mit personenbezogenen Daten";
-}
-
 .legal-page h2 {
   grid-column: 1;
   margin: 0;

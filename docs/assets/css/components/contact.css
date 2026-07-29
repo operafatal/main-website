@@ -82,7 +82,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 18%;
+  object-position: 43% 18%;
 }
 
 .contact-hero__credit {
@@ -212,7 +212,7 @@
   line-height: 1.7;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 720px) {
   .contact-hero,
   .contact-grid {
     grid-template-columns: 1fr;
@@ -258,6 +258,7 @@
   }
 
   .contact-hero__visual {
+    order: -1;
     height: 220px;
     min-height: 220px;
   }

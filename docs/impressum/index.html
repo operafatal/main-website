@@ -31,10 +31,14 @@
     <header class="site-header">
   <div class="site-header__inner">
     <a class="site-header__brand" href="/main-website/" aria-label="Jasmin Solfaghari">
-      <img class="site-header__brand-logo" src="/main-website/assets/img/jasmin-logo-v2.png" alt="" decoding="async">
-      
+      <img class="site-header__brand-logo" src="/main-website/assets/img/maennle-logo-accent.png" alt="" decoding="async">
+
     </a>
-    <nav class="site-nav" aria-label="Hauptnavigation">
+    <button class="site-nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
+      <span class="site-nav-toggle__label">Menü</span>
+      <span class="site-nav-toggle__icon" aria-hidden="true"></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
       <ul class="site-nav__list">
         <li><a class="site-nav__link" href="/main-website/">Home</a></li>
         <li><a class="site-nav__link" href="/main-website/inszenierungen/">Inszenierungen</a></li>
@@ -50,7 +54,7 @@
 </header>
 
     <main>
-      
+
 
 <article class="legal-page legal-page--imprint">
   <h1>Impressum</h1>
@@ -71,7 +75,7 @@ Anschrift wie oben</p>
 <h2>Logo und Illustrationen</h2>
 <p>Logo und Frauenfigur Workshop: Leander Zoff</p>
 <h2>Bildnachweise</h2>
-<p>Cathleen Herwarth von Bittenfeld, Klaus Lefebvre, Detlef Kurth, Bettina Stöss, Kirsten Nijhof, Tom Schulze, Oper Leipzig, Theater an der Wien, Ludwigsburger Schlossfestspiele, Oper Köln, Volkstheater Rostock, Stadttheater Klagenfurt, Scala Hamburg, Münchner Biennale, Staatsoperette Dresden, Hochschule für Musik Dresden, Hochschule für Musik und Theater Leipzig, Jasmin Solfaghari, Brigitte Schröder, Dr. Rainer Saffar, Leander Cyrus Funck, Josef Schönpflug, Stephan Röhl, LEAD Berlin, Robert Raithel, Jinjoo Kwak, Minsang Cho, Mirco Dalchow, Knud Eric Jorgensen, Ramin Zolfagari, Rebecca Liao, Jeffery S. McMillan, Schott Verlag, INTHEGA, Helmut Loos, Michael Ranft, Stefan O. Mahlich, Birgit Todt, Johanna Weidmann, Ji-Su Park, Benjamin Werth, Richard-Wagner Museum Bayreuth, Dirk Rückschloß, pixore photography, Noah Janotta, Sally Elblinger, Paul Kaufmann, François Croissant, Walter Schütze, Cercle Wagnérien de Toulouse, Ralf Giesecke, Barbara Stötzler, Dr. John Mastrogiovanni, Konstantin Arutyunyan, Bider &amp; Tanner, Schott-Music, Evelyn und Ralf Scheer, Theater und Orchester Neubrandenburg und Neustrelitz, Jona Heise, Andreas von Graffenried, Atsuko Imamura, Wombat's Eye, Regine Körner, Karl Russwurm, Richard Wagner Verband München, Opernfreunde München, Hanna Katsenes, u. a.</p>
+<p>Cathleen Herwarth von Bittenfeld, Klaus Lefebvre, Detlef Kurth, Bettina Stöss, Kirsten Nijhof, Tom Schulze, Oper Leipzig, Theater an der Wien, Ludwigsburger Schlossfestspiele, Oper Köln, Volkstheater Rostock, Stadttheater Klagenfurt, Scala Hamburg, Münchner Biennale, Staatsoperette Dresden, Hochschule für Musik Dresden, Hochschule für Musik und Theater Leipzig, Jasmin Solfaghari, Brigitte Schröder, Dr. Rainer Saffar, Leander Cyrus Funck, Josef Schönpflug, Stephan Röhl, LEAD Berlin, Robert Raithel, Jinjoo Kwak, Minsang Cho, Mirco Dalchow, Knud Eric Jorgensen, Ramin Zolfagari, Rebecca Liao, Jeffery S. McMillan, Schott Verlag, INTHEGA, Helmut Loos, Michael Ranft, Stefan O. Mahlich, Birgit Todt, Johanna Weidmann, Ji-Su Park, Benjamin Werth, Richard-Wagner Museum Bayreuth, Dirk Rückschloß, pixore photography, Noah Janotta, Sally Elblinger, Paul Kaufmann, François Croissant, Walter Schütze, Cercle Wagnérien de Toulouse, Ralf Giesecke, Barbara Stötzler, Dr. John Mastrogiovanni, Konstantin Arutyunyan, Bider &amp; Tanner, Schott-Music, Evelyn und Ralf Scheer, Theater und Orchester Neubrandenburg und Neustrelitz, Jona Heise, Andreas von Graffenried, Atsuko Imamura, Wombat's Eye, Regine Körner, Karl Russwurm, Richard Wagner Verband München, Opernfreunde München, Hanna Katsenes, Erzgebirgische Theater und Orchester, Severin Fraser, u. a.</p>
 <h2>Haftung für Inhalte</h2>
 <p>Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann dennoch keine Gewähr übernommen werden. Als Diensteanbieterin ist Jasmin Solfaghari nach den allgemeinen Gesetzen für eigene Inhalte auf diesen Seiten verantwortlich.</p>
 <h2>Haftung für Links</h2>
@@ -79,7 +83,7 @@ Anschrift wie oben</p>
 <h2>Urheberrecht</h2>
 <p>Die durch die Seitenbetreiberin erstellten Inhalte und Werke auf dieser Website unterliegen dem deutschen Urheberrecht. Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung der jeweiligen Rechteinhaber:innen. Soweit Inhalte auf dieser Website nicht von der Betreiberin erstellt wurden, werden die Urheberrechte Dritter beachtet und entsprechende Nachweise geführt. Hinweise auf mögliche Urheberrechtsverletzungen werden geprüft; bei Bekanntwerden entsprechender Rechtsverletzungen werden betroffene Inhalte umgehend entfernt.</p>
 
-  
+
 </article>
 
     </main>
@@ -96,6 +100,7 @@ Anschrift wie oben</p>
   </div>
 </footer>
 
+    <script src="/main-website/assets/js/mobile-nav.js" defer></script>
     <script src="/main-website/assets/js/editorial-carousel.js" defer></script>
     <script src="/main-website/assets/js/hero-parallax.js" defer></script>
     <script src="/main-website/assets/js/work-tabs.js" defer></script>

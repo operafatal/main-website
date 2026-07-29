@@ -142,6 +142,10 @@ main {
   margin-left: auto;
 }
 
+.site-nav-toggle {
+  display: none;
+}
+
 .site-nav__list {
   list-style: none;
   display: flex;
@@ -288,19 +292,106 @@ main {
   opacity: 0.8;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .site-header__inner,
   .site-footer__inner,
   main {
     padding-inline: var(--space-6);
   }
 
-  .site-header__inner,
+  .page-tabs-flush main {
+    padding-top: calc(var(--site-header-height) + var(--space-8));
+  }
+
+  .site-header__inner {
+    position: relative;
+    z-index: 32;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: var(--space-4);
+    justify-content: space-between;
+    padding-block: var(--space-4);
+  }
+
   .site-footer__inner {
     flex-direction: column;
     align-items: flex-start;
     gap: var(--space-4);
     padding-block: var(--space-4);
+  }
+
+  .site-nav-toggle {
+    position: relative;
+    z-index: 33;
+    display: inline-flex;
+    grid-column: 2;
+    justify-self: end;
+    flex: 0 0 auto;
+    align-items: center;
+    gap: var(--space-3);
+    min-height: 44px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: var(--color-accent);
+    font: inherit;
+    font-size: var(--font-size-small);
+    font-weight: 700;
+    letter-spacing: var(--tracking-nav);
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .site-nav-toggle__icon,
+  .site-nav-toggle__icon::before,
+  .site-nav-toggle__icon::after {
+    display: block;
+    width: 1.55rem;
+    height: 1px;
+    background: currentColor;
+    transition:
+      transform 180ms ease,
+      opacity 180ms ease;
+  }
+
+  .site-nav-toggle__icon {
+    position: relative;
+  }
+
+  .site-nav-toggle__icon::before,
+  .site-nav-toggle__icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+  }
+
+  .site-nav-toggle__icon::before {
+    top: -7px;
+  }
+
+  .site-nav-toggle__icon::after {
+    top: 7px;
+  }
+
+  .nav-is-open .site-nav-toggle {
+    color: var(--color-bg);
+  }
+
+  .nav-is-open .site-header__brand-logo {
+    filter: brightness(0) invert(1);
+  }
+
+  .nav-is-open .site-nav-toggle__icon {
+    background: transparent;
+  }
+
+  .nav-is-open .site-nav-toggle__icon::before {
+    transform: translateY(7px) rotate(42deg);
+  }
+
+  .nav-is-open .site-nav-toggle__icon::after {
+    transform: translateY(-7px) rotate(-42deg);
   }
 
   .site-nav,
@@ -310,17 +401,155 @@ main {
   }
 
   .site-nav {
+    position: fixed;
+    inset: 0;
+    z-index: 31;
+    grid-column: 1 / -1;
+    flex: none;
+    display: grid;
+    align-content: center;
     width: 100%;
-    max-width: 100%;
-    overflow-x: auto;
+    max-width: none;
+    min-height: 100svh;
+    padding: calc(var(--site-header-height) + var(--space-10)) var(--space-6) var(--space-8);
+    overflow-y: auto;
+    background: var(--color-accent);
+    color: var(--color-bg);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transform: translateY(-0.75rem);
+    transition:
+      opacity 180ms ease,
+      transform 180ms ease,
+      visibility 0s linear 180ms;
     -webkit-overflow-scrolling: touch;
   }
 
+  .nav-is-open .site-header {
+    background: var(--color-accent);
+    border-color: color-mix(in srgb, var(--color-bg) 16%, transparent);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .nav-is-open .site-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateY(0);
+    transition:
+      opacity 180ms ease,
+      transform 180ms ease,
+      visibility 0s;
+  }
+
+  .nav-is-open {
+    overflow: hidden;
+  }
+
   .site-nav__list {
-    width: max-content;
+    width: min(100%, 28rem);
     max-width: none;
-    flex-wrap: nowrap;
+    display: grid;
     gap: var(--space-4);
-    row-gap: var(--space-2);
+    align-items: stretch;
+    margin-inline: auto;
+  }
+
+  .site-nav__link {
+    display: block;
+    padding: 0 0 var(--space-3);
+    border-bottom: 1px solid color-mix(in srgb, var(--color-bg) 22%, transparent);
+    color: var(--color-bg);
+    font-family: var(--font-serif);
+    font-size: clamp(2rem, 10vw, 3.2rem);
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    line-height: 0.94;
+    text-transform: none;
+  }
+
+  .site-nav__link::after,
+  .site-nav__link.is-current::after {
+    display: none;
+  }
+
+  .site-nav__link.is-current {
+    color: var(--color-bg);
+  }
+
+  .site-nav__link.is-current::before {
+    content: "";
+    display: inline-block;
+    width: 0.4em;
+    height: 0.4em;
+    margin-right: 0.32em;
+    border-radius: 50%;
+    background: currentColor;
+    vertical-align: 0.08em;
+  }
+
+  .site-nav__link--contact,
+  .site-nav__link--contact.is-current {
+    margin-top: var(--space-5);
+    padding: 1rem 1.1rem;
+    border: 1px solid var(--color-bg);
+    background: var(--color-bg);
+    color: var(--color-accent);
+    font-family: var(--font-sans);
+    font-size: var(--font-size-small);
+    font-weight: 700;
+    letter-spacing: var(--tracking-nav);
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: 0 1.1rem 3rem color-mix(in srgb, var(--color-text) 16%, transparent);
+  }
+
+  .site-nav__link--contact.is-current::before {
+    display: none;
+  }
+
+  .site-nav__link--contact:hover {
+    background: color-mix(in srgb, var(--color-bg) 92%, transparent);
+    border-color: color-mix(in srgb, var(--color-bg) 92%, transparent);
+  }
+
+  .site-footer__nav {
+    margin-left: 0;
+  }
+
+  .site-footer__list {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 360px) {
+  main {
+    padding-inline: var(--space-4);
+  }
+
+  .site-nav__link {
+    font-size: clamp(1.78rem, 9.4vw, 2.35rem);
+  }
+
+  .site-nav__list {
+    gap: var(--space-3);
+  }
+
+  .site-nav__link--contact,
+  .site-nav__link--contact.is-current {
+    margin-top: var(--space-3);
+    padding-block: 0.88rem;
+  }
+}
+
+@media (max-width: 1100px) and (prefers-reduced-motion: reduce) {
+  .site-nav,
+  .site-nav-toggle__icon,
+  .site-nav-toggle__icon::before,
+  .site-nav-toggle__icon::after {
+    transition: none;
   }
 }

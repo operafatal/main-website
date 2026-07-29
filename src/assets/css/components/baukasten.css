@@ -706,6 +706,17 @@ button.course-preview-card {
   }
 }
 
+@media (max-width: 780px) {
+  .portal-note {
+    flex: 0 0 100%;
+    width: 100%;
+    margin-left: 0;
+    padding: var(--space-2) 0 0;
+    white-space: normal;
+    line-height: 1.45;
+  }
+}
+
 /* Meisterkurse & Coaching — two-column layout: course timeline / coaching
    intro on the left, photo + testimonial carousels on the right (fills what
    was previously dead space next to the event tiles). */
@@ -756,22 +767,20 @@ button.course-preview-card {
    insurance net for some future even-longer testimonial, not the plan. */
 .meisterkurse-layout__aside .editorial-carousel--quote .editorial-carousel__slide,
 .meisterkurse-layout__aside .editorial-carousel--quote .editorial-carousel__card {
-  height: 380px;
+  height: var(--meisterkurse-quote-height, 380px);
   min-height: 0;
   overflow: hidden;
 }
 
 @media (max-width: 480px) {
-  .meisterkurse-layout__aside .editorial-carousel--quote .editorial-carousel__slide,
-  .meisterkurse-layout__aside .editorial-carousel--quote .editorial-carousel__card {
-    height: 560px;
+  .meisterkurse-layout__aside {
+    --meisterkurse-quote-height: 560px;
   }
 }
 
 @media (min-width: 901px) and (max-width: 1100px) {
-  .meisterkurse-layout__aside .editorial-carousel--quote .editorial-carousel__slide,
-  .meisterkurse-layout__aside .editorial-carousel--quote .editorial-carousel__card {
-    height: 560px;
+  .meisterkurse-layout__aside {
+    --meisterkurse-quote-height: 560px;
   }
 }
 
@@ -830,6 +839,16 @@ button.course-preview-card {
   }
 }
 
+@media (max-width: 1100px) {
+  .meisterkurse-layout__aside .editorial-carousel__carousel--photo {
+    block-size: auto;
+  }
+
+  .meisterkurse-layout__aside .editorial-carousel--quote .editorial-carousel__carousel.is-enhanced .editorial-carousel__viewport {
+    block-size: var(--meisterkurse-quote-height, 380px);
+  }
+}
+
 /* Course-modal — full masterclass detail (opened from course-preview-card).
    No dedicated landing page: the funnel is just "email to apply", so a
    modal carries the whole thing — flyer, full content description, facts,
@@ -863,19 +882,19 @@ button.course-preview-card {
    (Inszenierungen-Detailseiten) — same context (sits over the navy head),
    same treatment. */
 .course-modal__close {
-  position: absolute;
+  position: sticky;
   top: var(--space-5);
-  right: var(--space-5);
-  z-index: 2;
+  z-index: 3;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 2.75rem;
   height: 2.75rem;
+  margin: var(--space-5) var(--space-5) calc((2.75rem + var(--space-5)) * -1) auto;
   padding: 0;
   border: 1px solid color-mix(in srgb, var(--color-bg) 42%, transparent);
   border-radius: 999px;
-  background: transparent;
+  background: color-mix(in srgb, var(--color-accent) 88%, black);
   color: var(--color-bg);
   font: inherit;
   font-size: 1.6rem;
@@ -985,10 +1004,28 @@ button.course-preview-card {
    panel, each fact separated by a thin light divider instead of its own
    background/gap. */
 .course-modal__facts {
+  margin: 0;
+  display: grid;
+  gap: var(--space-4);
+  padding: var(--space-5);
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+
+.course-modal__facts-title {
+  margin: 0;
+  font-size: var(--font-size-section-heading);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--color-bg);
+}
+
+.course-modal__facts-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   margin: 0;
-  background: var(--color-accent);
 }
 
 .course-modal__fact {

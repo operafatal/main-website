@@ -56,7 +56,7 @@ eleventyComputed:
   <div class="work-detail__content">
     {% if production.credits %}
       <section class="work-detail__section work-detail__section--credits" aria-labelledby="credits-title">
-        <h2 id="credits-title">Credits</h2>
+        <h2 id="credits-title">Team</h2>
         <dl class="work-detail__credits">
           {% for key, value in production.credits %}
             <dt>{{ key | creditLabel }}</dt>
@@ -135,9 +135,6 @@ eleventyComputed:
             {% if production.publicationFeature.href %}
               <a class="work-detail__source-link work-detail__source-link--publication" href="{{ production.publicationFeature.href }}"{% if production.publicationFeature.href | isExternalUrl %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ production.publicationFeature.linkLabel or "Mehr erfahren" }} <span aria-hidden="true">→</span></a>
             {% endif %}
-            {% if production.publicationFeature.detailLinkLabel %}
-              <span class="work-detail__source-link work-detail__source-link--publication-dummy" aria-disabled="true">{{ production.publicationFeature.detailLinkLabel }} <span aria-hidden="true">→</span></span>
-            {% endif %}
           </div>
         </div>
         {% if production.publicationFeature.image %}
@@ -190,8 +187,8 @@ eleventyComputed:
                 {% if review.fullText and review.fullText.length %}
                   <dialog class="work-detail__review-dialog" id="{{ reviewDialogId }}" aria-labelledby="{{ reviewDialogId }}-title">
                     <div class="work-detail__review-dialog-inner">
+                      <button class="work-detail__review-close" type="button" data-review-close aria-label="Kritik schließen">×</button>
                       <div class="work-detail__review-dialog-head">
-                        <button class="work-detail__review-close" type="button" data-review-close aria-label="Kritik schließen">×</button>
                         <p class="work-detail__section-kicker">Vollständige Kritik</p>
                         <h3 id="{{ reviewDialogId }}-title">{{ review.title if review.title else production.title }}</h3>
                         <p class="work-detail__review-dialog-meta">

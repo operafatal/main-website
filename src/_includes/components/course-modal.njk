@@ -45,29 +45,32 @@
           <div class="course-modal__flyer" aria-hidden="true"></div>
         </div>
 
-        <dl class="course-modal__facts">
-          {% if course.details.zielgruppe %}
-            <div class="course-modal__fact"><dt>Zielgruppe</dt><dd>{{ course.details.zielgruppe }}</dd></div>
-          {% endif %}
-          {% if course.details.teilnehmerzahl %}
-            <div class="course-modal__fact"><dt>Teilnehmerzahl</dt><dd>{{ course.details.teilnehmerzahl }}</dd></div>
-          {% endif %}
-          {% if course.details.sprachen %}
-            <div class="course-modal__fact"><dt>Unterrichtssprachen</dt><dd>{{ course.details.sprachen }}</dd></div>
-          {% endif %}
-          {% if course.details.klavier %}
-            <div class="course-modal__fact"><dt>Klavier</dt><dd>{{ course.details.klavier }}</dd></div>
-          {% endif %}
-          {% if course.details.kosten %}
-            <div class="course-modal__fact"><dt>Kosten</dt><dd>{{ course.details.kosten }}</dd></div>
-          {% endif %}
-          {% if course.details.anzahlung %}
-            <div class="course-modal__fact"><dt>Anzahlung</dt><dd>{{ course.details.anzahlung }}</dd></div>
-          {% endif %}
-          {% if course.veranstalter %}
-            <div class="course-modal__fact"><dt>Veranstalter</dt><dd>{{ course.veranstalter }}</dd></div>
-          {% endif %}
-        </dl>
+        <section class="course-modal__facts" aria-labelledby="course-modal-{{ course.id }}-facts-title">
+          <h3 class="course-modal__facts-title" id="course-modal-{{ course.id }}-facts-title">Infos</h3>
+          <dl class="course-modal__facts-list">
+            {% if course.details.zielgruppe %}
+              <div class="course-modal__fact"><dt>Zielgruppe</dt><dd>{{ course.details.zielgruppe }}</dd></div>
+            {% endif %}
+            {% if course.details.teilnehmerzahl %}
+              <div class="course-modal__fact"><dt>Teilnehmerzahl</dt><dd>{{ course.details.teilnehmerzahl }}</dd></div>
+            {% endif %}
+            {% if course.details.sprachen %}
+              <div class="course-modal__fact"><dt>Unterrichtssprachen</dt><dd>{{ course.details.sprachen }}</dd></div>
+            {% endif %}
+            {% if course.details.klavier %}
+              <div class="course-modal__fact"><dt>Klavier</dt><dd>{{ course.details.klavier }}</dd></div>
+            {% endif %}
+            {% if course.details.kosten %}
+              <div class="course-modal__fact"><dt>Kosten</dt><dd>{{ course.details.kosten }}</dd></div>
+            {% endif %}
+            {% if course.details.anzahlung %}
+              <div class="course-modal__fact"><dt>Anzahlung</dt><dd>{{ course.details.anzahlung }}</dd></div>
+            {% endif %}
+            {% if course.veranstalter %}
+              <div class="course-modal__fact"><dt>Veranstalter</dt><dd>{{ course.veranstalter }}</dd></div>
+            {% endif %}
+          </dl>
+        </section>
 
         {% if course.details.bewerbung and course.details.bewerbung.length %}
           <div class="course-modal__apply">

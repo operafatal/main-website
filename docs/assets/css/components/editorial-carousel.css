@@ -369,8 +369,8 @@
   min-width: 100%;
   min-height: 100%;
   object-fit: cover;
-  object-position: center 30%;
-  transform: scale(1.08);
+  object-position: var(--editorial-carousel-photo-position, center 30%);
+  transform: scale(var(--editorial-carousel-photo-scale, 1.08));
   transform-origin: center center;
 }
 
@@ -415,6 +415,10 @@
   transform: translateY(-50%);
 }
 
+.editorial-carousel__counter {
+  display: none;
+}
+
 .editorial-carousel__carousel.is-enhanced .editorial-carousel__control {
   display: inline-flex;
 }
@@ -422,6 +426,11 @@
 .editorial-carousel__control:hover {
   background: var(--color-accent);
   color: var(--color-bg);
+}
+
+.editorial-carousel__control:active {
+  background: var(--color-bg);
+  color: var(--color-accent);
 }
 
 .editorial-carousel__control:focus-visible {
@@ -444,7 +453,7 @@
 
 .editorial-carousel--quote .editorial-carousel__actions {
   justify-content: flex-start;
-  margin-top: calc(var(--space-6) * -1);
+  margin-top: 0;
 }
 
 .editorial-carousel--course .editorial-carousel__course-list {
@@ -477,16 +486,54 @@
   border-color: color-mix(in srgb, var(--color-bg) 40%, transparent);
 }
 
-@media (max-width: 900px) {
-  /* mirrors current-work's own 900px tweak (base.css switches main's side
-     padding at this breakpoint) — keep the photo carousel's arrow offset
-     in sync with it since both sit at the same container width. */
-  .editorial-carousel--photo .editorial-carousel__control--previous {
-    left: calc((var(--space-6) + var(--space-4)) * -1);
+@media (max-width: 1100px) {
+  .editorial-carousel__carousel--photo {
+    block-size: auto;
   }
 
+  .editorial-carousel__carousel--photo .editorial-carousel__viewport {
+    aspect-ratio: 16 / 10;
+    block-size: auto;
+  }
+
+  .editorial-carousel__carousel.is-enhanced {
+    display: grid;
+    grid-template-columns: 48px minmax(0, 1fr) 48px;
+    align-items: center;
+    gap: var(--space-3);
+  }
+
+  .editorial-carousel__viewport {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+  .editorial-carousel__carousel.is-enhanced .editorial-carousel__control {
+    position: static;
+    grid-row: 2;
+    transform: none;
+  }
+
+  .editorial-carousel__counter {
+    grid-column: 2;
+    grid-row: 2;
+    display: inline-flex;
+    justify-content: center;
+    color: var(--color-accent);
+    font-size: var(--font-size-small);
+    font-weight: 700;
+    letter-spacing: var(--tracking-nav);
+    text-transform: uppercase;
+  }
+
+  .editorial-carousel__control--previous,
+  .editorial-carousel--photo .editorial-carousel__control--previous {
+    grid-column: 1;
+  }
+
+  .editorial-carousel__control--next,
   .editorial-carousel--photo .editorial-carousel__control--next {
-    right: calc((var(--space-6) + var(--space-4)) * -1);
+    grid-column: 3;
   }
 }
 
@@ -508,13 +555,49 @@
     grid-template-columns: 1fr;
   }
 
-  .editorial-carousel__control--previous,
-  .editorial-carousel--photo .editorial-carousel__control--previous {
-    left: var(--space-2);
+  .editorial-carousel--quote .editorial-carousel__carousel.is-enhanced .editorial-carousel__viewport {
+    block-size: 200px;
   }
 
-  .editorial-carousel__control--next,
-  .editorial-carousel--photo .editorial-carousel__control--next {
-    right: var(--space-2);
+  .editorial-carousel__carousel--photo .editorial-carousel__viewport {
+    aspect-ratio: 3 / 2;
   }
+
+  .editorial-carousel--quote .editorial-carousel__slide,
+  .editorial-carousel--quote .editorial-carousel__card {
+    block-size: 200px;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .editorial-carousel--quote .editorial-carousel__actions {
+    margin-top: var(--space-5);
+  }
+}
+
+@media (max-width: 360px) {
+  .editorial-carousel,
+  .editorial-carousel__quote-layout,
+  .editorial-carousel__quote-content,
+  .editorial-carousel__carousel,
+  .editorial-carousel__viewport,
+  .editorial-carousel__track,
+  .editorial-carousel__card {
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .editorial-carousel--quote {
+    overflow: hidden;
+  }
+
+  .editorial-carousel__quote-content {
+    padding: var(--space-6) var(--space-5);
+  }
+
+  .editorial-carousel__visual img {
+    transform: none;
+  }
+
 }

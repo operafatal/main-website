@@ -607,6 +607,152 @@
   ],
   "lectures": [
     {
+      "id": "wagner-society-northern-california-potions-2027",
+      "status": "confirmed",
+      "institution": "Wagner Society of Northern California",
+      "location": "San Francisco / via Zoom",
+      "date": "10. Juli 2027",
+      "sortDate": "2027-07-10",
+      "title": "Potions in Tristan und Isolde, Die Walküre and Die Götterdämmerung",
+      "summary": "Zoom-Vortrag für die Wagner Society of Northern California, San Francisco, über Tränke und ihre dramaturgische Wirkung in Wagner.",
+      "buttonLabel": "Mehr anzeigen",
+      "visual": {
+        "type": "placeholder",
+        "label": "SF",
+        "tone": "accent"
+      },
+      "sources": [
+        {
+          "label": "Klientinnenangabe / geteilter Ordner",
+          "href": ""
+        }
+      ],
+      "details": {
+        "tags": [
+          "Lecture",
+          "Zoom",
+          "Wagner"
+        ],
+        "intro": [
+          "Der Zoom-Vortrag für die Wagner Society of Northern California widmet sich Tränken und ihren dramaturgischen Funktionen in Tristan und Isolde, Die Walküre und Die Götterdämmerung.",
+          "Ausgehend von den jeweiligen Bühnensituationen geht es um Verwandlung, Erkenntnis, Manipulation und musikalische Verdichtung."
+        ],
+        "facts": [
+          {
+            "label": "Datum",
+            "value": "10. Juli 2027"
+          },
+          {
+            "label": "Format",
+            "value": "via Zoom"
+          },
+          {
+            "label": "Veranstalter",
+            "value": "Wagner Society of Northern California, San Francisco"
+          }
+        ]
+      }
+    },
+    {
+      "id": "goetheanum-kundry-parsifal-2027",
+      "status": "confirmed",
+      "institution": "Goetheanum Dornach",
+      "location": "Goetheanum, Dornach",
+      "date": "20. April 2027",
+      "sortDate": "2027-04-20",
+      "title": "Wer hat Angst vor Kundry? Weiblichkeit und Erkenntnis in Wagners Parsifal",
+      "summary": "Vortrag beim Parsifal-Thementag am Goetheanum über Kundry, Weiblichkeit und Erkenntnis in Wagners Parsifal.",
+      "buttonLabel": "Mehr anzeigen",
+      "visual": {
+        "type": "placeholder",
+        "label": "Dornach",
+        "tone": "accent"
+      },
+      "sources": [
+        {
+          "label": "Klientinnenangabe / geteilter Ordner",
+          "href": ""
+        }
+      ],
+      "details": {
+        "time": "15 Uhr",
+        "tags": [
+          "Vortrag",
+          "Parsifal",
+          "Kundry"
+        ],
+        "intro": [
+          "Der Vortrag gehört zum Parsifal-Thementag am Goetheanum und widmet sich Kundry als Figur zwischen Weiblichkeit, Erkenntnis, Schuld, Sehnsucht und Erlösung.",
+          "Die Veranstaltung steht im unmittelbaren Umfeld der Parsifal-Aufführungen am Goetheanum."
+        ],
+        "facts": [
+          {
+            "label": "Datum",
+            "value": "20. April 2027"
+          },
+          {
+            "label": "Zeit",
+            "value": "15 Uhr"
+          },
+          {
+            "label": "Ort",
+            "value": "Goetheanum, Dornach"
+          },
+          {
+            "label": "Kontext",
+            "value": "Parsifal-Thementag"
+          }
+        ]
+      }
+    },
+    {
+      "id": "wagner-society-southern-california-singer-stage-2026",
+      "status": "confirmed",
+      "institution": "Wagner Society of Southern California",
+      "location": "Los Angeles / via Zoom",
+      "date": "22. Dezember 2026",
+      "sortDate": "2026-12-22",
+      "title": "“When everything stands perplexed.“ – The singer on the opera stage",
+      "summary": "Zoom-Vortrag für die Wagner Society of Southern California, Los Angeles, über den singenden Menschen auf der Opernbühne.",
+      "buttonLabel": "Mehr anzeigen",
+      "visual": {
+        "type": "placeholder",
+        "label": "LA",
+        "tone": "accent"
+      },
+      "sources": [
+        {
+          "label": "Klientinnenangabe / geteilter Ordner",
+          "href": ""
+        }
+      ],
+      "details": {
+        "tags": [
+          "Lecture",
+          "Zoom",
+          "Opernbühne"
+        ],
+        "intro": [
+          "Der Zoom-Vortrag für die Wagner Society of Southern California fragt nach dem singenden Menschen auf der Opernbühne: nach Präsenz, Situation, Stimme und szenischem Handeln.",
+          "Der Titel „When everything stands perplexed“ verweist auf Momente, in denen musikalische und theatrale Orientierung zugleich fraglich werden."
+        ],
+        "facts": [
+          {
+            "label": "Datum",
+            "value": "22. Dezember 2026"
+          },
+          {
+            "label": "Format",
+            "value": "via Zoom"
+          },
+          {
+            "label": "Veranstalter",
+            "value": "Wagner Society of Southern California, Los Angeles"
+          }
+        ]
+      }
+    },
+    {
       "id": "goetheanum-pflanzen-oper-2026",
       "status": "confirmed",
       "institution": "Goetheanum Dornach",
@@ -795,58 +941,6 @@
           {
             "label": "Thema",
             "value": "Bildersprache und Opernregie"
-          }
-        ]
-      }
-    },
-    {
-      "id": "rwv-nuernberg-parsifal-2025",
-      "status": "confirmed",
-      "institution": "Richard-Wagner-Verband Nürnberg",
-      "location": "Nürnberg",
-      "date": "15. Februar 2025 / verschoben auf November",
-      "sortDate": "2025-02-15",
-      "title": "Ich schreite kaum, doch wähn’ ich mich schon weit",
-      "summary": "Vortrag beim Richard-Wagner-Verband Nürnberg über Parsifal am Goetheanum; der Termin wurde auf November verschoben.",
-      "buttonLabel": "Mehr anzeigen",
-      "visual": {
-        "type": "placeholder",
-        "label": "Nürnberg",
-        "tone": "accent"
-      },
-      "sources": [
-        {
-          "label": "Solfaghari.com — Termine",
-          "href": "https://www.solfaghari.com/termine/"
-        }
-      ],
-      "details": {
-        "time": "15 Uhr",
-        "tags": [
-          "Vortrag",
-          "Richard-Wagner-Verband",
-          "Parsifal"
-        ],
-        "intro": [
-          "Der Nürnberger Vortrag führt in Parsifal am Goetheanum ein und beleuchtet die Entstehung der Dornacher Produktion. Im Zentrum stehen Regie, Eurythmie, Raumwirkung und die Frage, wie Wagners Bühnenweihfestspiel im Goetheanum eine eigene szenische Form findet.",
-          "Der ursprünglich für den 15. Februar 2025 angekündigte Vortrag beim Richard-Wagner-Verband Nürnberg wurde auf November verschoben."
-        ],
-        "facts": [
-          {
-            "label": "Ursprünglicher Termin",
-            "value": "15. Februar 2025, 15 Uhr"
-          },
-          {
-            "label": "Status",
-            "value": "auf November verschoben"
-          },
-          {
-            "label": "Ort",
-            "value": "Loews Merkur Hotel, Nürnberg"
-          },
-          {
-            "label": "Veranstalter",
-            "value": "Richard-Wagner-Verband Nürnberg"
           }
         ]
       }

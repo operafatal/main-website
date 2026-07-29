@@ -31,10 +31,14 @@
     <header class="site-header">
   <div class="site-header__inner">
     <a class="site-header__brand" href="/main-website/" aria-label="Jasmin Solfaghari">
-      <img class="site-header__brand-logo" src="/main-website/assets/img/jasmin-logo-v2.png" alt="" decoding="async">
-      
+      <img class="site-header__brand-logo" src="/main-website/assets/img/maennle-logo-accent.png" alt="" decoding="async">
+
     </a>
-    <nav class="site-nav" aria-label="Hauptnavigation">
+    <button class="site-nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
+      <span class="site-nav-toggle__label">Menü</span>
+      <span class="site-nav-toggle__icon" aria-hidden="true"></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
       <ul class="site-nav__list">
         <li><a class="site-nav__link" href="/main-website/">Home</a></li>
         <li><a class="site-nav__link" href="/main-website/inszenierungen/">Inszenierungen</a></li>
@@ -50,7 +54,7 @@
 </header>
 
     <main>
-      
+
 
 <article class="work-detail">
   <header class="work-detail__hero">
@@ -60,102 +64,102 @@
       <h1>La cabine téléphonique</h1>
       <p class="work-detail__subtitle">Claude Arrieu</p>
       <p class="work-detail__place">Institut Français Berlin</p>
-      
+
         <p class="work-detail__note">Geplante opéra-bouffe-Produktion 2026 im Rahmen „Die lustigen Komponistinnen“.</p>
-      
+
     </div>
 
     <figure class="work-detail__hero-visual" style="--work-detail-hero-object-position: center center; --work-detail-hero-image-scale: 1.02;">
-      
+
         <img src="/main-website/assets/img/la-cabine-telephonique/telephone-booth-paris-1955-publiphonie.jpg" alt="Telefonzelle in Paris, 1955 - Photographie PTT / Coll. Orange DANP via Publiphonie" loading="eager" decoding="async">
-        
+
           <figcaption>Telefonzelle in Paris, 1955 - Photographie PTT / Coll. Orange DANP via Publiphonie</figcaption>
-        
-      
+
+
     </figure>
   </header>
 
-  
-  
+
+
 
   <div class="work-detail__content">
-    
+
       <section class="work-detail__section work-detail__section--credits" aria-labelledby="credits-title">
-        <h2 id="credits-title">Credits</h2>
+        <h2 id="credits-title">Team</h2>
         <dl class="work-detail__credits">
-          
+
             <dt>Inszenierung</dt>
             <dd>Jasmin Solfaghari</dd>
-          
+
             <dt>Ausstattung</dt>
             <dd>Jasmin Solfaghari</dd>
-          
+
         </dl>
       </section>
-    
 
-    
+
+
       <section class="work-detail__section work-detail__section--narrative" aria-labelledby="narrative-title">
         <h2 id="narrative-title">Konzept & Wirkung</h2>
-        
+
           <p class="work-detail__lead">Claude Arrieus „La cabine téléphonique“ ist als opéra bouffe für Dezember 2026 am Institut Français Berlin angekündigt. Die Produktion gehört zur Reihe „Die lustigen Komponistinnen. Frauen im komischen Musiktheater um 1960“ und macht eine französische Komponistin sichtbar, deren Bühnenhumor selten gespielt wird.</p>
-        
-        
+
+
           <div class="work-detail__text-grid">
-            
+
               <section class="work-detail__text-block">
                 <h3>Komponistin im Fokus</h3>
                 <p>Die Projektanlage richtet den Blick auf eine Komponistin, die zwischen Eleganz, Leichtigkeit und kompositorischer Präzision arbeitet. Damit erweitert die Seite die Kategorie zeitgenössischer und neuerer Musiktheaterformen um eine Perspektive auf weibliche komische Oper um 1960.</p>
               </section>
-            
+
               <section class="work-detail__text-block">
                 <h3>Telefon als Bühne</h3>
                 <p>Die Telefonzelle ist ein szenisch dankbares Objekt: ein öffentlicher Miniaturraum für Privatheit, Missverständnis, Timing und komödiantische Verdichtung. Der Platzhalter-Hero zeigt bewusst dieses Motiv, bis Produktionsfotos vorliegen.</p>
               </section>
-            
+
               <section class="work-detail__text-block">
                 <h3>Berlin 2026</h3>
                 <p>Da die Premiere noch bevorsteht, bleibt die Seite nüchtern als Projektankündigung gebaut. Sie nennt Ort, Jahr und konzeptionellen Rahmen, ohne spätere Proben- oder Aufführungswirkung vorwegzunehmen.</p>
               </section>
-            
+
           </div>
-        
+
       </section>
-    
 
-    
 
-    
 
-    
 
-    
+
+
+
+
+
       <section class="work-detail__section work-detail__section--press" aria-labelledby="reviews-title">
         <h2 id="reviews-title">Presse</h2>
-        
-        
+
+
           <div class="work-detail__media-echo">
             <h3>Weitere Beiträge</h3>
             <div class="work-detail__media-list">
-              
+
                 <article class="work-detail__media-item">
                   <p class="work-detail__media-meta">Jasmin Solfaghari / LinkedIn · 2026</p>
                   <h4>La cabine téléphonique</h4>
-                  
+
                     <p>Öffentlicher Projektpost zur geplanten Inszenierung und Ausstattung von Claude Arrieus opéra bouffe am Institut Français Berlin, Premiere 4. Dezember 2026, zweite Vorstellung 11. Dezember 2026.</p>
-                  
-                  
+
+
                     <a class="work-detail__source-link work-detail__source-link--outline" href="https://de.linkedin.com/in/jasmin-solfaghari-a6ba3127" target="_blank" rel="noopener noreferrer">Beitrag öffnen <span aria-hidden="true">→</span></a>
-                  
+
                 </article>
-              
+
             </div>
           </div>
-        
-      </section>
-    
 
-    
+      </section>
+
+
+
   </div>
 </article>
 
@@ -173,6 +177,7 @@
   </div>
 </footer>
 
+    <script src="/main-website/assets/js/mobile-nav.js" defer></script>
     <script src="/main-website/assets/js/editorial-carousel.js" defer></script>
     <script src="/main-website/assets/js/hero-parallax.js" defer></script>
     <script src="/main-website/assets/js/work-tabs.js" defer></script>

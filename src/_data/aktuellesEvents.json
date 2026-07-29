@@ -109,14 +109,25 @@
       "sortDate": "2026-12-22",
       "day": "22",
       "month": "Dez 2026",
-      "title": "Wagner Lecture",
+      "title": "“When everything stands perplexed.“ – The singer on the opera stage",
       "subtitle": "Zoom-Vortrag",
       "location": "Wagner Society of Southern California, Los Angeles",
-      "summary": "Online-Vortrag im Umfeld der Wagner Society of Southern California; Detailtitel öffentlich noch nicht belastbar nachgewiesen.",
-      "buttonLabel": "In Prüfung",
-      "status": "needs-verification",
+      "summary": "Zoom-Vortrag für die Wagner Society of Southern California über den singenden Menschen auf der Opernbühne.",
+      "buttonLabel": "Mehr anzeigen",
+      "details": {
+        "tags": ["Lecture", "Zoom", "Opernbühne"],
+        "intro": [
+          "Der Zoom-Vortrag für die Wagner Society of Southern California fragt nach dem singenden Menschen auf der Opernbühne: nach Präsenz, Situation, Stimme und szenischem Handeln.",
+          "Der Titel „When everything stands perplexed“ verweist auf Momente, in denen musikalische und theatrale Orientierung zugleich fraglich werden."
+        ],
+        "facts": [
+          { "label": "Datum", "value": "22. Dezember 2026" },
+          { "label": "Format", "value": "via Zoom" },
+          { "label": "Veranstalter", "value": "Wagner Society of Southern California, Los Angeles" }
+        ]
+      },
       "sources": [
-        { "label": "Solfaghari.com — Termine", "href": "https://www.solfaghari.com/termine/" }
+        { "label": "Klientinnenangabe / geteilter Ordner", "href": "" }
       ]
     },
     {
@@ -189,10 +200,10 @@
       "id": "kundry-vortrag-2027",
       "category": "vortrag",
       "categoryLabel": "Vortrag",
-      "dateLabel": "20. März 2027",
-      "sortDate": "2027-03-20",
+      "dateLabel": "20. April 2027",
+      "sortDate": "2027-04-20",
       "day": "20",
-      "month": "Mär 2027",
+      "month": "Apr 2027",
       "title": "Wer hat Angst vor Kundry?",
       "subtitle": "Weiblichkeit und Erkenntnis in Wagners Parsifal",
       "location": "Goetheanum Dornach",
@@ -206,13 +217,42 @@
           "Die Veranstaltung steht im unmittelbaren Umfeld der Parsifal-Aufführungen am Goetheanum."
         ],
         "facts": [
-          { "label": "Datum", "value": "20. März 2027" },
+          { "label": "Datum", "value": "20. April 2027" },
           { "label": "Zeit", "value": "15 Uhr" },
           { "label": "Ort", "value": "Goetheanum Dornach" }
         ]
       },
       "sources": [
-        { "label": "Goetheanum-Bühne — Parsifal 2027", "href": "https://www.goetheanum-buehne.ch/projekte/wagners-parsifal-2026" }
+        { "label": "Klientinnenangabe / geteilter Ordner", "href": "" }
+      ]
+    },
+    {
+      "id": "wagner-society-northern-california-potions-2027",
+      "category": "vortrag",
+      "categoryLabel": "Vortrag",
+      "dateLabel": "10. Juli 2027",
+      "sortDate": "2027-07-10",
+      "day": "10",
+      "month": "Jul 2027",
+      "title": "Potions in Tristan und Isolde, Die Walküre and Die Götterdämmerung",
+      "subtitle": "Zoom-Vortrag",
+      "location": "Wagner Society of Northern California, San Francisco",
+      "summary": "Zoom-Vortrag über Tränke und ihre dramaturgische Wirkung in Wagner.",
+      "buttonLabel": "Mehr anzeigen",
+      "details": {
+        "tags": ["Lecture", "Zoom", "Wagner"],
+        "intro": [
+          "Der Zoom-Vortrag für die Wagner Society of Northern California widmet sich Tränken und ihren dramaturgischen Funktionen in Tristan und Isolde, Die Walküre und Die Götterdämmerung.",
+          "Ausgehend von den jeweiligen Bühnensituationen geht es um Verwandlung, Erkenntnis, Manipulation und musikalische Verdichtung."
+        ],
+        "facts": [
+          { "label": "Datum", "value": "10. Juli 2027" },
+          { "label": "Format", "value": "via Zoom" },
+          { "label": "Veranstalter", "value": "Wagner Society of Northern California, San Francisco" }
+        ]
+      },
+      "sources": [
+        { "label": "Klientinnenangabe / geteilter Ordner", "href": "" }
       ]
     }
   ],
@@ -389,20 +429,6 @@
           "location": "Leipziger Buchmesse",
           "summary": "Buchpräsentation am Stand des Schott Verlags.",
           "detailsSource": "event-modal-buchmesse-leipzig-schott-2025"
-        },
-        {
-          "id": "rwv-nuernberg-parsifal-2025",
-          "category": "vortrag",
-          "categoryLabel": "Vortrag",
-          "dateLabel": "15. Februar 2025 / verschoben auf November",
-          "sortDate": "2025-02-15",
-          "day": "15",
-          "month": "Feb 2025",
-          "title": "Ich schreite kaum, doch wähn’ ich mich schon weit",
-          "subtitle": "Vortrag · verschoben",
-          "location": "Richard-Wagner-Verband Nürnberg",
-          "summary": "Vortrag über Parsifal am Goetheanum; ursprünglich angekündigter Termin wurde verschoben.",
-          "detailsSource": "event-modal-rwv-nuernberg-parsifal-2025"
         },
         {
           "id": "eurythmeum-stuttgart-parsifal-2025",

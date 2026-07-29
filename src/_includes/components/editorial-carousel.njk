@@ -46,6 +46,8 @@
             </div>
 
             {% if showControls != false %}
+              <span class="editorial-carousel__counter" data-editorial-counter aria-live="polite"></span>
+
               <button class="editorial-carousel__control editorial-carousel__control--next" type="button" data-editorial-next aria-label="Nächster Eintrag">
                 <span aria-hidden="true">&rarr;</span>
               </button>
@@ -117,7 +119,7 @@
           <div class="editorial-carousel__track">
             {% for item in items %}
               <article class="editorial-carousel__card editorial-carousel__slide editorial-carousel__photo-card{% if loop.first %} is-active{% endif %}" data-editorial-slide{% if not loop.first %} aria-hidden="true"{% endif %}>
-                <figure class="editorial-carousel__photo">
+                <figure class="editorial-carousel__photo"{% if item.position or item.scale %} style="{% if item.position %}--editorial-carousel-photo-position: {{ item.position }};{% endif %}{% if item.scale %} --editorial-carousel-photo-scale: {{ item.scale }};{% endif %}"{% endif %}>
                   <img src="{{ item.src }}" alt="{{ item.alt }}" loading="lazy" decoding="async">
                   {% if item.caption %}
                     <figcaption>{{ item.caption }}</figcaption>
@@ -129,6 +131,8 @@
         </div>
 
         {% if showControls != false %}
+          <span class="editorial-carousel__counter" data-editorial-counter aria-live="polite"></span>
+
           <button class="editorial-carousel__control editorial-carousel__control--next" type="button" data-editorial-next aria-label="Nächstes Bild">
             <span aria-hidden="true">&rarr;</span>
           </button>

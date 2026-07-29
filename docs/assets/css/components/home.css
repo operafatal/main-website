@@ -8,6 +8,10 @@
   gap: var(--space-8);
 }
 
+.home-page > * {
+  min-width: 0;
+}
+
 /* Meisterkurse & Coaching — one tile (2026-07-25: merged from a two-tile
    pair; they belonged together conceptually and read as two unrelated
    cards, so the seam/gap between them went away and the CTA + the
@@ -120,8 +124,9 @@
 }
 
 .home-course-tile__testimonials {
-  display: flex;
-  align-items: center;
+  display: grid;
+  align-content: start;
+  gap: var(--space-5);
   min-height: 100%;
   padding: var(--space-copy-padding);
   background: var(--color-bg-subtle);
@@ -132,9 +137,15 @@
   width: 100%;
 }
 
+.home-course-tile__carousel.editorial-carousel__carousel.is-enhanced .editorial-carousel__viewport {
+  block-size: clamp(220px, 26vw, 300px);
+}
+
 .home-course-tile__testimonials .editorial-carousel__slide,
 .home-course-tile__testimonials .editorial-carousel__card {
-  min-height: clamp(130px, 13vw, 180px);
+  block-size: clamp(220px, 26vw, 300px);
+  min-height: 0;
+  overflow: hidden;
 }
 
 .home-course-tile__testimonials .editorial-carousel__card {
@@ -257,9 +268,12 @@
     grid-template-columns: 1fr;
   }
 
-  .home-course-tile__main,
-  .home-course-tile__testimonials {
+  .home-course-tile__main {
     padding: var(--space-8) var(--space-6);
+  }
+
+  .home-course-tile__testimonials {
+    padding: var(--space-6);
   }
 
   .home-course-tile__card {
@@ -269,9 +283,24 @@
 
   .home-course-tile__actions {
     position: static;
-    display: flex;
-    justify-content: center;
-    margin-top: var(--space-6);
+    justify-content: stretch;
+    padding: 0;
+    background: var(--color-bg-subtle);
+  }
+
+  .home-course-tile__actions .pill-button {
+    width: 100%;
+  }
+
+  .home-course-tile__carousel.editorial-carousel__carousel.is-enhanced .editorial-carousel__viewport,
+  .home-course-tile__testimonials .editorial-carousel__slide,
+  .home-course-tile__testimonials .editorial-carousel__card {
+    block-size: 200px;
+  }
+
+  .home-course-tile__testimonials .editorial-carousel__quote {
+    font-size: clamp(1.12rem, 5.2vw, 1.45rem);
+    line-height: 1.08;
   }
 
   .home-closer__grid {
@@ -292,5 +321,13 @@
 
   .home-closer__inquiries {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .home-course-tile__carousel.editorial-carousel__carousel.is-enhanced .editorial-carousel__viewport,
+  .home-course-tile__testimonials .editorial-carousel__slide,
+  .home-course-tile__testimonials .editorial-carousel__card {
+    block-size: 220px;
   }
 }

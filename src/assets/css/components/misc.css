@@ -2,8 +2,15 @@
    real pages (full-bleed utility, stat block, tag chips, quote strip). */
 
 .styleguide__full-bleed {
+  overflow: hidden;
   width: 100vw;
   margin-inline: calc(50% - 50vw);
+}
+
+@media (max-width: 360px) {
+  .page-home .styleguide__full-bleed {
+    margin-inline: calc(var(--space-4) * -1);
+  }
 }
 
 .stat-block {

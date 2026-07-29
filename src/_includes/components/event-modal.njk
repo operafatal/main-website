@@ -29,11 +29,14 @@
           {% endif %}
 
           {% if event.details.facts and event.details.facts.length %}
-            <dl class="event-modal__facts">
-              {% for fact in event.details.facts %}
-                <div class="event-modal__fact"><dt>{{ fact.label }}</dt><dd>{{ fact.value }}</dd></div>
-              {% endfor %}
-            </dl>
+            <section class="event-modal__facts" aria-labelledby="event-modal-{{ event.id }}-facts-title">
+              <h3 class="event-modal__facts-title" id="event-modal-{{ event.id }}-facts-title">Infos</h3>
+              <dl class="event-modal__facts-list">
+                {% for fact in event.details.facts %}
+                  <div class="event-modal__fact"><dt>{{ fact.label }}</dt><dd>{{ fact.value }}</dd></div>
+                {% endfor %}
+              </dl>
+            </section>
           {% endif %}
 
         </div>

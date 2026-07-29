@@ -31,10 +31,14 @@
     <header class="site-header">
   <div class="site-header__inner">
     <a class="site-header__brand" href="/main-website/" aria-label="Jasmin Solfaghari">
-      <img class="site-header__brand-logo" src="/main-website/assets/img/jasmin-logo-v2.png" alt="" decoding="async">
-      
+      <img class="site-header__brand-logo" src="/main-website/assets/img/maennle-logo-accent.png" alt="" decoding="async">
+
     </a>
-    <nav class="site-nav" aria-label="Hauptnavigation">
+    <button class="site-nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
+      <span class="site-nav-toggle__label">Menü</span>
+      <span class="site-nav-toggle__icon" aria-hidden="true"></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
       <ul class="site-nav__list">
         <li><a class="site-nav__link" href="/main-website/">Home</a></li>
         <li><a class="site-nav__link" href="/main-website/inszenierungen/">Inszenierungen</a></li>
@@ -50,7 +54,7 @@
 </header>
 
     <main>
-      
+
 
 <article class="work-detail">
   <header class="work-detail__hero">
@@ -60,238 +64,240 @@
       <h1>The Bassarids</h1>
       <p class="work-detail__subtitle">Hans Werner Henze</p>
       <p class="work-detail__place">Oper Köln</p>
-      
+
         <p class="work-detail__note">Kölner Henze-Produktion mit Markus Stenz und Ausstattung von Alexander Mudlagk.</p>
-      
+
     </div>
 
     <figure class="work-detail__hero-visual" style="--work-detail-hero-object-position: center center; --work-detail-hero-image-scale: 1.05;">
-      
+
         <img src="/main-website/assets/img/the-bassarids/bassarids-27022661.jpg" alt="The Bassarids - Archivbild solfaghari.com" loading="eager" decoding="async">
-        
+
           <figcaption>The Bassarids - Archivbild solfaghari.com</figcaption>
-        
-      
+
+
     </figure>
   </header>
 
-  
-  
-    
+
+
+
   <section class="editorial-carousel editorial-carousel--photo" aria-labelledby="gallery-the-bassarids-title">
-    
-      
+
+
         <h2 class="sr-only" id="gallery-the-bassarids-title">Bilder zur Inszenierung The Bassarids</h2>
-      
+
 
       <div class="editorial-carousel__carousel editorial-carousel__carousel--photo" data-editorial-carousel data-editorial-pause-on-hover="true" aria-roledescription="carousel" aria-label="Bilder zur Inszenierung The Bassarids" tabindex="0">
-        
+
           <button class="editorial-carousel__control editorial-carousel__control--previous" type="button" data-editorial-previous aria-label="Vorheriges Bild">
             <span aria-hidden="true">&larr;</span>
           </button>
-        
+
 
         <div class="editorial-carousel__viewport">
           <div class="editorial-carousel__track">
-            
+
               <article class="editorial-carousel__card editorial-carousel__slide editorial-carousel__photo-card is-active" data-editorial-slide>
                 <figure class="editorial-carousel__photo">
                   <img src="/main-website/assets/img/the-bassarids/bassarids-27022659.jpg" alt="The Bassarids - Archivbild solfaghari.com" loading="lazy" decoding="async">
-                  
+
                     <figcaption>The Bassarids - Archivbild solfaghari.com</figcaption>
-                  
+
                 </figure>
               </article>
-            
+
               <article class="editorial-carousel__card editorial-carousel__slide editorial-carousel__photo-card" data-editorial-slide aria-hidden="true">
                 <figure class="editorial-carousel__photo">
                   <img src="/main-website/assets/img/the-bassarids/bassarids-27022660.jpg" alt="The Bassarids - Archivbild solfaghari.com" loading="lazy" decoding="async">
-                  
+
                     <figcaption>The Bassarids - Archivbild solfaghari.com</figcaption>
-                  
+
                 </figure>
               </article>
-            
+
               <article class="editorial-carousel__card editorial-carousel__slide editorial-carousel__photo-card" data-editorial-slide aria-hidden="true">
                 <figure class="editorial-carousel__photo">
                   <img src="/main-website/assets/img/the-bassarids/bassarids-27022662.jpg" alt="The Bassarids - Archivbild solfaghari.com" loading="lazy" decoding="async">
-                  
+
                     <figcaption>The Bassarids - Archivbild solfaghari.com</figcaption>
-                  
+
                 </figure>
               </article>
-            
+
           </div>
         </div>
 
-        
+
+          <span class="editorial-carousel__counter" data-editorial-counter aria-live="polite"></span>
+
           <button class="editorial-carousel__control editorial-carousel__control--next" type="button" data-editorial-next aria-label="Nächstes Bild">
             <span aria-hidden="true">&rarr;</span>
           </button>
-        
+
       </div>
-    
-    
+
+
   </section>
 
-  
+
 
   <div class="work-detail__content">
-    
+
       <section class="work-detail__section work-detail__section--credits" aria-labelledby="credits-title">
-        <h2 id="credits-title">Credits</h2>
+        <h2 id="credits-title">Team</h2>
         <dl class="work-detail__credits">
-          
+
             <dt>Musikalische Leitung</dt>
             <dd>Markus Stenz</dd>
-          
+
             <dt>Inszenierung</dt>
             <dd>Jasmin Solfaghari</dd>
-          
+
             <dt>Ausstattung</dt>
             <dd>Alexander Mudlagk</dd>
-          
+
         </dl>
       </section>
-    
 
-    
+
+
       <section class="work-detail__section work-detail__section--narrative" aria-labelledby="narrative-title">
         <h2 id="narrative-title">Konzept & Wirkung</h2>
-        
+
           <p class="work-detail__lead">Henzes „The Bassarids“ kam 2005 an der Oper Köln in einer Produktion von Jasmin Solfaghari heraus. Der antike Dionysos-Mythos wird dabei nicht als fernes Ritual gezeigt, sondern als politisch und körperlich greifbare Eskalation: Ordnung, Rausch, Fanatismus und Katastrophe prallen aufeinander.</p>
-        
-        
+
+
           <div class="work-detail__text-grid">
-            
+
               <section class="work-detail__text-block">
                 <h3>Mythos als Gegenwart</h3>
                 <p>Die Inszenierung verzichtet auf musealen Antikenabstand. Pentheus&#39; Herrschaftslogik und Dionysos&#39; Verführungskraft erscheinen als gegensätzliche Systeme, die beide auf Entgrenzung zulaufen. Dadurch wird der Mythos sinnlich und gesellschaftlich lesbar.</p>
               </section>
-            
+
               <section class="work-detail__text-block">
                 <h3>Chor und Masse</h3>
                 <p>Die Pressestimmen heben besonders die Personen- und Chorführung hervor. In einem Werk, das zwischen individueller Verblendung und kollektiver Bewegung oszilliert, wird die Masse zum eigentlichen dramatischen Akteur.</p>
               </section>
-            
+
               <section class="work-detail__text-block">
                 <h3>Kölner Bekenntnis zu Henze</h3>
                 <p>Mit Markus Stenz am Pult stand die Produktion in einem starken Kölner Musiktheaterkontext. Die Resonanz beschreibt einen Abend, der Henze nachdrücklich verteidigt: als modernes Musikdrama, das Wucht, Bildkraft und kritische Gegenwart verbindet.</p>
               </section>
-            
+
           </div>
-        
+
       </section>
-    
 
-    
 
-    
 
-    
 
-    
+
+
+
+
+
       <section class="work-detail__section work-detail__section--press" aria-labelledby="reviews-title">
         <h2 id="reviews-title">Presse &amp; Kritiken</h2>
-        
+
           <div class="work-detail__reviews">
-            
-              
+
+
               <article class="work-detail__review">
                 <figure>
-                  
+
                     <p class="work-detail__review-title">Verzweifelter Kampf gegen göttlichen Verführer</p>
-                  
+
                   <blockquote>„Verzicht auf tiefenpsychologischen Ballast zugunsten einer sinnlich greifbaren Erzählung.“</blockquote>
                   <figcaption>
                     Alfred Beaujean · Aachener Zeitung · 20.09.2005
                   </figcaption>
                 </figure>
                 <div class="work-detail__review-actions">
-                  
-                  
+
+
                     <a class="work-detail__source-link work-detail__source-link--outline" href="https://www.solfaghari.com/b%C3%BChnenprojekte/zeitgen%C3%B6ssische-oper/" target="_blank" rel="noopener noreferrer">Beitrag öffnen <span aria-hidden="true">→</span></a>
-                  
+
                 </div>
-                
+
               </article>
-            
-              
+
+
               <article class="work-detail__review">
                 <figure>
-                  
+
                     <p class="work-detail__review-title">The Bassarids</p>
-                  
+
                   <blockquote>„Die Inszenierung Jasmin Solfagharis lebt von vielen Einfällen.“</blockquote>
                   <figcaption>
                     Christoph Vratz · Opernwelt · 11/2005
                   </figcaption>
                 </figure>
                 <div class="work-detail__review-actions">
-                  
-                  
+
+
                     <a class="work-detail__source-link work-detail__source-link--outline" href="https://www.solfaghari.com/b%C3%BChnenprojekte/zeitgen%C3%B6ssische-oper/" target="_blank" rel="noopener noreferrer">Beitrag öffnen <span aria-hidden="true">→</span></a>
-                  
+
                 </div>
-                
+
               </article>
-            
-              
+
+
               <article class="work-detail__review">
                 <figure>
-                  
+
                     <p class="work-detail__review-title">The Bassarids</p>
-                  
+
                   <blockquote>„... ästhetisch und realistisch zugleich.“</blockquote>
                   <figcaption>
                     B. Kempen · Das Opernglas · 11/2005
                   </figcaption>
                 </figure>
                 <div class="work-detail__review-actions">
-                  
-                  
+
+
                     <a class="work-detail__source-link work-detail__source-link--outline" href="https://www.solfaghari.com/b%C3%BChnenprojekte/zeitgen%C3%B6ssische-oper/" target="_blank" rel="noopener noreferrer">Beitrag öffnen <span aria-hidden="true">→</span></a>
-                  
+
                 </div>
-                
+
               </article>
-            
+
           </div>
-        
-        
+
+
           <div class="work-detail__media-echo">
             <h3>Weitere Beiträge</h3>
             <div class="work-detail__media-list">
-              
+
                 <article class="work-detail__media-item">
                   <p class="work-detail__media-meta">taz · 19.09.2005</p>
                   <h4>Gedämpfter Exzess</h4>
-                  
+
                     <p>Frieder Reininghaus bespricht Henzes „Bassarids“ an der Oper Köln mit Jasmin Solfaghari und Markus Stenz.</p>
-                  
-                  
+
+
                     <a class="work-detail__source-link work-detail__source-link--outline" href="https://taz.de/Gedaempfter-Exzess/!543947/" target="_blank" rel="noopener noreferrer">Beitrag öffnen <span aria-hidden="true">→</span></a>
-                  
+
                 </article>
-              
+
                 <article class="work-detail__media-item">
                   <p class="work-detail__media-meta">solfaghari.com</p>
                   <h4>THE BASSARIDS</h4>
-                  
+
                     <p>Archiviert die Kölner Produktion mit musikalischer Leitung Markus Stenz, Ausstattung Alexander Mudlagk und drei Pressestimmen aus Aachener Zeitung, Opernwelt und Opernglas.</p>
-                  
-                  
+
+
                     <a class="work-detail__source-link work-detail__source-link--outline" href="https://www.solfaghari.com/b%C3%BChnenprojekte/zeitgen%C3%B6ssische-oper/" target="_blank" rel="noopener noreferrer">Beitrag öffnen <span aria-hidden="true">→</span></a>
-                  
+
                 </article>
-              
+
             </div>
           </div>
-        
-      </section>
-    
 
-    
+      </section>
+
+
+
   </div>
 </article>
 
@@ -309,6 +315,7 @@
   </div>
 </footer>
 
+    <script src="/main-website/assets/js/mobile-nav.js" defer></script>
     <script src="/main-website/assets/js/editorial-carousel.js" defer></script>
     <script src="/main-website/assets/js/hero-parallax.js" defer></script>
     <script src="/main-website/assets/js/work-tabs.js" defer></script>

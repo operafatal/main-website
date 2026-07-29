@@ -6,6 +6,7 @@
     var slides = Array.from(carousel.querySelectorAll("[data-editorial-slide]"));
     var previousButton = carousel.querySelector("[data-editorial-previous]");
     var nextButton = carousel.querySelector("[data-editorial-next]");
+    var counter = carousel.querySelector("[data-editorial-counter]");
     var currentIndex = 0;
     var timerId = null;
     var focusIsInCarousel = false;
@@ -22,6 +23,10 @@
         slide.classList.toggle("is-active", isActive);
         slide.setAttribute("aria-hidden", String(!isActive));
       });
+
+      if (counter) {
+        counter.textContent = (currentIndex + 1) + " / " + slides.length;
+      }
     }
 
     function stopAutoplay() {

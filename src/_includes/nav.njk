@@ -1,7 +1,7 @@
 <header class="site-header">
   <div class="site-header__inner">
     <a class="site-header__brand" href="/" aria-label="Jasmin Solfaghari">
-      <img class="site-header__brand-logo" src="/assets/img/jasmin-logo-v2.png" alt="" decoding="async">
+      <img class="site-header__brand-logo" src="/assets/img/maennle-logo-accent.png" alt="" decoding="async">
       {# JS-Buchstabenmarke deaktiviert; bei Bedarf statt Logo wieder aktivieren.
       <span class="site-header__brand-mark site-header__brand-mark--letters" aria-hidden="true">
         <span class="site-header__brand-letter site-header__brand-letter--j">J</span>
@@ -9,7 +9,11 @@
       </span>
       #}
     </a>
-    <nav class="site-nav" aria-label="Hauptnavigation">
+    <button class="site-nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
+      <span class="site-nav-toggle__label">Menü</span>
+      <span class="site-nav-toggle__icon" aria-hidden="true"></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
       <ul class="site-nav__list">
         <li><a class="site-nav__link{% if page.url == '/' %} is-current{% endif %}" href="/">Home</a></li>
         <li><a class="site-nav__link{% if page.url == '/inszenierungen/' %} is-current{% endif %}" href="/inszenierungen/">Inszenierungen</a></li>

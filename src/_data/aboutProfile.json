@@ -4,9 +4,9 @@
     "title": "Jasmin Solfaghari",
     "lead": "Seit über zwei Jahrzehnten inszeniert Jasmin Solfaghari auf großen Bühnen im In- und Ausland — und verbindet diese Praxis mit Lehre, Mentoring und einer besonderen Aufmerksamkeit für die Vermittlung komplexer Bühnenstoffe.",
     "portrait": {
-      "src": "/assets/img/portrait-amazon-klein.jpg",
+      "src": "/assets/img/channels4_profile.jpg",
       "alt": "Portrait von Jasmin Solfaghari",
-      "credit": "Portrait: Cathleen Herwarth von Bittenfeld"
+      "credit": ""
     }
   },
   "introLinks": [
@@ -152,7 +152,7 @@
   },
   "sourceNotes": {
     "raw": "main-website/content/ueber-mich.md bleibt Rohquelle.",
-    "portrait": "Portrait-amazon-klein.jpg von Razz für Über Jasmin bestimmt; sichtbarer Credit von Razz am 2026-07-26 freigegeben.",
+    "portrait": "Über Jasmin nutzt seit 2026-07-27 dasselbe Portrait wie Kontakt: channels4_profile.jpg; kein sichtbarer Credit, da keine sichere Zuschreibung vorliegt.",
     "timelineOrder": "Razz bestätigte am 2026-07-26: heutiges Profil zuerst, dann rückwärts."
   }
 }

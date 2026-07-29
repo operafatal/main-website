@@ -296,6 +296,14 @@ button.aktuelles-row:hover .aktuelles-row__action {
     justify-self: start;
   }
 
+  .aktuelles-row__main,
+  .aktuelles-row__title,
+  .aktuelles-row__subtitle,
+  .aktuelles-row__summary {
+    min-width: 0;
+    overflow-wrap: break-word;
+  }
+
   .aktuelles-year {
     grid-template-columns: 1fr;
     gap: var(--space-3);
@@ -307,6 +315,18 @@ button.aktuelles-row:hover .aktuelles-row__action {
     width: calc(100vw - (var(--space-6) * 2));
     max-width: calc(100vw - (var(--space-6) * 2));
     justify-self: center;
+  }
+
+  .aktuelles-row__meta {
+    display: grid;
+    gap: var(--space-1);
+    letter-spacing: 0.08em;
+    overflow-wrap: anywhere;
+  }
+
+  .aktuelles-row__meta span + span {
+    padding-left: 0;
+    border-left: 0;
   }
 
 }
