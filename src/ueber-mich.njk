@@ -10,8 +10,8 @@ permalink: /ueber-jasmin/
 <article class="about-page">
   <section class="about-hero" aria-labelledby="about-title">
     <div class="about-hero__copy">
-      <p class="about-eyebrow">{{ about.hero.kicker }}</p>
       <h1 class="about-hero__title" id="about-title">{{ about.hero.title }}</h1>
+      <p class="about-eyebrow">{{ about.hero.kicker }}</p>
       <p class="about-hero__lead">{{ about.hero.lead }}</p>
       <div class="about-hero__actions" aria-label="Weiterführende Seiten">
         {% for link in about.introLinks %}
@@ -26,6 +26,26 @@ permalink: /ueber-jasmin/
       {% endif %}
     </figure>
   </section>
+
+  {% if about.badges and about.badges.length %}
+    <section class="about-badges" aria-label="Vertretung & Positionen">
+      {% for badge in about.badges %}
+        <div class="about-badge">
+          <span class="about-badge__visual">
+            <img src="{{ badge.image }}" alt="{{ badge.imageAlt }}" loading="lazy" decoding="async">
+          </span>
+          <span class="about-badge__text">
+            <strong>{{ badge.label }}</strong>
+            {% if badge.href %}
+              <a href="{{ badge.href }}" target="_blank" rel="noopener noreferrer">{{ badge.org }}</a>
+            {% else %}
+              <span>{{ badge.org }}</span>
+            {% endif %}
+          </span>
+        </div>
+      {% endfor %}
+    </section>
+  {% endif %}
 
   <section class="about-bio" aria-label="Biografie">
     <div class="about-bio__text">

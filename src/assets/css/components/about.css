@@ -101,6 +101,81 @@
   text-transform: uppercase;
 }
 
+.about-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  /* Grid-Gap des Elternelements (.about-page) ist für volle Sections gedacht (bis zu 80px) —
+     hier auf ein knappes Maß zurückziehen, ohne den Abstand der übrigen Sections anzufassen. */
+  margin-block: calc(-1 * clamp(var(--space-10), 7vw, var(--space-16)) + var(--space-5));
+}
+
+.about-badge {
+  display: flex;
+  align-items: stretch;
+  height: 3.75rem;
+  min-width: 13.5rem;
+  background: var(--color-bg);
+  border: 1px solid color-mix(in srgb, var(--color-accent) 18%, transparent);
+}
+
+.about-badge__visual {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  width: 3.75rem;
+  padding: var(--space-2);
+  background: var(--color-bg-subtle);
+  border-right: 1px solid color-mix(in srgb, var(--color-accent) 18%, transparent);
+}
+
+.about-badge__visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.about-badge__text {
+  display: grid;
+  align-content: center;
+  gap: 0.1rem;
+  min-width: 0;
+  padding: var(--space-2) var(--space-3);
+  font-size: 0.78rem;
+  line-height: 1.3;
+}
+
+.about-badge__text strong {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.about-badge__text a,
+.about-badge__text span:not(:first-child) {
+  color: var(--color-text-muted);
+}
+
+.about-badge__text a {
+  text-decoration: none;
+}
+
+.about-badge__text a:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .about-badges {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .about-badge {
+    min-width: 0;
+  }
+}
+
 .about-section {
   display: grid;
   grid-template-columns: minmax(180px, 0.34fr) minmax(0, 1fr);
@@ -304,6 +379,7 @@
   }
 
   .about-hero,
+  .about-badges,
   .about-bio,
   .about-section,
   .about-collaborations,
