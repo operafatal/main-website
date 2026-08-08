@@ -270,6 +270,7 @@ function buildCuratedContent() {
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy("src/robots.txt");
   eleventyConfig.addWatchTarget("content/");
   eleventyConfig.addWatchTarget("src/_data/werk.json");
   eleventyConfig.addTransform("external-links-new-tab", (content, outputPath) => {

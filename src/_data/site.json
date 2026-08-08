@@ -1,0 +1,9 @@
+{
+  "name": "Jasmin Solfaghari",
+  "tagline": "Opernregisseurin, Mentorin, Autorin",
+  "url": "https://solfaghari.com",
+  "defaultDescription": "Jasmin Solfaghari inszeniert seit über zwei Jahrzehnten Oper auf großen Bühnen im In- und Ausland und gibt ihre Erfahrung in Meisterkursen, Lehre und Publikationen weiter.",
+  "defaultImage": "/assets/img/channels4_profile.jpg",
+  "locale": "de_DE",
+  "sourceNotes": "2026-08-08: Basis-SEO (Titel, Meta-Description, Open Graph, Favicon, sitemap.xml, robots.txt) angelegt, vor dem geplanten Umzug auf die echte Domain solfaghari.com. site.url ist bewusst schon die Ziel-Domain (nicht der aktuelle Preview-Snapshot), damit Canonical/OG-Tags nach dem Umzug sofort stimmen -- vorher zeigen sie ins Leere, das ist ok."
+}

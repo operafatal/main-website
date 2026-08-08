@@ -4,9 +4,11 @@ pagination:
   data: werk.items
   size: 1
   alias: production
+  addAllPagesToCollections: true
 permalink: "/inszenierungen/{{ production.slug }}/"
 eleventyComputed:
   title: "{{ production.title }}"
+  description: "{{ production.composer }} — inszeniert von Jasmin Solfaghari{% if production.place %}, {{ production.place }}{% endif %}{% if production.year %} ({{ production.year }}){% endif %}."
 ---
 {% from "components/editorial-carousel.njk" import editorialCarousel %}
 
