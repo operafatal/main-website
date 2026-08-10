@@ -2,7 +2,7 @@
 
 {% macro hero(imageUrl, slogan, primaryLabel, primaryHref, secondaryLabel, secondaryHref, body="", meta=[], imageCredit="", role="", logoUrl="") %}
   <section class="hero" aria-label="Featured introduction">
-    <div class="hero__inner">
+    <div class="hero__inner{% if not logoUrl %} hero__inner--no-mark{% endif %}">
       <div class="hero__content">
         <div class="hero__copy">
           <div class="hero__top">
