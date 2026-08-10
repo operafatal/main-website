@@ -82,8 +82,21 @@ a.archive-row:focus-visible::before {
     gap: var(--space-2);
   }
 
+  .archive-row__year,
+  .archive-row__meta {
+    min-width: 0;
+  }
+
   .archive-row__meta {
     text-align: left;
+    /* Bei einer Spalte (siehe oben) steht die Meta-Zeile jetzt für sich allein
+       und darf umbrechen — das ererbte white-space: nowrap von der Desktop-
+       Zwei-Spalten-Regel hat lange Ortsangaben (z. B. "Rundfunksinfonie-
+       orchester Berlin / Atze Musiktheater Berlin") sonst ungebrochen über
+       die volle Breite gezwungen und dadurch die ganze Zeile/Karten-Grid-
+       Spalte (und mit ihr die komplette Inszenierungen-Seite) horizontal
+       überlaufen lassen -- sichtbar u. a. im "Oper für Einsteiger"-Tab. */
+    white-space: normal;
   }
 }
 

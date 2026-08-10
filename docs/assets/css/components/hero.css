@@ -10,11 +10,24 @@
 .hero__inner {
   position: relative;
   z-index: 1;
+  /* width darf NICHT von flex-grow übersteuert werden -- .hero ist der
+     Full-Bleed-Wrapper (100vw, siehe .styleguide__full-bleed), diese Box
+     hier zieht die Inhaltsspalte wieder auf dieselben 1180px/Zentrierung
+     wie main/.current-work etc. zusammen. flex: 1 (Grow) hätte sie sonst
+     trotz width auf die vollen 100vw aufgeblasen -- deshalb flex: 0 1 auto
+     statt 1 (Höhen-Stretch bleibt über das Flex-Default align-items:
+     stretch erhalten, nur das Wachsen in der Breite wird unterdrückt). */
   width: min(100%, 1180px);
   margin-inline: auto;
+  /* Linkes Padding reserviert Platz für .hero__mark (Logo), das absolut
+     links neben der Kopfzeile schwebt (right: 100%, siehe unten) -- nur
+     nötig, wenn ein Logo tatsächlich übergeben wird. Ohne Logo (aktueller
+     Home-Hero) auf dasselbe Padding wie main/.current-work etc. reduziert
+     (.hero__inner--no-mark), sonst schwebt der Text-Block ohne Grund weit
+     nach rechts verschoben von den übrigen Sections. */
   padding: clamp(var(--space-8), 5vw, 88px) clamp(2rem, 4vw, 4rem) clamp(var(--space-8), 5vw, 88px) clamp(15rem, 20vw, 22rem);
   display: flex;
-  flex: 1;
+  flex: 0 1 auto;
 }
 
 .hero__content {
@@ -271,5 +284,28 @@
 
   .hero__actions .pill-button {
     width: 100%;
+  }
+}
+
+/* .hero__inner--no-mark ans Dateiende gestellt (statt direkt neben die
+   Basisregel), damit es an JEDER Breite gewinnt -- die drei padding-Regeln
+   oben (Basis, 721-1100px, <=720px) setzen padding jeweils als Shorthand
+   und würden ein früher stehendes padding-left sonst pro Breakpoint wieder
+   überschreiben. Werte spiegeln exakt main/.current-work's eigene
+   Breakpoints (base.css), damit der Home-Hero ohne Logo an jeder Breite
+   bündig mit den übrigen Sections abschließt. */
+.hero__inner--no-mark {
+  padding-left: var(--space-10);
+}
+
+@media (max-width: 1100px) {
+  .hero__inner--no-mark {
+    padding-left: var(--space-6);
+  }
+}
+
+@media (max-width: 360px) {
+  .hero__inner--no-mark {
+    padding-left: var(--space-4);
   }
 }
