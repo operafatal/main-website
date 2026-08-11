@@ -32,11 +32,11 @@
                   {% if (filterWork and item.work and filterWork in item.work and item.source != "Amazon-Rezension") or not filterWork %}
                     <article class="editorial-carousel__card editorial-carousel__slide{% if firstVisible %} is-active{% endif %}" data-editorial-slide{% if not firstVisible %} aria-hidden="true"{% endif %}>
                       <blockquote class="editorial-carousel__quote">{{ item.quote }}</blockquote>
-                      <p class="editorial-carousel__attribution">
+                      <p class="editorial-carousel__attribution" translate="no">
                         {{ item.author }}{% if item.source %} &middot; {{ item.source }}{% endif %}
                       </p>
                       {% if item.work %}
-                        <p class="editorial-carousel__meta">{{ item.work }}</p>
+                        <p class="editorial-carousel__meta" translate="no">{{ item.work }}</p>
                       {% endif %}
                     </article>
                     {% set firstVisible = false %}
@@ -82,7 +82,7 @@
       <div class="editorial-carousel__course-list" aria-label="{{ ariaLabel }}">
         {% if courseItems[0] %}
           <article class="editorial-carousel__course-panel editorial-carousel__course-panel--primary">
-            <h3 class="editorial-carousel__course-title">{{ courseItems[0].title }}</h3>
+            <h3 class="editorial-carousel__course-title" translate="no">{{ courseItems[0].title }}</h3>
             <p class="editorial-carousel__course-subtitle">{{ courseItems[0].subtitle }}</p>
             <p class="editorial-carousel__course-details">{{ courseItems[0].date }}{% if courseItems[0].details %} · {{ courseItems[0].details }}{% endif %}</p>
           </article>
@@ -90,7 +90,7 @@
 
         {% if courseItems[1] %}
           <article class="editorial-carousel__course-panel editorial-carousel__course-panel--secondary">
-            <h3 class="editorial-carousel__course-title">{{ courseItems[1].title }}</h3>
+            <h3 class="editorial-carousel__course-title" translate="no">{{ courseItems[1].title }}</h3>
             <p class="editorial-carousel__course-subtitle">{{ courseItems[1].subtitle }}</p>
             <p class="editorial-carousel__course-details">{{ courseItems[1].date }}{% if courseItems[1].details %} · {{ courseItems[1].details }}{% endif %}</p>
           </article>

@@ -7,7 +7,7 @@
   <blockquote class="pull-quote">
     <p class="pull-quote__text">{{ quote }}</p>
     {% if author %}
-      <cite class="pull-quote__attribution">{{ author }}{% if source %} · {{ source }}{% endif %}</cite>
+      <cite class="pull-quote__attribution" translate="no">{{ author }}{% if source %} · {{ source }}{% endif %}</cite>
     {% endif %}
   </blockquote>
 {% endmacro %}

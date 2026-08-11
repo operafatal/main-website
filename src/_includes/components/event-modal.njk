@@ -7,7 +7,7 @@
         </button>
 
         <header class="event-modal__header">
-          <p class="event-modal__location">{{ event.institution or event.location }}{% if event.location and event.institution %} · {{ event.location }}{% endif %}</p>
+          <p class="event-modal__location" translate="no">{{ event.institution or event.location }}{% if event.location and event.institution %} · {{ event.location }}{% endif %}</p>
           <h2 class="event-modal__title" id="event-modal-{{ event.id }}-title">{{ event.title }}</h2>
           <p class="event-modal__date">{{ event.date }}{% if event.details.time %} · {{ event.details.time }}{% endif %}</p>
           {% if event.details.tags and event.details.tags.length %}

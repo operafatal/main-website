@@ -63,9 +63,9 @@ permalink: /publikationen/
       <div class="publication-mini-list">
         {% for item in publications.stageWorks %}
           <article class="publication-mini-item">
-            <h3>{{ item.title }}</h3>
+            <h3 translate="no">{{ item.title }}</h3>
             <p>{{ item.subtitle }}</p>
-            <p class="publication-mini-item__meta">{{ item.meta }}</p>
+            <p class="publication-mini-item__meta" translate="no">{{ item.meta }}</p>
           </article>
         {% endfor %}
       </div>
@@ -101,7 +101,7 @@ permalink: /publikationen/
       {% for item in publications.reviews %}
         <article class="publication-quote">
           <blockquote>„{{ item.quote }}“</blockquote>
-          <p>{{ item.source }}{% if item.date %} · {{ item.date }}{% endif %}</p>
+          <p translate="no">{{ item.source }}{% if item.date %} · {{ item.date }}{% endif %}</p>
           {% if item.context %}<span>{{ item.context }}</span>{% endif %}
           {% if item.href %}
             <a class="work-detail__source-link work-detail__source-link--outline publication-quote__link" href="{{ item.href }}"{% if item.href | isExternalUrl %} target="_blank" rel="noopener noreferrer"{% endif %}>Beitrag öffnen <span aria-hidden="true">→</span></a>

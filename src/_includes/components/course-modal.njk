@@ -21,8 +21,8 @@
         {% if course.details.zeiten %}
           <p class="course-modal__zeiten">{{ course.details.zeiten }}</p>
         {% endif %}
-        <h2 class="course-modal__title" id="modal-{{ course.id }}-title">{{ course.name }}</h2>
-        <p class="course-modal__location">{{ course.details.adresse or course.location }}</p>
+        <h2 class="course-modal__title" id="modal-{{ course.id }}-title" translate="no">{{ course.name }}</h2>
+        <p class="course-modal__location" translate="no">{{ course.details.adresse or course.location }}</p>
         {% if course.tags and course.tags.length %}
           <ul class="course-modal__tags">
             {% for tag in course.tags %}
@@ -67,7 +67,7 @@
               <div class="course-modal__fact"><dt>Anzahlung</dt><dd>{{ course.details.anzahlung }}</dd></div>
             {% endif %}
             {% if course.veranstalter %}
-              <div class="course-modal__fact"><dt>Veranstalter</dt><dd>{{ course.veranstalter }}</dd></div>
+              <div class="course-modal__fact"><dt>Veranstalter</dt><dd translate="no">{{ course.veranstalter }}</dd></div>
             {% endif %}
           </dl>
         </section>

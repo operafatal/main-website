@@ -11,9 +11,9 @@
   <{{ tag }} class="archive-row"{% if href %} href="{{ href }}"{% if href | isExternalUrl %} target="_blank" rel="noopener noreferrer"{% endif %}{% endif %}>
     <span class="archive-row__year">{{ year }}</span>
     <span class="archive-row__main">
-      <span class="archive-row__title">{{ title }}</span>
-      {% if subtitle %}<span class="archive-row__subtitle">{{ subtitle }}</span>{% endif %}
+      <span class="archive-row__title" translate="no">{{ title }}</span>
+      {% if subtitle %}<span class="archive-row__subtitle" translate="no">{{ subtitle }}</span>{% endif %}
     </span>
-    {% if meta %}<span class="archive-row__meta">{{ meta }}</span>{% endif %}
+    {% if meta %}<span class="archive-row__meta" translate="no">{{ meta }}</span>{% endif %}
   </{{ tag }}>
 {% endmacro %}

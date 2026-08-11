@@ -9,11 +9,11 @@
     <span class="aktuelles-row__main">
       <span class="aktuelles-row__meta">
         <span>{{ item.categoryLabel }}</span>
-        <span>{{ item.location }}</span>
+        <span translate="no">{{ item.location }}</span>
       </span>
-      <span class="aktuelles-row__title">{{ item.title }}</span>
+      <span class="aktuelles-row__title" translate="no">{{ item.title }}</span>
       {% if item.subtitle %}
-        <span class="aktuelles-row__subtitle">{{ item.subtitle }}</span>
+        <span class="aktuelles-row__subtitle" translate="no">{{ item.subtitle }}</span>
       {% endif %}
       {% if item.summary %}
         <span class="aktuelles-row__summary">{{ item.summary }}</span>

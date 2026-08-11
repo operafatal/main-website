@@ -17,9 +17,9 @@ eleventyComputed:
     <a class="work-detail__back" href="/inszenierungen/">← Zurück zu den Inszenierungen</a>
     <div class="work-detail__hero-copy">
       <p class="work-detail__kicker">{{ production.categoryLabel }} · {{ production.year }}</p>
-      <h1>{{ production.title }}</h1>
-      <p class="work-detail__subtitle">{{ production.composer }}</p>
-      <p class="work-detail__place">{{ production.place }}</p>
+      <h1 translate="no">{{ production.title }}</h1>
+      <p class="work-detail__subtitle" translate="no">{{ production.composer }}</p>
+      <p class="work-detail__place" translate="no">{{ production.place }}</p>
       {% if production.note %}
         <p class="work-detail__note">{{ production.note }}</p>
       {% endif %}
@@ -62,7 +62,7 @@ eleventyComputed:
         <dl class="work-detail__credits">
           {% for key, value in production.credits %}
             <dt>{{ key | creditLabel }}</dt>
-            <dd>{{ value }}</dd>
+            <dd translate="no">{{ value }}</dd>
           {% endfor %}
         </dl>
       </section>
@@ -119,7 +119,7 @@ eleventyComputed:
           {% if production.publicationFeature.kicker %}
             <p class="work-detail__section-kicker">{{ production.publicationFeature.kicker }}</p>
           {% endif %}
-          <h2 id="publication-title">{{ production.publicationFeature.title }}</h2>
+          <h2 id="publication-title" translate="no">{{ production.publicationFeature.title }}</h2>
           {% if production.publicationFeature.subtitle %}
             <p class="work-detail__publication-subtitle">{{ production.publicationFeature.subtitle }}</p>
           {% endif %}
@@ -129,7 +129,7 @@ eleventyComputed:
           {% if production.publicationFeature.facts and production.publicationFeature.facts.length %}
             <ul class="work-detail__publication-facts" aria-label="Buchdetails">
               {% for fact in production.publicationFeature.facts %}
-                <li>{{ fact }}</li>
+                <li translate="no">{{ fact }}</li>
               {% endfor %}
             </ul>
           {% endif %}
@@ -143,7 +143,7 @@ eleventyComputed:
           <figure class="work-detail__publication-visual">
             <img src="{{ production.publicationFeature.image.src }}" alt="{{ production.publicationFeature.image.alt }}" loading="lazy" decoding="async">
             {% if production.publicationFeature.image.caption %}
-              <figcaption>{{ production.publicationFeature.image.caption }}</figcaption>
+              <figcaption translate="no">{{ production.publicationFeature.image.caption }}</figcaption>
             {% endif %}
           </figure>
         {% endif %}
@@ -174,7 +174,7 @@ eleventyComputed:
                     <p class="work-detail__review-title">{{ review.title }}</p>
                   {% endif %}
                   <blockquote>{{ review.quote }}</blockquote>
-                  <figcaption>
+                  <figcaption translate="no">
                     {{ review.author }}{% if review.source %} · {{ review.source }}{% endif %}{% if review.date %} · {{ review.date }}{% endif %}
                   </figcaption>
                 </figure>
@@ -193,7 +193,7 @@ eleventyComputed:
                       <div class="work-detail__review-dialog-head">
                         <p class="work-detail__section-kicker">Vollständige Kritik</p>
                         <h3 id="{{ reviewDialogId }}-title">{{ review.title if review.title else production.title }}</h3>
-                        <p class="work-detail__review-dialog-meta">
+                        <p class="work-detail__review-dialog-meta" translate="no">
                           {{ review.author }}{% if review.source %} · {{ review.source }}{% endif %}{% if review.date %} · {{ review.date }}{% endif %}
                         </p>
                       </div>
@@ -215,7 +215,7 @@ eleventyComputed:
             <div class="work-detail__media-list">
               {% for item in production.mediaEcho %}
                 <article class="work-detail__media-item">
-                  <p class="work-detail__media-meta">{{ item.source }}{% if item.date %} · {{ item.date }}{% endif %}</p>
+                  <p class="work-detail__media-meta" translate="no">{{ item.source }}{% if item.date %} · {{ item.date }}{% endif %}</p>
                   <h4>{{ item.title }}</h4>
                   {% if item.summary %}
                     <p>{{ item.summary }}</p>

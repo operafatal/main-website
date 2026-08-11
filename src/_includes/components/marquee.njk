@@ -7,7 +7,7 @@
             {% if item.logo %}
               <img class="marquee__logo" src="{{ item.logo }}" alt="{{ item.name }}" decoding="async">
             {% else %}
-              {{ item }}
+              <span translate="no">{{ item }}</span>
             {% endif %}
           </li>
         {% endfor %}
@@ -18,7 +18,7 @@
             {% if item.logo %}
               <img class="marquee__logo" src="{{ item.logo }}" alt="" decoding="async">
             {% else %}
-              {{ item }}
+              <span translate="no">{{ item }}</span>
             {% endif %}
           </li>
         {% endfor %}

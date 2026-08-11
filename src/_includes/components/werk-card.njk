@@ -15,13 +15,13 @@
           <span class="werk-card__separator" aria-hidden="true">·</span>
           <span>{{ item.categoryLabel }}</span>
         </div>
-        <h3 class="werk-card__title">{{ item.title }}</h3>
-        <p class="werk-card__meta">{{ item.composer }}</p>
-        <p class="werk-card__meta">{{ item.place }}</p>
+        <h3 class="werk-card__title" translate="no">{{ item.title }}</h3>
+        <p class="werk-card__meta" translate="no">{{ item.composer }}</p>
+        <p class="werk-card__meta" translate="no">{{ item.place }}</p>
         {% if item.note %}
           <p class="werk-card__note">{{ item.note }}</p>
         {% elif item.reviews and item.reviews[0] %}
-          <p class="werk-card__note">Pressestimme: {{ item.reviews[0].source }}</p>
+          <p class="werk-card__note">Pressestimme: <span translate="no">{{ item.reviews[0].source }}</span></p>
         {% endif %}
         <span class="werk-card__cta">Mehr zur Inszenierung <span aria-hidden="true">→</span></span>
       </div>

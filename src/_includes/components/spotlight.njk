@@ -12,8 +12,8 @@
 {% macro spotlight(meta, title, subtitle, description, visual, ctaLabel, ctaHref) %}
   <article class="spotlight">
     <div class="spotlight__copy">
-      {% if meta %}<p class="spotlight__meta">{{ meta }}</p>{% endif %}
-      <h3 class="spotlight__title">{{ title }}</h3>
+      {% if meta %}<p class="spotlight__meta" translate="no">{{ meta }}</p>{% endif %}
+      <h3 class="spotlight__title" translate="no">{{ title }}</h3>
       {% if subtitle %}<p class="spotlight__subtitle">{{ subtitle }}</p>{% endif %}
       {% if description %}<p class="spotlight__description">{{ description }}</p>{% endif %}
       {% if ctaLabel and ctaHref %}

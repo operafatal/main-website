@@ -29,9 +29,9 @@
       <span class="course-preview-card__badge">{{ statusLabel }}</span>
       <div class="course-preview-card__header">
         <p class="course-preview-card__date">{{ course.date }}</p>
-        <p class="course-preview-card__location">{{ course.location }}</p>
+        <p class="course-preview-card__location" translate="no">{{ course.location }}</p>
       </div>
-      <h3 class="course-preview-card__name">{{ course.name }}</h3>
+      <h3 class="course-preview-card__name" translate="no">{{ course.name }}</h3>
       {% if course.description %}
         <p class="course-preview-card__description">{{ course.description }}</p>
       {% endif %}
@@ -43,7 +43,7 @@
         </ul>
       {% endif %}
       {% if course.veranstalter %}
-        <p class="course-preview-card__veranstalter">{{ course.veranstalter }}</p>
+        <p class="course-preview-card__veranstalter" translate="no">{{ course.veranstalter }}</p>
       {% endif %}
       <span class="course-preview-card__more">Mehr erfahren &rarr;</span>
     </button>
@@ -52,9 +52,9 @@
       <span class="course-preview-card__badge">{{ statusLabel }}</span>
       <div class="course-preview-card__header">
         <p class="course-preview-card__date">{{ course.date }}</p>
-        <p class="course-preview-card__location">{{ course.location }}</p>
+        <p class="course-preview-card__location" translate="no">{{ course.location }}</p>
       </div>
-      <h3 class="course-preview-card__name">{{ course.name }}</h3>
+      <h3 class="course-preview-card__name" translate="no">{{ course.name }}</h3>
       {% if course.description %}
         <p class="course-preview-card__description">{{ course.description }}</p>
       {% endif %}
@@ -66,7 +66,7 @@
         </ul>
       {% endif %}
       {% if course.veranstalter %}
-        <p class="course-preview-card__veranstalter">{{ course.veranstalter }}</p>
+        <p class="course-preview-card__veranstalter" translate="no">{{ course.veranstalter }}</p>
       {% endif %}
     </div>
   {% endif %}
