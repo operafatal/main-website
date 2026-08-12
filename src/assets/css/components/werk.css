@@ -65,7 +65,9 @@
   gap: var(--space-2);
   padding: var(--space-3) var(--space-10);
   background: color-mix(in srgb, var(--color-bg) 92%, transparent);
-  border-top: 1px solid color-mix(in srgb, var(--color-accent) 12%, transparent);
+  /* No border-top: the bar sits flush against the header now (0px gap),
+     so a top border would just double up with the header's own
+     border-bottom right above it. */
   border-bottom: 1px solid color-mix(in srgb, var(--color-accent) 12%, transparent);
   backdrop-filter: blur(12px);
 }
