@@ -30,7 +30,20 @@
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 0;
-  height: 100%;
+  /* War früher height:100% -- eine Prozent-Höhe gegen .home-course-tile,
+     das selbst nur eine min-height (keine feste Höhe) hat. Das ist eine
+     fragile Konstruktion: Browser dürfen/müssen height:100% gegen einen
+     Elternrahmen ohne feste Höhe eigentlich als "auto" behandeln, aber
+     mindestens ein reales Safari auf einem echten Gerät hat das
+     stattdessen gegen eine viel größere Ersatz-Höhe aufgelöst (Section
+     wurde >2600px hoch, obwohl der Inhalt nur ~300px braucht). position:
+     absolute + inset:0 ist eindeutig: die Grid-Box entspricht IMMER exakt
+     der Box von .home-course-tile (das position:relative + overflow:hidden
+     hat), ganz ohne Prozent-Auflösung. Nur bei <=720px zurückgesetzt (siehe
+     Media Query unten), weil die Section dort einspaltig gestapelt wächst
+     und nicht auf eine feste Höhe geklemmt werden darf. */
+  position: absolute;
+  inset: 0;
 }
 
 .home-course-tile__main {
@@ -53,6 +66,12 @@
   z-index: 0;
   background-size: 135% auto;
   background-position: 0% center;
+  /* Ohne no-repeat kachelt das Foto sich vertikal, sobald die Section aus
+     irgendeinem Grund höher wird als das Bild selbst (z.B. wenn das
+     Testimonial-Karussell rechts kurz unaktiviert startet und dadurch
+     höher ist) -- unabhängig von der eigentlichen Ursache sollte ein
+     einzelnes Hintergrundfoto nie kacheln. */
+  background-repeat: no-repeat;
   filter: grayscale(1);
   opacity: 0.55;
   -webkit-mask-image: linear-gradient(to right, transparent 0%, transparent 24%, black 60%);
@@ -266,6 +285,10 @@
 @media (max-width: 720px) {
   .home-course-tile__grid {
     grid-template-columns: 1fr;
+    /* Einspaltig gestapelt darf die Section mit ihrem Inhalt wachsen,
+       statt auf die min-height von .home-course-tile geklemmt zu sein. */
+    position: static;
+    inset: auto;
   }
 
   .home-course-tile__main {

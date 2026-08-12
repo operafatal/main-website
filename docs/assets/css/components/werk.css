@@ -45,28 +45,37 @@
   min-width: 0;
 }
 
+/* position: fixed, not sticky — see the comment on --tabs-bar-height in
+   tokens.css for why. Fixed directly under the header with no gap, on
+   every page that has this component (all of them are .page-tabs-flush),
+   so no extra scoping selector is needed. Its own box model (max-width +
+   centering + padding-inline) mirrors main's exactly, so the buttons line
+   up with the page content below regardless of viewport width. */
 .work-tabs__list {
-  position: sticky;
+  position: fixed;
   top: var(--site-header-height);
-  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1180px;
+  box-sizing: border-box;
+  z-index: 25;
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-2);
-  padding: var(--space-3) 0;
+  padding: var(--space-3) var(--space-10);
   background: color-mix(in srgb, var(--color-bg) 92%, transparent);
-  border-top: 1px solid color-mix(in srgb, var(--color-accent) 12%, transparent);
+  /* No border-top: the bar sits flush against the header now (0px gap),
+     so a top border would just double up with the header's own
+     border-bottom right above it. */
   border-bottom: 1px solid color-mix(in srgb, var(--color-accent) 12%, transparent);
   backdrop-filter: blur(12px);
 }
 
-/* Inszenierungen/Meisterkurse & Coaching (see .page-tabs-flush in base.css):
-   stick a bit lower than the header instead of flush against it, so there's
-   a visible resting gap above the tab bar. Must match .page-tabs-flush
-   main's padding-top exactly (--tabs-flush-offset) so the bar's static
-   position equals its sticky trigger point and it locks immediately on
-   scroll instead of traveling. */
-.page-tabs-flush .work-tabs__list {
-  top: var(--tabs-flush-offset);
+@media (max-width: 1100px) {
+  .work-tabs__list {
+    padding-inline: var(--space-6);
+  }
 }
 
 .work-tabs__button {
@@ -876,6 +885,11 @@
 
   .work-tabs__list {
     position: static;
+    left: auto;
+    top: auto;
+    transform: none;
+    width: auto;
+    max-width: none;
     display: flex;
     flex-wrap: wrap;
     gap: var(--space-2);

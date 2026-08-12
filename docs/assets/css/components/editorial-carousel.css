@@ -8,7 +8,6 @@
   display: grid;
   grid-template-rows: auto minmax(0, 1fr) auto;
   gap: var(--space-4);
-  min-height: 100%;
   padding: var(--space-copy-padding);
   color: var(--color-text);
 }
@@ -78,7 +77,6 @@
   grid-template-rows: auto 1fr auto;
   gap: 0;
   align-items: stretch;
-  min-height: 100%;
 }
 
 .editorial-carousel__quote-content {
@@ -93,11 +91,6 @@
 .editorial-carousel__quote-layout > .editorial-carousel__visual {
   grid-column: 2;
   grid-row: 1 / 4;
-}
-
-.editorial-carousel__quote-layout > .editorial-carousel__visual,
-.editorial-carousel__quote-layout > .editorial-carousel__quote-content {
-  min-height: 100%;
 }
 
 .editorial-carousel--course {
@@ -189,11 +182,15 @@
 }
 
 .editorial-carousel__visual {
+  /* No height/min-height:100% here on purpose: same fragile pattern that
+     blew up the "Meisterkurse & Mentoring" tile in real Safari (percentage
+     height resolving against an ancestor whose own height isn't definite —
+     this section's height is content-driven, not fixed). align-self/
+     justify-self:stretch already size this grid item to match the content
+     column's natural height without any percentage resolution. */
   position: relative;
   margin: 0;
   width: 100%;
-  min-height: 100%;
-  height: 100%;
   align-self: stretch;
   justify-self: stretch;
   overflow: hidden;

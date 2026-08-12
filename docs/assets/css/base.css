@@ -55,15 +55,21 @@ main {
   padding-top: 0;
 }
 
-/* Inszenierungen/Meisterkurse & Coaching: no visible H1 anymore, so the
-   sticky tab bar (.work-tabs__list) is the first thing in the page. The
-   visible gap under the fixed header is baked into its own sticky offset
-   (see .page-tabs-flush .work-tabs__list below) rather than left as plain
-   spacing here — its static resting position must exactly equal that
-   sticky offset, or it visibly travels/scrolls the difference before
-   locking in place instead of being stuck from the first pixel of scroll. */
+/* Inszenierungen/Meisterkurse & Coaching etc.: no visible H1 anymore, so
+   the fixed tab bar (.work-tabs__list, position:fixed, see werk.css) is
+   the first thing in the page. Since a fixed element reserves no space in
+   the flow, main has to reserve it manually — see --tabs-flush-offset in
+   tokens.css. Below 780px the tab bar goes back to position:static (it's
+   part of the normal flow there), so this override no longer applies —
+   see the max-width:780px block below. */
 .page-tabs-flush main {
   padding-top: var(--tabs-flush-offset);
+}
+
+@media (max-width: 780px) {
+  .page-tabs-flush main {
+    padding-top: calc(var(--site-header-height) + var(--space-8));
+  }
 }
 
 .site-header {
@@ -151,7 +157,14 @@ main {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: var(--space-6);
+  /* space-4 statt space-6: die vollständige 8-Punkte-Nav braucht bei
+     space-6 ca. 981px, was zwischen ca. 1101-1135px (also knapp ÜBER der
+     Mobile-Schwelle unten) nicht mehr in main's verfügbare Breite passt und
+     umbricht -- wodurch die Kopfzeile höher wird als --site-header-height
+     und jede darauf aufbauende Sticky-Berechnung (Tab-Leiste) driftet.
+     Mit space-4 passt die Liste bis exakt zur 1100px-Schwelle, danach
+     übernimmt ohnehin das Mobile-Menü. */
+  gap: var(--space-4);
   padding: 0;
   margin: 0;
 }
@@ -297,10 +310,6 @@ main {
   .site-footer__inner,
   main {
     padding-inline: var(--space-6);
-  }
-
-  .page-tabs-flush main {
-    padding-top: calc(var(--site-header-height) + var(--space-8));
   }
 
   .site-header__inner {

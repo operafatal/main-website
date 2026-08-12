@@ -345,12 +345,20 @@
   outline-offset: 4px;
 }
 
+/* Ideal-Versatz ist -64px (space-10 + space-4) außerhalb der Karte -- das
+   passt nur, solange main tatsächlich einen Rand neben seiner eigenen
+   1180px-Spalte hat. Unter/um 1180px Fensterbreite gibt es diesen Rand gar
+   nicht (main füllt randlos), wodurch die Pfeile bislang aus dem Sichtfeld
+   rutschten. max() zwischen dem festen Ideal-Wert und einer Formel, die den
+   tatsächlich verfügbaren Rand misst, zieht die Pfeile automatisch nach
+   innen, sobald der Rand knapp wird, statt sie unsichtbar werden zu lassen
+   -- ganz ohne zusätzliche Breakpoints. */
 .current-work__control--previous {
-  left: calc((var(--space-10) + var(--space-4)) * -1);
+  left: max(calc((var(--space-10) + var(--space-4)) * -1), calc((1180px - 100vw) / 2 + var(--space-2)));
 }
 
 .current-work__control--next {
-  right: calc((var(--space-10) + var(--space-4)) * -1);
+  right: max(calc((var(--space-10) + var(--space-4)) * -1), calc((1180px - 100vw) / 2 + var(--space-2)));
 }
 
 @keyframes current-work-enter {
