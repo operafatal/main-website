@@ -8,6 +8,16 @@
   display: flex;
   width: max-content;
   animation: marquee-scroll 26s linear infinite;
+  /* marquee.js drives this element's transform directly every frame via
+     requestAnimationFrame rather than a native CSS animation. Without this
+     hint, some engines don't promote it to its own compositor layer for a
+     JS-driven transform the way they reliably do for a CSS @keyframes
+     animation, and can leave stale pixels from the previous frame behind
+     on repaint -- visible as logos appearing to overlap while scrolling,
+     even though their actual measured positions are correct at any given
+     instant (verified via getBoundingClientRect: consistent 24px gaps,
+     zero overlap). */
+  will-change: transform;
 }
 
 .marquee__list {
