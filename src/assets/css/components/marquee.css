@@ -1,4 +1,11 @@
 .marquee {
+  --marquee-list-width: 916px;
+  --marquee-item-width: 110px;
+  --marquee-wide-item-width: 160px;
+  --marquee-narrow-item-width: 70px;
+  --marquee-gap: 24px;
+  --marquee-padding-inline: 24px;
+  --marquee-wide-item-offset: -16px;
   overflow: hidden;
   background: transparent;
   padding-block: clamp(var(--space-8), 5vw, var(--space-12));
@@ -8,23 +15,15 @@
   display: flex;
   width: max-content;
   animation: marquee-scroll 26s linear infinite;
-  /* marquee.js drives this element's transform directly every frame via
-     requestAnimationFrame rather than a native CSS animation. Without this
-     hint, some engines don't promote it to its own compositor layer for a
-     JS-driven transform the way they reliably do for a CSS @keyframes
-     animation, and can leave stale pixels from the previous frame behind
-     on repaint -- visible as logos appearing to overlap while scrolling,
-     even though their actual measured positions are correct at any given
-     instant (verified via getBoundingClientRect: consistent 24px gaps,
-     zero overlap). */
-  will-change: transform;
 }
 
 .marquee__list {
   display: flex;
   align-items: center;
-  gap: clamp(1.5rem, 3vw, 3rem);
-  padding: var(--space-1) clamp(var(--space-6), 4vw, var(--space-10));
+  flex: 0 0 var(--marquee-list-width);
+  width: var(--marquee-list-width);
+  gap: var(--marquee-gap);
+  padding: var(--space-1) var(--marquee-padding-inline);
   margin: 0;
   list-style: none;
 }
@@ -40,48 +39,69 @@
 }
 
 .marquee__item--logo {
-  display: grid;
-  place-items: center;
-  flex: 0 0 clamp(110px, 10vw, 160px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 var(--marquee-item-width);
   height: 48px;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .marquee__item--deutsche-oper-berlin {
-  flex-basis: clamp(160px, 14vw, 220px);
-  margin-left: clamp(-1.5rem, -2vw, -1rem);
+  flex-basis: var(--marquee-wide-item-width);
+  margin-left: var(--marquee-wide-item-offset);
 }
 
 .marquee__item--hamburgische-staatsoper,
 .marquee__item--hmt-leipzig {
-  flex-basis: clamp(70px, 7vw, 96px);
+  flex-basis: var(--marquee-narrow-item-width);
 }
 
 .marquee__logo {
   display: block;
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 34px;
-  filter: brightness(0);
+  width: 100%;
+  height: 34px;
+  background-color: #000;
+  -webkit-mask-image: var(--marquee-logo-image);
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-image: var(--marquee-logo-image);
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
   opacity: 0.76;
 }
 
 @keyframes marquee-scroll {
   from {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
   to {
-    /* --marquee-shift wird von marquee.js exakt auf die Pixelbreite einer
-       Listenkopie gesetzt; 50% bleibt nur Fallback ohne JS. */
-    transform: translateX(calc(-1 * var(--marquee-shift, 50%)));
+    transform: translate3d(calc(0px - var(--marquee-list-width)), 0, 0);
   }
 }
 
-@media (max-width: 720px) {
-  .marquee__list {
-    gap: var(--space-6);
-    padding-inline: var(--space-6);
+@media (min-width: 721px) {
+  .marquee {
+    --marquee-list-width: 1056px;
+    --marquee-item-width: 120px;
+    --marquee-wide-item-width: 168px;
+    --marquee-narrow-item-width: 84px;
+    --marquee-gap: 32px;
+    --marquee-padding-inline: 32px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .marquee {
+    --marquee-list-width: 1316px;
+    --marquee-item-width: 150px;
+    --marquee-wide-item-width: 210px;
+    --marquee-narrow-item-width: 96px;
+    --marquee-gap: 40px;
+    --marquee-padding-inline: 48px;
+    --marquee-wide-item-offset: -22px;
   }
 }
 

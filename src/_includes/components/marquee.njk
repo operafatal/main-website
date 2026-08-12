@@ -5,7 +5,7 @@
         {% for item in items %}
           <li class="marquee__item{% if item.logo %} marquee__item--logo{% endif %}{% if item.id %} marquee__item--{{ item.id }}{% endif %}">
             {% if item.logo %}
-              <img class="marquee__logo" src="{{ item.logo }}" alt="{{ item.name }}" decoding="async">
+              <span class="marquee__logo" style="--marquee-logo-image: url('{{ item.logo }}')" role="img" aria-label="{{ item.name }}"></span>
             {% else %}
               <span translate="no">{{ item }}</span>
             {% endif %}
@@ -16,7 +16,7 @@
         {% for item in items %}
           <li class="marquee__item{% if item.logo %} marquee__item--logo{% endif %}{% if item.id %} marquee__item--{{ item.id }}{% endif %}">
             {% if item.logo %}
-              <img class="marquee__logo" src="{{ item.logo }}" alt="" decoding="async">
+              <span class="marquee__logo" style="--marquee-logo-image: url('{{ item.logo }}')"></span>
             {% else %}
               <span translate="no">{{ item }}</span>
             {% endif %}
