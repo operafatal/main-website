@@ -1,4 +1,4 @@
-{% macro currentWork(items) %}
+{% macro currentWork(items, showCredits=true) %}
   <section class="current-work" aria-labelledby="current-work-title">
     <header class="current-work__section-head">
       <h2 id="current-work-title">Aktuelles</h2>
@@ -39,7 +39,7 @@
                     {% else %}
                       <img src="{{ item.visual.src }}" alt="{{ item.visual.alt }}" loading="lazy" decoding="async">
                     {% endif %}
-                    {% if item.visual.credit %}
+                    {% if showCredits != false and item.visual.credit %}
                       <figcaption>{{ item.visual.credit }}</figcaption>
                     {% endif %}
                   </figure>
