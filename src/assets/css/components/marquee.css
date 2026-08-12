@@ -62,7 +62,9 @@
     transform: translateX(0);
   }
   to {
-    transform: translateX(-50%);
+    /* --marquee-shift wird von marquee.js exakt auf die Pixelbreite einer
+       Listenkopie gesetzt; 50% bleibt nur Fallback ohne JS. */
+    transform: translateX(calc(-1 * var(--marquee-shift, 50%)));
   }
 }
 

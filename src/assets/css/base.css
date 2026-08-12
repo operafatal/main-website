@@ -151,7 +151,14 @@ main {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: var(--space-6);
+  /* space-4 statt space-6: die vollständige 8-Punkte-Nav braucht bei
+     space-6 ca. 981px, was zwischen ca. 1101-1135px (also knapp ÜBER der
+     Mobile-Schwelle unten) nicht mehr in main's verfügbare Breite passt und
+     umbricht -- wodurch die Kopfzeile höher wird als --site-header-height
+     und jede darauf aufbauende Sticky-Berechnung (Tab-Leiste) driftet.
+     Mit space-4 passt die Liste bis exakt zur 1100px-Schwelle, danach
+     übernimmt ohnehin das Mobile-Menü. */
+  gap: var(--space-4);
   padding: 0;
   margin: 0;
 }
