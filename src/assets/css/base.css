@@ -55,15 +55,21 @@ main {
   padding-top: 0;
 }
 
-/* Inszenierungen/Meisterkurse & Coaching: no visible H1 anymore, so the
-   sticky tab bar (.work-tabs__list) is the first thing in the page. The
-   visible gap under the fixed header is baked into its own sticky offset
-   (see .page-tabs-flush .work-tabs__list below) rather than left as plain
-   spacing here — its static resting position must exactly equal that
-   sticky offset, or it visibly travels/scrolls the difference before
-   locking in place instead of being stuck from the first pixel of scroll. */
+/* Inszenierungen/Meisterkurse & Coaching etc.: no visible H1 anymore, so
+   the fixed tab bar (.work-tabs__list, position:fixed, see werk.css) is
+   the first thing in the page. Since a fixed element reserves no space in
+   the flow, main has to reserve it manually — see --tabs-flush-offset in
+   tokens.css. Below 780px the tab bar goes back to position:static (it's
+   part of the normal flow there), so this override no longer applies —
+   see the max-width:780px block below. */
 .page-tabs-flush main {
   padding-top: var(--tabs-flush-offset);
+}
+
+@media (max-width: 780px) {
+  .page-tabs-flush main {
+    padding-top: calc(var(--site-header-height) + var(--space-8));
+  }
 }
 
 .site-header {
@@ -304,10 +310,6 @@ main {
   .site-footer__inner,
   main {
     padding-inline: var(--space-6);
-  }
-
-  .page-tabs-flush main {
-    padding-top: calc(var(--site-header-height) + var(--space-8));
   }
 
   .site-header__inner {

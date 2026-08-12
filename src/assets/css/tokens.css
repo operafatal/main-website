@@ -60,11 +60,19 @@
   --space-copy-padding: clamp(var(--space-8), 5vw, var(--space-12));
   --site-header-height: 62px;
   --page-top-offset: calc(var(--site-header-height) + var(--space-8));
-  /* Shared by .page-tabs-flush main (padding-top) and .work-tabs__list
-     (sticky top) — both must use the exact same value, or the tab bar's
-     static resting position won't match its own sticky trigger point and
-     it'll visibly travel that difference before locking on scroll. */
-  --tabs-flush-offset: calc(var(--site-header-height) + var(--space-2) - 1px);
+  /* .work-tabs__list is position:fixed directly under the header (no gap —
+     see mobile-nav.js), never position:sticky: sticky is unreliable across
+     browsers when any ancestor (even <html>, see overflow-x:hidden in
+     base.css) has non-visible overflow, which showed up as the tab bar
+     inconsistently drifting/lagging before locking in some browsers.
+     Because fixed elements are removed from layout flow entirely (unlike
+     sticky, which still reserves its own space), .page-tabs-flush main
+     must reserve that space itself: header height + the tab bar's own
+     real height (--tabs-bar-height, synced live by mobile-nav.js since
+     the bar can wrap to two rows) + a small breathing gap before the
+     page content starts. */
+  --tabs-bar-height: 64px;
+  --tabs-flush-offset: calc(var(--site-header-height) + var(--tabs-bar-height) + var(--space-5));
 
   /* Radii */
   --radius-pill: 100px;   /* buttons */

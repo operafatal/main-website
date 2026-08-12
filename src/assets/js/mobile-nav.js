@@ -30,6 +30,34 @@
     }
   }
 
+  // Same idea, for the fixed secondary tab bar (.work-tabs__list, see
+  // werk.css): it's position:fixed now (not sticky, see tokens.css), so it
+  // reserves no space in the flow on its own -- main's padding-top has to
+  // account for its real height instead, and that height isn't constant
+  // (the buttons wrap to two rows on some tablet widths).
+  const tabBar = document.querySelector(".work-tabs__list");
+
+  if (tabBar) {
+    const syncTabBarHeight = () => {
+      const height = tabBar.getBoundingClientRect().height;
+      if (height > 0) {
+        document.documentElement.style.setProperty("--tabs-bar-height", `${height}px`);
+      }
+    };
+
+    syncTabBarHeight();
+
+    if (typeof ResizeObserver !== "undefined") {
+      new ResizeObserver(syncTabBarHeight).observe(tabBar);
+    } else {
+      window.addEventListener("resize", syncTabBarHeight);
+    }
+
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(syncTabBarHeight);
+    }
+  }
+
   const toggle = document.querySelector(".site-nav-toggle");
   const nav = document.querySelector("#site-nav");
 
