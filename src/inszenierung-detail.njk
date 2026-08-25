@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 pagination:
-  data: werk.items
+  data: curatedContent.work.items
   size: 1
   alias: production
   addAllPagesToCollections: true
@@ -11,6 +11,33 @@ eleventyComputed:
   description: "{{ production.composer }} — inszeniert von Jasmin Solfaghari{% if production.place %}, {{ production.place }}{% endif %}{% if production.year %} ({{ production.year }}){% endif %}."
 ---
 {% from "components/editorial-carousel.njk" import editorialCarousel %}
+
+{#
+  Cast entries are grouped by role. Kept to one dt + one dd per role
+  (multiple performances joined with <br> inside that single dd) rather
+  than one dd per performance, so this drops into the existing dt/dd grid
+  --credits already uses everywhere (both the 2-column layout next to
+  Team and the 4-column full-width fallback) without needing grid-column
+  overrides that would only be correct in one of those two layouts.
+  role.performances[].year is optional -- omit it for single-cast works
+  (e.g. L'absence, where role is a voice type rather than a character name).
+  Repeat performances of the same name (e.g. cast the same across several
+  seasons) are grouped and their years range-compressed by the
+  groupCastPerformances filter -- see eleventy.config.js -- rather than
+  requiring werk.json itself to stay deduplicated by hand.
+#}
+{% macro castList(cast) %}
+  <dl class="work-detail__credits">
+    {% for role in cast %}
+      <dt>{{ role.role }}</dt>
+      <dd translate="no">
+        {% for performer in role.performances | groupCastPerformances %}
+          {{ performer.name }}{% if performer.yearsLabel %} ({{ performer.yearsLabel }}){% endif %}{% if not loop.last %}<br>{% endif %}
+        {% endfor %}
+      </dd>
+    {% endfor %}
+  </dl>
+{% endmacro %}
 
 <article class="work-detail">
   <header class="work-detail__hero">
@@ -56,16 +83,43 @@ eleventyComputed:
   {% endif %}
 
   <div class="work-detail__content">
-    {% if production.credits %}
-      <section class="work-detail__section work-detail__section--credits" aria-labelledby="credits-title">
-        <h2 id="credits-title">Team</h2>
-        <dl class="work-detail__credits">
-          {% for key, value in production.credits %}
-            <dt>{{ key | creditLabel }}</dt>
-            <dd translate="no">{{ value }}</dd>
-          {% endfor %}
-        </dl>
-      </section>
+    {% set hasCast = production.cast and production.cast.length %}
+    {% if production.credits and hasCast %}
+      <div class="work-detail__team-cast">
+        <section class="work-detail__section work-detail__section--credits work-detail__section--cast" aria-labelledby="cast-title">
+          <h2 id="cast-title">Besetzung</h2>
+          {{ castList(production.cast) }}
+        </section>
+
+        <section class="work-detail__section work-detail__section--credits" aria-labelledby="credits-title">
+          <h2 id="credits-title">Team</h2>
+          <dl class="work-detail__credits">
+            {% for key, value in production.credits %}
+              <dt>{{ key | creditLabel }}</dt>
+              <dd translate="no">{{ value }}</dd>
+            {% endfor %}
+          </dl>
+        </section>
+      </div>
+    {% else %}
+      {% if production.credits %}
+        <section class="work-detail__section work-detail__section--credits" aria-labelledby="credits-title">
+          <h2 id="credits-title">Team</h2>
+          <dl class="work-detail__credits">
+            {% for key, value in production.credits %}
+              <dt>{{ key | creditLabel }}</dt>
+              <dd translate="no">{{ value }}</dd>
+            {% endfor %}
+          </dl>
+        </section>
+      {% endif %}
+
+      {% if hasCast %}
+        <section class="work-detail__section work-detail__section--credits work-detail__section--cast" aria-labelledby="cast-title">
+          <h2 id="cast-title">Besetzung</h2>
+          {{ castList(production.cast) }}
+        </section>
+      {% endif %}
     {% endif %}
 
     {% if production.detailIntro or production.detailSections %}

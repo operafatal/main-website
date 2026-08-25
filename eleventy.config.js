@@ -92,7 +92,7 @@ function groupWerkItems(data) {
   return data.categories.map((category) => ({
     ...category,
     items: data.items
-      .filter((item) => item.category === category.slug)
+      .filter((item) => item.category === category.slug && !item.hidden)
       .sort((a, b) => getSortYear(b.year) - getSortYear(a.year))
   }));
 }
@@ -212,6 +212,68 @@ function creditLabel(value) {
     .replace(/^./, (letter) => letter.toUpperCase());
 }
 
+// A role's `performances` are stored one row per (name, year) -- simplest
+// shape to research/append into incrementally. Grouping the same name's
+// years into one line (2023-2026 for a run, "&" between separate runs,
+// matching the site's existing Und->"&" convention above) happens here at
+// render time instead of in the data, so werk.json never needs manual
+// dedup/merge bookkeeping when a new season's cast is added.
+function groupCastPerformances(performances) {
+  const order = [];
+  const yearsByName = new Map();
+
+  (performances || []).forEach((performance) => {
+    if (!performance || !performance.name) {
+      return;
+    }
+    if (!yearsByName.has(performance.name)) {
+      yearsByName.set(performance.name, []);
+      order.push(performance.name);
+    }
+    if (performance.year) {
+      yearsByName.get(performance.name).push(performance.year);
+    }
+  });
+
+  return order.map((name) => ({
+    name,
+    yearsLabel: formatYearRanges(yearsByName.get(name))
+  }));
+}
+
+function formatYearRanges(years) {
+  if (!years || !years.length) {
+    return "";
+  }
+
+  const numeric = years.map((year) => Number.parseInt(year, 10));
+  const allPlainYears = numeric.every((year, index) => !Number.isNaN(year) && String(year) === String(years[index]));
+
+  if (!allPlainYears) {
+    // A non-plain value (e.g. "2023/24") can't be range-compressed
+    // reliably -- fall back to listing every distinct value as-is.
+    return [...new Set(years)].join(" & ");
+  }
+
+  const sortedYears = [...new Set(numeric)].sort((a, b) => a - b);
+  const ranges = [];
+  let rangeStart = sortedYears[0];
+  let rangeEnd = sortedYears[0];
+
+  for (let i = 1; i <= sortedYears.length; i += 1) {
+    const year = sortedYears[i];
+    if (year === rangeEnd + 1) {
+      rangeEnd = year;
+      continue;
+    }
+    ranges.push(rangeStart === rangeEnd ? `${rangeStart}` : `${rangeStart}–${rangeEnd}`);
+    rangeStart = year;
+    rangeEnd = year;
+  }
+
+  return ranges.join(" & ");
+}
+
 function buildCuratedContent() {
   const homeParagraphs = splitParagraphs(readText("content/home.md"));
   const ueberMich = splitLastNote(readText("content/ueber-mich.md"));
@@ -262,7 +324,10 @@ function buildCuratedContent() {
     },
     work: {
       categories: freshWerkData.categories,
-      items: freshWerkData.items,
+      // Filters out items with hidden:true (see werk.json) -- used by
+      // inszenierung-detail.njk's pagination, so no detail page gets
+      // built for a hidden production at all, not just left unlinked.
+      items: freshWerkData.items.filter((item) => !item.hidden),
       groupedCategories: groupWerkItems(freshWerkData)
     }
   };
@@ -290,6 +355,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("galleryAfterHero", galleryAfterHero);
   eleventyConfig.addFilter("isExternalUrl", isExternalUrl);
   eleventyConfig.addFilter("creditLabel", creditLabel);
+  eleventyConfig.addFilter("groupCastPerformances", groupCastPerformances);
 
   // Function (not a plain object) so Eleventy re-reads content/*.md and
   // werk.json on every rebuild instead of once at server start — avoids

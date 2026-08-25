@@ -58,8 +58,8 @@
       "location": "Stuttgart",
       "date": "2024",
       "sortDate": "2024-02-01",
-      "title": "Masterclass in Stuttgart",
-      "summary": "Masterclass im Stuttgarter Hochschulumfeld mit Arbeit an szenischer Präsenz, Diktion und Rollenverständnis im Übergang zwischen Studium und Beruf.",
+      "title": "Lehrauftrag in Stuttgart",
+      "summary": "Lehrauftrag im Stuttgarter Hochschulumfeld mit Arbeit an szenischer Präsenz, Diktion und Rollenverständnis im Übergang zwischen Studium und Beruf.",
       "buttonLabel": "Mehr anzeigen",
       "visual": {
         "type": "placeholder",
@@ -79,12 +79,12 @@
       "verificationNote": "Von Razz/Jasmin erinnert; öffentlich bisher nicht als Einzeltermin auffindbar. Übergeordnete Lehrtätigkeit an Opernschule Stuttgart ist über Operabase/Solfaghari-Bio belegt.",
       "details": {
         "tags": [
-          "Masterclass",
+          "Lehrauftrag",
           "Musikdrama",
           "Diktion"
         ],
         "intro": [
-          "In dieser Masterclass arbeitet Jasmin Solfaghari mit jungen Sänger:innen an der Verbindung von musikalischer Genauigkeit, Sprache und szenischer Präsenz. Eine Partie wird nicht nur stimmlich vorbereitet, sondern als konkrete Bühnensituation verstanden.",
+          "In diesem Lehrauftrag arbeitet Jasmin Solfaghari mit jungen Sänger:innen an der Verbindung von musikalischer Genauigkeit, Sprache und szenischer Präsenz. Eine Partie wird nicht nur stimmlich vorbereitet, sondern als konkrete Bühnensituation verstanden.",
           "Im Mittelpunkt stehen Rollenverständnis, präzise Diktion und die Fähigkeit, musikalische Struktur in glaubwürdige Handlung zu übersetzen. Der Unterricht richtet den Blick auf den Übergang vom Studium in professionelle Proben- und Vorsingsituationen."
         ],
         "facts": [
@@ -98,7 +98,7 @@
           },
           {
             "label": "Format",
-            "value": "Masterclass / dramatischer Unterricht"
+            "value": "Lehrauftrag / dramatischer Unterricht"
           },
           {
             "label": "Schwerpunkt",
@@ -701,6 +701,52 @@
           {
             "label": "Kontext",
             "value": "Parsifal-Thementag"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nosolo-studios-re-connect-eurythmie-2026",
+      "status": "confirmed",
+      "institution": "nosolo studios / re_connect eurythmie",
+      "location": "Stuttgart",
+      "date": "31. Oktober – 1. November 2026",
+      "sortDate": "2026-10-31",
+      "title": "Lenk mal nicht von dir ab",
+      "summary": "Einführungsvortrag zu Bühnenpräsenz und Bühnengesetzen im Rahmen der Workshopreihe „re_connect eurythmie“ bei nosolo studios Stuttgart.",
+      "buttonLabel": "Mehr anzeigen",
+      "visual": {
+        "type": "placeholder",
+        "label": "Stuttgart",
+        "tone": "accent"
+      },
+      "details": {
+        "time": "Sa 10–13 & 15–18 Uhr, So 11–15 Uhr",
+        "tags": [
+          "Vortrag",
+          "Eurythmie",
+          "Bühnenpräsenz"
+        ],
+        "intro": [
+          "Die Workshopreihe „re_connect eurythmie“ von nosolo studios Stuttgart eröffnet einen Raum zwischen freier Performance, Theater und Oper, in dem bestehende Formen der Eurythmie hinterfragt und neue künstlerische Zusammenhänge erprobt werden. Martje Brandsma, Rafael Tavares und Severin Fraser widmen sich dabei drei Bereichen: Eurythmie als freie Performance, im Theater und in der Oper.",
+          "Unter dem Titel „Lenk mal nicht von dir ab“ gibt Opernregisseurin Jasmin Solfaghari eine Einführung zu Bühnenpräsenz und Bühnengesetzen. Das erste Workshopwochenende findet am 31. Oktober und 1. November 2026 statt."
+        ],
+        "facts": [
+          {
+            "label": "Datum",
+            "value": "31. Oktober – 1. November 2026"
+          },
+          {
+            "label": "Zeit",
+            "value": "Sa 10–13 & 15–18 Uhr, So 11–15 Uhr"
+          },
+          {
+            "label": "Ort",
+            "value": "nosolo studios, Stuttgart"
+          },
+          {
+            "label": "Veranstalter",
+            "value": "re_connect eurythmie (nosolo studios)"
           }
         ]
       }

@@ -37,6 +37,71 @@
         "video": "Walter Schütze",
         "chorleitung": "Andreas Klippert"
       },
+      "cast": [
+        {
+          "role": "Kundry",
+          "performances": [
+            { "name": "Ivonne Fuchs", "year": "2023" },
+            { "name": "Ivonne Fuchs", "year": "2024" },
+            { "name": "Ivonne Fuchs", "year": "2025" },
+            { "name": "Ivonne Fuchs", "year": "2026" },
+            { "name": "Ivonne Fuchs", "year": "2027" }
+          ]
+        },
+        {
+          "role": "Parsifal",
+          "performances": [
+            { "name": "Roman Payer", "year": "2023" },
+            { "name": "Klaus Florian Vogt", "year": "2024" },
+            { "name": "Roman Payer", "year": "2024" },
+            { "name": "Klaus Florian Vogt", "year": "2025" },
+            { "name": "Roman Payer", "year": "2026" },
+            { "name": "Klaus Florian Vogt", "year": "2026" },
+            { "name": "Daniel Behle", "year": "2027" },
+            { "name": "Jonathan Stoughton", "year": "2027" }
+          ]
+        },
+        {
+          "role": "Gurnemanz",
+          "performances": [
+            { "name": "Andreas Hörl", "year": "2023" },
+            { "name": "Andreas Hörl", "year": "2024" },
+            { "name": "Andreas Hörl", "year": "2025" },
+            { "name": "Andreas Hörl", "year": "2026" },
+            { "name": "Andreas Hörl", "year": "2027" }
+          ]
+        },
+        {
+          "role": "Amfortas",
+          "performances": [
+            { "name": "Alejandro Marco-Buhrmester", "year": "2023" },
+            { "name": "Alejandro Marco-Buhrmester", "year": "2024" },
+            { "name": "Alejandro Marco-Buhrmester", "year": "2025" },
+            { "name": "Alejandro Marco-Buhrmester", "year": "2026" },
+            { "name": "Tómas Tómasson", "year": "2027" }
+          ]
+        },
+        {
+          "role": "Klingsor",
+          "performances": [
+            { "name": "Thomas Jesatko", "year": "2023" },
+            { "name": "Thomas Jesatko", "year": "2024" },
+            { "name": "Thomas Jesatko", "year": "2025" },
+            { "name": "Tómas Tómasson", "year": "2026" },
+            { "name": "Tómas Tómasson", "year": "2027" }
+          ]
+        },
+        {
+          "role": "Titurel",
+          "performances": [
+            { "name": "Wilhelm Schwinghammer", "year": "2023" },
+            { "name": "Simonas Strazdas", "year": "2024" },
+            { "name": "Christopher Jähnig", "year": "2025" },
+            { "name": "Wilhelm Schwinghammer", "year": "2026" },
+            { "name": "Christopher Jähnig", "year": "2027" }
+          ]
+        }
+      ],
       "reviews": [
         {
           "quote": "„Solfagharis Personenregie … findet sich in dieser Inszenierung in vollständiger Harmonie mit den dramaturgischen Intentionen Wagners.“",
@@ -252,6 +317,20 @@
         "lightdesign": "Andrew Tristram, Nico Kraaima",
         "videodesign": "Arthur Steijn"
       },
+      "cast": [
+        { "role": "Wotan", "performances": [{ "name": "James Johnson" }, { "name": "Thomas J. Mayer" }] },
+        { "role": "Brünnhilde", "performances": [{ "name": "Jennifer Wilson" }, { "name": "Catherine Foster" }] },
+        { "role": "Siegfried", "performances": [{ "name": "Torsten Kerl" }] },
+        { "role": "Siegmund", "performances": [{ "name": "Kristian Benedikt" }] },
+        { "role": "Sieglinde", "performances": [{ "name": "Miina-Liisa Värelä" }] },
+        { "role": "Loge", "performances": [{ "name": "Vsevolod Grivnov" }] },
+        { "role": "Alberich", "performances": [{ "name": "Pavlo Hunka" }] },
+        { "role": "Mime", "performances": [{ "name": "Gerhard Siegel" }, { "name": "Wolfgang Ablinger-Sperrhacke" }] },
+        { "role": "Fricka", "performances": [{ "name": "Lioba Braun" }] },
+        { "role": "Erda", "performances": [{ "name": "Anja Jung" }] },
+        { "role": "Gunther", "performances": [{ "name": "Alejandro Marco-Buhrmester" }] },
+        { "role": "Hagen", "performances": [{ "name": "Rúni Brattaberg" }] }
+      ],
       "reviews": [
         {
           "quote": "„... ein ausgezeichnetes Beispiel beeindruckender Gestaltung des opus magnum Wagners mit nur geringer Vorlaufzeit.“",
@@ -306,7 +385,7 @@
           "src": "/assets/img/der-ring-des-nibelungen/schluss1.gd.jpg",
           "alt": "Der Ring des Nibelungen, Odense - Foto: Trine Lai",
           "caption": "Der Ring des Nibelungen, Odense - Foto: Trine Lai",
-          "position": "center 78%"
+          "position": "center 58%"
         }
       ],
       "sourceUrl": "https://www.solfaghari.com/b%C3%BChnenprojekte/oper/",
@@ -370,6 +449,17 @@
         "buehne": "Frank Philipp Schlössmann",
         "kostueme": "Mechthild Seipel"
       },
+      "cast": [
+        { "role": "Tannhäuser", "performances": [{ "name": "Torsten Kerl" }] },
+        { "role": "Elisabeth", "performances": [{ "name": "Camilla Nylund" }] },
+        { "role": "Venus", "performances": [{ "name": "Dalia Schaechter" }, { "name": "Iris Vermillon" }] },
+        { "role": "Wolfram von Eschenbach", "performances": [{ "name": "Miljenko Turk" }] },
+        { "role": "Landgraf Hermann", "performances": [{ "name": "Andreas Hörl" }, { "name": "Reinhard Dorn" }] },
+        { "role": "Walther von der Vogelweide", "performances": [{ "name": "Martin Homrich" }, { "name": "Musa Nkuna" }] },
+        { "role": "Biterolf", "performances": [{ "name": "Daniel Henriks" }, { "name": "Timm de Jong" }] },
+        { "role": "Heinrich der Schreiber", "performances": [{ "name": "Andrés Felipe Orozco Martínez" }] },
+        { "role": "Reinmar von Zweter", "performances": [{ "name": "Wilfried Staber" }] }
+      ],
       "reviews": [
         {
           "quote": "„Der scheiternde Emanzipationsversuch Elisabeths … ist der bezwingendste Erzählstrang.“",
@@ -404,9 +494,9 @@
       },
       "gallery": [
         {
-          "src": "/assets/img/tannhauser/tannhauser-6685598.jpg",
-          "alt": "Tannhäuser, Oper Köln 2008 - Archivbild solfaghari.com",
-          "caption": "Tannhäuser, Oper Köln 2008 - Archivbild solfaghari.com"
+          "src": "/assets/img/tannhauser/tannhauser-3.jpg",
+          "alt": "Tannhäuser, Oper Köln 2008",
+          "caption": "Tannhäuser, Oper Köln 2008"
         }
       ],
       "sourceUrl": "https://www.solfaghari.com/b%C3%BChnenprojekte/oper/",
@@ -464,14 +554,30 @@
         "inszenierung": "Jasmin Solfaghari",
         "buehneUndKostueme": "Romina Kaap, Maira Bieler"
       },
+      "cast": [
+        { "role": "Xerxes", "performances": [{ "name": "Patricia Osei-Kofi" }] },
+        { "role": "Romilda", "performances": [{ "name": "Maria König" }] },
+        { "role": "Amastris", "performances": [{ "name": "Leandra Johne" }] },
+        { "role": "Ariodates", "performances": [{ "name": "Felix Schwandtke" }] },
+        { "role": "Arsamenes", "performances": [{ "name": "Sunghwan Sa" }] },
+        { "role": "Atalanta", "performances": [{ "name": "Marie Hänsel" }, { "name": "Teresa Suschke" }] },
+        { "role": "Elviro", "performances": [{ "name": "Carl Thiemt" }, { "name": "Philipp Schreyer" }] }
+      ],
       "reviews": [
         {
-          "quote": "„... die Grauzone zwischen Tragödie und Komödie gut abzustecken.“",
+          "quote": "„Die Melange aus Witz und Tragik bleibt in dieser Inszenierung gelungen ausgewogen.“",
           "author": "Nicole Czerwinka",
-          "source": "Dresdner Neueste Nachrichten",
+          "source": "Elbmargarita",
+          "date": "14.05.2014",
+          "title": "Farbenfrohes Opernkunstwerk",
+          "href": "https://www.elbmargarita.de/2014/05/farbenfrohes-opernkunstwerk/"
+        },
+        {
+          "quote": "„...Viel Beifall für die vitale, hintersinnige Inszenierung einer starken Barockoper.“",
+          "author": "Jens-Uwe Sommerschein",
+          "source": "Sächsische Zeitung",
           "date": "12.05.2014",
-          "title": "Xerxes",
-          "href": "https://www.solfaghari.com/b%C3%BChnenprojekte/oper/"
+          "title": "Xerxes"
         }
       ],
       "slug": "xerxes",
@@ -479,14 +585,9 @@
       "categoryLabel": "Oper",
       "visual": {
         "type": "image",
-        "src": "/assets/img/xerxes/xerxes-04.jpg",
+        "src": "/assets/img/xerxes/xerxes-06.jpg",
         "alt": "Xerxes - Bühne und Kostüme: Maira Bieler, Romina Kaap",
-        "caption": "Xerxes - Bühne und Kostüme: Maira Bieler, Romina Kaap",
-        "position": "center 47%",
-        "scale": "1.04",
-        "cardPosition": "center 46%",
-        "cardScale": "1.06",
-        "cardHoverScale": "1.1"
+        "caption": "Xerxes - Bühne und Kostüme: Maira Bieler, Romina Kaap"
       },
       "gallery": [
         {
@@ -505,12 +606,12 @@
           "caption": "Xerxes - Bühne und Kostüme: Maira Bieler, Romina Kaap"
         },
         {
-          "src": "/assets/img/xerxes/xerxes-05.jpg",
+          "src": "/assets/img/xerxes/xerxes-04.jpg",
           "alt": "Xerxes - Bühne und Kostüme: Maira Bieler, Romina Kaap",
           "caption": "Xerxes - Bühne und Kostüme: Maira Bieler, Romina Kaap"
         },
         {
-          "src": "/assets/img/xerxes/xerxes-06.jpg",
+          "src": "/assets/img/xerxes/xerxes-05.jpg",
           "alt": "Xerxes - Bühne und Kostüme: Maira Bieler, Romina Kaap",
           "caption": "Xerxes - Bühne und Kostüme: Maira Bieler, Romina Kaap"
         },
@@ -526,6 +627,16 @@
         },
         {
           "src": "/assets/img/xerxes/xerxes-09.jpg",
+          "alt": "Xerxes - Bühne und Kostüme: Maira Bieler, Romina Kaap",
+          "caption": "Xerxes - Bühne und Kostüme: Maira Bieler, Romina Kaap"
+        },
+        {
+          "src": "/assets/img/xerxes/xerxes-15.jpg",
+          "alt": "Xerxes - Bühne und Kostüme: Maira Bieler, Romina Kaap",
+          "caption": "Xerxes - Bühne und Kostüme: Maira Bieler, Romina Kaap"
+        },
+        {
+          "src": "/assets/img/xerxes/xerxes-16.jpg",
           "alt": "Xerxes - Bühne und Kostüme: Maira Bieler, Romina Kaap",
           "caption": "Xerxes - Bühne und Kostüme: Maira Bieler, Romina Kaap"
         }
@@ -544,7 +655,7 @@
         },
         {
           "heading": "Zwischen Tragödie und Komödie",
-          "body": "Die überlieferte Pressestimme benennt ausdrücklich die Grauzone zwischen tragischem Ernst und komischer Anlage. Damit wird eine zentrale Qualität des Werks sichtbar: Händels Figuren sind nicht nur Karikaturen und nicht nur Leidende, sondern Menschen in wechselnden Aggregatzuständen von Pathos, Eitelkeit, Verlangen und Verletzbarkeit."
+          "body": "Die Kritiken heben ausdrücklich die gelungene Balance zwischen Witz und Tragik hervor. Damit wird eine zentrale Qualität des Werks sichtbar: Händels Figuren sind nicht nur Karikaturen und nicht nur Leidende, sondern Menschen in wechselnden Aggregatzuständen von Pathos, Eitelkeit, Verlangen und Verletzbarkeit."
         }
       ],
       "mediaEcho": [
@@ -580,6 +691,16 @@
         "buehne": "Mark Gläser",
         "kostueme": "Petra Reinhardt"
       },
+      "cast": [
+        { "role": "Angelina (Cenerentola)", "performances": [{ "name": "Gaia Petrone" }] },
+        { "role": "Don Ramiro", "performances": [{ "name": "Andrew Owens" }] },
+        { "role": "Dandini", "performances": [{ "name": "Ben Connor" }] },
+        { "role": "Don Magnifico", "performances": [{ "name": "Igor Bakan" }, { "name": "Giulio Mastrototaro (Krankheitsvertretung)" }] },
+        { "role": "Alidoro", "performances": [{ "name": "Igor Bakan" }, { "name": "Giulio Mastrototaro (Krankheitsvertretung, 27.11.2013)" }] },
+        { "role": "Clorinda", "performances": [{ "name": "Gan-ya Ben-gur Akselrod" }] },
+        { "role": "Tisbe", "performances": [{ "name": "Natalia Kawałek-Plewniak" }] },
+        { "role": "Luna (Erzähler)", "performances": [{ "name": "Alexander Waechter" }] }
+      ],
       "reviews": [
         {
           "quote": "„Amüsant ist die Inszenierung von Jasmin Solfaghari allemal.“",
@@ -610,16 +731,22 @@
       "categoryLabel": "Oper",
       "visual": {
         "type": "image",
-        "src": "/assets/img/la-cenerentola/la-cenerentola-kultur.jpg",
-        "alt": "La Cenerentola - Foto: VBW / Kultur.net",
-        "caption": "La Cenerentola - Foto: VBW / Kultur.net",
-        "position": "center center",
-        "scale": "1.02",
-        "cardPosition": "center center",
-        "cardScale": "1.04",
-        "cardHoverScale": "1.08"
+        "src": "/assets/img/la-cenerentola/la-cenerentola-hauptbild.jpg",
+        "alt": "La Cenerentola, Wiener Kammeroper / Theater an der Wien",
+        "caption": "La Cenerentola, Wiener Kammeroper / Theater an der Wien",
+        "position": "center 24%"
       },
       "gallery": [
+        {
+          "src": "/assets/img/la-cenerentola/la-cenerentola-kultur.jpg",
+          "alt": "La Cenerentola - Foto: VBW / Kultur.net",
+          "caption": "La Cenerentola - Foto: VBW / Kultur.net"
+        },
+        {
+          "src": "/assets/img/la-cenerentola/la-cenerentola-paar.jpg",
+          "alt": "La Cenerentola, Wiener Kammeroper / Theater an der Wien",
+          "caption": "La Cenerentola, Wiener Kammeroper / Theater an der Wien"
+        },
         {
           "src": "/assets/img/la-cenerentola/la-cenerentola-operacritic-armin-bardel.jpg",
           "alt": "La Cenerentola - Foto: Armin Bardel / The Opera Critic",
@@ -847,6 +974,14 @@
         "ausstattung": "Jasmin Solfaghari",
         "lichtregie": "Jasmin Solfaghari"
       },
+      "cast": [
+        { "role": "Rinaldo", "performances": [{ "name": "Yumi Tatsumiya" }] },
+        { "role": "Armida", "performances": [{ "name": "Jinjoo Kwak" }] },
+        { "role": "Almirena", "performances": [{ "name": "Friederike Kühl" }] },
+        { "role": "Argante", "performances": [{ "name": "Jaehwan Shim" }] },
+        { "role": "Goffredo", "performances": [{ "name": "Alina Behning" }] },
+        { "role": "Eustazio", "performances": [{ "name": "Annika Sofia Westlund" }] }
+      ],
       "reviews": [
         {
           "quote": "„... macht das Beste aus einem Mini-Budget in einer sehr ansprechenden Kulisse.“",
@@ -936,6 +1071,9 @@
         "musikalischeLeitung": "Dieter Kurz",
         "inszenierung": "Jasmin Solfaghari"
       },
+      "cast": [
+        { "role": "Vespina", "performances": [{ "name": "Jessica Eckhoff" }] }
+      ],
       "detailIntro": "Joseph Haydns „L'Infedeltà delusa“ führte Jasmin Solfaghari 1997 bei den Ludwigsburger Schlossfestspielen in der Kelter Bietigheim auf. Die frühe Arbeit verbindet barock-klassische Buffa-Mechanik, Dialogfassung und eine intime Spielortsituation: Verstellung, Heiratsgeschäft und ländliche Komödie werden nicht museal gezeigt, sondern als lebendige Menschenkomödie lesbar.",
       "detailSections": [
         {
@@ -974,6 +1112,7 @@
       "year": "1996",
       "category": "oper",
       "featured": false,
+      "hidden": true,
       "slug": "eugen-onegin",
       "href": "/inszenierungen/eugen-onegin/",
       "categoryLabel": "Oper",
@@ -1032,6 +1171,7 @@
       "year": "1992",
       "category": "oper",
       "featured": false,
+      "hidden": true,
       "slug": "pimpinone",
       "href": "/inszenierungen/pimpinone/",
       "categoryLabel": "Oper",
@@ -1115,6 +1255,9 @@
         "inszenierung": "Jasmin Solfaghari",
         "ausstattung": "Mark Gläser"
       },
+      "cast": [
+        { "role": "Rosalie Billmeier", "performances": [{ "name": "Gudrun Ebel" }] }
+      ],
       "slug": "a-lady-dies",
       "href": "/inszenierungen/a-lady-dies/",
       "categoryLabel": "Zeitgenössische Oper",
@@ -1173,6 +1316,16 @@
         "inszenierung": "Jasmin Solfaghari",
         "ausstattung": "Alexander Mudlagk"
       },
+      "cast": [
+        { "role": "Dionysos", "performances": [{ "name": "Ray M. Wade Jr." }] },
+        { "role": "Pentheus", "performances": [{ "name": "Urban Malmberg" }] },
+        { "role": "Agaue", "performances": [{ "name": "Dalia Schaechter" }] },
+        { "role": "Kadmos", "performances": [{ "name": "Dieter Schweikart" }] },
+        { "role": "Teiresias", "performances": [{ "name": "Johannes Preißinger" }] },
+        { "role": "Hauptmann der königlichen Wache", "performances": [{ "name": "Timm de Jong" }] },
+        { "role": "Autonoe", "performances": [{ "name": "Claudia Rohrbach" }] },
+        { "role": "Beroe", "performances": [{ "name": "Andrea Andonian" }] }
+      ],
       "reviews": [
         {
           "quote": "„Verzicht auf tiefenpsychologischen Ballast zugunsten einer sinnlich greifbaren Erzählung.“",
@@ -1278,6 +1431,9 @@
         "buehne": "Stefan Heinrichs",
         "kostueme": "Regine Becker"
       },
+      "cast": [
+        { "role": "Igel", "performances": [{ "name": "Christian Feichtmair" }] }
+      ],
       "reviews": [
         {
           "quote": "„... mit der liebevoll umgesetzten ‹Perle› einen weiteren Beweis ihrer künstlerischen Berufung.“",
@@ -1349,6 +1505,9 @@
         "buehne": "Mascha Braun",
         "kostueme": "Florence von Gerkhan"
       },
+      "cast": [
+        { "role": "Marguerite", "performances": [{ "name": "Jacqueline Zander-Wall" }] }
+      ],
       "slug": "tender-buttons",
       "href": "/inszenierungen/tender-buttons/",
       "categoryLabel": "Zeitgenössische Oper",
@@ -1414,6 +1573,9 @@
         "inszenierung": "Jasmin Solfaghari",
         "ausstattung": "Mark Gläser"
       },
+      "cast": [
+        { "role": "Fürstin Bibulowna", "performances": [{ "name": "Christiane Iven" }] }
+      ],
       "reviews": [
         {
           "quote": "„Regisseurin Jasmin Solfaghari bezieht das Orchester sehr witzig in die Handlung mit ein.“",
@@ -1488,7 +1650,7 @@
     {
       "title": "L'absence",
       "composer": "Sarah Nemtsov",
-      "place": "Münchner Biennale",
+      "place": "Münchner Biennale, Muffathalle (Muffatwerk)",
       "year": "2012",
       "category": "zeitgenoessisch",
       "featured": false,
@@ -1498,6 +1660,12 @@
         "buehne": "Etienne Pluss",
         "kostueme": "Florence von Gerkan"
       },
+      "cast": [
+        { "role": "Sopran", "performances": [{ "name": "Tehila Nini Goldstein" }] },
+        { "role": "Bariton", "performances": [{ "name": "Assaf Levitin" }] },
+        { "role": "Countertenor", "performances": [{ "name": "Bernhard Landauer" }] },
+        { "role": "Gesprochen", "performances": [{ "name": "Peter Pruchniewitz" }] }
+      ],
       "reviews": [
         {
           "quote": "„... approached ‹L'absence› with great care and respect.“",
@@ -1514,6 +1682,27 @@
           "date": "05.05.2012",
           "title": "L'absence",
           "href": "https://www.solfaghari.com/b%C3%BChnenprojekte/zeitgen%C3%B6ssische-oper/"
+        },
+        {
+          "quote": "„‚Die Abwesenheit‘ enthält starkes Potenzial, um mahnend auf die Verbrechen der Menschheit hinzuweisen, die nie passieren dürften und sich doch immer wiederholen auf der Welt. Das haben auch die Komponistin und Regisseurin Jasmin Solfaghari weitgehend gelungen umgesetzt … Lang anhaltender Applaus des Publikums würdigte die Gesamtleistung der Mitwirkenden.“",
+          "author": "G. Helbig",
+          "source": "Das Opernglas",
+          "date": "06/2012",
+          "title": "L'absence"
+        },
+        {
+          "quote": "„Sarah Nemtsovs Oper ‚L'Absence‘ erzählt von seelischer Zerstörung in der Folge des Holocausts … Regisseurin Jasmin Solfaghari zeigt eine schlüssige Personenführung … Sehr freundlicher Applaus.“",
+          "author": "Joachim Buch",
+          "source": "Augsburger Allgemeine und Allgäuer Zeitung",
+          "date": "05.05.2012",
+          "title": "L'absence"
+        },
+        {
+          "quote": "„Größte Anspannung und höchste Not stecken in diesem Erzähler wie in allen andern Figuren. Unheilschwanger das Gemurmel des Rabbinerchors … Regisseurin Jasmin Solfaghari hat das Maximum an szenischen Möglichkeiten dem Stück entlockt … Starke Momente gibt es in diesen 100 Minuten. Archaisierendes Stimmengewirr, skurrile Stolpereien, lichtglitzernde Wolken.“",
+          "author": "Christoph Schmitz",
+          "source": "Deutschlandfunk",
+          "date": "04.05.2012",
+          "title": "L'absence"
         }
       ],
       "slug": "l-absence",
@@ -1521,15 +1710,27 @@
       "categoryLabel": "Zeitgenössische Oper",
       "visual": {
         "type": "image",
-        "src": "/assets/img/l-absence/l-absence-6895414.jpg",
-        "alt": "L'absence - Archivbild solfaghari.com",
-        "caption": "L'absence - Archivbild solfaghari.com",
-        "position": "center center",
-        "scale": "1.04",
-        "cardScale": "1.05",
-        "cardHoverScale": "1.09"
+        "src": "/assets/img/l-absence/l-absence-01.jpg",
+        "alt": "L'absence, Münchener Biennale 2012",
+        "caption": "L'absence, Münchener Biennale 2012"
       },
-      "gallery": [],
+      "gallery": [
+        {
+          "src": "/assets/img/l-absence/l-absence-02.jpg",
+          "alt": "L'absence, Münchener Biennale 2012",
+          "caption": "L'absence, Münchener Biennale 2012"
+        },
+        {
+          "src": "/assets/img/l-absence/l-absence-03.jpg",
+          "alt": "L'absence, Münchener Biennale 2012",
+          "caption": "L'absence, Münchener Biennale 2012"
+        },
+        {
+          "src": "/assets/img/l-absence/l-absence-04.jpg",
+          "alt": "L'absence, Münchener Biennale 2012",
+          "caption": "L'absence, Münchener Biennale 2012"
+        }
+      ],
       "sourceUrl": "https://www.solfaghari.com/b%C3%BChnenprojekte/zeitgen%C3%B6ssische-oper/",
       "note": "Uraufführung bei der 13. Münchener Biennale für neues Musiktheater.",
       "trailer": {
@@ -1590,6 +1791,21 @@
         "buehne": "Daniela Schramm",
         "kostueme": "Eva-Maria Weber"
       },
+      "cast": [
+        { "role": "Albert Herring", "performances": [{ "name": "Paul Kaufmann" }, { "name": "Patrick Grahl" }] },
+        { "role": "Lady Billows", "performances": [{ "name": "Stina Levvel" }, { "name": "Josefine Feiler" }] },
+        { "role": "Florence Pike", "performances": [{ "name": "Sylvia Irmen" }] },
+        { "role": "Miss Wordsworth", "performances": [{ "name": "Manuela Fraikin" }, { "name": "Paula Antal" }] },
+        { "role": "Vicar Mr. Gedge", "performances": [{ "name": "Christian Backhaus" }] },
+        { "role": "Mayor Mr. Upfold", "performances": [{ "name": "Peter Potzelt" }] },
+        { "role": "Superintendent Budd", "performances": [{ "name": "Manuel Helmeke" }] },
+        { "role": "Sid", "performances": [{ "name": "Sebastian Wartig" }, { "name": "Dominic Große" }] },
+        { "role": "Nancy", "performances": [{ "name": "Taryn Knerr" }, { "name": "Meredith Nicoll" }] },
+        { "role": "Mrs. Herring", "performances": [{ "name": "Astryd Cottet" }] },
+        { "role": "Emmie", "performances": [{ "name": "Maria Hengst" }] },
+        { "role": "Cis", "performances": [{ "name": "Carla Frick" }] },
+        { "role": "Harry", "performances": [{ "name": "Carolin Schumann" }] }
+      ],
       "slug": "albert-herring",
       "href": "/inszenierungen/albert-herring/",
       "categoryLabel": "Zeitgenössische Oper",
@@ -1709,17 +1925,12 @@
       "categoryLabel": "Operette",
       "visual": {
         "type": "image",
-        "src": "/assets/img/der-schmetterling-daniel-behle.webp",
-        "alt": "Der Schmetterling - Daniel Behle",
-        "caption": "Der Schmetterling - Daniel Behle"
+        "src": "/assets/img/der-schmetterling-hero.webp",
+        "alt": "Der Schmetterling - Illustration einer mechanischen Schmetterlingsuhr",
+        "caption": "Der Schmetterling",
+        "position": "center 8%"
       },
-      "gallery": [
-        {
-          "src": "/assets/img/der-schmetterling-daniel-behle.webp",
-          "alt": "Der Schmetterling - Daniel Behle",
-          "caption": "Der Schmetterling - Daniel Behle"
-        }
-      ],
+      "gallery": [],
       "sourceUrl": "https://www.solfaghari.com/b%C3%BChnenprojekte/familienproduktionen-operetten/",
       "detailIntro": "„Der Schmetterling“ ist Daniel Behles zweite Operette nach „Hopfen und Malz“ und kommt am 10. Oktober 2026 am Eduard-von-Winterstein-Theater in Annaberg-Buchholz zur Uraufführung. Jasmin Solfaghari übernimmt die Inszenierung einer neuen Operettenfantasie, die Opernklischees, Gruselromantik, Bayreuth-Anspielungen, Zukunftsvisionen und die Frage nach dem Wert von Kunst miteinander verschränkt.",
       "detailSections": [
@@ -1787,6 +1998,21 @@
         "einstudierungChor": "Joseph Feigl",
         "dramaturgie": "Martin von Bargen"
       },
+      "cast": [
+        { "role": "Fürstin Fedora Palinska", "performances": [{ "name": "Laura Albert" }] },
+        { "role": "Mister X", "performances": [{ "name": "Bernd Könnes" }, { "name": "Andrés Felipe Orozco" }] },
+        { "role": "Toni Schlumberger", "performances": [{ "name": "Kyoungloul Kim" }] },
+        { "role": "Prinz Sergius Wladimir", "performances": [{ "name": "Robert Merwald" }] },
+        { "role": "Graf Sakusin", "performances": [{ "name": "Krzystof Napierala" }] },
+        { "role": "Graf v. Petrowitsch", "performances": [{ "name": "Ramin Varzandeh" }] },
+        { "role": "Direktor Stanislawski", "performances": [{ "name": "Ryszard Kalus" }] },
+        { "role": "Luigi Pinelli", "performances": [{ "name": "Lothar Dreyer" }] },
+        { "role": "Miss Mabel Gibson", "performances": [{ "name": "Laura Scherwitzl" }] },
+        { "role": "Carla Schlumberger", "performances": [{ "name": "Grit Kolpatzik" }] },
+        { "role": "Pelikan", "performances": [{ "name": "Markus Kopp" }] },
+        { "role": "Mary", "performances": [{ "name": "Sylke Urbanek" }] },
+        { "role": "Haushofmeister des Prinzen", "performances": [{ "name": "Andreas Hartig" }] }
+      ],
       "slug": "die-zirkusprinzessin",
       "href": "/inszenierungen/die-zirkusprinzessin/",
       "categoryLabel": "Operette",
@@ -1901,6 +2127,18 @@
         "buehnenbildUndKostueme": "Walter Schütze",
         "chor": "Daniele Pilato"
       },
+      "cast": [
+        { "role": "Horst Flens", "performances": [{ "name": "László Varga" }] },
+        { "role": "Senta", "performances": [{ "name": "Madelaine Vogt" }] },
+        { "role": "Klaus", "performances": [{ "name": "Richard Glöckner" }] },
+        { "role": "Ischias", "performances": [{ "name": "Jakob Nistler" }] },
+        { "role": "Bernd", "performances": [{ "name": "Jason-Nandor Tomory" }] },
+        { "role": "Letty Fisch", "performances": [{ "name": "Maria Rüssel" }] },
+        { "role": "Max Fisch", "performances": [{ "name": "Ivaylo Guberov" }] },
+        { "role": "Theophil", "performances": [{ "name": "Leander de Marel" }] },
+        { "role": "Mama Cervisia", "performances": [{ "name": "Renate Behle" }, { "name": "Bettina Grothkopf" }] },
+        { "role": "Vorstand des Wirteverbandes", "performances": [{ "name": "Udo Prucha" }] }
+      ],
       "reviews": [
         {
           "quote": "„Sie lässt Schafe singen, Bayern platteln und findet für jede Figur ein passendes Profil.“",
@@ -2016,6 +2254,21 @@
         "chor": "Gotthard Franke",
         "dramaturgie": "Lür Jaenike"
       },
+      "cast": [
+        { "role": "Dornröschen (Röschen)", "performances": [{ "name": "Marina Medvedeva" }] },
+        { "role": "Prinz Reinhold", "performances": [{ "name": "Andrés Felipe Orozco" }] },
+        { "role": "König Ringold", "performances": [{ "name": "Markus Kopp" }] },
+        { "role": "Königin Armgart", "performances": [{ "name": "Grit Kolpatzik" }] },
+        { "role": "Dämonia (böse Fee)", "performances": [{ "name": "Iuliia Tarasova" }] },
+        { "role": "Morphina", "performances": [{ "name": "Luise Hansen" }, { "name": "Laura Scherwitzl" }] },
+        { "role": "Rosa (Die Sonne)", "performances": [{ "name": "Syrinx Jessen" }] },
+        { "role": "Quecksilber", "performances": [{ "name": "Misun Kim" }] },
+        { "role": "Vogt des Ahnenschlosses", "performances": [{ "name": "Ryszard Kalus" }] },
+        { "role": "Tellermeister", "performances": [{ "name": "Ramin Varzandeh" }] },
+        { "role": "Bote (Gesandter der Strahleninseln)", "performances": [{ "name": "Krzysztof Napierala" }] },
+        { "role": "Der Mond", "performances": [{ "name": "Lothar Dreyer" }] },
+        { "role": "Koch", "performances": [{ "name": "Bernd Richert" }] }
+      ],
       "slug": "dornroschen",
       "href": "/inszenierungen/dornroschen/",
       "categoryLabel": "Oper",
@@ -2156,6 +2409,18 @@
         "veranstalter": "PAMY Mediaproductions",
         "orchester": "Mitglieder des Philharmonischen Orchesters des Landestheaters Coburg"
       },
+      "cast": [
+        { "role": "Cacatois XXII (Die Insel Tulipatan)", "performances": [{ "name": "Jason-Nandor Tomory" }] },
+        { "role": "Alexis (Die Insel Tulipatan)", "performances": [{ "name": "Taryn Knerr" }] },
+        { "role": "Romboïdal (Die Insel Tulipatan)", "performances": [{ "name": "Karsten Münster" }] },
+        { "role": "Théodorine (Die Insel Tulipatan)", "performances": [{ "name": "Ilona Nymoen" }] },
+        { "role": "Hermosa (Die Insel Tulipatan)", "performances": [{ "name": "James Berkeley Wilson" }] },
+        { "role": "Monsieur Choufleuri (Herr Blumenkohl)", "performances": [{ "name": "Jason-Nandor Tomory" }] },
+        { "role": "Ernestine (Herr Blumenkohl gibt sich die Ehre)", "performances": [{ "name": "Taryn Knerr" }] },
+        { "role": "Chrysodule Babylas (Herr Blumenkohl gibt sich die Ehre)", "performances": [{ "name": "James Berkeley Wilson" }] },
+        { "role": "Balandard (Herr Blumenkohl gibt sich die Ehre)", "performances": [{ "name": "Karsten Münster" }] },
+        { "role": "Madame Balandard (Herr Blumenkohl gibt sich die Ehre)", "performances": [{ "name": "Ilona Nymoen" }] }
+      ],
       "slug": "die-insel-tulipatan-herr-blumenkohl-gibt-sich-die-ehre",
       "href": "/inszenierungen/die-insel-tulipatan-herr-blumenkohl-gibt-sich-die-ehre/",
       "categoryLabel": "Operette",
@@ -2265,6 +2530,57 @@
         "ausstattung": "Alexander Mudlagk",
         "inszenierung": "Jasmin Solfaghari"
       },
+      "cast": [
+        {
+          "role": "Hänsel",
+          "performances": [
+            { "name": "Stephanie Atanasov", "year": "2017" },
+            { "name": "Amira Elmadfa", "year": "2017" },
+            { "name": "Leandra Johne", "year": "2017" }
+          ]
+        },
+        {
+          "role": "Gretel",
+          "performances": [
+            { "name": "Annika Gerhards", "year": "2017" },
+            { "name": "Andreja Zidaric", "year": "2017" },
+            { "name": "Julia Danz", "year": "2017" },
+            { "name": "Catalina Bertucci", "year": "2018" }
+          ]
+        },
+        {
+          "role": "Knusperhexe",
+          "performances": [
+            { "name": "Matthias Koziorowski", "year": "2017" },
+            { "name": "Andreas Sauerzapf", "year": "2017" }
+          ]
+        },
+        {
+          "role": "Vater (Peter)",
+          "performances": [
+            { "name": "Elmar Andree", "year": "2017" },
+            { "name": "Matthias Henneberg", "year": "2017" },
+            { "name": "Andreas Jäpel", "year": "2017" }
+          ]
+        },
+        {
+          "role": "Mutter (Gertrud)",
+          "performances": [
+            { "name": "Silke Richter", "year": "2017" },
+            { "name": "Ingeborg Schöpf", "year": "2017" }
+          ]
+        },
+        { "role": "Sandmännchen", "performances": [{ "name": "Pauline Weiche", "year": "2017" }] },
+        {
+          "role": "Taumännchen",
+          "performances": [
+            { "name": "Marie Hänsel", "year": "2017" },
+            { "name": "Maria Perlt", "year": "2017" },
+            { "name": "Andreja Zidaric", "year": "2017" },
+            { "name": "Qing Wang", "year": "2018" }
+          ]
+        }
+      ],
       "slug": "hansel-und-gretel",
       "href": "/inszenierungen/hansel-und-gretel/",
       "categoryLabel": "Oper",
@@ -2377,6 +2693,16 @@
         "kostueme": "Sven Bindseil",
         "inszenierung": "Jasmin Solfaghari"
       },
+      "cast": [
+        { "role": "Aladin", "performances": [{ "name": "Rodrigo Porras Garulo" }] },
+        { "role": "Prinzessin Badr-al-Budur", "performances": [{ "name": "Paula Rummel" }] },
+        { "role": "Magier (Großwesir)", "performances": [{ "name": "Milcho Borovinov" }] },
+        { "role": "Aladins Mutter", "performances": [{ "name": "Sandra Janke" }] },
+        { "role": "Sultan", "performances": [{ "name": "Jürgen Kurth" }] },
+        { "role": "Ringgeist", "performances": [{ "name": "Sejong Chang" }] },
+        { "role": "Lampengeist", "performances": [{ "name": "Manuel Helmeke" }] },
+        { "role": "Aladins Gefährten", "performances": [{ "name": "Sebastian Fuchsberger" }, { "name": "Keith Boldt" }] }
+      ],
       "reviews": [
         {
           "quote": "„Mit solch poetisch-eindrucksvollen Bildern hat Jasmin Solfaghari in der Oper Leipzig das lyrische Märchen »Aladin und die Wunderlampe« von Nino Rota inszeniert.“",
@@ -2521,6 +2847,19 @@
         "buehne": "Frank Schmutzler, Jasmin Solfaghari",
         "kostueme": "nach Bayreuther Festspiele"
       },
+      "cast": [
+        { "role": "Wotan", "performances": [{ "name": "Milko Milev" }] },
+        { "role": "Brünnhilde", "performances": [{ "name": "Josefine Weber" }] },
+        { "role": "Siegfried", "performances": [{ "name": "James Allen Smith" }] },
+        { "role": "Siegmund", "performances": [{ "name": "James Allen Smith" }] },
+        { "role": "Sieglinde", "performances": [{ "name": "Ruth Ingeborg Ohlmann" }] },
+        { "role": "Loge", "performances": [{ "name": "Andreas Rainer" }] },
+        { "role": "Mime", "performances": [{ "name": "Andreas Rainer" }] },
+        { "role": "Alberich", "performances": [{ "name": "Kostadin Arguirov" }] },
+        { "role": "Hagen", "performances": [{ "name": "Kostadin Arguirov" }] },
+        { "role": "Woglinde", "performances": [{ "name": "Mirjam Neururer" }] },
+        { "role": "Waldvogel", "performances": [{ "name": "Mirjam Neururer" }] }
+      ],
       "reviews": [
         {
           "quote": "„... mit viel Phantasie, Theatereffekten und einem überzeugenden Ensemble.“",
@@ -2606,6 +2945,17 @@
         "kostueme": "Petra Reinhardt",
         "inszenierung": "Jasmin Solfaghari"
       },
+      "cast": [
+        { "role": "Guido, Herzog von Urbino", "performances": [{ "name": "Richard Samek" }, { "name": "Steffen Schantz" }] },
+        { "role": "Bartolomeo Delacqua", "performances": [{ "name": "Frank Blees" }, { "name": "Hans-Jürgen Wiese" }] },
+        { "role": "Barbara Delacqua", "performances": [{ "name": "Silke Fröde" }, { "name": "Elke Kottmair" }] },
+        { "role": "Agricola Barbaruccio", "performances": [{ "name": "Bettina Weichert" }] },
+        { "role": "Giorgio Testaccio", "performances": [{ "name": "Herbert G. Adami" }, { "name": "André Eckert" }] },
+        { "role": "Annina", "performances": [{ "name": "Jessica Glatte" }, { "name": "Mirka Wagner" }] },
+        { "role": "Caramello", "performances": [{ "name": "Hauke Möller" }, { "name": "Ralf Simon" }] },
+        { "role": "Pappacoda", "performances": [{ "name": "Frank Ernst" }, { "name": "Bryan Rothfuss" }, { "name": "Christoph Simon" }] },
+        { "role": "Ciboletta", "performances": [{ "name": "Jeannette Oswald" }, { "name": "Isabell Schmitt" }] }
+      ],
       "slug": "eine-nacht-in-venedig",
       "href": "/inszenierungen/eine-nacht-in-venedig/",
       "categoryLabel": "Operette",
@@ -2699,6 +3049,14 @@
         "kostueme": "Eva-Maria Weber",
         "inszenierung": "Jasmin Solfaghari"
       },
+      "cast": [
+        { "role": "Raoul de Gardefeu", "performances": [{ "name": "Frank Ernst" }] },
+        { "role": "Bobinet Chicard", "performances": [{ "name": "Bryan Rothfuss" }] },
+        { "role": "Métella", "performances": [{ "name": "Ingeborg Schöpf" }] },
+        { "role": "Baron de Gondremarck", "performances": [{ "name": "Elmar Andree" }] },
+        { "role": "Baronin Gondremarck", "performances": [{ "name": "Jessica Glatte" }] },
+        { "role": "Prosper", "performances": [{ "name": "Christian Grygas" }] }
+      ],
       "reviews": [
         {
           "quote": "„... unter der musikalischen Leitung von Ernst Theis, der Offenbachs süffige Musik mit Schwung aus dem Orchestergraben klingen lässt, inszeniert Jasmin Solfaghari die Geschichte mit viel Situationskomik ... Viel Applaus.“",
@@ -2909,6 +3267,30 @@
         "video": "Jens Gelbhaar, Emanuel Ramin Funck",
         "lektoratFassung": "Paul Kaufmann"
       },
+      "cast": [
+        { "role": "Brünnhilde", "performances": [{ "name": "Agnes Selma Weiland" }] },
+        { "role": "Sieglinde", "performances": [{ "name": "Jieun Choi" }] },
+        { "role": "Gutrune", "performances": [{ "name": "Jieun Choi" }] },
+        { "role": "Mime", "performances": [{ "name": "Paul Kaufmann" }] },
+        { "role": "Loge", "performances": [{ "name": "Paul Kaufmann" }] },
+        { "role": "Woglinde", "performances": [{ "name": "Elisabeth Rauch" }] },
+        { "role": "Waldvogel", "performances": [{ "name": "Elisabeth Rauch" }] },
+        { "role": "Wellgunde", "performances": [{ "name": "Madeline Cain" }] },
+        { "role": "Freia", "performances": [{ "name": "Madeline Cain" }] },
+        { "role": "Flosshilde", "performances": [{ "name": "Anna Neufeld" }] },
+        { "role": "Fricka", "performances": [{ "name": "Anna Neufeld" }] },
+        { "role": "Erda", "performances": [{ "name": "Anna Neufeld" }] },
+        { "role": "Alberich", "performances": [{ "name": "Marek Reichert" }] },
+        { "role": "Fasolt", "performances": [{ "name": "Marek Reichert" }] },
+        { "role": "Gunther", "performances": [{ "name": "Marek Reichert" }] },
+        { "role": "Wotan", "performances": [{ "name": "Ji-Su Park" }] },
+        { "role": "Siegmund", "performances": [{ "name": "Benjamin Werth" }] },
+        { "role": "Siegfried", "performances": [{ "name": "Benjamin Werth" }] },
+        { "role": "Fafner", "performances": [{ "name": "Christoph Heinrich" }] },
+        { "role": "Hunding", "performances": [{ "name": "Christoph Heinrich" }] },
+        { "role": "Hagen", "performances": [{ "name": "Christoph Heinrich" }] },
+        { "role": "Luna vom Mond (Erzähler)", "performances": [{ "name": "Karsten Münster" }] }
+      ],
       "reviews": [
         {
           "quote": "„Für Ring-Einsteiger empfehlenswert!“",
@@ -2998,6 +3380,29 @@
         "musikalischeLeitung": "Heiko Matthias Förster",
         "ideeRegieUndAusstattung": "Jasmin Solfaghari"
       },
+      "cast": [
+        { "role": "Woglinde", "performances": [{ "name": "Rinnat Moriah" }] },
+        { "role": "Waldvogel", "performances": [{ "name": "Rinnat Moriah" }] },
+        { "role": "Wellgunde", "performances": [{ "name": "Abbie Furmansky" }] },
+        { "role": "Sieglinde", "performances": [{ "name": "Abbie Furmansky" }] },
+        { "role": "Freia", "performances": [{ "name": "Abbie Furmansky" }] },
+        { "role": "Gutrune", "performances": [{ "name": "Abbie Furmansky" }] },
+        { "role": "Flosshilde", "performances": [{ "name": "Cheri Rose Katz" }] },
+        { "role": "Erda", "performances": [{ "name": "Cheri Rose Katz" }] },
+        { "role": "Fricka", "performances": [{ "name": "Cheri Rose Katz" }] },
+        { "role": "Brünnhilde", "performances": [{ "name": "Kirsten Blanck" }] },
+        { "role": "Wotan", "performances": [{ "name": "Jürgen Linn" }] },
+        { "role": "Alberich", "performances": [{ "name": "Wolfgang Newerla" }] },
+        { "role": "Fasolt", "performances": [{ "name": "Wolfgang Newerla" }] },
+        { "role": "Gunther", "performances": [{ "name": "Wolfgang Newerla" }] },
+        { "role": "Loge", "performances": [{ "name": "Paul Kaufmann" }] },
+        { "role": "Mime", "performances": [{ "name": "Paul Kaufmann" }] },
+        { "role": "Fafner", "performances": [{ "name": "Timo Riihonen" }] },
+        { "role": "Hunding", "performances": [{ "name": "Timo Riihonen" }] },
+        { "role": "Hagen", "performances": [{ "name": "Timo Riihonen" }] },
+        { "role": "Siegmund", "performances": [{ "name": "Stefan Vinke" }] },
+        { "role": "Siegfried", "performances": [{ "name": "Stefan Vinke" }] }
+      ],
       "reviews": [
         {
           "quote": "„Weiße Stoffbahnen verbinden Zuschauer- und Bühnenraum.“",
@@ -3094,6 +3499,20 @@
         "licht": "Tina Hüninghaus",
         "orchester": "Da Vinci Orchester"
       },
+      "cast": [
+        { "role": "Il Conte di Almaviva", "performances": [{ "name": "Nikita Ivasechko" }] },
+        { "role": "La Contessa di Almaviva", "performances": [{ "name": "Viktorija Narvidaitė" }] },
+        { "role": "Susanna", "performances": [{ "name": "Taryn Knerr" }, { "name": "Katharina Ruckgaber" }, { "name": "Tania Lorenzo Castro" }] },
+        { "role": "Figaro", "performances": [{ "name": "Ilya Silchuk" }] },
+        { "role": "Cherubino", "performances": [{ "name": "Inga Schäfer" }, { "name": "Klara Brockhaus" }, { "name": "Emily Lorini" }, { "name": "Christina Campsall" }] },
+        { "role": "Marcellina", "performances": [{ "name": "Ilona Nymoen" }] },
+        { "role": "Bartolo", "performances": [{ "name": "Torsten Frisch" }] },
+        { "role": "Basilio", "performances": [{ "name": "Karsten Münster" }] },
+        { "role": "Don Curzio", "performances": [{ "name": "Karsten Münster" }] },
+        { "role": "Barbarina", "performances": [{ "name": "Eva Möritz" }] },
+        { "role": "Antonio", "performances": [{ "name": "Alexander von Glenck" }] },
+        { "role": "Luna (Erzählerfigur)", "performances": [{ "name": "Peter Pruchniewitz" }] }
+      ],
       "slug": "figaro-fur-operneinsteiger",
       "href": "/inszenierungen/figaro-fur-operneinsteiger/",
       "categoryLabel": "Oper für Einsteiger",
@@ -3198,6 +3617,17 @@
         "choreinstudierung": "Mathias Drechsler",
         "dramaturgie": "Heidi Zippel"
       },
+      "cast": [
+        { "role": "Max", "performances": [{ "name": "Radoslaw Rydlewski" }] },
+        { "role": "Kaspar", "performances": [{ "name": "Kostadin Arguirov" }] },
+        { "role": "Agathe", "performances": [{ "name": "Lilli Wünscher" }] },
+        { "role": "Ännchen", "performances": [{ "name": "Mirjam Neururer" }] },
+        { "role": "Ottokar", "performances": [{ "name": "Patrick Rohbeck" }] },
+        { "role": "Kuno", "performances": [{ "name": "Michael Raschle" }] },
+        { "role": "Eremit", "performances": [{ "name": "Milko Milev" }] },
+        { "role": "Samiel", "performances": [{ "name": "Andreas Rainer" }] },
+        { "role": "Mond (Erzähler)", "performances": [{ "name": "Andreas Rainer" }] }
+      ],
       "reviews": [
         {
           "quote": "„Eine Liebeserklärung an das Theater.“",
@@ -3353,6 +3783,18 @@
         "kostueme": "Vivien Waneck",
         "kooperation": "Oper Leipzig / Hochschule für Musik und Theater Leipzig"
       },
+      "cast": [
+        { "role": "Figaro", "performances": [{ "name": "Christoph Heinrich" }, { "name": "Franz Schlecht" }] },
+        { "role": "Susanna", "performances": [{ "name": "Steffi Lehmann" }, { "name": "Ying Peng" }] },
+        { "role": "Graf", "performances": [{ "name": "Ji-Su Park" }] },
+        { "role": "Gräfin", "performances": [{ "name": "Anli Sasaki" }] },
+        { "role": "Cherubino", "performances": [{ "name": "Marie-Luise Dreßen" }, { "name": "Hannah Schlott" }] },
+        { "role": "Bartolo (Antonio)", "performances": [{ "name": "Andreas Krüger" }] },
+        { "role": "Marcellina", "performances": [{ "name": "Teresa Smolnik" }] },
+        { "role": "Basilio (Don Curzio)", "performances": [{ "name": "Matthias Siddharta Otto" }, { "name": "Simon Wallfisch" }] },
+        { "role": "Barbarina", "performances": [{ "name": "Paula Rummel" }, { "name": "Julla von Landsleben" }] },
+        { "role": "Luna (Erzählerfigur)", "performances": [{ "name": "Benedikt Crisand" }] }
+      ],
       "reviews": [
         {
           "quote": "„Mit liebevollen szenischen Einfällen und viel Humor.“",
@@ -3427,6 +3869,14 @@
         "kostueme": "Katrin Neubert",
         "neueDialogfassung": "Jasmin Solfaghari"
       },
+      "cast": [
+        { "role": "Abraham Mendelssohn (Herr von Robert)", "performances": [{ "name": "Karsten Müller" }] },
+        { "role": "Felix Mendelssohn (Carl, sein Sohn)", "performances": [{ "name": "Simon Wallfisch" }, { "name": "Stephan Scherpe" }] },
+        { "role": "Cécile Mendelssohn, geb. Jeanrenaud (Elise)", "performances": [{ "name": "Diana Kuznetsova" }, { "name": "Anastasiya Peretyahina" }] },
+        { "role": "Carl Friedrich Zelter (Lehrer Kinderschreck)", "performances": [{ "name": "Sindre Øgaard" }, { "name": "Ezra Jung" }] },
+        { "role": "Fanny Hensel, geb. Mendelssohn (Hannchen)", "performances": [{ "name": "Manuela Fraikin" }, { "name": "Paula Rummel" }] },
+        { "role": "Wilhelm Hensel (Luftig)", "performances": [{ "name": "Alexander Voigt" }, { "name": "József Gál" }] }
+      ],
       "detailIntro": "„Alle Wünsche sind dahin“ verbindet Musik von Fanny Hensel und Felix Mendelssohn Bartholdy zu einem Musiktheaterabend, der Werkstatt, Collage und szenische Reflexion zusammendenkt. Die Erstaufführung entstand an der Hochschule für Musik und Theater Leipzig und gastierte 2009 bei den Ludwigsburger Schlossfestspielen.",
       "detailSections": [
         {
@@ -3492,6 +3942,18 @@
         "kostueme": "Su Bühler",
         "licht": "Hans Tœlstede"
       },
+      "cast": [
+        { "role": "Hanna Glawari", "performances": [{ "name": "Kirsten Blanck" }] },
+        { "role": "Graf Danilo Danilowitsch", "performances": [{ "name": "Thomas Mohr" }] },
+        { "role": "Baron Mirko Zeta", "performances": [{ "name": "Ulrich Hielscher" }] },
+        { "role": "Valencienne", "performances": [{ "name": "Claudia Rohrbach" }] },
+        { "role": "Camille de Rosillon", "performances": [{ "name": "Musa Nkuna" }] },
+        { "role": "Vicomte Cascada", "performances": [{ "name": "Andrés Felipe Orozco Martinez" }] },
+        { "role": "Raoul de St. Brioche", "performances": [{ "name": "Johannes Preißinger" }] },
+        { "role": "Njegus", "performances": [{ "name": "Dieter Schweikart" }] },
+        { "role": "Pritschitsch", "performances": [{ "name": "Ulrich Schüler" }] },
+        { "role": "Bogdanowitsch", "performances": [{ "name": "Stefan Kohnke" }] }
+      ],
       "reviews": [
         {
           "quote": "„Solfaghari transpose l'action dans les années 1950.“",
@@ -3564,6 +4026,10 @@
         "buehne": "Mark Gläser",
         "kostueme": "Tomas Kypta"
       },
+      "cast": [
+        { "role": "Herzog von Mantua", "performances": [{ "name": "Álex Vicens" }] },
+        { "role": "Gilda", "performances": [{ "name": "Petya Ivanova" }] }
+      ],
       "reviews": [
         {
           "quote": "„... eine Opernproduktion, die sowohl musikalisch wie auch inszenatorisch besticht.“",

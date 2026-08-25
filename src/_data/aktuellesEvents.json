@@ -66,6 +66,49 @@
       ]
     },
     {
+      "id": "nosolo-studios-re-connect-eurythmie-2026",
+      "category": "vortrag",
+      "categoryLabel": "Vortrag",
+      "dateLabel": "31. Oktober – 1. November 2026",
+      "sortDate": "2026-10-31",
+      "day": "31",
+      "month": "Okt 2026",
+      "title": "Lenk mal nicht von dir ab",
+      "subtitle": "Einführung im Rahmen von „re_connect eurythmie“",
+      "location": "nosolo studios Stuttgart",
+      "summary": "Einführungsvortrag zu Bühnenpräsenz und Bühnengesetzen im Rahmen der Workshopreihe „re_connect eurythmie“ bei nosolo studios Stuttgart.",
+      "buttonLabel": "Mehr anzeigen",
+      "details": {
+        "tags": [
+          "Vortrag",
+          "Eurythmie",
+          "Bühnenpräsenz"
+        ],
+        "intro": [
+          "Die Workshopreihe „re_connect eurythmie“ von nosolo studios Stuttgart eröffnet einen Raum zwischen freier Performance, Theater und Oper, in dem bestehende Formen der Eurythmie hinterfragt und neue künstlerische Zusammenhänge erprobt werden. Martje Brandsma, Rafael Tavares und Severin Fraser widmen sich dabei drei Bereichen: Eurythmie als freie Performance, im Theater und in der Oper.",
+          "Unter dem Titel „Lenk mal nicht von dir ab“ gibt Opernregisseurin Jasmin Solfaghari eine Einführung zu Bühnenpräsenz und Bühnengesetzen. Das erste Workshopwochenende findet am 31. Oktober und 1. November 2026 statt."
+        ],
+        "facts": [
+          {
+            "label": "Datum",
+            "value": "31. Oktober – 1. November 2026"
+          },
+          {
+            "label": "Zeit",
+            "value": "Sa 10–13 & 15–18 Uhr, So 11–15 Uhr"
+          },
+          {
+            "label": "Ort",
+            "value": "nosolo studios, Stuttgart"
+          },
+          {
+            "label": "Veranstalter",
+            "value": "re_connect eurythmie (nosolo studios)"
+          }
+        ]
+      }
+    },
+    {
       "id": "la-cabine-telephonique-2026",
       "category": "inszenierung",
       "categoryLabel": "Premiere",
