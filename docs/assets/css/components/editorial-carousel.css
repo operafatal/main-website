@@ -311,10 +311,26 @@
   /* Only ever renders 2 children (heading + carousel) — never the 3rd
      "actions" row the base 3-row grid reserves for the course/quote CTA.
      Overriding to 2 explicit row tracks removes that trailing empty track
-     so its gap doesn't add invisible space below the carousel. */
+     from participating in row sizing.
+
+     No `gap` here though, on purpose: `gap` is inserted between every
+     pair of defined grid row tracks regardless of whether a track is
+     occupied. When this variant is called without a heading (e.g. the
+     production-detail gallery), only the sr-only <h2> fallback exists --
+     it's position:absolute and renders with zero height, but `gap` would
+     still add a full var(--space-6) (24px) of dead space below the
+     carousel that has nothing to visually separate it from, making that
+     gallery's total bottom whitespace 24px bigger than every other
+     section boundary on the page. The spacing is applied instead, below,
+     scoped to .editorial-carousel__section-head -- which only exists in
+     the DOM at all when a real, visible heading was passed in. */
   grid-template-rows: auto minmax(0, 1fr);
   padding: 0;
-  gap: var(--space-6);
+  gap: 0;
+}
+
+.editorial-carousel--photo .editorial-carousel__section-head {
+  margin-bottom: var(--space-6);
 }
 
 .editorial-carousel__carousel--photo {

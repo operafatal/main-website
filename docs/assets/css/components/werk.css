@@ -356,7 +356,26 @@
 }
 
 .work-detail__hero-visual {
-  position: relative;
+  /* position:absolute + inset:0 (not a normal grid item) is deliberate:
+     without it, this figure's height is "auto" inside the grid row, and
+     for a replaced element like <img> with an otherwise-indeterminate
+     height, browsers fall back to the image's own intrinsic aspect ratio
+     to size the grid track -- so a tall portrait photo (e.g. "Der
+     Schmetterling", 1890x2715) blows the whole hero row up to match its
+     own height instead of respecting .work-detail__hero's min-height
+     clamp, no matter how short .work-detail__hero-copy's text is.
+     Pinning this to .work-detail__hero's own box (position:relative
+     above) makes its size depend only on the row height the copy column
+     establishes, regardless of the image's aspect ratio -- same fix
+     pattern as the home-course-tile/editorial-carousel height bugs.
+     grid-column keeps inset:0 scoped to the second column's own box
+     (its containing block as an abs-pos grid item with a placed area)
+     instead of the full-bleed 100vw hero -- without it inset:0 covers
+     the whole hero width and buries .work-detail__hero-copy's text. */
+  grid-column: 2;
+  grid-row: 1;
+  position: absolute;
+  inset: 0;
   margin: 0;
   overflow: hidden;
   background: var(--color-bg-subtle);
@@ -624,6 +643,42 @@
 .work-detail__section--credits h2 {
   margin: 0;
   font-size: var(--font-size-section-heading);
+}
+
+/* Besetzung (cast): same dt/dd layout as Team, but visually distinct --
+   light grey instead of the navy accent, so the two boxes read as
+   related-but-separate at a glance rather than one continuous block. */
+.work-detail__section--cast {
+  background: var(--color-bg-subtle);
+  color: var(--color-text);
+}
+
+.work-detail__section--cast .work-detail__section-kicker,
+.work-detail__section--cast h2,
+.work-detail__section--cast .work-detail__credits dt,
+.work-detail__section--cast .work-detail__credits dd {
+  color: var(--color-text);
+}
+
+.work-detail__section--cast .work-detail__section-kicker,
+.work-detail__section--cast .work-detail__credits dt {
+  opacity: 1;
+  color: var(--color-text-faint);
+}
+
+/* Only exists when both Team and Besetzung are present (see
+   inszenierung-detail.njk) -- Team alone still gets the full-width
+   section treatment above, unwrapped. */
+.work-detail__team-cast {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--work-detail-section-gap);
+}
+
+/* Each box is only half-width here, too narrow for the default two
+   dt/dd-pairs-per-row layout -- one pair per row instead. */
+.work-detail__team-cast .work-detail__credits {
+  grid-template-columns: minmax(7rem, auto) minmax(0, 1fr);
 }
 
 .work-detail__section--press h2 {
@@ -925,6 +980,12 @@
   }
 
   .work-detail__hero-visual {
+    /* Back into normal flow: the desktop position:absolute (see the
+       default rule above) would otherwise overlay this on top of the
+       copy instead of stacking below it, and this breakpoint already
+       bounds the height explicitly via min/max-height, so the bug the
+       absolute positioning works around doesn't apply here anyway. */
+    position: static;
     order: 2;
     width: 100%;
     min-height: clamp(220px, 38svh, 320px);
@@ -937,6 +998,10 @@
   }
 
   .work-detail__section--publication {
+    grid-template-columns: 1fr;
+  }
+
+  .work-detail__team-cast {
     grid-template-columns: 1fr;
   }
 
