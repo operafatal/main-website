@@ -19,6 +19,8 @@
         <span class="aktuelles-row__summary">{{ item.summary }}</span>
       {% endif %}
     </span>
-    <span class="aktuelles-row__action">{{ item.buttonLabel or ("Mehr anzeigen" if targetHref or item.details else "Notiert") }}{% if targetHref or item.details %} &rarr;{% endif %}</span>
+    {% if targetHref or item.details %}
+      <span class="aktuelles-row__action">{{ item.buttonLabel or "Mehr anzeigen" }} &rarr;</span>
+    {% endif %}
   </{{ tag }}>
 {% endmacro %}

@@ -311,7 +311,7 @@
       "featured": true,
       "credits": {
         "musikalischeLeitung": "Alexander Vedernikov",
-        "inszenierung": "Jasmin Solfaghari, Annechien Koerselman",
+        "inszenierung": "Jasmin Solfaghari",
         "buehne": "Elisabeth Holager Lund, Michala Clemmensen",
         "kostueme": "Uta Materne",
         "lightdesign": "Andrew Tristram, Nico Kraaima",
@@ -346,11 +346,16 @@
       "categoryLabel": "Oper",
       "visual": {
         "type": "image",
-        "src": "/assets/img/der-ring-des-nibelungen/ring-rheingold-1b-1.jpg",
+        "src": "/assets/img/der-ring-des-nibelungen/schluss1.gd.jpg",
         "alt": "Der Ring des Nibelungen, Odense - Foto: Trine Lai",
         "caption": "Der Ring des Nibelungen, Odense - Foto: Trine Lai"
       },
       "gallery": [
+        {
+          "src": "/assets/img/der-ring-des-nibelungen/ring-rheingold-1b-1.jpg",
+          "alt": "Der Ring des Nibelungen, Odense - Foto: Trine Lai",
+          "caption": "Der Ring des Nibelungen, Odense - Foto: Trine Lai"
+        },
         {
           "src": "/assets/img/der-ring-des-nibelungen/ring-siegfried-1b.jpg",
           "alt": "Der Ring des Nibelungen, Odense - Foto: Trine Lai",
@@ -380,12 +385,6 @@
           "src": "/assets/img/der-ring-des-nibelungen/ring-siegfried-3.jpg",
           "alt": "Der Ring des Nibelungen, Odense - Foto: Trine Lai",
           "caption": "Der Ring des Nibelungen, Odense - Foto: Trine Lai"
-        },
-        {
-          "src": "/assets/img/der-ring-des-nibelungen/schluss1.gd.jpg",
-          "alt": "Der Ring des Nibelungen, Odense - Foto: Trine Lai",
-          "caption": "Der Ring des Nibelungen, Odense - Foto: Trine Lai",
-          "position": "center 58%"
         }
       ],
       "sourceUrl": "https://www.solfaghari.com/b%C3%BChnenprojekte/oper/",
@@ -483,22 +482,11 @@
       "categoryLabel": "Oper",
       "visual": {
         "type": "image",
-        "src": "/assets/img/tannhauser/tannhauser-6685597.jpg",
-        "alt": "Tannhäuser, Oper Köln 2008 - Archivbild solfaghari.com",
-        "caption": "Tannhäuser, Oper Köln 2008 - Archivbild solfaghari.com",
-        "position": "center center",
-        "scale": "1.02",
-        "cardPosition": "center center",
-        "cardScale": "1.04",
-        "cardHoverScale": "1.08"
+        "src": "/assets/img/tannhauser/tannhauser-3.jpg",
+        "alt": "Tannhäuser, Oper Köln 2008",
+        "caption": "Tannhäuser, Oper Köln 2008"
       },
-      "gallery": [
-        {
-          "src": "/assets/img/tannhauser/tannhauser-3.jpg",
-          "alt": "Tannhäuser, Oper Köln 2008",
-          "caption": "Tannhäuser, Oper Köln 2008"
-        }
-      ],
+      "gallery": [],
       "sourceUrl": "https://www.solfaghari.com/b%C3%BChnenprojekte/oper/",
       "note": "Kölner Wagner-Produktion mit Markus Stenz und dem Gürzenich-Orchester Köln.",
       "detailIntro": "Jasmin Solfagharis „Tannhäuser“ an der Oper Köln stellte Wagners Konflikt zwischen Sinnlichkeit, gesellschaftlicher Ordnung und Erlösungssehnsucht in eine kühle Gegenwart. Der Bühnenraum von Frank Philipp Schlössmann, die Kostüme von Mechthild Seipel und Markus Stenz mit dem Gürzenich-Orchester rahmten eine Lesart, in der besonders Elisabeths Weg durch eine verkrustete Gesellschaft ins Zentrum rückte.",
@@ -552,6 +540,7 @@
       "credits": {
         "musikalischeLeitung": "Franz Brochhagen",
         "inszenierung": "Jasmin Solfaghari",
+        "choreografie": "Katja Erfurth",
         "buehneUndKostueme": "Romina Kaap, Maira Bieler"
       },
       "cast": [
@@ -593,7 +582,8 @@
         {
           "src": "/assets/img/xerxes/xerxes-01.jpg",
           "alt": "Xerxes - Bühne und Kostüme: Maira Bieler, Romina Kaap",
-          "caption": "Xerxes - Bühne und Kostüme: Maira Bieler, Romina Kaap"
+          "caption": "Xerxes - Bühne und Kostüme: Maira Bieler, Romina Kaap",
+          "position": "center 80%"
         },
         {
           "src": "/assets/img/xerxes/xerxes-02.jpg",
@@ -621,19 +611,10 @@
           "caption": "Xerxes - Bühne und Kostüme: Maira Bieler, Romina Kaap"
         },
         {
-          "src": "/assets/img/xerxes/xerxes-08.jpg",
-          "alt": "Xerxes - Bühne und Kostüme: Maira Bieler, Romina Kaap",
-          "caption": "Xerxes - Bühne und Kostüme: Maira Bieler, Romina Kaap"
-        },
-        {
-          "src": "/assets/img/xerxes/xerxes-09.jpg",
-          "alt": "Xerxes - Bühne und Kostüme: Maira Bieler, Romina Kaap",
-          "caption": "Xerxes - Bühne und Kostüme: Maira Bieler, Romina Kaap"
-        },
-        {
           "src": "/assets/img/xerxes/xerxes-15.jpg",
           "alt": "Xerxes - Bühne und Kostüme: Maira Bieler, Romina Kaap",
-          "caption": "Xerxes - Bühne und Kostüme: Maira Bieler, Romina Kaap"
+          "caption": "Xerxes - Bühne und Kostüme: Maira Bieler, Romina Kaap",
+          "position": "center 80%"
         },
         {
           "src": "/assets/img/xerxes/xerxes-16.jpg",
@@ -738,19 +719,9 @@
       },
       "gallery": [
         {
-          "src": "/assets/img/la-cenerentola/la-cenerentola-kultur.jpg",
-          "alt": "La Cenerentola - Foto: VBW / Kultur.net",
-          "caption": "La Cenerentola - Foto: VBW / Kultur.net"
-        },
-        {
           "src": "/assets/img/la-cenerentola/la-cenerentola-paar.jpg",
           "alt": "La Cenerentola, Wiener Kammeroper / Theater an der Wien",
           "caption": "La Cenerentola, Wiener Kammeroper / Theater an der Wien"
-        },
-        {
-          "src": "/assets/img/la-cenerentola/la-cenerentola-operacritic-armin-bardel.jpg",
-          "alt": "La Cenerentola - Foto: Armin Bardel / The Opera Critic",
-          "caption": "La Cenerentola - Foto: Armin Bardel / The Opera Critic"
         }
       ],
       "sourceUrl": "https://www.solfaghari.com/b%C3%BChnenprojekte/oper/",
@@ -1908,7 +1879,7 @@
       "externalLinks": []
     },
     {
-      "title": "Der Schmetterling",
+      "title": "Schmetterling",
       "composer": "Daniel Behle / Alain Claude Sulzer (Libretto)",
       "place": "Eduard-von-Winterstein-Theater, Annaberg-Buchholz",
       "year": "2026",
@@ -1944,7 +1915,7 @@
         },
         {
           "heading": "Humor, Bayreuth und Gegenwart",
-          "body": "Behle und Alain Claude Sulzer verbinden Operettenlust mit einem Blick auf Bayreuth, Kunstbetrieb und die Angst vor kulturellem Ersetztwerden. Solfagharis Regie kann diese Ebenen als präzises Spiel mit Genre, Grusel, Satire und Fantasie bündeln: leicht genug für Operette, aber klar genug für die darunterliegende Frage nach Kunst und Kultur."
+          "body": "Behle und Alain Claude Sulzer verbinden Operettenlust mit einem Blick auf Bayreuth, Kunstbetrieb und die Angst vor kulturellem Ersetztwerden. Solfagharis Inszenierung kann diese Ebenen als präzises Spiel mit Genre, Grusel, Satire und Fantasie bündeln: leicht genug für Operette, aber klar genug für die darunterliegende Frage nach Kunst und Kultur."
         }
       ],
       "mediaEcho": [

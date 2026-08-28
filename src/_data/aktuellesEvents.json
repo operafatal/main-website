@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-26",
+  "updated": "2026-08-28",
   "sourcesNote": "Termine aus solfaghari.com/termine, Goetheanum-Bühne, LinkedIn, Daniel Behle, Operabase sowie bestehenden lokalen Daten abgeglichen. Persönliche News werden nicht ausgespielt.",
   "categories": [
     { "slug": "alle", "label": "Alle" },
@@ -109,6 +109,67 @@
       }
     },
     {
+      "id": "pflanzen-oper-freiburg-2026",
+      "category": "vortrag",
+      "categoryLabel": "Vortrag",
+      "dateLabel": "4. November 2026",
+      "sortDate": "2026-11-04",
+      "day": "4",
+      "month": "Nov 2026",
+      "title": "Kräuter und Wurzeln findet ein Jeder sich selbst – Pflanzen in der Oper",
+      "subtitle": "Vortrag beim Richard-Wagner-Verband Freiburg",
+      "location": "Museumsgesellschaft Freiburg e.V.",
+      "summary": "Vortrag über Pflanzenmotive in der Oper bei der Museumsgesellschaft Freiburg e.V. auf Einladung des Richard-Wagner-Verbandes Freiburg.",
+      "buttonLabel": "Mehr anzeigen",
+      "details": {
+        "time": "19 Uhr",
+        "tags": ["Vortrag", "Freiburg", "Richard-Wagner-Verband"],
+        "intro": [
+          "Der Vortrag findet am 4. November 2026 um 19 Uhr bei der Museumsgesellschaft Freiburg e.V. auf Einladung des Richard-Wagner-Verbandes Freiburg statt. Unter dem Titel „Kräuter und Wurzeln findet ein Jeder sich selbst – Pflanzen in der Oper“ verbindet Jasmin Solfaghari ihre Parsifal-Arbeit mit einem größeren operngeschichtlichen Motivfeld.",
+          "Der Blick richtet sich auf Pflanzen als Zeichen von Heilung, Verführung, Gift, Naturwissen und Erkenntnis."
+        ],
+        "facts": [
+          { "label": "Datum", "value": "4. November 2026" },
+          { "label": "Zeit", "value": "19 Uhr" },
+          { "label": "Ort", "value": "Museumsgesellschaft Freiburg e.V., Wasserstr. 11, 79098 Freiburg" },
+          { "label": "Veranstalter", "value": "Richard-Wagner-Verband Freiburg" }
+        ]
+      },
+      "sources": [
+        { "label": "Klientinnenangabe / Vortragsflyer", "href": "" }
+      ]
+    },
+    {
+      "id": "wagner-society-northern-california-potions-2026",
+      "category": "vortrag",
+      "categoryLabel": "Vortrag",
+      "dateLabel": "22. November 2026",
+      "sortDate": "2026-11-22",
+      "day": "22",
+      "month": "Nov 2026",
+      "title": "Potions in Tristan und Isolde, Die Walküre and Die Götterdämmerung",
+      "subtitle": "Zoom-Vortrag",
+      "location": "Wagner Society of Northern California, San Francisco",
+      "summary": "Zoom-Vortrag über Tränke und ihre dramaturgische Wirkung in Wagner. Jahr laut Klientinnenangabe angenommen, nicht online verifizierbar — vor Livegang gegenprüfen.",
+      "buttonLabel": "Mehr anzeigen",
+      "status": "needs-verification",
+      "details": {
+        "tags": ["Lecture", "Zoom", "Wagner"],
+        "intro": [
+          "Der Zoom-Vortrag für die Wagner Society of Northern California widmet sich Tränken und ihren dramaturgischen Funktionen in Tristan und Isolde, Die Walküre und Die Götterdämmerung.",
+          "Ausgehend von den jeweiligen Bühnensituationen geht es um Verwandlung, Erkenntnis, Manipulation und musikalische Verdichtung."
+        ],
+        "facts": [
+          { "label": "Datum", "value": "22. November 2026 (Jahr laut Klientinnenangabe, unverifiziert)" },
+          { "label": "Format", "value": "via Zoom" },
+          { "label": "Veranstalter", "value": "Wagner Society of Northern California, San Francisco" }
+        ]
+      },
+      "sources": [
+        { "label": "Klientinnenangabe / geteilter Ordner", "href": "" }
+      ]
+    },
+    {
       "id": "la-cabine-telephonique-2026",
       "category": "inszenierung",
       "categoryLabel": "Premiere",
@@ -171,24 +232,6 @@
       },
       "sources": [
         { "label": "Klientinnenangabe / geteilter Ordner", "href": "" }
-      ]
-    },
-    {
-      "id": "pflanzen-oper-freiburg-2027",
-      "category": "vortrag",
-      "categoryLabel": "Vortrag",
-      "dateLabel": "3. oder 4. März 2027",
-      "sortDate": "2027-03-03",
-      "day": "3/4",
-      "month": "Mär 2027",
-      "title": "Kräuter und Wurzeln findet ein Jeder sich selbst – Pflanzen in der Oper",
-      "subtitle": "Vortrag beim Richard-Wagner-Verband Freiburg",
-      "location": "Freiburg",
-      "summary": "Vortragstermin aus der übernommenen Terminquelle; exaktes Datum muss vor Livegang bei Jasmin/Razz oder Veranstalter geprüft werden.",
-      "buttonLabel": "In Prüfung",
-      "status": "needs-verification",
-      "sources": [
-        { "label": "Solfaghari.com — Termine", "href": "https://www.solfaghari.com/termine/" }
       ]
     },
     {
@@ -263,35 +306,6 @@
           { "label": "Datum", "value": "20. April 2027" },
           { "label": "Zeit", "value": "15 Uhr" },
           { "label": "Ort", "value": "Goetheanum Dornach" }
-        ]
-      },
-      "sources": [
-        { "label": "Klientinnenangabe / geteilter Ordner", "href": "" }
-      ]
-    },
-    {
-      "id": "wagner-society-northern-california-potions-2027",
-      "category": "vortrag",
-      "categoryLabel": "Vortrag",
-      "dateLabel": "10. Juli 2027",
-      "sortDate": "2027-07-10",
-      "day": "10",
-      "month": "Jul 2027",
-      "title": "Potions in Tristan und Isolde, Die Walküre and Die Götterdämmerung",
-      "subtitle": "Zoom-Vortrag",
-      "location": "Wagner Society of Northern California, San Francisco",
-      "summary": "Zoom-Vortrag über Tränke und ihre dramaturgische Wirkung in Wagner.",
-      "buttonLabel": "Mehr anzeigen",
-      "details": {
-        "tags": ["Lecture", "Zoom", "Wagner"],
-        "intro": [
-          "Der Zoom-Vortrag für die Wagner Society of Northern California widmet sich Tränken und ihren dramaturgischen Funktionen in Tristan und Isolde, Die Walküre und Die Götterdämmerung.",
-          "Ausgehend von den jeweiligen Bühnensituationen geht es um Verwandlung, Erkenntnis, Manipulation und musikalische Verdichtung."
-        ],
-        "facts": [
-          { "label": "Datum", "value": "10. Juli 2027" },
-          { "label": "Format", "value": "via Zoom" },
-          { "label": "Veranstalter", "value": "Wagner Society of Northern California, San Francisco" }
         ]
       },
       "sources": [

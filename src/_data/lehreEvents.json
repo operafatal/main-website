@@ -59,7 +59,7 @@
       "date": "2024",
       "sortDate": "2024-02-01",
       "title": "Lehrauftrag in Stuttgart",
-      "summary": "Lehrauftrag im Stuttgarter Hochschulumfeld mit Arbeit an szenischer Präsenz, Diktion und Rollenverständnis im Übergang zwischen Studium und Beruf.",
+      "summary": "Lehrauftrag an der Opernschule der Musikhochschule Stuttgart mit Arbeit an szenischer Präsenz, Diktion und Rollenverständnis im Übergang zwischen Studium und Beruf.",
       "buttonLabel": "Mehr anzeigen",
       "visual": {
         "type": "placeholder",
@@ -217,8 +217,8 @@
       "location": "Rio de Janeiro",
       "date": "Februar 2016",
       "sortDate": "2016-02-01",
-      "title": "Lecture in Brasilien",
-      "summary": "Lecture an der Universidade Federal do Rio de Janeiro im Februar 2016 als Teil ihrer internationalen Lehr- und Vortragstätigkeit.",
+      "title": "Masterclass in Brasilien",
+      "summary": "Masterclass an der Universidade Federal do Rio de Janeiro im Februar 2016 als Teil ihrer internationalen Lehr- und Vortragstätigkeit.",
       "buttonLabel": "Mehr anzeigen",
       "visual": {
         "type": "placeholder",
@@ -233,13 +233,13 @@
       ],
       "details": {
         "tags": [
-          "Lecture",
+          "Masterclass",
           "Brasilien",
           "Hochschule"
         ],
         "intro": [
-          "Die Lecture an der Universidade Federal do Rio de Janeiro führt Jasmin Solfagharis Arbeit in einen internationalen Hochschulkontext. Oper wird hier als Zusammenspiel von Musik, Sprache, Körper und dramatischer Situation vermittelt.",
-          "Der Vortrag knüpft an ihre Arbeit als Regisseurin und Lehrende an: Partitur und Text werden nicht abstrakt analysiert, sondern auf ihre Wirkung im Raum und auf der Bühne hin befragt."
+          "Die Masterclass an der Universidade Federal do Rio de Janeiro führt Jasmin Solfagharis Arbeit in einen internationalen Hochschulkontext. Oper wird hier als Zusammenspiel von Musik, Sprache, Körper und dramatischer Situation vermittelt.",
+          "Die Masterclass knüpft an ihre Arbeit als Regisseurin und Lehrende an: Partitur und Text werden nicht abstrakt analysiert, sondern auf ihre Wirkung im Raum und auf der Bühne hin befragt."
         ],
         "facts": [
           {
@@ -252,7 +252,7 @@
           },
           {
             "label": "Format",
-            "value": "Lecture / Hochschulveranstaltung"
+            "value": "Masterclass / Hochschulveranstaltung"
           }
         ]
       }
@@ -607,53 +607,6 @@
   ],
   "lectures": [
     {
-      "id": "wagner-society-northern-california-potions-2027",
-      "status": "confirmed",
-      "institution": "Wagner Society of Northern California",
-      "location": "San Francisco / via Zoom",
-      "date": "10. Juli 2027",
-      "sortDate": "2027-07-10",
-      "title": "Potions in Tristan und Isolde, Die Walküre and Die Götterdämmerung",
-      "summary": "Zoom-Vortrag für die Wagner Society of Northern California, San Francisco, über Tränke und ihre dramaturgische Wirkung in Wagner.",
-      "buttonLabel": "Mehr anzeigen",
-      "visual": {
-        "type": "placeholder",
-        "label": "SF",
-        "tone": "accent"
-      },
-      "sources": [
-        {
-          "label": "Klientinnenangabe / geteilter Ordner",
-          "href": ""
-        }
-      ],
-      "details": {
-        "tags": [
-          "Lecture",
-          "Zoom",
-          "Wagner"
-        ],
-        "intro": [
-          "Der Zoom-Vortrag für die Wagner Society of Northern California widmet sich Tränken und ihren dramaturgischen Funktionen in Tristan und Isolde, Die Walküre und Die Götterdämmerung.",
-          "Ausgehend von den jeweiligen Bühnensituationen geht es um Verwandlung, Erkenntnis, Manipulation und musikalische Verdichtung."
-        ],
-        "facts": [
-          {
-            "label": "Datum",
-            "value": "10. Juli 2027"
-          },
-          {
-            "label": "Format",
-            "value": "via Zoom"
-          },
-          {
-            "label": "Veranstalter",
-            "value": "Wagner Society of Northern California, San Francisco"
-          }
-        ]
-      }
-    },
-    {
       "id": "goetheanum-kundry-parsifal-2027",
       "status": "confirmed",
       "institution": "Goetheanum Dornach",
@@ -747,6 +700,105 @@
           {
             "label": "Veranstalter",
             "value": "re_connect eurythmie (nosolo studios)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rwv-freiburg-pflanzen-oper-2026",
+      "status": "confirmed",
+      "institution": "Richard-Wagner-Verband Freiburg",
+      "location": "Freiburg",
+      "date": "4. November 2026",
+      "sortDate": "2026-11-04",
+      "title": "Kräuter und Wurzeln findet ein Jeder sich selbst – Pflanzen in der Oper",
+      "summary": "Vortrag über Pflanzenmotive in der Oper bei der Museumsgesellschaft Freiburg e.V. auf Einladung des Richard-Wagner-Verbandes Freiburg.",
+      "buttonLabel": "Mehr anzeigen",
+      "visual": {
+        "type": "placeholder",
+        "label": "Freiburg",
+        "tone": "accent"
+      },
+      "sources": [
+        {
+          "label": "Klientinnenangabe / Vortragsflyer",
+          "href": ""
+        }
+      ],
+      "details": {
+        "time": "19 Uhr",
+        "tags": [
+          "Vortrag",
+          "Freiburg",
+          "Richard-Wagner-Verband"
+        ],
+        "intro": [
+          "Der Vortrag findet am 4. November 2026 um 19 Uhr bei der Museumsgesellschaft Freiburg e.V. auf Einladung des Richard-Wagner-Verbandes Freiburg statt. Unter dem Titel „Kräuter und Wurzeln findet ein Jeder sich selbst – Pflanzen in der Oper“ verbindet Jasmin Solfaghari ihre Parsifal-Arbeit mit einem größeren operngeschichtlichen Motivfeld.",
+          "Der Blick richtet sich auf Pflanzen als Zeichen von Heilung, Verführung, Gift, Naturwissen und Erkenntnis."
+        ],
+        "facts": [
+          {
+            "label": "Datum",
+            "value": "4. November 2026"
+          },
+          {
+            "label": "Zeit",
+            "value": "19 Uhr"
+          },
+          {
+            "label": "Ort",
+            "value": "Museumsgesellschaft Freiburg e.V., Wasserstr. 11, 79098 Freiburg"
+          },
+          {
+            "label": "Veranstalter",
+            "value": "Richard-Wagner-Verband Freiburg"
+          }
+        ]
+      }
+    },
+    {
+      "id": "wagner-society-northern-california-potions-2026",
+      "status": "needs-verification",
+      "institution": "Wagner Society of Northern California",
+      "location": "San Francisco / via Zoom",
+      "date": "22. November 2026",
+      "sortDate": "2026-11-22",
+      "title": "Potions in Tristan und Isolde, Die Walküre and Die Götterdämmerung",
+      "summary": "Zoom-Vortrag für die Wagner Society of Northern California, San Francisco, über Tränke und ihre dramaturgische Wirkung in Wagner. Jahr laut Klientinnenangabe angenommen, nicht online verifizierbar — vor Livegang gegenprüfen.",
+      "buttonLabel": "Mehr anzeigen",
+      "visual": {
+        "type": "placeholder",
+        "label": "SF",
+        "tone": "accent"
+      },
+      "sources": [
+        {
+          "label": "Klientinnenangabe / geteilter Ordner",
+          "href": ""
+        }
+      ],
+      "details": {
+        "tags": [
+          "Lecture",
+          "Zoom",
+          "Wagner"
+        ],
+        "intro": [
+          "Der Zoom-Vortrag für die Wagner Society of Northern California widmet sich Tränken und ihren dramaturgischen Funktionen in Tristan und Isolde, Die Walküre und Die Götterdämmerung.",
+          "Ausgehend von den jeweiligen Bühnensituationen geht es um Verwandlung, Erkenntnis, Manipulation und musikalische Verdichtung."
+        ],
+        "facts": [
+          {
+            "label": "Datum",
+            "value": "22. November 2026 (Jahr laut Klientinnenangabe, unverifiziert)"
+          },
+          {
+            "label": "Format",
+            "value": "via Zoom"
+          },
+          {
+            "label": "Veranstalter",
+            "value": "Wagner Society of Northern California, San Francisco"
           }
         ]
       }
