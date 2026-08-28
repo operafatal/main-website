@@ -18,7 +18,7 @@
 
 .about-hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(220px, 0.34fr);
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.44fr);
   min-height: clamp(360px, 34vw, 480px);
   background: var(--color-accent);
 }
@@ -84,7 +84,9 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 43% 18%;
+  object-position: 35% 18%;
+  transform: scale(1.4);
+  transform-origin: 45% 18%;
 }
 
 .about-hero__portrait figcaption {

@@ -4,16 +4,10 @@
     <loc>https://solfaghari.com/</loc>
   </url>
   <url>
-    <loc>https://solfaghari.com/inszenierungen/</loc>
-  </url>
-  <url>
     <loc>https://solfaghari.com/meisterkurse-coaching/</loc>
   </url>
   <url>
     <loc>https://solfaghari.com/lehre/</loc>
-  </url>
-  <url>
-    <loc>https://solfaghari.com/aktuelles/</loc>
   </url>
   <url>
     <loc>https://solfaghari.com/kontakt/</loc>
@@ -134,5 +128,11 @@
   </url>
   <url>
     <loc>https://solfaghari.com/inszenierungen/rigoletto/</loc>
+  </url>
+  <url>
+    <loc>https://solfaghari.com/inszenierungen/</loc>
+  </url>
+  <url>
+    <loc>https://solfaghari.com/aktuelles/</loc>
   </url>
 </urlset>
