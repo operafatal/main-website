@@ -262,7 +262,7 @@
       "status": "needs-verification",
       "institution": "Class in Nanjing",
       "location": "Nanjing, China",
-      "date": "Internationale Lehrstation",
+      "date": "Internationale Masterclass",
       "sortDate": "2015-01-01",
       "title": "Unterricht in Nanjing",
       "summary": "Unterricht in Nanjing als Teil ihrer internationalen Lehrtätigkeit mit Schwerpunkt Musikdrama, Sprache und szenische Präsenz.",
@@ -310,10 +310,10 @@
       "status": "needs-verification",
       "institution": "Montepulciano",
       "location": "Italien",
-      "date": "Internationale Lehrstation",
+      "date": "Internationale Masterclass",
       "sortDate": "2014-01-01",
-      "title": "Lehrstation in Italien",
-      "summary": "Internationale Lehrstation in Montepulciano mit Arbeit an Opernszene, Diktion, Rollenverständnis und dramatischem Ausdruck.",
+      "title": "Masterclass in Italien",
+      "summary": "Internationale Masterclass in Montepulciano mit Arbeit an Opernszene, Diktion, Rollenverständnis und dramatischem Ausdruck.",
       "buttonLabel": "Mehr anzeigen",
       "visual": {
         "type": "placeholder",
@@ -352,7 +352,7 @@
           },
           {
             "label": "Format",
-            "value": "Masterclass / Lehrstation"
+            "value": "Internationale Masterclass"
           },
           {
             "label": "Arbeitsfeld",
@@ -607,6 +607,53 @@
   ],
   "lectures": [
     {
+      "id": "wagner-society-northern-california-potions-2027",
+      "status": "confirmed",
+      "institution": "Wagner Society of Northern California",
+      "location": "San Francisco / via Zoom",
+      "date": "10. Juli 2027",
+      "sortDate": "2027-07-10",
+      "title": "Potions in Tristan und Isolde, Die Walküre and Die Götterdämmerung",
+      "summary": "Zoom-Vortrag für die Wagner Society of Northern California, San Francisco, über Tränke und ihre dramaturgische Wirkung in Wagner.",
+      "buttonLabel": "Mehr anzeigen",
+      "visual": {
+        "type": "placeholder",
+        "label": "SF",
+        "tone": "accent"
+      },
+      "sources": [
+        {
+          "label": "Klientinnenangabe / geteilter Ordner",
+          "href": ""
+        }
+      ],
+      "details": {
+        "tags": [
+          "Lecture",
+          "Zoom",
+          "Wagner"
+        ],
+        "intro": [
+          "Der Zoom-Vortrag für die Wagner Society of Northern California widmet sich Tränken und ihren dramaturgischen Funktionen in Tristan und Isolde, Die Walküre und Die Götterdämmerung.",
+          "Ausgehend von den jeweiligen Bühnensituationen geht es um Verwandlung, Erkenntnis, Manipulation und musikalische Verdichtung."
+        ],
+        "facts": [
+          {
+            "label": "Datum",
+            "value": "10. Juli 2027"
+          },
+          {
+            "label": "Format",
+            "value": "via Zoom"
+          },
+          {
+            "label": "Veranstalter",
+            "value": "Wagner Society of Northern California, San Francisco"
+          }
+        ]
+      }
+    },
+    {
       "id": "goetheanum-kundry-parsifal-2027",
       "status": "confirmed",
       "institution": "Goetheanum Dornach",
@@ -757,59 +804,12 @@
       }
     },
     {
-      "id": "wagner-society-northern-california-potions-2026",
-      "status": "needs-verification",
-      "institution": "Wagner Society of Northern California",
-      "location": "San Francisco / via Zoom",
-      "date": "22. November 2026",
-      "sortDate": "2026-11-22",
-      "title": "Potions in Tristan und Isolde, Die Walküre and Die Götterdämmerung",
-      "summary": "Zoom-Vortrag für die Wagner Society of Northern California, San Francisco, über Tränke und ihre dramaturgische Wirkung in Wagner. Jahr laut Klientinnenangabe angenommen, nicht online verifizierbar — vor Livegang gegenprüfen.",
-      "buttonLabel": "Mehr anzeigen",
-      "visual": {
-        "type": "placeholder",
-        "label": "SF",
-        "tone": "accent"
-      },
-      "sources": [
-        {
-          "label": "Klientinnenangabe / geteilter Ordner",
-          "href": ""
-        }
-      ],
-      "details": {
-        "tags": [
-          "Lecture",
-          "Zoom",
-          "Wagner"
-        ],
-        "intro": [
-          "Der Zoom-Vortrag für die Wagner Society of Northern California widmet sich Tränken und ihren dramaturgischen Funktionen in Tristan und Isolde, Die Walküre und Die Götterdämmerung.",
-          "Ausgehend von den jeweiligen Bühnensituationen geht es um Verwandlung, Erkenntnis, Manipulation und musikalische Verdichtung."
-        ],
-        "facts": [
-          {
-            "label": "Datum",
-            "value": "22. November 2026 (Jahr laut Klientinnenangabe, unverifiziert)"
-          },
-          {
-            "label": "Format",
-            "value": "via Zoom"
-          },
-          {
-            "label": "Veranstalter",
-            "value": "Wagner Society of Northern California, San Francisco"
-          }
-        ]
-      }
-    },
-    {
       "id": "wagner-society-southern-california-singer-stage-2026",
       "status": "confirmed",
       "institution": "Wagner Society of Southern California",
       "location": "Los Angeles / via Zoom",
-      "date": "22. Dezember 2026",
-      "sortDate": "2026-12-22",
+      "date": "22. November 2026",
+      "sortDate": "2026-11-22",
       "title": "“When everything stands perplexed.“ – The singer on the opera stage",
       "summary": "Zoom-Vortrag für die Wagner Society of Southern California, Los Angeles, über den singenden Menschen auf der Opernbühne.",
       "buttonLabel": "Mehr anzeigen",
@@ -837,7 +837,7 @@
         "facts": [
           {
             "label": "Datum",
-            "value": "22. Dezember 2026"
+            "value": "22. November 2026"
           },
           {
             "label": "Format",

@@ -1065,7 +1065,7 @@
           "title": "L'infedeltà delusa 1997",
           "source": "Jessica Eckhoff",
           "href": "https://www.jessica-eckhoff.de/galerie/",
-          "summary": "Galerieeintrag mit vier Produktionsbildern und den Angaben: Inszenierung Jasmin Solfaghari, musikalische Leitung Dieter Kurz."
+          "summary": "Galerieeintrag mit vier Produktionsbildern und den Angaben: Inszenierung Jasmin Solfaghari, Musikalische Leitung Dieter Kurz."
         },
         {
           "title": "Eigene Dialogfassungen",
@@ -1754,7 +1754,7 @@
       "composer": "Benjamin Britten",
       "place": "Hochschule für Musik und Theater Leipzig",
       "year": "2011",
-      "category": "zeitgenoessisch",
+      "category": "oper",
       "featured": false,
       "credits": {
         "musikalischeLeitung": "Ulrich Windfuhr",
@@ -1779,7 +1779,7 @@
       ],
       "slug": "albert-herring",
       "href": "/inszenierungen/albert-herring/",
-      "categoryLabel": "Zeitgenössische Oper",
+      "categoryLabel": "Oper",
       "visual": {
         "type": "image",
         "src": "/assets/img/albert-herring/benjamin-britten-1921.jpg",

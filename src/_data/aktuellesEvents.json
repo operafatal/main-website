@@ -20,7 +20,7 @@
       "title": "Der Schmetterling",
       "subtitle": "Operette von Daniel Behle · Libretto Alain Claude Sulzer",
       "location": "Eduard-von-Winterstein-Theater, Annaberg-Buchholz",
-      "summary": "Uraufführung der neuen Operette; Regie Jasmin Solfaghari, musikalische Leitung Bruno Borralhinho, Bühne und Kostüme Walter Schütze.",
+      "summary": "Uraufführung der neuen Operette; Inszenierung Jasmin Solfaghari, Musikalische Leitung Bruno Borralhinho, Bühne und Kostüme Walter Schütze.",
       "href": "/inszenierungen/der-schmetterling/",
       "buttonLabel": "Mehr anzeigen",
       "sources": [
@@ -140,29 +140,28 @@
       ]
     },
     {
-      "id": "wagner-society-northern-california-potions-2026",
+      "id": "wagner-lecture-southern-california-2026",
       "category": "vortrag",
       "categoryLabel": "Vortrag",
       "dateLabel": "22. November 2026",
       "sortDate": "2026-11-22",
       "day": "22",
       "month": "Nov 2026",
-      "title": "Potions in Tristan und Isolde, Die Walküre and Die Götterdämmerung",
+      "title": "“When everything stands perplexed.“ – The singer on the opera stage",
       "subtitle": "Zoom-Vortrag",
-      "location": "Wagner Society of Northern California, San Francisco",
-      "summary": "Zoom-Vortrag über Tränke und ihre dramaturgische Wirkung in Wagner. Jahr laut Klientinnenangabe angenommen, nicht online verifizierbar — vor Livegang gegenprüfen.",
+      "location": "Wagner Society of Southern California, Los Angeles",
+      "summary": "Zoom-Vortrag für die Wagner Society of Southern California über den singenden Menschen auf der Opernbühne.",
       "buttonLabel": "Mehr anzeigen",
-      "status": "needs-verification",
       "details": {
-        "tags": ["Lecture", "Zoom", "Wagner"],
+        "tags": ["Lecture", "Zoom", "Opernbühne"],
         "intro": [
-          "Der Zoom-Vortrag für die Wagner Society of Northern California widmet sich Tränken und ihren dramaturgischen Funktionen in Tristan und Isolde, Die Walküre und Die Götterdämmerung.",
-          "Ausgehend von den jeweiligen Bühnensituationen geht es um Verwandlung, Erkenntnis, Manipulation und musikalische Verdichtung."
+          "Der Zoom-Vortrag für die Wagner Society of Southern California fragt nach dem singenden Menschen auf der Opernbühne: nach Präsenz, Situation, Stimme und szenischem Handeln.",
+          "Der Titel „When everything stands perplexed“ verweist auf Momente, in denen musikalische und theatrale Orientierung zugleich fraglich werden."
         ],
         "facts": [
-          { "label": "Datum", "value": "22. November 2026 (Jahr laut Klientinnenangabe, unverifiziert)" },
+          { "label": "Datum", "value": "22. November 2026" },
           { "label": "Format", "value": "via Zoom" },
-          { "label": "Veranstalter", "value": "Wagner Society of Northern California, San Francisco" }
+          { "label": "Veranstalter", "value": "Wagner Society of Southern California, Los Angeles" }
         ]
       },
       "sources": [
@@ -203,35 +202,6 @@
       "buttonLabel": "Details öffnen",
       "sources": [
         { "label": "Solfaghari.com — Termine", "href": "https://www.solfaghari.com/termine/" }
-      ]
-    },
-    {
-      "id": "wagner-lecture-southern-california-2026",
-      "category": "vortrag",
-      "categoryLabel": "Vortrag",
-      "dateLabel": "22. Dezember 2026",
-      "sortDate": "2026-12-22",
-      "day": "22",
-      "month": "Dez 2026",
-      "title": "“When everything stands perplexed.“ – The singer on the opera stage",
-      "subtitle": "Zoom-Vortrag",
-      "location": "Wagner Society of Southern California, Los Angeles",
-      "summary": "Zoom-Vortrag für die Wagner Society of Southern California über den singenden Menschen auf der Opernbühne.",
-      "buttonLabel": "Mehr anzeigen",
-      "details": {
-        "tags": ["Lecture", "Zoom", "Opernbühne"],
-        "intro": [
-          "Der Zoom-Vortrag für die Wagner Society of Southern California fragt nach dem singenden Menschen auf der Opernbühne: nach Präsenz, Situation, Stimme und szenischem Handeln.",
-          "Der Titel „When everything stands perplexed“ verweist auf Momente, in denen musikalische und theatrale Orientierung zugleich fraglich werden."
-        ],
-        "facts": [
-          { "label": "Datum", "value": "22. Dezember 2026" },
-          { "label": "Format", "value": "via Zoom" },
-          { "label": "Veranstalter", "value": "Wagner Society of Southern California, Los Angeles" }
-        ]
-      },
-      "sources": [
-        { "label": "Klientinnenangabe / geteilter Ordner", "href": "" }
       ]
     },
     {
@@ -306,6 +276,35 @@
           { "label": "Datum", "value": "20. April 2027" },
           { "label": "Zeit", "value": "15 Uhr" },
           { "label": "Ort", "value": "Goetheanum Dornach" }
+        ]
+      },
+      "sources": [
+        { "label": "Klientinnenangabe / geteilter Ordner", "href": "" }
+      ]
+    },
+    {
+      "id": "wagner-society-northern-california-potions-2027",
+      "category": "vortrag",
+      "categoryLabel": "Vortrag",
+      "dateLabel": "10. Juli 2027",
+      "sortDate": "2027-07-10",
+      "day": "10",
+      "month": "Jul 2027",
+      "title": "Potions in Tristan und Isolde, Die Walküre and Die Götterdämmerung",
+      "subtitle": "Zoom-Vortrag",
+      "location": "Wagner Society of Northern California, San Francisco",
+      "summary": "Zoom-Vortrag über Tränke und ihre dramaturgische Wirkung in Wagner.",
+      "buttonLabel": "Mehr anzeigen",
+      "details": {
+        "tags": ["Lecture", "Zoom", "Wagner"],
+        "intro": [
+          "Der Zoom-Vortrag für die Wagner Society of Northern California widmet sich Tränken und ihren dramaturgischen Funktionen in Tristan und Isolde, Die Walküre und Die Götterdämmerung.",
+          "Ausgehend von den jeweiligen Bühnensituationen geht es um Verwandlung, Erkenntnis, Manipulation und musikalische Verdichtung."
+        ],
+        "facts": [
+          { "label": "Datum", "value": "10. Juli 2027" },
+          { "label": "Format", "value": "via Zoom" },
+          { "label": "Veranstalter", "value": "Wagner Society of Northern California, San Francisco" }
         ]
       },
       "sources": [
