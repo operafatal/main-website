@@ -314,7 +314,7 @@
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   min-height: clamp(460px, 68vh, 640px);
   background: var(--color-accent);
   color: var(--color-bg);
@@ -331,8 +331,10 @@
 
 .work-detail__hero h1 {
   margin: var(--space-4) 0 0;
-  max-width: 11ch;
-  font-size: clamp(3rem, 7vw, 6.6rem);
+  max-width: 12ch;
+  /* --work-detail-title-max lets a single long title word (e.g. "Schmetterling")
+     stay on one line on wide screens, where the copy column stops growing. */
+  font-size: min(clamp(3rem, 7vw, 6.6rem), var(--work-detail-title-max, 6.6rem));
   line-height: 0.86;
   letter-spacing: -0.04em;
   overflow-wrap: break-word;
@@ -986,6 +988,10 @@
        bounds the height explicitly via min/max-height, so the bug the
        absolute positioning works around doesn't apply here anyway. */
     position: static;
+    /* Undo the desktop grid-column:2 placement, otherwise the single-column
+       mobile grid gets an implicit second column and the hero splits in two. */
+    grid-column: auto;
+    grid-row: auto;
     order: 2;
     width: 100%;
     min-height: clamp(220px, 38svh, 320px);
@@ -1058,4 +1064,14 @@
     grid-template-columns: minmax(0, 1fr);
     overflow: hidden;
   }
+}
+
+/* Allow an explicit line break inside a cast role label (e.g. "Peter,\nder Schmetterling") */
+.work-detail__section--cast .work-detail__credits dt {
+  white-space: pre-line;
+}
+
+/* Multi-line role label: align the performer name with the label's last line */
+.work-detail__section--cast .work-detail__credits .is-multiline-role {
+  align-self: last baseline;
 }

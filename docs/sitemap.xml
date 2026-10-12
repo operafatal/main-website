@@ -25,6 +25,12 @@
     <loc>https://solfaghari.com/ueber-jasmin/</loc>
   </url>
   <url>
+    <loc>https://solfaghari.com/inszenierungen/</loc>
+  </url>
+  <url>
+    <loc>https://solfaghari.com/aktuelles/</loc>
+  </url>
+  <url>
     <loc>https://solfaghari.com/inszenierungen/parsifal/</loc>
   </url>
   <url>
@@ -128,11 +134,5 @@
   </url>
   <url>
     <loc>https://solfaghari.com/inszenierungen/rigoletto/</loc>
-  </url>
-  <url>
-    <loc>https://solfaghari.com/inszenierungen/</loc>
-  </url>
-  <url>
-    <loc>https://solfaghari.com/aktuelles/</loc>
   </url>
 </urlset>
