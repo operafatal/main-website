@@ -14,13 +14,14 @@
       "category": "inszenierung",
       "categoryLabel": "Uraufführung",
       "dateLabel": "10. Oktober 2026",
-      "sortDate": "2026-10-10",
+      "sortDate": "2026-10-10", "performances": [{"date": "2026-10-10", "time": "19:30", "label": "Uraufführung"}, {"date": "2026-10-14", "time": "19:30", "ticketHref": "https://www.erzgebirgische.theater/kauf.cfm?sp=29310"}, {"date": "2026-10-25", "time": "19:30", "ticketHref": "https://www.erzgebirgische.theater/kauf.cfm?sp=29540"}, {"date": "2026-11-14", "time": "19:30", "ticketHref": "https://www.erzgebirgische.theater/kauf.cfm?sp=29542"}, {"date": "2026-11-22", "time": "15:00", "ticketHref": "https://www.erzgebirgische.theater/kauf.cfm?sp=29543"}, {"date": "2026-11-27", "time": "19:30", "ticketHref": "https://www.erzgebirgische.theater/kauf.cfm?sp=32346"}],
       "day": "10",
       "month": "Okt 2026",
       "title": "Schmetterling",
       "subtitle": "Operette von Daniel Behle · Libretto: Alain Claude Sulzer und Daniel Behle",
       "location": "Eduard-von-Winterstein-Theater, Annaberg-Buchholz",
-      "summary": "Uraufführung der neuen Operette; Inszenierung Jasmin Solfaghari, Musikalische Leitung Bruno Borralhinho, Bühne und Kostüme Walter Schütze.",
+      "summary": "Neue Operette von Daniel Behle; Inszenierung Jasmin Solfaghari, Musikalische Leitung Bruno Borralhinho, Ausstattung Walter Schütze.",
+      "shortSummary": "Inszenierung: Jasmin Solfaghari",
       "href": "/inszenierungen/der-schmetterling/",
       "buttonLabel": "Mehr anzeigen",
       "sources": [
@@ -34,7 +35,7 @@
       "category": "meisterkurs",
       "categoryLabel": "Meisterkurs",
       "dateLabel": "20.–22. Oktober 2026",
-      "sortDate": "2026-10-20",
+      "sortDate": "2026-10-20", "endDate": "2026-10-22",
       "day": "20–22",
       "month": "Okt 2026",
       "title": "Tristan | Ring | Parsifal",
@@ -52,7 +53,7 @@
       "category": "meisterkurs",
       "categoryLabel": "Meisterkurs",
       "dateLabel": "27.–29. Oktober 2026",
-      "sortDate": "2026-10-27",
+      "sortDate": "2026-10-27", "endDate": "2026-10-29",
       "day": "27–29",
       "month": "Okt 2026",
       "title": "Requiem Studies Part I",
@@ -70,7 +71,7 @@
       "category": "vortrag",
       "categoryLabel": "Vortrag",
       "dateLabel": "31. Oktober – 1. November 2026",
-      "sortDate": "2026-10-31",
+      "sortDate": "2026-10-31", "endDate": "2026-11-01",
       "day": "31",
       "month": "Okt 2026",
       "title": "Lenk mal nicht von dir ab",
@@ -171,19 +172,22 @@
     {
       "id": "la-cabine-telephonique-2026",
       "category": "inszenierung",
-      "categoryLabel": "Premiere",
+      "categoryLabel": "Deutsche Erstaufführung",
       "dateLabel": "4. und 11. Dezember 2026",
-      "sortDate": "2026-12-04",
+      "sortDate": "2026-12-04", "performances": [{"date": "2026-12-04", "time": "19:30", "label": "Deutsche Erstaufführung", "ticketHref": "https://www.eventbrite.de/e/die-lustigen-komponistinnen-tickets-2003266487992"}, {"date": "2026-12-11", "time": "19:30", "ticketHref": "https://www.eventbrite.de/e/die-lustigen-komponistinnen-tickets-2003266848069"}],
       "day": "4/11",
       "month": "Dez 2026",
       "title": "La cabine téléphonique",
-      "subtitle": "Opéra bouffe von Claude Arrieu",
-      "location": "Institut Français Berlin",
-      "summary": "Inszenierung und Ausstattung in der Reihe „Die lustigen Komponistinnen. Frauen im komischen Musiktheater um 1960“; Veranstalter Jazz am Helmholtzplatz e.V. / Dr. Regina Câmara.",
+      "subtitle": "Opéra bouffe von Claude Arrieu · Libretto: Michel Vaucaire",
+      "location": "Maison de France (Institut Français), Berlin",
+      "summary": "Inszenierung und Ausstattung: Jasmin Solfaghari, Musikalische Leitung: Aurélien Bello. In der Reihe „Die lustigen Komponistinnen. Frauen im komischen Musiktheater um 1960“ von Jazz am Helmholtzplatz e.V., gefördert vom Hauptstadtkulturfonds.",
+      "shortSummary": "Inszenierung und Ausstattung: Jasmin Solfaghari",
       "href": "/inszenierungen/la-cabine-telephonique/",
       "buttonLabel": "Mehr anzeigen",
       "sources": [
-        { "label": "LinkedIn — Jasmin Solfaghari", "href": "https://de.linkedin.com/in/jasmin-solfaghari-a6ba3127" }
+        { "label": "Tickets 4. Dezember", "href": "https://www.eventbrite.de/e/die-lustigen-komponistinnen-tickets-2003266487992" },
+        { "label": "Tickets 11. Dezember", "href": "https://www.eventbrite.de/e/die-lustigen-komponistinnen-tickets-2003266848069" },
+        { "label": "Programm Jazz am Helmholtzplatz", "href": "https://www.jazzamhelmholtzplatz.com/Ausfuehrliches-Konzertprogramm/" }
       ]
     },
     {
@@ -191,7 +195,7 @@
       "category": "meisterkurs",
       "categoryLabel": "Meisterkurs",
       "dateLabel": "16.–18. Dezember 2026",
-      "sortDate": "2026-12-16",
+      "sortDate": "2026-12-16", "endDate": "2026-12-18",
       "day": "16–18",
       "month": "Dez 2026",
       "title": "Vorsingtraining | Diktion | Präsenz",
@@ -209,13 +213,14 @@
       "category": "inszenierung",
       "categoryLabel": "Inszenierung",
       "dateLabel": "12./14./21. März 2027",
-      "sortDate": "2027-03-12",
+      "sortDate": "2027-03-12", "performances": [{"date": "2027-03-12", "time": "16:00"}, {"date": "2027-03-14", "time": "16:00"}, {"date": "2027-03-21", "time": "16:00"}], "ticketHref": "https://www.parsifal-wagner.ch/tickets",
       "day": "12/14/21",
       "month": "Mär 2027",
       "title": "Parsifal",
       "subtitle": "Richard Wagner · Goetheanum Dornach",
       "location": "Goetheanum Dornach bei Basel",
-      "summary": "Drei Aufführungen der Parsifal-Produktion; Inszenierung Jasmin Solfaghari, Regie Eurythmie Stefan Hasler.",
+      "summary": "Parsifal am Goetheanum; Inszenierung Jasmin Solfaghari, Regie Eurythmie Stefan Hasler.",
+      "shortSummary": "Inszenierung: Jasmin Solfaghari",
       "href": "/inszenierungen/parsifal/",
       "buttonLabel": "Mehr anzeigen",
       "sources": [
@@ -256,14 +261,14 @@
       "id": "kundry-vortrag-2027",
       "category": "vortrag",
       "categoryLabel": "Vortrag",
-      "dateLabel": "20. April 2027",
-      "sortDate": "2027-04-20",
+      "dateLabel": "Samstag, 20. März 2027, 15 Uhr",
+      "sortDate": "2027-03-20",
       "day": "20",
-      "month": "Apr 2027",
+      "month": "Mär 2027",
       "title": "Wer hat Angst vor Kundry?",
       "subtitle": "Weiblichkeit und Erkenntnis in Wagners Parsifal",
       "location": "Goetheanum Dornach",
-      "summary": "Vortrag von Jasmin Solfaghari beim Parsifal-Thementag am Goetheanum.",
+      "summary": "Vortrag von Jasmin Solfaghari beim Parsifal-Thementag am Goetheanum, zwischen den Vorstellungen am 14. und 21. März.",
       "buttonLabel": "Mehr anzeigen",
       "details": {
         "time": "15 Uhr",
@@ -273,13 +278,13 @@
           "Die Veranstaltung steht im unmittelbaren Umfeld der Parsifal-Aufführungen am Goetheanum."
         ],
         "facts": [
-          { "label": "Datum", "value": "20. April 2027" },
+          { "label": "Datum", "value": "Samstag, 20. März 2027" },
           { "label": "Zeit", "value": "15 Uhr" },
           { "label": "Ort", "value": "Goetheanum Dornach" }
         ]
       },
       "sources": [
-        { "label": "Klientinnenangabe / geteilter Ordner", "href": "" }
+        { "label": "Goetheanum-Bühne — Parsifal 2027", "href": "https://www.goetheanum-buehne.ch/projekte/wagners-parsifal-2026" }
       ]
     },
     {

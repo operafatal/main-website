@@ -658,8 +658,8 @@
       "status": "confirmed",
       "institution": "Goetheanum Dornach",
       "location": "Goetheanum, Dornach",
-      "date": "20. April 2027",
-      "sortDate": "2027-04-20",
+      "date": "20. März 2027",
+      "sortDate": "2027-03-20",
       "title": "Wer hat Angst vor Kundry? Weiblichkeit und Erkenntnis in Wagners Parsifal",
       "summary": "Vortrag beim Parsifal-Thementag am Goetheanum über Kundry, Weiblichkeit und Erkenntnis in Wagners Parsifal.",
       "buttonLabel": "Mehr anzeigen",
@@ -670,8 +670,8 @@
       },
       "sources": [
         {
-          "label": "Klientinnenangabe / geteilter Ordner",
-          "href": ""
+          "label": "Goetheanum-Bühne — Parsifal 2027",
+          "href": "https://www.goetheanum-buehne.ch/projekte/wagners-parsifal-2026"
         }
       ],
       "details": {
@@ -688,7 +688,7 @@
         "facts": [
           {
             "label": "Datum",
-            "value": "20. April 2027"
+            "value": "Samstag, 20. März 2027"
           },
           {
             "label": "Zeit",

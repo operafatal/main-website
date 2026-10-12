@@ -52,6 +52,24 @@
     }
   },
   {
+    "type": "Deutsche Erstaufführung",
+    "meta": "4./11.12.2026",
+    "titleStyle": "display",
+    "title": "La cabine téléphonique",
+    "copyWidth": "40rem",
+    "subtitle": "Musik: Claude Arrieu · Libretto: Michel Vaucaire",
+    "details": "Inszenierung und Ausstattung: Jasmin Solfaghari",
+    "note": "Maison de France (Institut Français), Berlin · Reihe „Die lustigen Komponistinnen“",
+    "href": "/inszenierungen/la-cabine-telephonique/",
+    "visual": {
+      "type": "image",
+      "src": "/assets/img/la-cabine-telephonique/die-lustigen-komponistinnen-plakat.jpg",
+      "alt": "Plakat „Die lustigen Komponistinnen“ mit gezeichneter Frau in einer Telefonzelle",
+      "credit": "Plakat: Jazz am Helmholtzplatz e.V.",
+      "position": "center top"
+    }
+  },
+  {
     "type": "Meisterkurs",
     "meta": "27.–29.10.2026",
     "titleStyle": "display",

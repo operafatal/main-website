@@ -41,6 +41,7 @@ eleventyComputed:
 {% endmacro %}
 
 <article class="work-detail">
+  {% set ticketDates = aktuellesEvents | upcomingPerformances(production.href) %}
   <header class="work-detail__hero">
     <a class="work-detail__back" href="/inszenierungen/">← Zurück zu den Inszenierungen</a>
     <div class="work-detail__hero-copy">
@@ -50,6 +51,9 @@ eleventyComputed:
       <p class="work-detail__place" translate="no">{{ production.place }}</p>
       {% if production.note %}
         <p class="work-detail__note">{{ production.note }}</p>
+      {% endif %}
+      {% if ticketDates.length %}
+        <a class="work-detail__hero-tickets" href="#termine-tickets" data-hero-tickets>Termine &amp; Tickets <span aria-hidden="true">↓</span></a>
       {% endif %}
     </div>
 
@@ -81,6 +85,31 @@ eleventyComputed:
       "",
       detailGallery.length > 1
     ) }}
+  {% endif %}
+
+  {% if ticketDates.length %}
+    <section class="work-detail__tickets" id="termine-tickets" aria-labelledby="tickets-title" data-ticket-section>
+      <h2 id="tickets-title">Termine &amp; Tickets</h2>
+      <ul class="work-detail__ticket-list">
+        {% for date in ticketDates %}
+          <li class="work-detail__ticket-row" data-end-date="{{ date.endDate }}">
+            <span class="work-detail__ticket-date" aria-hidden="true">
+              <span class="work-detail__ticket-day">{{ date.day }}</span>
+              <span class="work-detail__ticket-month">{{ date.month }}</span>
+            </span>
+            <span class="work-detail__ticket-info">
+              <span class="work-detail__ticket-meta">{{ date.weekday }}{% if date.timeLabel %} · {{ date.timeLabel }}{% endif %}</span>
+              <span class="sr-only">{{ date.dateLabel }}</span>
+              <span class="work-detail__ticket-label">{{ date.performanceLabel }}</span>
+              <span class="work-detail__ticket-place" translate="no">{{ date.location }}</span>
+            </span>
+            {% if date.ticketHref %}
+              <a class="work-detail__ticket-button" href="{{ date.ticketHref }}" target="_blank" rel="noopener noreferrer" aria-label="Tickets für {{ date.dateLabel }}">Tickets <span aria-hidden="true">→</span></a>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
   {% endif %}
 
   <div class="work-detail__content">
@@ -169,7 +198,8 @@ eleventyComputed:
     {% endif %}
 
     {% if production.publicationFeature %}
-      <section class="work-detail__section work-detail__section--publication" aria-labelledby="publication-title">
+      {% set featureImages = production.publicationFeature.images %}
+      <section class="work-detail__section work-detail__section--publication{% if featureImages and featureImages.length %} work-detail__section--publication-stacked{% endif %}" aria-labelledby="publication-title">
         <div class="work-detail__publication-copy">
           {% if production.publicationFeature.kicker %}
             <p class="work-detail__section-kicker">{{ production.publicationFeature.kicker }}</p>
@@ -182,9 +212,16 @@ eleventyComputed:
             <p class="work-detail__publication-body">{{ production.publicationFeature.body }}</p>
           {% endif %}
           {% if production.publicationFeature.facts and production.publicationFeature.facts.length %}
-            <ul class="work-detail__publication-facts" aria-label="Buchdetails">
+            <ul class="work-detail__publication-facts" aria-label="{{ production.publicationFeature.factsLabel or 'Buchdetails' }}">
               {% for fact in production.publicationFeature.facts %}
-                <li translate="no">{{ fact }}</li>
+                {% if fact.text %}
+                  <li class="work-detail__publication-fact--linked">
+                    <span translate="no">{{ fact.text }}</span>
+                    <a class="work-detail__source-link work-detail__source-link--publication work-detail__fact-link" href="{{ fact.href }}"{% if fact.href | isExternalUrl %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ fact.label or "Tickets" }} <span aria-hidden="true">→</span></a>
+                  </li>
+                {% else %}
+                  <li translate="no">{{ fact }}</li>
+                {% endif %}
               {% endfor %}
             </ul>
           {% endif %}
@@ -194,7 +231,20 @@ eleventyComputed:
             {% endif %}
           </div>
         </div>
-        {% if production.publicationFeature.image %}
+        {% if featureImages and featureImages.length %}
+          <div class="work-detail__publication-visuals">
+            {% for image in featureImages %}
+              <figure class="work-detail__publication-visual">
+                <a href="{{ image.src }}" target="_blank" rel="noopener">
+                  <img src="{{ image.src }}" alt="{{ image.alt }}" loading="lazy" decoding="async">
+                </a>
+                {% if image.caption %}
+                  <figcaption translate="no">{{ image.caption }}</figcaption>
+                {% endif %}
+              </figure>
+            {% endfor %}
+          </div>
+        {% elif production.publicationFeature.image %}
           <figure class="work-detail__publication-visual">
             <img src="{{ production.publicationFeature.image.src }}" alt="{{ production.publicationFeature.image.alt }}" loading="lazy" decoding="async">
             {% if production.publicationFeature.image.caption %}

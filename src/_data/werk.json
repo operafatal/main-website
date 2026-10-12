@@ -1827,8 +1827,8 @@
     },
     {
       "title": "La cabine téléphonique",
-      "composer": "Claude Arrieu",
-      "place": "Institut Français Berlin",
+      "composer": "Musik: Claude Arrieu · Libretto: Michel Vaucaire",
+      "place": "Maison de France (Institut Français), Berlin",
       "year": "2026",
       "category": "zeitgenoessisch",
       "featured": false,
@@ -1837,36 +1837,76 @@
       "categoryLabel": "Zeitgenössische Oper",
       "visual": {
         "type": "image",
-        "src": "/assets/img/la-cabine-telephonique/telephone-booth-paris-1955-publiphonie.jpg",
-        "alt": "Telefonzelle in Paris, 1955 - Photographie PTT / Coll. Orange DANP via Publiphonie",
-        "caption": "Telefonzelle in Paris, 1955 - Photographie PTT / Coll. Orange DANP via Publiphonie",
-        "position": "center center",
-        "scale": "1.02",
-        "cardScale": "1.04",
-        "cardHoverScale": "1.08"
+        "src": "/assets/img/la-cabine-telephonique/die-lustigen-komponistinnen-plakat.jpg",
+        "alt": "Plakat „Die lustigen Komponistinnen“: gezeichnete Frau mit Telefonhörer und Trompete in einer Telefonzelle",
+        "caption": "Plakat: Jazz am Helmholtzplatz e.V.",
+        "position": "center top"
       },
       "gallery": [],
-      "sourceUrl": "https://www.solfaghari.com/b%C3%BChnenprojekte/zeitgen%C3%B6ssische-oper/",
-      "note": "Opéra-bouffe-Produktion 2026 im Rahmen „Die lustigen Komponistinnen“.",
+      "sourceUrl": "https://www.jazzamhelmholtzplatz.com/Ausfuehrliches-Konzertprogramm/",
+      "note": "Deutsche Erstaufführung am 4. Dezember 2026, weitere Vorstellung am 11. Dezember 2026. Opéra bouffe im Rahmen „Die lustigen Komponistinnen“.",
       "credits": {
-        "inszenierung": "Jasmin Solfaghari",
-        "ausstattung": "Jasmin Solfaghari"
+        "musikalischeLeitung": "Aurélien Bello",
+        "inszenierungUndAusstattung": "Jasmin Solfaghari"
       },
-      "detailIntro": "Claude Arrieus „La cabine téléphonique“ ist als opéra bouffe für Dezember 2026 am Institut Français Berlin angekündigt. Die Produktion gehört zur Reihe „Die lustigen Komponistinnen. Frauen im komischen Musiktheater um 1960“ und macht eine französische Komponistin sichtbar, deren Bühnenhumor selten gespielt wird.",
+      "cast": [
+        { "role": "La jeune fille", "performances": [{ "name": "Constance Grandperrin" }] },
+        { "role": "La dame sentimentale", "performances": [{ "name": "Sarah Papadopoulou" }] },
+        { "role": "La vieille fille", "performances": [{ "name": "Sarah van der Kemp" }] },
+        { "role": "Le gros monsieur", "performances": [{ "name": "Thomas Guilbert" }] },
+        { "role": "L’expert en autographes", "performances": [{ "name": "Hartmut Schröder" }] },
+        { "role": "Le jeune homme timide", "performances": [{ "name": "Berthold Schindler" }] }
+      ],
+      "detailIntro": "Mit Claude Arrieus opéra bouffe „La cabine téléphonique“ kommt im Dezember 2026 ein selten gespieltes Stück französischen Musiktheaters zur deutschen Erstaufführung. Jasmin Solfaghari verantwortet Inszenierung und Ausstattung, Aurélien Bello die musikalische Leitung. Die Produktion im Maison de France, dem Sitz des Institut Français in Berlin, ist Teil der Reihe „Die lustigen Komponistinnen. Frauen im komischen Musiktheater um 1960“.",
       "detailSections": [
         {
           "heading": "Komponistin im Fokus",
-          "body": "Die Projektanlage richtet den Blick auf eine Komponistin, die zwischen Eleganz, Leichtigkeit und kompositorischer Präzision arbeitet. Damit erweitert die Seite die Kategorie zeitgenössischer und neuerer Musiktheaterformen um eine Perspektive auf weibliche komische Oper um 1960."
+          "body": "Claude Arrieu, eigentlich Louise-Marie Simon (1903–1990), arbeitete über Jahre für den französischen Rundfunk und schrieb Bühnenwerke voller Witz und Präzision. „La cabine téléphonique“ auf ein Libretto von Michel Vaucaire wurde am 15. März 1959 im Radio uraufgeführt. Die Berliner Reihe stellt sie neben Marguerite Monnot und Madeleine Dring: drei Komponistinnen, deren komisches Musiktheater bis heute selten auf der Bühne zu erleben ist."
         },
         {
           "heading": "Telefon als Bühne",
-          "body": "Die Telefonzelle ist ein szenisch dankbares Objekt: ein öffentlicher Miniaturraum für Privatheit, Missverständnis, Timing und komödiantische Verdichtung. Der Platzhalter-Hero zeigt bewusst dieses Motiv, bis Produktionsfotos vorliegen."
+          "body": "Eine öffentliche Telefonzelle wird zum Schauplatz für sechs Figuren, von der jungen Frau und der sentimentalen Dame über die alte Jungfer bis zum dicken Herrn, dem Autogrammexperten und dem schüchternen jungen Mann. Der enge, halböffentliche Raum macht Privates hörbar und lebt von Timing, Missverständnis und komödiantischer Verdichtung."
         },
         {
-          "heading": "Berlin 2026",
-          "body": "Da die Premiere noch bevorsteht, bleibt die Seite nüchtern als Projektankündigung gebaut. Sie nennt Ort, Jahr und konzeptionellen Rahmen, ohne spätere Proben- oder Aufführungswirkung vorwegzunehmen."
+          "heading": "Deutsche Erstaufführung in Berlin",
+          "body": "Gespielt wird am 4. und 11. Dezember 2026 jeweils um 19:30 Uhr in der Salle Boris Vian des Maison de France am Kurfürstendamm. Am ersten Abend folgt „Irma la Douce“ nach Marguerite Monnot, am zweiten die „Cabaret Songs“ von Madeleine Dring. Veranstalter ist Jazz am Helmholtzplatz e.V., gefördert wird die Reihe vom Hauptstadtkulturfonds."
         }
       ],
+      "publicationFeature": {
+        "kicker": "Die Reihe",
+        "title": "Die lustigen Komponistinnen",
+        "subtitle": "Frauen im komischen Musiktheater um 1960",
+        "body": "Vier Abende mit Werken von Claude Arrieu, Marguerite Monnot und Madeleine Dring im Maison de France und in der Brotfabrik Berlin. Veranstaltet von Jazz am Helmholtzplatz e.V., gefördert vom Hauptstadtkulturfonds.",
+        "factsLabel": "Termine der Reihe",
+        "facts": [
+          {
+            "text": "4.12.2026 · La cabine téléphonique und Irma la Douce · Maison de France, 19:30 Uhr",
+            "href": "https://www.eventbrite.de/e/die-lustigen-komponistinnen-tickets-2003266487992",
+            "label": "Tickets"
+          },
+          {
+            "text": "11.12.2026 · La cabine téléphonique und Cabaret Songs · Maison de France, 19:30 Uhr",
+            "href": "https://www.eventbrite.de/e/die-lustigen-komponistinnen-tickets-2003266848069",
+            "label": "Tickets"
+          },
+          "18.12.2026 · Irma la Douce und Cabaret Songs · Brotfabrik, 20 Uhr",
+          "19.12.2026 · Das lustige Komponistinnen Quartett · Brotfabrik, 20 Uhr"
+        ],
+        "href": "https://www.jazzamhelmholtzplatz.com/Ausfuehrliches-Konzertprogramm/",
+        "linkLabel": "Programm der Reihe",
+        "images": [
+          {
+            "src": "/assets/img/la-cabine-telephonique/die-lustigen-komponistinnen-plakat.jpg",
+            "alt": "Plakat „Die lustigen Komponistinnen“: gezeichnete Frau mit Telefonhörer und Trompete in einer Telefonzelle, Namen Marguerite Monnot, Claude Arrieu und Madeleine Dring",
+            "caption": "Plakat: Jazz am Helmholtzplatz e.V."
+          },
+          {
+            "src": "/assets/img/la-cabine-telephonique/die-lustigen-komponistinnen-programm.jpg",
+            "alt": "Programmzettel „Die lustigen Komponistinnen“ mit allen vier Terminen, Besetzung von La cabine téléphonique und Veranstaltungsorten",
+            "caption": "Programm: Jazz am Helmholtzplatz e.V."
+          }
+        ]
+      },
       "mediaEcho": [
         {
           "title": "La cabine téléphonique",
@@ -1876,12 +1916,16 @@
           "summary": "Öffentlicher Projektpost zur geplanten Inszenierung und Ausstattung von Claude Arrieus opéra bouffe am Institut Français Berlin, Premiere 4. Dezember 2026, zweite Vorstellung 11. Dezember 2026."
         }
       ],
-      "externalLinks": []
+      "externalLinks": [
+        {
+          "label": "Programm Jazz am Helmholtzplatz",
+          "href": "https://www.jazzamhelmholtzplatz.com/Ausfuehrliches-Konzertprogramm/"
+        }
+      ]
     },
     {
       "title": "Schmetterling",
       "composer": "Musik: Daniel Behle · Libretto: Alain Claude Sulzer und Daniel Behle",
-      "heroTitleMax": "5.6rem",
       "place": "Eduard-von-Winterstein-Theater, Annaberg-Buchholz",
       "year": "2026",
       "category": "familie-operette",

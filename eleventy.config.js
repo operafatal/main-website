@@ -123,6 +123,107 @@ function byCategory(items, category) {
   return (items || []).filter((item) => item && item.category === category);
 }
 
+// Aktuelles: merge the hand-maintained "upcoming" list and the year-grouped
+// "archive" and re-split them by date at build time, so past events move to
+// the archive automatically. An event stays upcoming until its endDate (last
+// performance/day); without endDate its sortDate counts. "Today" is Berlin
+// time. assets/js/aktuelles-archive.js repeats the same split in the browser,
+// so the page stays correct between deploys.
+function berlinToday() {
+  return new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Berlin" }).format(new Date());
+}
+
+const MONTHS_SHORT = ["Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"];
+const MONTHS_LONG = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"];
+const WEEKDAYS = ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"];
+
+// A production with several performances is entered once, with a
+// "performances" list ([{date, time?, label?}]). For the timeline each
+// performance becomes its own row (own date, time and label, e.g.
+// "Uraufführung" for the first one, "Vorstellung" for the rest).
+function expandPerformances(item) {
+  if (!Array.isArray(item.performances) || !item.performances.length) {
+    return [item];
+  }
+  return item.performances.map((performance, index) => {
+    const [year, month, day] = performance.date.split("-").map(Number);
+    const weekday = WEEKDAYS[new Date(Date.UTC(year, month - 1, day)).getUTCDay()];
+    const time = performance.time ? `${performance.time} Uhr` : "";
+    const label = performance.label || item.performanceLabel || "Vorstellung";
+    const { performances, endDate, ...rest } = item;
+    return {
+      ...rest,
+      id: `${item.id}-${performance.date}`,
+      productionId: item.id,
+      performanceIndex: index,
+      sortDate: performance.date,
+      endDate: performance.date,
+      day: String(day),
+      month: `${MONTHS_SHORT[month - 1]} ${year}`,
+      dateLabel: `${weekday}, ${day}. ${MONTHS_LONG[month - 1]} ${year}${time ? `, ${time}` : ""}`,
+      categoryLabel: time ? `${label} · ${time}` : label,
+      weekday,
+      timeLabel: time,
+      performanceLabel: label,
+      ticketHref: performance.ticketHref || item.ticketHref || ""
+    };
+  });
+}
+
+function splitAktuelles(feed) {
+  const all = [
+    ...((feed && feed.upcoming) || []),
+    ...((feed && feed.archive) || []).flatMap((group) => group.items || [])
+  ]
+    .filter(Boolean)
+    .flatMap(expandPerformances);
+  const today = berlinToday();
+  const endOf = (item) => item.endDate || item.sortDate || "";
+  const upcoming = all
+    .filter((item) => endOf(item) >= today)
+    .sort((a, b) => (a.sortDate || "").localeCompare(b.sortDate || ""));
+  const past = all
+    .filter((item) => endOf(item) < today)
+    .sort((a, b) => (b.sortDate || "").localeCompare(a.sortDate || ""));
+
+  // Repeating the full description on every performance of the same
+  // production makes the timeline hard to scan: keep it on the next
+  // upcoming performance only (in the archive: on the first performance);
+  // the other performances show the short "shortSummary" (Jasmin's role).
+  const seen = new Set();
+  const trimRepeatedSummary = (item, keep) => {
+    if (!item.productionId) {
+      return item;
+    }
+    if (keep(item) && !seen.has(item.productionId)) {
+      seen.add(item.productionId);
+      return item;
+    }
+    return { ...item, summary: item.shortSummary || "" };
+  };
+  const upcomingRows = upcoming.map((item) => trimRepeatedSummary(item, () => true));
+  const pastRows = past.map((item) => trimRepeatedSummary(item, (entry) => entry.performanceIndex === 0));
+
+  const archive = [];
+  for (const item of pastRows) {
+    const year = (item.sortDate || "").slice(0, 4);
+    let group = archive.find((entry) => entry.year === year);
+    if (!group) {
+      group = { year, items: [] };
+      archive.push(group);
+    }
+    group.items.push(item);
+  }
+  return { upcoming: upcomingRows, archive, all: [...upcomingRows, ...pastRows] };
+}
+
+// Detail pages: the upcoming performances of one production (matched by
+// its detail-page href), for the "Termine & Tickets" section. Same data
+// and same "today" as the Aktuelles timeline, so both always agree.
+function upcomingPerformances(feed, href) {
+  return splitAktuelles(feed).upcoming.filter((item) => item.productionId && item.href === href);
+}
+
 function hasCategory(items, category) {
   return byCategory(items, category).length > 0;
 }
@@ -350,6 +451,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("masterclassEntries", filterMasterclassEntries);
   eleventyConfig.addFilter("byStatus", byStatus);
   eleventyConfig.addFilter("byCategory", byCategory);
+  eleventyConfig.addFilter("splitAktuelles", splitAktuelles);
+  eleventyConfig.addFilter("upcomingPerformances", upcomingPerformances);
   eleventyConfig.addFilter("hasCategory", hasCategory);
   eleventyConfig.addFilter("chronological", chronological);
   eleventyConfig.addFilter("galleryAfterHero", galleryAfterHero);

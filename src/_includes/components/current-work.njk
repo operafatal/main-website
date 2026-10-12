@@ -37,7 +37,7 @@
                       </div>
                       <span class="sr-only">{{ item.visual.alt }}</span>
                     {% else %}
-                      <img src="{{ item.visual.src }}" alt="{{ item.visual.alt }}" loading="lazy" decoding="async">
+                      <img src="{{ item.visual.src }}" alt="{{ item.visual.alt }}" loading="lazy" decoding="async"{% if item.visual.position %} style="object-position: {{ item.visual.position }};"{% endif %}>
                     {% endif %}
                     {% if showCredits != false and item.visual.credit %}
                       <figcaption>{{ item.visual.credit }}</figcaption>

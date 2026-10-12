@@ -8,6 +8,7 @@ permalink: /aktuelles/
 {% from "components/event-modal.njk" import eventModal %}
 
 {% set feed = aktuellesEvents %}
+{% set split = feed | splitAktuelles %}
 
 <article class="aktuelles-page">
   <div class="aktuelles-tabs" data-work-tabs>
@@ -24,14 +25,12 @@ permalink: /aktuelles/
             <h2 id="upcoming-{{ category.slug }}">Kommende Termine</h2>
             <p>Stand: {{ feed.updated }}.</p>
           </div>
-          <div class="aktuelles-list">
-            {% set upcomingItems = feed.upcoming | byCategory(category.slug) %}
+          <div class="aktuelles-list" data-aktuelles-upcoming>
+            {% set upcomingItems = split.upcoming | byCategory(category.slug) %}
             {% for item in upcomingItems %}
               {{ aktuellesRow(item, "all-view" if category.slug == "alle" else "") }}
             {% endfor %}
-            {% if not upcomingItems.length %}
-              <p class="aktuelles-empty">Für diesen Bereich sind aktuell keine kommenden Termine eingetragen.</p>
-            {% endif %}
+            <p class="aktuelles-empty"{% if upcomingItems.length %} hidden{% endif %}>Für diesen Bereich sind aktuell keine kommenden Termine eingetragen.</p>
           </div>
         </section>
 
@@ -40,11 +39,11 @@ permalink: /aktuelles/
             <h2 id="archive-{{ category.slug }}">Archiv</h2>
           </div>
 
-          <div class="aktuelles-archive">
-            {% for yearGroup in feed.archive %}
+          <div class="aktuelles-archive" data-aktuelles-archive>
+            {% for yearGroup in split.archive %}
               {% set archiveItems = yearGroup.items | byCategory(category.slug) %}
               {% if archiveItems.length %}
-                <section class="aktuelles-year">
+                <section class="aktuelles-year" data-year="{{ yearGroup.year }}">
                   <h3>{{ yearGroup.year }}</h3>
                   <div class="aktuelles-list aktuelles-list--archive">
                     {% for item in archiveItems %}
@@ -60,7 +59,7 @@ permalink: /aktuelles/
     {% endfor %}
   </div>
 
-  {% for item in feed.upcoming %}
+  {% for item in split.all %}
     {% if item.details %}
       {{ eventModal(item) }}
     {% endif %}
