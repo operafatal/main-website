@@ -6,8 +6,8 @@
     "title": "Schmetterling",
     "copyWidth": "31rem",
     "subtitle": "Daniel Behle · Libretto: Alain Claude Sulzer",
-    "details": "Eduard-von-Winterstein-Theater, Annaberg-Buchholz",
-    "note": "Weitere Vorstellungen bis 27. November 2026.",
+    "details": "Inszenierung: Jasmin Solfaghari",
+    "note": "Eduard-von-Winterstein-Theater, Annaberg-Buchholz · Weitere Vorstellungen bis 27. November 2026",
     "href": "/inszenierungen/der-schmetterling/",
     "visual": {
       "type": "image",
@@ -23,8 +23,8 @@
     "title": "Parsifal",
     "copyWidth": "25rem",
     "subtitle": "Richard Wagner",
-    "details": "Goetheanum, Dornach (CH)",
-    "note": "Koproduktion PAMY Mediaproductions / Goetheanum-Bühne.",
+    "details": "Inszenierung: Jasmin Solfaghari",
+    "note": "Goetheanum, Dornach (CH) · Koproduktion PAMY Mediaproductions und Goetheanum-Bühne",
     "href": "/inszenierungen/",
     "durationMs": 9000,
     "visual": {
@@ -52,6 +52,23 @@
     }
   },
   {
+    "type": "Meisterkurs",
+    "meta": "27.–29.10.2026",
+    "titleStyle": "display",
+    "title": "Requiem Studies Part I",
+    "copyWidth": "39rem",
+    "subtitle": "Gesang & Bühneneurythmie",
+    "details": "Kursleitung: Jasmin Solfaghari und Severin Fraser",
+    "note": "nosolo studios Stuttgart · Requien von Mozart, Verdi und Brahms",
+    "href": "/meisterkurse-coaching/",
+    "visual": {
+      "type": "image",
+      "src": "/assets/img/requiem-studies.webp",
+      "alt": "Requiem Studies Seminar für Gesang und Bühneneurythmie in den nosolo studios Stuttgart",
+      "credit": "Foto: nosolo studios"
+    }
+  },
+  {
     "type": "Publikation",
     "meta": "Schott",
     "titleStyle": "publication",
@@ -66,23 +83,6 @@
       "src": "/assets/img/parsifal/buch/parsifal-buchsignierung.jpeg",
       "alt": "Jasmin Solfaghari bei einer Buchsignierung vor dem Cover von Parsifal am Goetheanum",
       "focus": "publication"
-    }
-  },
-  {
-    "type": "Meisterkurs",
-    "meta": "27.–29.10.2026",
-    "titleStyle": "display",
-    "title": "Requiem Studies Part I",
-    "copyWidth": "39rem",
-    "subtitle": "Gesang & Bühneneurythmie",
-    "details": "nosolo studios Stuttgart · mit Severin Fraser",
-    "note": "Mozart, Verdi und Brahms.",
-    "href": "/meisterkurse-coaching/",
-    "visual": {
-      "type": "image",
-      "src": "/assets/img/requiem-studies.webp",
-      "alt": "Requiem Studies Seminar für Gesang und Bühneneurythmie in den nosolo studios Stuttgart",
-      "credit": "Foto: nosolo studios"
     }
   }
 ]

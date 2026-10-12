@@ -203,6 +203,12 @@
   line-height: 1.55;
 }
 
+/* First details line carries Jasmin's role (Inszenierung, Kursleitung,
+   Herausgabe) and must read clearly, not as muted metadata. */
+.current-work__details p:first-child {
+  color: var(--color-bg);
+}
+
 .current-work__actions {
   display: flex;
   align-items: center;
