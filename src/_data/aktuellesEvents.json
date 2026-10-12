@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-28",
+  "updated": "2026-10-12",
   "sourcesNote": "Termine aus solfaghari.com/termine, Goetheanum-Bühne, LinkedIn, Daniel Behle, Operabase sowie bestehenden lokalen Daten abgeglichen. Persönliche News werden nicht ausgespielt.",
   "categories": [
     { "slug": "alle", "label": "Alle" },
@@ -17,7 +17,7 @@
       "sortDate": "2026-10-10",
       "day": "10",
       "month": "Okt 2026",
-      "title": "Der Schmetterling",
+      "title": "Schmetterling",
       "subtitle": "Operette von Daniel Behle · Libretto Alain Claude Sulzer",
       "location": "Eduard-von-Winterstein-Theater, Annaberg-Buchholz",
       "summary": "Uraufführung der neuen Operette; Inszenierung Jasmin Solfaghari, Musikalische Leitung Bruno Borralhinho, Bühne und Kostüme Walter Schütze.",

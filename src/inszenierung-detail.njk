@@ -29,8 +29,9 @@ eleventyComputed:
 {% macro castList(cast) %}
   <dl class="work-detail__credits">
     {% for role in cast %}
-      <dt>{{ role.role }}</dt>
-      <dd translate="no">
+      {% set roleIsMultiline = role.role.indexOf("\n") != -1 %}
+      <dt{% if roleIsMultiline %} class="is-multiline-role"{% endif %}>{{ role.role }}</dt>
+      <dd translate="no"{% if roleIsMultiline %} class="is-multiline-role"{% endif %}>
         {% for performer in role.performances | groupCastPerformances %}
           {{ performer.name }}{% if performer.yearsLabel %} ({{ performer.yearsLabel }}){% endif %}{% if not loop.last %}<br>{% endif %}
         {% endfor %}
@@ -44,7 +45,7 @@ eleventyComputed:
     <a class="work-detail__back" href="/inszenierungen/">← Zurück zu den Inszenierungen</a>
     <div class="work-detail__hero-copy">
       <p class="work-detail__kicker">{{ production.categoryLabel }} · {{ production.year }}</p>
-      <h1 translate="no">{{ production.title }}</h1>
+      <h1 translate="no"{% if production.heroTitleMax %} style="--work-detail-title-max: {{ production.heroTitleMax }};"{% endif %}>{{ production.title }}</h1>
       <p class="work-detail__subtitle" translate="no">{{ production.composer }}</p>
       <p class="work-detail__place" translate="no">{{ production.place }}</p>
       {% if production.note %}

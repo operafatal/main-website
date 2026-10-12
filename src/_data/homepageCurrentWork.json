@@ -1,5 +1,22 @@
 [
   {
+    "type": "Uraufführung",
+    "meta": "10.10.2026",
+    "titleStyle": "display",
+    "title": "Schmetterling",
+    "copyWidth": "31rem",
+    "subtitle": "Daniel Behle · Libretto: Alain Claude Sulzer",
+    "details": "Eduard-von-Winterstein-Theater, Annaberg-Buchholz",
+    "note": "Weitere Vorstellungen bis 27. November 2026.",
+    "href": "/inszenierungen/der-schmetterling/",
+    "visual": {
+      "type": "image",
+      "src": "/assets/img/der-schmetterling/schmetterling-dirk-rueckschloss-327.jpg",
+      "alt": "Bühnenszene aus der Uraufführung von Schmetterling am Eduard-von-Winterstein-Theater Annaberg-Buchholz",
+      "credit": "Foto: Dirk Rückschloß / Pixore Photography"
+    }
+  },
+  {
     "type": "Inszenierung",
     "meta": "2023–2027",
     "titleStyle": "display",
@@ -32,23 +49,6 @@
           "credit": "Foto: Klaus Lefebvre"
         }
       ]
-    }
-  },
-  {
-    "type": "Uraufführung",
-    "meta": "10.10.2026",
-    "titleStyle": "display",
-    "title": "Der Schmetterling",
-    "copyWidth": "31rem",
-    "subtitle": "Daniel Behle · Libretto: Alain Claude Sulzer",
-    "details": "Eduard-von-Winterstein-Theater, Annaberg-Buchholz",
-    "note": "",
-    "href": "/inszenierungen/",
-    "visual": {
-      "type": "image",
-      "src": "/assets/img/der-schmetterling-daniel-behle.webp",
-      "alt": "Daniel Behle in einer Porträtaufnahme für Der Schmetterling",
-      "credit": "Foto: Lucia Hunziker"
     }
   },
   {

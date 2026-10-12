@@ -1880,7 +1880,8 @@
     },
     {
       "title": "Schmetterling",
-      "composer": "Daniel Behle / Alain Claude Sulzer (Libretto)",
+      "composer": "Daniel Behle · Libretto: Alain Claude Sulzer",
+      "heroTitleMax": "5.6rem",
       "place": "Eduard-von-Winterstein-Theater, Annaberg-Buchholz",
       "year": "2026",
       "category": "familie-operette",
@@ -1889,59 +1890,221 @@
       "credits": {
         "musikalischeLeitung": "Bruno Borralhinho",
         "inszenierung": "Jasmin Solfaghari",
-        "ausstattung": "Walter Schütze"
+        "ausstattung": "Walter Schütze",
+        "chorleitung": "Niccolò Morello",
+        "dramaturgie": "Lür Jaenike"
       },
+      "cast": [
+        { "role": "Peter,\nder Schmetterling", "performances": [{ "name": "Theo Rohde" }] },
+        { "role": "Petra", "performances": [{ "name": "Zsófia Szabó" }] },
+        { "role": "Helga", "performances": [{ "name": "Malina Höfflin" }] },
+        { "role": "Franz", "performances": [{ "name": "Angus Simmons" }] },
+        { "role": "Richard", "performances": [{ "name": "Ivaylo Guberov" }] },
+        { "role": "Uhrmacherin", "performances": [{ "name": "Beatrice Löffelholz" }] },
+        { "role": "1. Migräne", "performances": [{ "name": "Bridgette Brothers" }] },
+        { "role": "2. Migräne", "performances": [{ "name": "Juliane Prucha" }] },
+        { "role": "3. Migräne", "performances": [{ "name": "Stephanie Ritter" }] },
+        { "role": "Souffleur", "performances": [{ "name": "Uli Heim" }] },
+        { "role": "Kutscher", "performances": [{ "name": "Volker Tancke" }] },
+        { "role": "Polizist", "performances": [{ "name": "Oliver Hirte" }, { "name": "Lukáš Šimonov" }] }
+      ],
       "slug": "der-schmetterling",
       "href": "/inszenierungen/der-schmetterling/",
       "categoryLabel": "Operette",
       "visual": {
         "type": "image",
-        "src": "/assets/img/der-schmetterling-hero.webp",
-        "alt": "Der Schmetterling - Illustration einer mechanischen Schmetterlingsuhr",
-        "caption": "Der Schmetterling",
-        "position": "center 8%"
+        "src": "/assets/img/der-schmetterling/schmetterling-dirk-rueckschloss-327.jpg",
+        "alt": "Schmetterling, Uraufführung am Eduard-von-Winterstein-Theater Annaberg-Buchholz - Bühnenszene mit Zsófia Szabó und Theo Rohde",
+        "caption": "Schmetterling - Foto: Dirk Rückschloß / Pixore Photography"
       },
-      "gallery": [],
-      "sourceUrl": "https://www.solfaghari.com/b%C3%BChnenprojekte/familienproduktionen-operetten/",
-      "detailIntro": "„Der Schmetterling“ ist Daniel Behles zweite Operette nach „Hopfen und Malz“ und kommt am 10. Oktober 2026 am Eduard-von-Winterstein-Theater in Annaberg-Buchholz zur Uraufführung. Jasmin Solfaghari übernimmt die Inszenierung einer neuen Operettenfantasie, die Opernklischees, Gruselromantik, Bayreuth-Anspielungen, Zukunftsvisionen und die Frage nach dem Wert von Kunst miteinander verschränkt.",
+      "gallery": [
+        {
+          "src": "/assets/img/der-schmetterling/schmetterling-dirk-rueckschloss-327.jpg",
+          "alt": "Schmetterling - Bühnenszene, Foto: Dirk Rückschloß",
+          "caption": "Schmetterling - Foto: Dirk Rückschloß / Pixore Photography",
+          "position": "center 85%",
+          "scale": 1
+        },
+        {
+          "src": "/assets/img/der-schmetterling/schmetterling-rueckschloss-1880.jpg",
+          "alt": "Schmetterling - Angus Simmons (Franz) und Ivaylo Guberov (Richard)",
+          "caption": "Schmetterling - Foto: Dirk Rückschloß / Pixore Photography (vorläufig)",
+          "position": "center 35%",
+          "scale": 1
+        },
+        {
+          "src": "/assets/img/der-schmetterling/schmetterling-rueckschloss-1885.jpg",
+          "alt": "Schmetterling - Angus Simmons (Franz), im Hintergrund Malina Höfflin (Helga)",
+          "caption": "Schmetterling - Foto: Dirk Rückschloß / Pixore Photography (vorläufig)",
+          "position": "center 30%",
+          "scale": 1
+        },
+        {
+          "src": "/assets/img/der-schmetterling/schmetterling-rueckschloss-1884.jpg",
+          "alt": "Schmetterling - Angus Simmons (Franz), im Hintergrund Bridgette Brothers und Zsófia Szabó (Petra)",
+          "caption": "Schmetterling - Foto: Dirk Rückschloß / Pixore Photography (vorläufig)",
+          "position": "center 85%",
+          "scale": 1
+        },
+        {
+          "src": "/assets/img/der-schmetterling/schmetterling-rueckschloss-1888.jpg",
+          "alt": "Schmetterling - Theo Rohde (Peter) und Angus Simmons (Franz)",
+          "caption": "Schmetterling - Foto: Dirk Rückschloß / Pixore Photography (vorläufig)",
+          "position": "center 88%",
+          "scale": 1
+        },
+        {
+          "src": "/assets/img/der-schmetterling/schmetterling-rueckschloss-1887.jpg",
+          "alt": "Schmetterling - Damen des Opernchors, Theo Rohde (Peter) und Volker Tancke (Kutscher)",
+          "caption": "Schmetterling - Foto: Dirk Rückschloß / Pixore Photography (vorläufig)",
+          "position": "center 82%",
+          "scale": 1
+        },
+        {
+          "src": "/assets/img/der-schmetterling/schmetterling-rueckschloss-1883.jpg",
+          "alt": "Schmetterling - Zsófia Szabó (Petra), Malina Höfflin (Helga), Oliver Hirte (Polizist), Angus Simmons (Franz), Ivaylo Guberov (Richard) und Opernchor",
+          "caption": "Schmetterling - Foto: Dirk Rückschloß / Pixore Photography (vorläufig)",
+          "position": "center 80%",
+          "scale": 1
+        },
+        {
+          "src": "/assets/img/der-schmetterling/schmetterling-rueckschloss-1882.jpg",
+          "alt": "Schmetterling - Opernchor, Theo Rohde (Peter), Malina Höfflin (Helga), Ivaylo Guberov (Richard), Angus Simmons (Franz) und Zsófia Szabó (Petra)",
+          "caption": "Schmetterling - Foto: Dirk Rückschloß / Pixore Photography (vorläufig)",
+          "position": "center 55%",
+          "scale": 1
+        },
+        {
+          "src": "/assets/img/der-schmetterling/schmetterling-rueckschloss-1889.jpg",
+          "alt": "Schmetterling - Malina Höfflin (Helga) und Zsófia Szabó (Petra)",
+          "caption": "Schmetterling - Foto: Dirk Rückschloß / Pixore Photography (vorläufig)",
+          "position": "center 88%",
+          "scale": 1
+        },
+        {
+          "src": "/assets/img/der-schmetterling/schmetterling-rueckschloss-1890.jpg",
+          "alt": "Schmetterling - Juliane Prucha, Zsófia Szabó (Petra), Stephanie Ritter und Malina Höfflin (Helga)",
+          "caption": "Schmetterling - Foto: Dirk Rückschloß / Pixore Photography (vorläufig)",
+          "position": "center 88%",
+          "scale": 1
+        },
+        {
+          "src": "/assets/img/der-schmetterling/schmetterling-rueckschloss-1891.jpg",
+          "alt": "Schmetterling - Zsófia Szabó (Petra) und Theo Rohde (Peter)",
+          "caption": "Schmetterling - Foto: Dirk Rückschloß / Pixore Photography (vorläufig)",
+          "position": "center 88%",
+          "scale": 1
+        },
+        {
+          "src": "/assets/img/der-schmetterling/schmetterling-rueckschloss-1881.jpg",
+          "alt": "Schmetterling - Opernchor, Malina Höfflin (Helga), Angus Simmons (Franz) und Ivaylo Guberov (Richard)",
+          "caption": "Schmetterling - Foto: Dirk Rückschloß / Pixore Photography (vorläufig)",
+          "position": "center 60%",
+          "scale": 1
+        },
+        {
+          "src": "/assets/img/der-schmetterling/schmetterling-szene-02.jpg",
+          "alt": "Schmetterling - dritter Akt, Klon-Welt mit Hasenmasken im Nebel",
+          "caption": "Schmetterling - Szenenfoto (vorläufig)",
+          "position": "center 92%",
+          "scale": 1
+        },
+        {
+          "src": "/assets/img/der-schmetterling/schmetterling-szene-01.jpg",
+          "alt": "Schmetterling - Ensembleszene vor der Backsteinmauer mit Standuhr",
+          "caption": "Schmetterling - Szenenfoto (vorläufig)",
+          "position": "center 62%",
+          "scale": 1
+        },
+        {
+          "src": "/assets/img/der-schmetterling/schmetterling-szene-03.jpg",
+          "alt": "Schmetterling - turbulente Ensembleszene im zweiten Akt",
+          "caption": "Schmetterling - Szenenfoto (vorläufig)",
+          "position": "center 72%",
+          "scale": 1
+        }
+      ],
+      "galleryStartIndex": 1,
+      "sourceUrl": "https://www.erzgebirgische.theater/1650-Schmetterling",
+      "trailer": {
+        "heading": "Videokritik",
+        "youtubeId": "ZncHVCLtmtA",
+        "title": "Daniel Behles Operette „Schmetterling“ in Annaberg-Buchholz – Markus Thiel"
+      },
+      "detailIntro": "„Schmetterling“ ist Daniel Behles zweite Operette nach „Hopfen und Malz“ und wurde am 10. Oktober 2026 am Eduard-von-Winterstein-Theater in Annaberg-Buchholz uraufgeführt. Jasmin Solfaghari, die schon Behles Erstling zur Uraufführung brachte, inszeniert den Dreiakter nach dem Libretto von Alain Claude Sulzer und Daniel Behle als temporeiches Spiel über Theater, Wagner-Kosmos, Künstlerängste und die Erlösung durch Kunst.",
       "detailSections": [
         {
-          "heading": "Uraufführung als Anfang",
-          "body": "Weil die Produktion noch vor ihrer Premiere steht, funktioniert diese Detailseite bewusst als redaktioneller Auftakt statt als abgeschlossene Dokumentation. Im Mittelpunkt stehen die gesicherten Projektdaten, das Kreativteam und die Werkidee; Szenenfotos und Kritiken werden erst ergänzt, sobald es Premierenmaterial gibt."
+          "heading": "Drei Zeiten, ein Fluch",
+          "body": "Die letzte Oper eines berühmten Komponisten gilt als unaufführbar: Jeder Tenor, der sich an ihr versucht, stirbt an der Partie und wird im Garten vergraben. Im ersten Akt hält Festspieldirektor Franz, der Enkel des Komponisten, mit Köchin Helga und Gärtner Richard dennoch an der Uraufführung fest. In der Gegenwart ist Franz ein unsterblicher Intendanten-Vampir, Helga Regisseurin, Richard Dirigent, und mit Peter erscheint ein neuer Tenorheld. Im dritten Akt, einer Zukunft voller fantasieloser Klone, kehren Partitur und „Schmetterling“-Tenor aus der Standuhr zurück und erwecken die Kunst neu."
         },
         {
-          "heading": "Operettenfantasie mit doppeltem Boden",
-          "body": "Die Handlung springt zwischen Vergangenheit, Gegenwart und Zukunft: Tenöre scheitern an einer mörderischen Partitur, ein unsterblicher Lord bewahrt den Mythos des Werks, und in einer Zukunft ohne Kunst kehrt ein Schmetterlingsmann zurück. Daraus entsteht eine komische, aber nicht harmlose Theaterwelt, die den Opernbetrieb mit Liebe und Schärfe betrachtet."
+          "heading": "Typen statt Karikaturen",
+          "body": "Solfaghari mischt im ersten Akt Boulevardstück, Farce und Schwank, nutzt die Drehbühne für ein präzises Timing und lässt den Humor fein statt platt wirken. Die Figuren bleiben Typen, keine Karikaturen. Walter Schützes detailreiche Ausstattung reicht vom altdeutschen Arbeitszimmer mit Fototapete bis zum Vampir-Cape. Die Klon-Welt des dritten Akts übersetzt die Inszenierung in eine surreale, eher sanfte als kalte Psychiatrie-Atmosphäre."
         },
         {
-          "heading": "Humor, Bayreuth und Gegenwart",
-          "body": "Behle und Alain Claude Sulzer verbinden Operettenlust mit einem Blick auf Bayreuth, Kunstbetrieb und die Angst vor kulturellem Ersetztwerden. Solfagharis Inszenierung kann diese Ebenen als präzises Spiel mit Genre, Grusel, Satire und Fantasie bündeln: leicht genug für Operette, aber klar genug für die darunterliegende Frage nach Kunst und Kultur."
+          "heading": "Ein Publikumserfolg",
+          "body": "Schon vor Beginn der Premiere brandete Jubel auf, zur Pause und am Ende setzte sich der Applaus fort. Die Kritik hob die Spiellust des Ensembles, die Erzgebirgische Philharmonie Aue unter Bruno Borralhinho und den liebevollen Ton der Inszenierung hervor. Der Deutschlandfunk nannte das Werk „einen echten Wurf“, der Münchner Merkur sah darin den Beweis, dass sich auch heute noch Operetten schreiben lassen."
+        }
+      ],
+      "reviews": [
+        {
+          "quote": "„Regisseurin Jasmin Solfaghari, sie betreute schon ‚Hopfen und Malz‘, ist die ideale Geburtshelferin. Der Humor ist fein, nicht platt. Das Timing auch dank der Drehbühne musterhaft. Nie wird draufgedrückt oder bemüht nach Pointen gefischt. Auf der Bühne sieht man Typen, keine Karikaturen.“",
+          "author": "Markus Thiel",
+          "source": "Münchner Merkur",
+          "date": "11.10.2026",
+          "title": "Club der toten Tenöre: Daniel Behles Operette „Schmetterling“",
+          "href": "https://www.merkur.de/kultur/daniel-behle-schmetterling-operette-urauffuehrung-kritik-annaberg-buchholz-erzgebirgisches-theater-zr-94535032.html"
+        },
+        {
+          "quote": "„Man langweilt sich keine Sekunde, auch weil Regisseurin Jasmin Solfaghari den flotten Dreiakter virtuos und temporeich inszeniert. Jede Figur ist liebevoll charakterisiert. Den mitunter derben Humor fängt die Regisseurin mit viel Geschmack auf und setzt elegante Pointen.“",
+          "author": "Regine Müller",
+          "source": "Deutschlandfunk, Musikjournal",
+          "date": "12.10.2026",
+          "title": "„Schmetterling“ – UA der Operette von Daniel Behle in Annaberg-Buchholz",
+          "href": "https://www.deutschlandfunk.de/schmetterling-ua-der-operette-von-daniel-behle-in-annaberg-buchholz-100.html"
+        },
+        {
+          "quote": "„Jasmin Solfaghari mixt Boulevardstück, Farce und Schwank. … Insgesamt geht es in der Uraufführungsinszenierung vor allem um souveränes Spiel und die Nähe zum liebevoll aufgeschlossenen Publikum.“",
+          "author": "Roland H. Dippel",
+          "source": "nmz – neue musikzeitung",
+          "date": "11.10.2026",
+          "title": "Ein Fluch, ein Super-Tenor und die miese Zukunft",
+          "href": "https://www.nmz.de/kritik/oper-konzert/ein-fluch-ein-super-tenor-und-die-miese-zukunft-daniel-behles-operette"
+        },
+        {
+          "quote": "„Regisseurin Jasmin Solfaghari und Ausstatter Walter Schütze übersetzten das auf der Drehbühne in kraftvolle Bilder … Die Kostüme blitzten so schrill auf wie die Charaktere.“",
+          "author": "Christiane Franke",
+          "source": "klassik.com",
+          "date": "12.10.2026",
+          "title": "Große Kunst fordert Opfer",
+          "href": "https://magazin.klassik.com/konzerte/reviews.cfm?task=review&PID=8653"
         }
       ],
       "mediaEcho": [
-        {
-          "title": "Schmetterling - Opus 2",
-          "source": "Daniel Behle",
-          "date": "12.06.2026",
-          "href": "https://www.danielbehle.de/news-detail/schmetterling-opus-2.html",
-          "summary": "Projektseite zur Uraufführung am 10. Oktober 2026 in Annaberg-Buchholz mit Werkbeschreibung, Libretto-Angabe und Kreativteam."
-        },
         {
           "title": "Komponieren verleiht Flügel",
           "source": "Münchner Merkur",
           "date": "05.06.2026",
           "href": "https://www.merkur.de/kultur/daniel-behle-operette-der-schmetterling-interview-urauffuehrung-tenor-bayreuth-zr-94337560.html",
-          "summary": "Markus Thiel spricht mit Daniel Behle über Bayreuth-Anspielungen, Operettenhumor, Künstliche Intelligenz und die ernste Meta-Ebene des neuen Werks."
+          "summary": "Markus Thiel spricht vor der Uraufführung mit Daniel Behle über Bayreuth-Anspielungen, Operettenhumor, Künstliche Intelligenz und die ernste Meta-Ebene des neuen Werks."
         },
         {
-          "title": "Der Schmetterling",
-          "source": "Operabase",
-          "date": "2026",
-          "href": "https://www.operabase.com/productions/der-schmetterling-487585/en",
-          "summary": "Produktionsdaten zur Annaberger Uraufführung mit Jasmin Solfaghari als Regisseurin und Bruno Borralhinho am Dirigentenpult."
+          "title": "Schmetterling - Opus 2",
+          "source": "Daniel Behle",
+          "date": "12.06.2026",
+          "href": "https://www.danielbehle.de/news-detail/schmetterling-opus-2.html",
+          "summary": "Projektseite des Komponisten zur Uraufführung mit Werkbeschreibung, Libretto-Angabe und Kreativteam."
         }
       ],
       "externalLinks": [
+        {
+          "label": "Produktionsseite Erzgebirgische Theater",
+          "href": "https://www.erzgebirgische.theater/1650-Schmetterling"
+        },
+        {
+          "label": "Deutschlandfunk-Beitrag anhören",
+          "href": "https://www.deutschlandfunk.de/schmetterling-ua-der-operette-von-daniel-behle-in-annaberg-buchholz-100.html"
+        },
         {
           "label": "Projektseite Daniel Behle",
           "href": "https://www.danielbehle.de/news-detail/schmetterling-opus-2.html"
@@ -2086,7 +2249,7 @@
     },
     {
       "title": "Hopfen und Malz",
-      "composer": "Daniel Behle / Alain Claude Sulzer (Libretto)",
+      "composer": "Daniel Behle · Libretto: Alain Claude Sulzer",
       "place": "Eduard-von-Winterstein-Theater Annaberg-Buchholz",
       "year": "2023",
       "category": "familie-operette",
