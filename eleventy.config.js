@@ -175,7 +175,7 @@ function splitAktuelles(feed) {
     ...((feed && feed.upcoming) || []),
     ...((feed && feed.archive) || []).flatMap((group) => group.items || [])
   ]
-    .filter(Boolean)
+    .filter((item) => item && !item.hidden)
     .flatMap(expandPerformances);
   const today = berlinToday();
   const endOf = (item) => item.endDate || item.sortDate || "";
@@ -235,6 +235,9 @@ function hasCategory(items, category) {
 // grouping) carries the offen/demnaechst/vergangen distinction now, see
 // course-preview-card.
 function chronological(items) {
+  // hidden:true takes a course off the site without deleting its data
+  // (e.g. a course that will not take place, pending a decision).
+  items = (items || []).filter((item) => item && !item.hidden);
   const today = new Date().toISOString().slice(0, 10);
   const offen = (items || []).filter((item) => item && item.status === "offen");
   const upcoming = (items || []).filter((item) => item && item.status !== "offen" && item.sortDate >= today);

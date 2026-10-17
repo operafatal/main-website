@@ -28,17 +28,17 @@ permalink: /
     ) }}
   </div>
 
-  {{ currentWork(homepageCurrentWork, false) }}
+  {{ currentWork(homepageCurrentWork | rejectattr("hidden"), false) }}
 
   <section class="home-course-tile" aria-label="Meisterkurse und Mentoring">
     <div class="home-course-tile__grid">
       <div class="home-course-tile__main">
         <div class="home-course-tile__photo" style="background-image: url('/assets/img/meisterkurse-tile.jpg');" aria-hidden="true"></div>
         <h2 class="home-course-tile__heading">Meisterkurse &amp; Mentoring</h2>
-        <a class="home-course-tile__card" href="/meisterkurse-coaching/" aria-label="Requiem Studies Part I ansehen">
+        <a class="home-course-tile__card" href="/meisterkurse-coaching/" aria-label="Vorsingtraining | Diktion | Präsenz ansehen">
           <div class="home-course-tile__card-top">
             <p class="pill-button pill-button--compact pill-button--negative home-course-tile__badge">Jetzt offen</p>
-            <h3 class="home-course-tile__card-title">Requiem Studies Part I</h3>
+            <h3 class="home-course-tile__card-title">Vorsingtraining | Diktion | Präsenz</h3>
           </div>
           <span class="home-course-tile__card-link">Mehr erfahren <span aria-hidden="true">→</span></span>
         </a>

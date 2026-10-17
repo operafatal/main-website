@@ -84,7 +84,8 @@
       "src": "/assets/img/requiem-studies.webp",
       "alt": "Requiem Studies Seminar für Gesang und Bühneneurythmie in den nosolo studios Stuttgart",
       "credit": "Foto: nosolo studios"
-    }
+    },
+    "hidden": true
   },
   {
     "type": "Publikation",
