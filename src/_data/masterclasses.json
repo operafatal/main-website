@@ -1,6 +1,7 @@
 [
   {
-    "id": "requiem-studies-part-i", "hidden": true,
+    "id": "requiem-studies-part-i",
+    "hidden": true,
     "status": "offen",
     "date": "27.–29. Oktober 2026",
     "sortDate": "2026-10-27",
@@ -8,7 +9,11 @@
     "location": "nosolo studios Stuttgart",
     "name": "Requiem Studies Part I",
     "description": "Seminar für Gesang & Bühneneurythmie",
-    "tags": ["Mozart", "Verdi", "Brahms"],
+    "tags": [
+      "Mozart",
+      "Verdi",
+      "Brahms"
+    ],
     "veranstalter": "Jasmin Solfaghari & Severin Fraser",
     "details": {
       "zeiten": "Täglich 10:00–13:00 & 14:00–17:00",
@@ -24,21 +29,31 @@
       "sprachen": "Deutsch, Englisch, Französisch, Italienisch",
       "kosten": "auf Anfrage",
       "bewerbung": [
-        { "label": "Sänger:innen", "email": "masterclass@solfaghari.com", "hinweis": "CV + Video-Links" },
-        { "label": "Eurythmist:innen", "email": "contact@nosoloculture.com", "hinweis": "CV + Video-Links" }
+        {
+          "label": "Sänger:innen",
+          "email": "masterclass@solfaghari.com",
+          "hinweis": "CV + Video-Links"
+        },
+        {
+          "label": "Eurythmist:innen",
+          "email": "contact@nosoloculture.com",
+          "hinweis": "CV + Video-Links"
+        }
       ]
     }
   },
   {
     "id": "wagner-tristan-ring-parsifal-2026-10",
-    "status": "ausgebucht",
+    "status": "vergangen",
     "date": "20.–22. Oktober 2026",
     "sortDate": "2026-10-20",
     "meta": "Meisterkurs",
     "location": "nosolo studios Stuttgart",
     "name": "Tristan | Ring | Parsifal",
     "description": "kleine Wagner-Partien",
-    "tags": ["Wagner"],
+    "tags": [
+      "Wagner"
+    ],
     "veranstalter": "Jasmin Solfaghari & Severin Fraser",
     "details": {
       "zeiten": "10:00–17:00 Uhr, am 22.10. Abschlusskonzert",
@@ -53,7 +68,10 @@
       "kosten": "350 € insgesamt",
       "anzahlung": "200 € per PayPal/Überweisung bei Anmeldung",
       "bewerbung": [
-        { "label": "Anmeldung", "email": "masterclass@solfaghari.com" }
+        {
+          "label": "Anmeldung",
+          "email": "masterclass@solfaghari.com"
+        }
       ]
     }
   },
@@ -69,18 +87,22 @@
     "tags": [],
     "veranstalter": "Jasmin Solfaghari, gefördert vom Richard-Wagner-Verband Freiburg",
     "details": {
-      "zeiten": "Am 18. Dezember Abschlusskonzert",
+      "zeiten": "Abschlusskonzert am 18. Dezember, 15 Uhr (Eintritt frei, Spenden erbeten)",
       "adresse": "Aula des KHG, Lorettostr. 20, 79100 Freiburg",
       "klavier": "Philipp Rivinius",
       "intro": [
-        "Arbeit mit und ohne Klavierbegleitung an Partien, die gezielt für Vorsingen vorbereitet werden sollen. Drei Tage Einzel- und Gruppenunterricht: musikalische Struktur, Dramaturgie, Diktion, dramatischer Ausdruck. Am 18. Dezember Abschlusskonzert."
+        "Arbeit mit und ohne Klavierbegleitung an Partien, die gezielt für Vorsingen vorbereitet werden sollen. Drei Tage Einzel- und Gruppenunterricht: musikalische Struktur, Dramaturgie, Diktion, dramatischer Ausdruck.",
+        "Am 18. Dezember um 15 Uhr öffentliches Konzert der Kursteilnehmer mit Arien von Mozart, Tschaikowski, Wagner und mehr – Klavier: Philipp Rivinius, Moderation: Jasmin Solfaghari. Eintritt frei, Spenden erbeten."
       ],
       "teilnehmerzahl": "10 Plätze",
       "sprachen": "Deutsch, Französisch, Englisch, Italienisch",
       "kosten": "350 € insgesamt",
       "anzahlung": "200 € per PayPal/Überweisung",
       "bewerbung": [
-        { "label": "Anmeldung", "email": "masterclass@solfaghari.com" }
+        {
+          "label": "Anmeldung",
+          "email": "masterclass@solfaghari.com"
+        }
       ]
     }
   },
@@ -94,5 +116,33 @@
     "description": "Musiktheater, Diktion — kleine Gesangspartien",
     "tags": [],
     "veranstalter": "Richard-Wagner-Verein München"
+  },
+  {
+    "id": "masterclass-berlin-musicdrama-2026",
+    "status": "offen",
+    "date": "7. Dezember 2026",
+    "sortDate": "2026-12-07",
+    "meta": "Masterclass",
+    "location": "Berlin-Pankow",
+    "name": "MusicDrama | Diction",
+    "description": "Wagner-Class",
+    "tags": [
+      "Wagner"
+    ],
+    "veranstalter": "Boram Ahn (Klavier & Organisation)",
+    "details": {
+      "zeiten": "12:00–15:30 Uhr",
+      "adresse": "Mühlenstraße 62, 13187 Berlin-Pankow",
+      "klavier": "Boram Ahn",
+      "intro": [
+        "Ein Tag intensiver künstlerischer Arbeit zu Musikdrama und Diktion mit besonderem Fokus auf die Werke Richard Wagners: künstlerischer Ausdruck, Diktion, dramatische Interpretation und die Verbindung von Text, Musik und Bühnenpräsenz – mit individueller Arbeit an den mitgebrachten Partien."
+      ],
+      "bewerbung": [
+        {
+          "label": "Anmeldung, Kursgebühr & Informationen",
+          "email": "boram.musicspace@gmail.com"
+        }
+      ]
+    }
   }
 ]

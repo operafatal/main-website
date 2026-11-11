@@ -2047,6 +2047,20 @@
           "scale": 1
         },
         {
+          "src": "/assets/img/der-schmetterling/schmetterling-ensemble-theater.jpg",
+          "alt": "Schmetterling - Franz, Richard, Helga und Peter mit Partituren",
+          "caption": "Schmetterling - Foto: Erzgebirgische Theater (vorläufig)",
+          "position": "center 96%",
+          "scale": 1
+        },
+        {
+          "src": "/assets/img/der-schmetterling/schmetterling-helga-theater.jpg",
+          "alt": "Schmetterling - Malina Höfflin als Helga",
+          "caption": "Schmetterling - Foto: Erzgebirgische Theater (vorläufig)",
+          "position": "center 30%",
+          "scale": 1
+        },
+        {
           "src": "/assets/img/der-schmetterling/schmetterling-szene-02.jpg",
           "alt": "Schmetterling - dritter Akt, Klon-Welt mit Hasenmasken im Nebel",
           "caption": "Schmetterling - Szenenfoto (vorläufig)",
@@ -2138,6 +2152,14 @@
           "date": "10/2026",
           "title": "Am Ende fliegt er doch",
           "href": "https://www.omm.de/veranstaltungen/musiktheater20262027/ANA-schmetterling.html"
+        },
+        {
+          "quote": "„Der besondere Witz des Stücks liegt vor allem in der humorvollen Betrachtung der Geschehnisse hinter der Bühne. Das Kreativteam hat hier sicher eigene Erfahrungen eingebracht. Der enorme Druck, der auf jeder Neuinszenierung liegt, hier etwas Einzigartiges, Überragendes zu schaffen, die sicher nicht immer nachvollziehbaren Entscheidungen der Theaterleitung und nicht zuletzt die Beziehungen der Mitwirkenden untereinander werden hier humorvoll persifliert.“",
+          "author": "Redaktion",
+          "source": "Gast & Rast",
+          "date": "01.11.2026",
+          "title": "Der Schmetterling – Neue Operette in Annaberg",
+          "href": "https://gastundrast.com/schmetterling-operette-annaberg/"
         },
         {
           "quote": "„Regisseurin Jasmin Solfaghari und Ausstatter Walter Schütze übersetzten das auf der Drehbühne in kraftvolle Bilder … Die Kostüme blitzten so schrill auf wie die Charaktere.“",

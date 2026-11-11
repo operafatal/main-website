@@ -1,5 +1,41 @@
 [
   {
+    "src": "/assets/img/masterclass/stuttgart-2026-konzert-ensemble.jpg",
+    "alt": "Abschlusskonzert des Wagner-Meisterkurses in den nosolo studios Stuttgart, Oktober 2026",
+    "position": "center 45%",
+    "scale": 1
+  },
+  {
+    "src": "/assets/img/masterclass/stuttgart-2026-szene-probe.jpg",
+    "alt": "Jasmin Solfaghari bei der szenischen Arbeit im Meisterkurs Stuttgart",
+    "position": "center 12%",
+    "scale": 1
+  },
+  {
+    "src": "/assets/img/masterclass/stuttgart-2026-konzert-gruppe.jpg",
+    "alt": "Teilnehmende des Meisterkurses Stuttgart nach dem Abschlusskonzert",
+    "position": "center 25%",
+    "scale": 1
+  },
+  {
+    "src": "/assets/img/masterclass/stuttgart-2026-szenische-arbeit.jpg",
+    "alt": "Szenische Arbeit mit einem Sänger im Meisterkurs Stuttgart",
+    "position": "center 18%",
+    "scale": 1
+  },
+  {
+    "src": "/assets/img/masterclass/stuttgart-2026-konzert-applaus.jpg",
+    "alt": "Applaus beim Abschlusskonzert in den nosolo studios Stuttgart",
+    "position": "center 50%",
+    "scale": 1
+  },
+  {
+    "src": "/assets/img/masterclass/stuttgart-2026-team.jpg",
+    "alt": "Jasmin Solfaghari mit dem Team der nosolo studios Stuttgart",
+    "position": "center 22%",
+    "scale": 1
+  },
+  {
     "src": "/assets/img/masterclass/masterclass-klavier-probe.webp",
     "alt": "Probe am Klavier während eines Meisterkurses"
   },

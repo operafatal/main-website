@@ -654,6 +654,103 @@
       }
     },
     {
+      "id": "toulouse-pflanzen-oper-2027",
+      "status": "confirmed",
+      "institution": "Cercle Richard Wagner Toulouse Occitanie",
+      "location": "Toulouse",
+      "date": "12. Juni 2027",
+      "sortDate": "2027-06-12",
+      "title": "La Magie de la Nature et des Plantes à l'opéra",
+      "summary": "Vortrag beim Cercle Richard Wagner Toulouse Occitanie über Natur und Pflanzen in der Oper.",
+      "buttonLabel": "Mehr anzeigen",
+      "visual": {
+        "type": "image",
+        "src": "/assets/img/vortraege/toulouse-2027-pflanzen-oper.jpg",
+        "alt": "Opernsaal voller Pflanzen – Motiv zum Vortrag in Toulouse"
+      },
+      "sources": [
+        {
+          "label": "Klientinnenangabe / Vortragsflyer",
+          "href": ""
+        }
+      ],
+      "details": {
+        "tags": [
+          "Vortrag",
+          "Toulouse",
+          "Pflanzen in der Oper"
+        ],
+        "intro": [
+          "Auf Einladung des Cercle Richard Wagner Toulouse Occitanie spricht Jasmin Solfaghari über die Magie der Natur und der Pflanzen in der Oper."
+        ],
+        "facts": [
+          {
+            "label": "Datum",
+            "value": "12. Juni 2027"
+          },
+          {
+            "label": "Ort",
+            "value": "Toulouse, Frankreich"
+          },
+          {
+            "label": "Veranstalter",
+            "value": "Cercle Richard Wagner Toulouse Occitanie"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rwv-koblenz-parsifal-2027",
+      "status": "confirmed",
+      "institution": "Richard-Wagner-Verband Koblenz",
+      "location": "Koblenz",
+      "date": "23. März 2027",
+      "sortDate": "2027-03-23",
+      "title": "Ich schreite kaum, doch wähn' ich mich schon weit. – Parsifal am Goetheanum 2023–2027",
+      "summary": "Vortrag beim Richard-Wagner-Verband Koblenz über die Parsifal-Produktion am Goetheanum.",
+      "buttonLabel": "Mehr anzeigen",
+      "visual": {
+        "type": "placeholder",
+        "label": "Koblenz",
+        "tone": "accent"
+      },
+      "sources": [
+        {
+          "label": "Klientinnenangabe / Vortragsflyer",
+          "href": ""
+        }
+      ],
+      "details": {
+        "time": "19 Uhr",
+        "tags": [
+          "Vortrag",
+          "Parsifal",
+          "Koblenz"
+        ],
+        "intro": [
+          "Auf Einladung des Richard-Wagner-Verbandes Koblenz blickt Jasmin Solfaghari auf die Parsifal-Produktion am Goetheanum 2023–2027 zurück – wenige Tage nach den letzten Vorstellungen in Dornach."
+        ],
+        "facts": [
+          {
+            "label": "Datum",
+            "value": "23. März 2027"
+          },
+          {
+            "label": "Zeit",
+            "value": "19 Uhr"
+          },
+          {
+            "label": "Ort",
+            "value": "Historischer Rathaussaal, Willi-Hörter-Platz 1, 56068 Koblenz"
+          },
+          {
+            "label": "Veranstalter",
+            "value": "Richard-Wagner-Verband Koblenz e.V."
+          }
+        ]
+      }
+    },
+    {
       "id": "goetheanum-kundry-parsifal-2027",
       "status": "confirmed",
       "institution": "Goetheanum Dornach",
@@ -706,47 +803,48 @@
       }
     },
     {
-      "id": "nosolo-studios-re-connect-eurythmie-2026",
+      "id": "wagner-society-southern-california-singer-stage-2026",
       "status": "confirmed",
-      "institution": "nosolo studios / re_connect eurythmie",
-      "location": "Stuttgart",
-      "date": "31. Oktober – 1. November 2026",
-      "sortDate": "2026-10-31",
-      "title": "Lenk mal nicht von dir ab",
-      "summary": "Einführungsvortrag zu Bühnenpräsenz und Bühnengesetzen im Rahmen der Workshopreihe „re_connect eurythmie“ bei nosolo studios Stuttgart.",
+      "institution": "Wagner Society of Southern California",
+      "location": "Los Angeles / via Zoom",
+      "date": "15. November 2026",
+      "sortDate": "2026-11-15",
+      "title": "“When everything stands perplexed.“ – The singer on the opera stage",
+      "summary": "Zoom-Vortrag für die Wagner Society of Southern California, Los Angeles, über den singenden Menschen auf der Opernbühne.",
       "buttonLabel": "Mehr anzeigen",
       "visual": {
         "type": "placeholder",
-        "label": "Stuttgart",
+        "label": "LA",
         "tone": "accent"
       },
+      "sources": [
+        {
+          "label": "Klientinnenangabe / geteilter Ordner",
+          "href": ""
+        }
+      ],
       "details": {
-        "time": "Sa 10–13 & 15–18 Uhr, So 11–15 Uhr",
         "tags": [
-          "Vortrag",
-          "Eurythmie",
-          "Bühnenpräsenz"
+          "Lecture",
+          "Zoom",
+          "Opernbühne"
         ],
         "intro": [
-          "Die Workshopreihe „re_connect eurythmie“ von nosolo studios Stuttgart eröffnet einen Raum zwischen freier Performance, Theater und Oper, in dem bestehende Formen der Eurythmie hinterfragt und neue künstlerische Zusammenhänge erprobt werden. Martje Brandsma, Rafael Tavares und Severin Fraser widmen sich dabei drei Bereichen: Eurythmie als freie Performance, im Theater und in der Oper.",
-          "Unter dem Titel „Lenk mal nicht von dir ab“ gibt Opernregisseurin Jasmin Solfaghari eine Einführung zu Bühnenpräsenz und Bühnengesetzen. Das erste Workshopwochenende findet am 31. Oktober und 1. November 2026 statt."
+          "Der Zoom-Vortrag für die Wagner Society of Southern California fragt nach dem singenden Menschen auf der Opernbühne: nach Präsenz, Situation, Stimme und szenischem Handeln.",
+          "Der Titel „When everything stands perplexed“ verweist auf Momente, in denen musikalische und theatrale Orientierung zugleich fraglich werden."
         ],
         "facts": [
           {
             "label": "Datum",
-            "value": "31. Oktober – 1. November 2026"
+            "value": "15. November 2026"
           },
           {
-            "label": "Zeit",
-            "value": "Sa 10–13 & 15–18 Uhr, So 11–15 Uhr"
-          },
-          {
-            "label": "Ort",
-            "value": "nosolo studios, Stuttgart"
+            "label": "Format",
+            "value": "via Zoom"
           },
           {
             "label": "Veranstalter",
-            "value": "re_connect eurythmie (nosolo studios)"
+            "value": "Wagner Society of Southern California, Los Angeles"
           }
         ]
       }
@@ -762,9 +860,9 @@
       "summary": "Vortrag über Pflanzenmotive in der Oper bei der Museumsgesellschaft Freiburg e.V. auf Einladung des Richard-Wagner-Verbandes Freiburg.",
       "buttonLabel": "Mehr anzeigen",
       "visual": {
-        "type": "placeholder",
-        "label": "Freiburg",
-        "tone": "accent"
+        "type": "image",
+        "src": "/assets/img/vortraege/freiburg-2026-pflanzen-oper.jpg",
+        "alt": "Jasmin Solfaghari beim Vortrag „Pflanzen in der Oper“ in Freiburg, November 2026"
       },
       "sources": [
         {
@@ -804,48 +902,47 @@
       }
     },
     {
-      "id": "wagner-society-southern-california-singer-stage-2026",
+      "id": "nosolo-studios-re-connect-eurythmie-2026",
       "status": "confirmed",
-      "institution": "Wagner Society of Southern California",
-      "location": "Los Angeles / via Zoom",
-      "date": "22. November 2026",
-      "sortDate": "2026-11-22",
-      "title": "“When everything stands perplexed.“ – The singer on the opera stage",
-      "summary": "Zoom-Vortrag für die Wagner Society of Southern California, Los Angeles, über den singenden Menschen auf der Opernbühne.",
+      "institution": "nosolo studios / re_connect eurythmie",
+      "location": "Stuttgart",
+      "date": "31. Oktober – 1. November 2026",
+      "sortDate": "2026-10-31",
+      "title": "Lenk mal nicht von dir ab",
+      "summary": "Einführungsvortrag zu Bühnenpräsenz und Bühnengesetzen im Rahmen der Workshopreihe „re_connect eurythmie“ bei nosolo studios Stuttgart.",
       "buttonLabel": "Mehr anzeigen",
       "visual": {
-        "type": "placeholder",
-        "label": "LA",
-        "tone": "accent"
+        "type": "image",
+        "src": "/assets/img/vortraege/stuttgart-2026-re-connect.jpg",
+        "alt": "Jasmin Solfaghari bei der Einführung „Lenk mal nicht von dir ab“ in den nosolo studios Stuttgart"
       },
-      "sources": [
-        {
-          "label": "Klientinnenangabe / geteilter Ordner",
-          "href": ""
-        }
-      ],
       "details": {
+        "time": "Sa 10–13 & 15–18 Uhr, So 11–15 Uhr",
         "tags": [
-          "Lecture",
-          "Zoom",
-          "Opernbühne"
+          "Vortrag",
+          "Eurythmie",
+          "Bühnenpräsenz"
         ],
         "intro": [
-          "Der Zoom-Vortrag für die Wagner Society of Southern California fragt nach dem singenden Menschen auf der Opernbühne: nach Präsenz, Situation, Stimme und szenischem Handeln.",
-          "Der Titel „When everything stands perplexed“ verweist auf Momente, in denen musikalische und theatrale Orientierung zugleich fraglich werden."
+          "Die Workshopreihe „re_connect eurythmie“ von nosolo studios Stuttgart eröffnet einen Raum zwischen freier Performance, Theater und Oper, in dem bestehende Formen der Eurythmie hinterfragt und neue künstlerische Zusammenhänge erprobt werden. Martje Brandsma, Rafael Tavares und Severin Fraser widmen sich dabei drei Bereichen: Eurythmie als freie Performance, im Theater und in der Oper.",
+          "Unter dem Titel „Lenk mal nicht von dir ab“ gibt Opernregisseurin Jasmin Solfaghari eine Einführung zu Bühnenpräsenz und Bühnengesetzen. Das erste Workshopwochenende findet am 31. Oktober und 1. November 2026 statt."
         ],
         "facts": [
           {
             "label": "Datum",
-            "value": "22. November 2026"
+            "value": "31. Oktober – 1. November 2026"
           },
           {
-            "label": "Format",
-            "value": "via Zoom"
+            "label": "Zeit",
+            "value": "Sa 10–13 & 15–18 Uhr, So 11–15 Uhr"
+          },
+          {
+            "label": "Ort",
+            "value": "nosolo studios, Stuttgart"
           },
           {
             "label": "Veranstalter",
-            "value": "Wagner Society of Southern California, Los Angeles"
+            "value": "re_connect eurythmie (nosolo studios)"
           }
         ]
       }
